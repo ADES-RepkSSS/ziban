@@ -14,6 +14,17 @@ import { PageHeader } from '../../components/PageHeader';
 import { localExplainer } from '../../capabilities/explainer';
 import { articles } from '../../data/articles';
 
+/**
+ * “帮我看屏幕”的 v0.1 文本路径。
+ *
+ * 这里刻意不接 OCR / 网页抓取：
+ * - 文字来源只有两个：用户主动粘贴的文本、打包在 src/data/articles.ts 的示例文章；
+ * - 解释只走 capabilities/explainer（当前是离线词表），没有把握就返回 null，
+ *   UI 必须显示“只会念，还讲不好”，不能调用任何在线模型补内容；
+ * - 风险提示是启发式，不是医疗/法律/金融建议；文案不能变成操作指令。
+ *
+ * 将来接 Electron OCR / 本地模型时，保持同样的输入输出，不要让这个页面直接依赖平台 API。
+ */
 export function HelperPage() {
   const { progress } = useProgress();
   const {

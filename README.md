@@ -163,6 +163,8 @@ docs/                     立项、内容流水线、合规、Electron、路线�
 | [docs/04-roadmap.md](docs/04-roadmap.md) | 路线图、验收、风险登记 |
 | [docs/05-experimental-v0.1.md](docs/05-experimental-v0.1.md) | **本版功能、结构、边界、自测** |
 | [docs/06-github-community.md](docs/06-github-community.md) | **建仓、Pages、社区化、许可证** |
+| [docs/07-handoff.md](docs/07-handoff.md) | **交接：当前快照、架构、已知问题、下一步** |
+| [AGENTS.md](AGENTS.md) | 给下一位 AI/维护者的操作速查与硬约束 |
 | [content/README.md](content/README.md) | 卡片/图片/字表维护 |
 | [CHANGELOG.md](CHANGELOG.md) | 版本记录 |
 | [GOVERNANCE.md](GOVERNANCE.md) | 角色、决策、发布、资金 |

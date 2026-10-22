@@ -18,6 +18,20 @@ import { useProgress } from './ProgressProvider';
 import { browserSpeech } from '../capabilities/speech/webSpeech';
 import type { SpeechEngine, VoiceInfo } from '../capabilities/speech/engine';
 
+/**
+ * 全局语音队列（整个 App 只有一个，任何页面 speak 都会打断上一个）。
+ *
+ * 三层保护，改之前先看懂：
+ * 1. generation：每次 startQueue/stop 自增，旧 utterance 的 onend/onerror 回来时直接丢弃；
+ * 2. segmentToken：同一个 generation 内再区分“当前段”，防止 watchdog 已切到下一段后，
+ *    上一段迟到的 onend 又把下一段误结束；
+ * 3. watchdog：按字时长估算 + 5s，浏览器不触发 onend 时兜底推进队列。
+ *
+ * 逐字高亮不是只靠 boundary：中文 boundary 不可靠，所以用 buildCharTimings()
+ * 的字符时间轴驱动，boundary 到达时校正 anchor。
+ *
+ * 能力层只暴露 SpeechEngine；替换成 sherpa-onnx 时不要改这个文件的状态机。
+ */
 export interface SpeechSegment {
   text: string;
   segmentId: string;

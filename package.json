@@ -26,7 +26,8 @@
     "content:validate": "node scripts/validate-content.mjs",
     "typecheck": "pnpm -r exec tsc --noEmit",
     "test": "vitest run",
-    "check": "pnpm content:validate && pnpm typecheck && pnpm test && pnpm build",
+    "check:github": "node tools/check-github-files.cjs",
+    "check": "pnpm content:validate && pnpm typecheck && pnpm test && pnpm build && pnpm check:github",
     "screenshot": "node scripts/screenshot.mjs"
   },
   "devDependencies": {

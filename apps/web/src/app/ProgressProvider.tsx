@@ -2,6 +2,14 @@ import { createContext, useCallback, useContext, useMemo, useState, type ReactNo
 import { createInitialProgress, type ProgressState } from '@ziban/core';
 import { clearStoredProgress, readStoredProgress, saveProgress } from '../lib/storage';
 
+/**
+ * 学习进度的唯一来源。
+ *
+ * 纪律：
+ * - 只写本机 localStorage（key: ziban.progress.v1），不经过任何网络；
+ * - 每次 update 立即写盘，避免用户直接关窗口丢失进度；
+ * - 旧数据/手改数据由 core.normalizeProgress 兜底，UI 不信任 localStorage 的形状。
+ */
 interface ProgressContextValue {
   progress: ProgressState;
   update: (updater: (previous: ProgressState) => ProgressState) => void;

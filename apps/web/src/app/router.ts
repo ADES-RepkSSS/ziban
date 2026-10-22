@@ -1,5 +1,13 @@
 import { useSyncExternalStore } from 'react';
 
+/**
+ * Hash 路由，刻意不用 BrowserRouter。
+ *
+ * 1. GitHub Pages 项目页在 /ziban/ 子路径，history 路由需要 404 fallback；
+ * 2. Electron 用自定义协议（app://）加载 dist 时，刷新/深链也只需要 index.html；
+ * 3. file:// 预览时 hash 是唯一不需要服务器的路由方式。
+ * 换路由库前先确认这三件事都还能用。
+ */
 export type Route =
   | { name: 'home' }
   | { name: 'welcome' }

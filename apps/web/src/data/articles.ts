@@ -1,5 +1,14 @@
 import type { RiskNote } from '@ziban/core';
 
+/**
+ * 自带示例文章（全部是人工撰写/人工解释，不是模型生成）。
+ *
+ * 约束：
+ * - 每句必须有 plain 人工解释；不能为了覆盖率让模型补；
+ * - risk 是编辑判断，不是自动风险评分；文案不能变成“这样做”的操作指令；
+ * - 文章是“看屏幕”的教学样例，不假装能抓任意网址；
+ * - 图片路径与 content/images 对应，构建时复制到 public/images。
+ */
 export interface ArticleSentence {
   text: string;
   /** 人工写的一句话解释；不自动生成，避免对老人编造意思。 */

@@ -157,3 +157,5 @@ Web 版没有假装这些接口已经能用：`src/capabilities/index.ts` 把它
 ---
 
 开源发布、GitHub Pages、社区治理与许可证选择的完整步骤见 [docs/06-github-community.md](06-github-community.md)。
+
+项目当前快照、架构不变量、已知问题与下一步优先级见 [docs/07-handoff.md](07-handoff.md)；给下一位 AI 的速查见 [AGENTS.md](../AGENTS.md)。

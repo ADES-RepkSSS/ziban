@@ -24,6 +24,8 @@ export function LearnPage() {
   const today = localDateKey();
   const session = progress.session && progress.session.date === today ? progress.session : null;
 
+  // 只在“今天还没有会话”时创建；已完成会话也保留，让 /learn 继续显示“今天认完了”。
+  // 不要在 render 里创建——StrictMode 会双调用，可能写入两个会话/两次抽卡。
   useEffect(() => {
     if (!progress.onboarded) return;
     if (progress.session && progress.session.date === today) return;
@@ -75,6 +77,7 @@ export function LearnPage() {
       session={session}
       currentIndex={currentIndex}
       onNext={() => {
+        // 先停掉当前卡的朗读，再记完成；否则旧卡的声音会拖到下一张卡。
         stop();
         update((previous) => completeCard(previous, card.id));
       }}

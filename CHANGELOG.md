@@ -4,6 +4,11 @@
 
 ## [Unreleased]
 
+### Docs
+
+- 增加 [AGENTS.md](AGENTS.md) 与 [docs/07-handoff.md](docs/07-handoff.md)：交接快照、关键不变量、已知坑、下一步优先级。
+- 给语音队列、每日会话、内容构建、路由、进度存储等关键模块补充源码注释。
+
 ### Planned
 
 - 老人可用性测试（3–5 位）与卡点修复

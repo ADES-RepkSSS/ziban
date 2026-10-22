@@ -7,6 +7,15 @@ import { Icon } from '../../components/Icon';
 import { PageHeader } from '../../components/PageHeader';
 import { articleById, type Article } from '../../data/articles';
 
+/**
+ * 自带文章的阅读器。
+ *
+ * 重要边界：
+ * - `src/data/articles.ts` 里的 summary / plain 都是人工写的，不是模型生成；
+ * - 逐句朗读用 segmentId `read-*`，单句解释用 `plain-*`，两者互斥，
+ *   避免“点讲一句”时整篇朗读还在继续；
+ * - 当前只支持本地文章 id，不支持任意 URL；跨域正文抽取是后续 PageReader 的事。
+ */
 export function ReaderPage({ id }: { id: string }) {
   const article = articleById.get(id);
   if (!article) {

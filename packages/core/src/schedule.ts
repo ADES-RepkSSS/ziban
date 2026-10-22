@@ -7,6 +7,20 @@ import {
   type UserSettings,
 } from './types.js';
 
+/**
+ * 每日会话状态机（纯函数，无 DOM / 无网络）。
+ *
+ * 生命周期：
+ *   ensureSession()  今天没有会话就新建（3 张新卡 + 最多 3 张到期复习）
+ *   completeCard()   每看完一张就记 seen、排下次 due，完成最后一张时标记 finished
+ *   SessionComplete  前端展示“今天认完了”；startAnotherSession() 可再开一批
+ *
+ * 关键约束：
+ * - 同一天已有会话时，ensureSession 必须原样续上，不能又抽一批新卡；
+ * - 已完成会话当天再次打开仍返回它，供 UI 显示“今天认完了”；
+ * - 不记录“对/错”，只记录“见过”，避免把老人放进考试语境；
+ * - 日期用本地日历（而非 UTC），晚上 23:30 不会算到第二天。
+ */
 export const DAY_MS = 24 * 60 * 60 * 1000;
 export const NEW_CARDS_PER_SESSION = 3;
 export const MAX_REVIEWS_PER_SESSION = 3;

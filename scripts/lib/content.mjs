@@ -4,6 +4,19 @@ import { fileURLToPath } from 'node:url';
 import YAML from 'yaml';
 import { z } from 'zod';
 
+/**
+ * 内容构建管线（唯一入口）：
+ *
+ *   content/cards/level*.yaml
+ *     → Zod 结构校验
+ *     → 业务门禁（text/chars、拼音数量、释义用字表、图片存在、id 唯一）
+ *     → 复制 content/images 到 apps/web/public/images
+ *     → 生成 apps/web/src/content/cards.generated.json
+ *
+ * 生成字段 `imageUrl` / `order` 只存在于 JSON，**不要写回 YAML**；
+ * 也不要手改 cards.generated.json——下次构建会覆盖。
+ * 加卡/改图的完整流程见 content/README.md。
+ */
 const here = path.dirname(fileURLToPath(import.meta.url));
 export const ROOT = path.resolve(here, '..', '..');
 export const CARDS_DIR = path.join(ROOT, 'content', 'cards');
