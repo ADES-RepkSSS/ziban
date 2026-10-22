@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="一个蓝色的对话气泡，里面有四个小黑点">
+  <rect width="512" height="512" rx="40" fill="#F4EBD9"/>
+  <circle cx="256" cy="248" r="196" fill="#FCF8EF"/>
+  <ellipse cx="256" cy="421" rx="132" ry="17" fill="#DDCEB7" stroke="none" stroke-width="0" opacity="0.75"/><path d="M 106 130 h 300 q 26 0 26 26 v 148 q 0 26 -26 26 H 232 l -58 62 l 4 -62 H 106 q -26 0 -26 -26 V 156 q 0 -26 26 -26 Z" fill="#3E6FA6" stroke="#26313D" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" /><circle cx="174" cy="230" r="11" fill="#FFFFFF" stroke="none" stroke-width="0" /><circle cx="228" cy="230" r="11" fill="#FFFFFF" stroke="none" stroke-width="0" /><circle cx="282" cy="230" r="11" fill="#FFFFFF" stroke="none" stroke-width="0" /><circle cx="336" cy="230" r="11" fill="#FFFFFF" stroke="none" stroke-width="0" /><path d="M 120 388 q 72 -24 146 0" fill="none" stroke="#8FC7C1" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+</svg>

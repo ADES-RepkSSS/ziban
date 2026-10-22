@@ -1,0 +1,80 @@
+name: 问题反馈
+description: 页面打不开、按钮没反应、朗读不对、图片不显示……
+title: "[问题] "
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        谢谢反馈。**请不要填写真实姓名、电话、住址、身份证、银行卡、病历等个人信息。**
+        如果涉及诈骗短信/网页，请先把链接和号码打码。
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: 哪里出了问题？
+      options:
+        - 启动 / 安装
+        - 识字卡 / 朗读
+        - 字库
+        - 帮我看屏幕（粘贴文字 / 文章）
+        - 设置 / 声音
+        - 其他
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: 发生了什么？
+      description: 用一两句话描述，不用写技术词。
+      placeholder: 例如：点了“再念一遍”，没有声音。
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 怎么出现的？
+      description: 按顺序写你点过什么。
+      placeholder: |
+        1. 打开首页
+        2. 点“开始”
+        3. 点“再念一遍”
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: 你本来希望它怎么样？
+
+  - type: input
+    id: environment
+    attributes:
+      label: 电脑和浏览器
+      description: 例如 Windows 11 + Edge 131；MacBook Air M1 + Safari 17。
+    validations:
+      required: true
+
+  - type: textarea
+    id: media
+    attributes:
+      label: 截图或录屏
+      description: 可以直接拖图片进来。请先打码个人信息。
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: 控制台报错（可选）
+      description: 打开开发者工具（F12）→ Console，把红色文字贴在这里。没有就留空。
+
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: 确认
+      options:
+        - label: 这不是涉及支付、银行卡、密码、身份证的敏感页面；如果是，我只在私密安全报告里提供。
+          required: true
+        - label: 我已经检查并打码了截图/文字里的个人信息。
+          required: true

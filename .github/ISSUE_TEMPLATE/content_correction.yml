@@ -1,0 +1,60 @@
+name: 内容纠错
+description: 卡片释义、拼音、例句、图片或文章解释有问题
+title: "[内容] "
+labels: ["content", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        内容错了，用户没有能力发现；所以内容问题优先级很高。
+        请尽量给出**可引用的来源**，不要只写“感觉不对”。
+
+  - type: input
+    id: card
+    attributes:
+      label: 哪张卡 / 哪篇文章？
+      description: 卡片 id 或词，例如 `c_yao` / 药；文章写标题。
+    validations:
+      required: true
+
+  - type: dropdown
+    id: kind
+    attributes:
+      label: 哪一类问题？
+      options:
+        - 释义不准确 / 老人听不懂
+        - 拼音 / 多音字
+        - 例句不自然或来源不明
+        - 图片和词对不上
+        - 文章解释错误
+        - 用字超纲 / 含英文数字括号
+        - 其他
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: 问题是什么？
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: 建议怎么改？
+      description: 释义请控制在 20 字内，尽量用口语，不用成语/括号/英文。
+
+  - type: input
+    id: source
+    attributes:
+      label: 来源
+      description: 词典条目、政府网站、志愿者授权语料等；没有来源也可以先提，但内容不会直接入库。
+
+  - type: checkboxes
+    id: license
+    attributes:
+      label: 授权确认
+      options:
+        - label: 我提供的改写/例句可以由本项目以 CC BY-SA 4.0 分发；如果来自第三方，我已在来源里注明。
+          required: true

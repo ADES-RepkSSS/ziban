@@ -1,0 +1,308 @@
+# 20 张样例卡片（结构示例，未审校，status=draft，禁止直接发布）
+#
+# 来源策略（见 docs/02-corpus-compliance.md）：
+#   - 释义：改写自中文维基词典，改写后仍标注 entry 以便追溯
+#   - 例句：优先 volunteer_cc0（志愿者自述）或 gov_site，不取论坛原文
+#   - 图片：self（实拍）优先；arasaac 为 CC BY-NC-SA，须作为独立资源包分发
+#
+# 校验：schema/card.schema.json
+
+- id: c_yao
+  text: 药
+  chars: [药]
+  pinyin: ["yào"]
+  level: 1
+  scene: health
+  meaning: 生病时吃的东西
+  meaning_source: { dict: zhwiktionary, entry: 药, rev: "2024-08-11" }
+  sentence: 这个药一天吃两次。
+  sentence_source: { corpus: health_faq, doc: d_0231 }
+  image: { file: medicine-box-03.jpg, lib: self, license: CC-BY-SA-4.0, alt: 一盒白色的药，盒子上有字 }
+  confusables: [约]
+  status: draft
+  gen: { model: human, prompt_ver: "seed@0", hash: "seed" }
+
+- id: c_yiyuan
+  text: 医院
+  chars: [医, 院]
+  pinyin: ["yī", "yuàn"]
+  level: 1
+  scene: health
+  meaning: 看病的地方
+  meaning_source: { dict: zhwiktionary, entry: 医院 }
+  sentence: 明天我去医院看病。
+  sentence_source: { corpus: volunteer_cc0, doc: v_0012 }
+  image: { file: hospital-gate-01.jpg, lib: self, license: CC-BY-SA-4.0, alt: 医院的大门，上面有红十字 }
+  confusables: [医, 依]
+  status: draft
+  gen: { model: human, prompt_ver: "seed@0", hash: "seed" }
+
+- id: c_guahao
+  text: 挂号
+  chars: [挂, 号]
+  pinyin: ["guà", "hào"]
+  level: 1
+  scene: health
+  meaning: 看病前先拿一个号
+  meaning_source: { dict: zhwiktionary, entry: 挂号 }
+  sentence: 先挂号，再去看医生。
+  sentence_source: { corpus: health_faq, doc: d_0088 }
+  image: { file: hospital-kiosk-02.jpg, lib: self, license: CC-BY-SA-4.0, alt: 医院大厅里的自助挂号机 }
+  confusables: [号, 亏]
+  status: draft
+  gen: { model: human, prompt_ver: "seed@0", hash: "seed" }
+
+- id: c_yisheng
+  text: 医生
+  chars: [医, 生]
+  pinyin: ["yī", "shēng"]
+  level: 1
+  scene: health
+  meaning: 给你看病的人
+  meaning_source: { dict: zhwiktionary, entry: 医生 }
+  sentence: 医生说要多喝水。
+  sentence_source: { corpus: volunteer_cc0, doc: v_0044 }
+  image: { file: doctor-01.jpg, lib: self, license: CC-BY-SA-4.0, alt: 穿白大褂的医生 }
+  confusables: [生, 牛]
+  status: draft
+  gen: { model: human, prompt_ver: "seed@0", hash: "seed" }
+
+- id: c_quqian
+  text: 取钱
+  chars: [取, 钱]
+  pinyin: ["qǔ", "qián"]
+  level: 1
+  scene: money
+  meaning: 从机器里把钱拿出来
+  meaning_source: { dict: zhwiktionary, entry: 取 }
+  sentence: 我去银行取钱。
+  sentence_source: { corpus: volunteer_cc0, doc: v_0007 }
+  image: { file: atm-01.jpg, lib: self, license: CC-BY-SA-4.0, alt: 银行门口的自动取款机 }
+  confusables: [取, 敢]
+  status: draft
+  gen: { model: human, prompt_ver: "seed@0", hash: "seed" }
+
+- id: c_mima
+  text: 密码
+  chars: [密, 码]
+  pinyin: ["mì", "mǎ"]
+  level: 1
+  scene: money
+  meaning: 取钱前要按的几个数字
+  meaning_source: { dict: zhwiktionary, entry: 密码 }
+  sentence: 请输入密码。
+  sentence_source: { corpus: gov_site, doc: g_1021 }
+  image: { file: keypad-01.jpg, lib: self, license: CC-BY-SA-4.0, alt: 取款机上的数字按键 }
+  confusables: [码, 马]
+  status: draft
+  gen: { model: human, prompt_ver: "seed@0", hash: "seed" }
+
+- id: c_weixin
+  text: 微信
+  chars: [微, 信]
+  pinyin: ["wēi", "xìn"]
+  level: 1
+  scene: contact
+  meaning: 用手机和家人说话的地方
+  meaning_source: { dict: zhwiktionary, entry: 微信 }
+  sentence: 我给女儿发微信。
+  sentence_source: { corpus: volunteer_cc0, doc: v_0021 }
+  image: { file: wechat-icon-01.png, lib: self, license: CC-BY-SA-4.0, alt: 绿色的微信图标，两个白色气泡 }
+  confusables: [信, 言]
+  status: draft
+  gen: { model: human, prompt_ver: "seed@0", hash: "seed" }
+
+- id: c_dianhua
+  text: 电话
+  chars: [电, 话]
+  pinyin: ["diàn", "huà"]
+  level: 1
+  scene: contact
+  meaning: 能和人说话的东西
+  meaning_source: { dict: zhwiktionary, entry: 电话 }
+  sentence: 电话响了，快接。
+  sentence_source: { corpus: volunteer_cc0, doc: v_0033 }
+  image: { file: phone-01.jpg, lib: self, license: CC-BY-SA-4.0, alt: 一部座机电话 }
+  confusables: [话, 活]
+  status: draft
+  gen: { model: human, prompt_ver: "seed@0", hash: "seed" }
+
+- id: c_kai
+  text: 开
+  chars: [开]
+  pinyin: ["kāi"]
+  level: 1
+  scene: home
+  meaning: 让它动起来
+  meaning_source: { dict: zhwiktionary, entry: 开 }
+  sentence: 帮我把电视开开。
+  sentence_source: { corpus: volunteer_cc0, doc: v_0058 }
+  image: { file: switch-on-01.jpg, lib: self, license: CC-BY-SA-4.0, alt: 一个被按下、灯亮着的开关 }
+  confusables: [并, 井]
+  status: draft
+  gen: { model: human, prompt_ver: "seed@0", hash: "seed" }
+
+- id: c_guan
+  text: 关
+  chars: [关]
+  pinyin: ["guān"]
+  level: 1
+  scene: home
+  meaning: 让它停下来
+  meaning_source: { dict: zhwiktionary, entry: 关 }
+  sentence: 睡觉前把灯关了。
+  sentence_source: { corpus: volunteer_cc0, doc: v_0059 }
+  image: { file: switch-off-01.jpg, lib: self, license: CC-BY-SA-4.0, alt: 一个被抬起、灯灭的开关 }
+  confusables: [天, 送]
+  status: draft
+  gen: { model: human, prompt_ver: "seed@0", hash: "seed" }
+
+- id: c_gongjiao
+  text: 公交
+  chars: [公, 交]
+  pinyin: ["gōng", "jiāo"]
+  level: 1
+  scene: travel
+  meaning: 大家都能坐的大车
+  meaning_source: { dict: zhwiktionary, entry: 公交 }
+  sentence: 坐公交去菜市场。
+  sentence_source: { corpus: volunteer_cc0, doc: v_0066 }
+  image: { file: bus-01.jpg, lib: self, license: CC-BY-SA-4.0, alt: 一辆绿色的公共汽车 }
+  confusables: [交, 文]
+  status: draft
+  gen: { model: human, prompt_ver: "seed@0", hash: "seed" }
+
+- id: c_zhan
+  text: 站
+  chars: [站]
+  pinyin: ["zhàn"]
+  level: 1
+  scene: travel
+  meaning: 车停下来让人上下的地方
+  meaning_source: { dict: zhwiktionary, entry: 站 }
+  sentence: 下一站是火车站。
+  sentence_source: { corpus: volunteer_cc0, doc: v_0067 }
+  image: { file: bus-stop-01.jpg, lib: self, license: CC-BY-SA-4.0, alt: 路边的公交站牌 }
+  confusables: [占, 战]
+  status: draft
+  gen: { model: human, prompt_ver: "seed@0", hash: "seed" }
+
+- id: c_shenfenzheng
+  text: 身份证
+  chars: [身, 份, 证]
+  pinyin: ["shēn", "fèn", "zhèng"]
+  level: 2
+  scene: gov
+  meaning: 证明你是谁的小卡片
+  meaning_source: { dict: zhwiktionary, entry: 身份证 }
+  sentence: 办手续要带身份证。
+  sentence_source: { corpus: gov_site, doc: g_0307 }
+  image: { file: id-card-01.jpg, lib: self, license: CC-BY-SA-4.0, alt: 一张身份证的背面，正面朝下 }
+  confusables: [证, 征]
+  status: draft
+  gen: { model: human, prompt_ver: "seed@0", hash: "seed" }
+
+- id: c_shebao
+  text: 社保
+  chars: [社, 保]
+  pinyin: ["shè", "bǎo"]
+  level: 2
+  scene: gov
+  meaning: 老了以后领的钱
+  meaning_source: { dict: zhwiktionary, entry: 社会保障 }
+  sentence: 社保卡每年要到银行激活。
+  sentence_source: { corpus: gov_site, doc: g_0355 }
+  image: { file: social-card-01.jpg, lib: self, license: CC-BY-SA-4.0, alt: 一张社会保障卡 }
+  confusables: [保, 宝]
+  status: draft
+  gen: { model: human, prompt_ver: "seed@0", hash: "seed" }
+
+- id: c_fukuan
+  text: 付款
+  chars: [付, 款]
+  pinyin: ["fù", "kuǎn"]
+  level: 2
+  scene: shopping
+  meaning: 把钱给出去
+  meaning_source: { dict: zhwiktionary, entry: 付款 }
+  sentence: 到柜台付款。
+  sentence_source: { corpus: gov_site, doc: g_0412 }
+  image: { file: pay-counter-01.jpg, lib: self, license: CC-BY-SA-4.0, alt: 超市收银台，前面有扫码的机器 }
+  confusables: [付, 附]
+  status: draft
+  gen: { model: human, prompt_ver: "seed@0", hash: "seed" }
+
+- id: c_duoshaoqian
+  text: 多少钱
+  chars: [多, 少, 钱]
+  pinyin: ["duō", "shǎo", "qián"]
+  level: 1
+  scene: shopping
+  meaning: 问这个东西要几百块
+  meaning_source: { dict: zhwiktionary, entry: 多少 }
+  sentence: 老板，这个多少钱？
+  sentence_source: { corpus: volunteer_cc0, doc: v_0071 }
+  image: { file: price-tag-01.jpg, lib: self, license: CC-BY-SA-4.0, alt: 货架上的价签，写着数字 }
+  confusables: [钱, 线]
+  status: draft
+  gen: { model: human, prompt_ver: "seed@0", hash: "seed" }
+
+- id: c_yanzhengma
+  text: 验证码
+  chars: [验, 证, 码]
+  pinyin: ["yàn", "zhèng", "mǎ"]
+  level: 2
+  scene: safety
+  meaning: 别人发给你的一串数字
+  meaning_source: { dict: zhwiktionary, entry: 验证码 }
+  sentence: 验证码不要给别人。
+  sentence_source: { corpus: gov_site, doc: g_0620 }
+  image: { file: sms-code-01.png, lib: self, license: CC-BY-SA-4.0, alt: 手机短信里的六个数字 }
+  confusables: [码, 马]
+  status: draft
+  gen: { model: human, prompt_ver: "seed@0", hash: "seed" }
+
+- id: c_zhuanzhang
+  text: 转账
+  chars: [转, 账]
+  pinyin: ["zhuǎn", "zhàng"]
+  level: 2
+  scene: safety
+  meaning: 把钱送到别人卡上
+  meaning_source: { dict: zhwiktionary, entry: 转账 }
+  sentence: 陌生人叫你转账，不要转。
+  sentence_source: { corpus: gov_site, doc: g_0631 }
+  image: { file: transfer-ui-01.png, lib: self, license: CC-BY-SA-4.0, alt: 手机银行里转账的页面 }
+  confusables: [账, 帐]
+  status: draft
+  gen: { model: human, prompt_ver: "seed@0", hash: "seed" }
+
+- id: c_buyao
+  text: 不要
+  chars: [不, 要]
+  pinyin: ["bù", "yào"]
+  level: 1
+  scene: safety
+  meaning: 告诉你别这么做
+  meaning_source: { dict: zhwiktionary, entry: 不要 }
+  sentence: 不要相信陌生电话。
+  sentence_source: { corpus: gov_site, doc: g_0640 }
+  image: { file: no-entry-sign-01.jpg, lib: self, license: CC-BY-SA-4.0, alt: 一个红色的禁止标志 }
+  confusables: [要, 耍]
+  status: draft
+  gen: { model: human, prompt_ver: "seed@0", hash: "seed" }
+
+- id: c_guaduan
+  text: 挂断
+  chars: [挂, 断]
+  pinyin: ["guà", "duàn"]
+  level: 2
+  scene: safety
+  meaning: 把电话关掉
+  meaning_source: { dict: zhwiktionary, entry: 挂断 }
+  sentence: 说完了就挂断电话。
+  sentence_source: { corpus: volunteer_cc0, doc: v_0082 }
+  image: { file: hangup-button-01.png, lib: self, license: CC-BY-SA-4.0, alt: 手机上一个红色的挂断按钮 }
+  confusables: [断, 继]
+  status: draft
+  gen: { model: human, prompt_ver: "seed@0", hash: "seed" }

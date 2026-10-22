@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="一个红色的电话听筒，下面有一个向下的箭头">
+  <rect width="512" height="512" rx="40" fill="#F4EBD9"/>
+  <circle cx="256" cy="248" r="196" fill="#FCF8EF"/>
+  <ellipse cx="256" cy="421" rx="132" ry="17" fill="#DDCEB7" stroke="none" stroke-width="0" opacity="0.75"/><g transform="rotate(135 256 240)"><path d="M 138 222 q -18 -58 40 -58 h 156 q 58 0 40 58 l -22 40 q -10 20 -34 12 l -40 -14 q -22 -8 -30 -20 q -8 12 -30 20 l -40 14 q -24 8 -34 -12 Z" fill="#C9483A" stroke="#26313D" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" /><rect x="220" y="168" width="72" height="30" rx="12" fill="#E9A59C" stroke="#26313D" stroke-width="8" /></g><line x1="256" y1="342" x2="256" y2="406" stroke="#26313D" stroke-width="16" stroke-linecap="round" /><path d="M 220 374 l 36 36 l 36 -36" fill="none" stroke="#26313D" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" /><path d="M 150 120 q 18 20 0 40 M 362 120 q -18 20 0 40" fill="none" stroke="#9AA4AE" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+</svg>

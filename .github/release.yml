@@ -1,0 +1,21 @@
+changelog:
+  exclude:
+    labels:
+      - dependencies
+      - skip-changelog
+  categories:
+    - title: 安全与隐私
+      labels:
+        - security
+    - title: 内容（词表 / 释义 / 例句 / 图片）
+      labels:
+        - content
+    - title: 无障碍
+      labels:
+        - accessibility
+    - title: 修复
+      labels:
+        - bug
+    - title: 其他改动
+      labels:
+        - "*"

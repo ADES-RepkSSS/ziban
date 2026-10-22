@@ -1,0 +1,15 @@
+packages:
+  - apps/*
+  - packages/*
+
+# 开发环境不希望在每次 pnpm run 前重新做一次联网依赖检查；
+# 安装仍由 `pnpm install` 显式完成。
+verifyDepsBeforeRun: false
+
+# Vite 依赖 esbuild 的平台二进制；允许它的安装脚本。
+allowBuilds:
+  esbuild: true
+
+# 锁文件生成时固定了 rollup 版本（受限网络环境）；升级 Vite/rollup 时一起更新锁文件。
+overrides:
+  rollup: 4.64.12

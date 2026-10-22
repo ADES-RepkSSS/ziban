@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="一个大红球和一个小蓝球，小蓝球被圈了出来">
+  <rect width="512" height="512" rx="40" fill="#F4EBD9"/>
+  <circle cx="256" cy="248" r="196" fill="#FCF8EF"/>
+  <ellipse cx="256" cy="421" rx="132" ry="17" fill="#DDCEB7" stroke="none" stroke-width="0" opacity="0.75"/><circle cx="202" cy="300" r="108" fill="#C9483A" stroke="#26313D" stroke-width="14" /><circle cx="370" cy="352" r="50" fill="#3E6FA6" stroke="#26313D" stroke-width="14" /><circle cx="370" cy="352" r="72" fill="none" stroke="#E8A63C" stroke-width="10" stroke-dasharray="14 14"/><path d="M 142 178 q 40 -34 96 -24" fill="none" stroke="#E8A63C" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+</svg>

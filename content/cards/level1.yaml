@@ -1,0 +1,777 @@
+# 字伴 v0.1 实验版 · 50 张“救命词”卡片
+#
+# 内容状态：draft（原型内容，尚未经过 docs/01 的 C5 对抗审校与人工审校）
+# 来源策略：
+#   - 释义/例句：本原型由项目组用日常口语手写（dict/corpus = self），
+#     不冒充词典或真实语料；正式版必须补 source_ref 并走内容流水线。
+#   - 图片：项目组手绘 SVG（lib = self，CC BY-SA 4.0），不使用文生图。
+#   - 拼音：仅作内部数据与家人查看，不用于教学。
+#
+# 校验：schema/card.schema.json + scripts/validate-content.mjs
+# 顺序：YAML 顺序即“每天三个字”的教学顺序（按场景连续）。
+
+# ── 看病买药 ──────────────────────────────────────────────
+
+- id: c_yao
+  text: 药
+  chars: [药]
+  pinyin: ["yào"]
+  level: 1
+  scene: health
+  meaning: 生病时吃的东西
+  meaning_source: { dict: self, entry: 药, rev: "prototype-2026-10" }
+  sentence: 这个药一天吃两次。
+  sentence_source: { corpus: self, doc: proto-health-01 }
+  image: { file: medicine-box.svg, lib: self, license: CC-BY-SA-4.0, alt: 一盒药和两粒白色的药片 }
+  confusables: [约, 乐]
+  status: draft
+  gen: { model: human, prompt_ver: "seed@1", hash: "seed-level1-c_yao" }
+
+- id: c_yiyuan
+  text: 医院
+  chars: [医, 院]
+  pinyin: ["yī", "yuàn"]
+  level: 1
+  scene: health
+  meaning: 看病的地方
+  meaning_source: { dict: self, entry: 医院, rev: "prototype-2026-10" }
+  sentence: 明天我去医院看病。
+  sentence_source: { corpus: self, doc: proto-health-02 }
+  image: { file: hospital.svg, lib: self, license: CC-BY-SA-4.0, alt: 一栋白色的医院大楼，门口有红十字 }
+  confusables: [医, 依]
+  status: draft
+  gen: { model: human, prompt_ver: "seed@1", hash: "seed-level1-c_yiyuan" }
+
+- id: c_guahao
+  text: 挂号
+  chars: [挂, 号]
+  pinyin: ["guà", "hào"]
+  level: 1
+  scene: health
+  meaning: 看病前先拿一个号
+  meaning_source: { dict: self, entry: 挂号, rev: "prototype-2026-10" }
+  sentence: 先挂号，再去看医生。
+  sentence_source: { corpus: self, doc: proto-health-03 }
+  image: { file: registration.svg, lib: self, license: CC-BY-SA-4.0, alt: 医院大厅里的挂号机和一张带红十字的号单 }
+  confusables: [号, 亏]
+  status: draft
+  gen: { model: human, prompt_ver: "seed@1", hash: "seed-level1-c_guahao" }
+
+- id: c_yisheng
+  text: 医生
+  chars: [医, 生]
+  pinyin: ["yī", "shēng"]
+  level: 1
+  scene: health
+  meaning: 给你看病的人
+  meaning_source: { dict: self, entry: 医生, rev: "prototype-2026-10" }
+  sentence: 医生说要多喝水。
+  sentence_source: { corpus: self, doc: proto-health-04 }
+  image: { file: doctor.svg, lib: self, license: CC-BY-SA-4.0, alt: 穿白大褂、挂着听诊器的医生 }
+  confusables: [生, 牛]
+  status: draft
+  gen: { model: human, prompt_ver: "seed@1", hash: "seed-level1-c_yisheng" }
+
+- id: c_jiaofei
+  text: 缴费
+  chars: [缴, 费]
+  pinyin: ["jiǎo", "fèi"]
+  level: 1
+  scene: health
+  meaning: 把该付的钱交上去
+  meaning_source: { dict: self, entry: 缴费, rev: "prototype-2026-10" }
+  sentence: 先去缴费，再取药。
+  sentence_source: { corpus: self, doc: proto-health-05 }
+  image: { file: payment-bill.svg, lib: self, license: CC-BY-SA-4.0, alt: 一张缴费单和几枚硬币 }
+  confusables: [缴, 激]
+  status: draft
+  gen: { model: human, prompt_ver: "seed@1", hash: "seed-level1-c_jiaofei" }
+
+- id: c_yuyue
+  text: 预约
+  chars: [预, 约]
+  pinyin: ["yù", "yuē"]
+  level: 2
+  scene: health
+  meaning: 先说好什么时候去
+  meaning_source: { dict: self, entry: 预约, rev: "prototype-2026-10" }
+  sentence: 看病要先预约。
+  sentence_source: { corpus: self, doc: proto-health-06 }
+  image: { file: calendar-clock.svg, lib: self, license: CC-BY-SA-4.0, alt: 一个日历和一个小闹钟 }
+  confusables: [预, 豫]
+  status: draft
+  gen: { model: human, prompt_ver: "seed@1", hash: "seed-level1-c_yuyue" }
+
+- id: c_yibao
+  text: 医保
+  chars: [医, 保]
+  pinyin: ["yī", "bǎo"]
+  level: 1
+  scene: health
+  meaning: 看病能少花钱的卡
+  meaning_source: { dict: self, entry: 医保, rev: "prototype-2026-10" }
+  sentence: 挂号的时候要用医保。
+  sentence_source: { corpus: self, doc: proto-health-07 }
+  image: { file: insurance-card.svg, lib: self, license: CC-BY-SA-4.0, alt: 一张带红十字和心跳线的医保卡 }
+  confusables: [保, 宝]
+  status: draft
+  gen: { model: human, prompt_ver: "seed@1", hash: "seed-level1-c_yibao" }
+
+# ── 取钱转账 ──────────────────────────────────────────────
+
+- id: c_quqian
+  text: 取钱
+  chars: [取, 钱]
+  pinyin: ["qǔ", "qián"]
+  level: 1
+  scene: money
+  meaning: 从机器里把钱拿出来
+  meaning_source: { dict: self, entry: 取钱, rev: "prototype-2026-10" }
+  sentence: 我去银行取钱。
+  sentence_source: { corpus: self, doc: proto-money-01 }
+  image: { file: atm.svg, lib: self, license: CC-BY-SA-4.0, alt: 一台自动取款机，正在吐出一张钞票 }
+  confusables: [取, 敢]
+  status: draft
+  gen: { model: human, prompt_ver: "seed@1", hash: "seed-level1-c_quqian" }
+
+- id: c_cunqian
+  text: 存钱
+  chars: [存, 钱]
+  pinyin: ["cún", "qián"]
+  level: 1
+  scene: money
+  meaning: 把钱放进银行里
+  meaning_source: { dict: self, entry: 存钱, rev: "prototype-2026-10" }
+  sentence: 每个月存一点钱。
+  sentence_source: { corpus: self, doc: proto-money-02 }
+  image: { file: piggy-bank.svg, lib: self, license: CC-BY-SA-4.0, alt: 一个粉色的存钱罐，上面投进一枚硬币 }
+  confusables: [存, 在]
+  status: draft
+  gen: { model: human, prompt_ver: "seed@1", hash: "seed-level1-c_cunqian" }
+
+- id: c_mima
+  text: 密码
+  chars: [密, 码]
+  pinyin: ["mì", "mǎ"]
+  level: 1
+  scene: money
+  meaning: 取钱前要按的几个数字
+  meaning_source: { dict: self, entry: 密码, rev: "prototype-2026-10" }
+  sentence: 请输入密码。
+  sentence_source: { corpus: self, doc: proto-money-03 }
+  image: { file: keypad.svg, lib: self, license: CC-BY-SA-4.0, alt: 一个数字键盘，按键上有小圆点 }
+  confusables: [密, 蜜]
+  status: draft
+  gen: { model: human, prompt_ver: "seed@1", hash: "seed-level1-c_mima" }
+
+- id: c_ka
+  text: 卡
+  chars: [卡]
+  pinyin: ["kǎ"]
+  level: 1
+  scene: money
+  meaning: 能取钱、能买东西的小卡片
+  meaning_source: { dict: self, entry: 卡, rev: "prototype-2026-10" }
+  sentence: 把卡插进机器里。
+  sentence_source: { corpus: self, doc: proto-money-04 }
+  image: { file: bank-card.svg, lib: self, license: CC-BY-SA-4.0, alt: 一张带芯片和黑色磁条的银行卡 }
+  confusables: [卡, 下]
+  status: draft
+  gen: { model: human, prompt_ver: "seed@1", hash: "seed-level1-c_ka" }
+
+- id: c_yue
+  text: 余额
+  chars: [余, 额]
+  pinyin: ["yú", "é"]
+  level: 1
+  scene: money
+  meaning: 卡里还剩多少钱
+  meaning_source: { dict: self, entry: 余额, rev: "prototype-2026-10" }
+  sentence: 卡里余额不多了。
+  sentence_source: { corpus: self, doc: proto-money-05 }
+  image: { file: wallet.svg, lib: self, license: CC-BY-SA-4.0, alt: 一个打开的钱包，里面有几枚硬币 }
+  confusables: [余, 佘]
+  status: draft
+  gen: { model: human, prompt_ver: "seed@1", hash: "seed-level1-c_yue" }
+
+- id: c_zhuanzhang
+  text: 转账
+  chars: [转, 账]
+  pinyin: ["zhuǎn", "zhàng"]
+  level: 2
+  scene: money
+  meaning: 把钱送到别人卡上
+  meaning_source: { dict: self, entry: 转账, rev: "prototype-2026-10" }
+  sentence: 陌生人叫你转账，不要转。
+  sentence_source: { corpus: self, doc: proto-money-06 }
+  image: { file: transfer.svg, lib: self, license: CC-BY-SA-4.0, alt: 两部手机之间有一个向右的箭头，表示把钱送过去 }
+  confusables: [账, 帐]
+  status: draft
+  gen: { model: human, prompt_ver: "seed@1", hash: "seed-level1-c_zhuanzhang" }
+
+- id: c_queren
+  text: 确认
+  chars: [确, 认]
+  pinyin: ["què", "rèn"]
+  level: 1
+  scene: money
+  meaning: 看好了，就按这个
+  meaning_source: { dict: self, entry: 确认, rev: "prototype-2026-10" }
+  sentence: 看清楚了，再按确认。
+  sentence_source: { corpus: self, doc: proto-money-07 }
+  image: { file: check-button.svg, lib: self, license: CC-BY-SA-4.0, alt: 一个绿色的圆形按钮，上面有一个白色的对勾 }
+  confusables: [认, 人]
+  status: draft
+  gen: { model: human, prompt_ver: "seed@1", hash: "seed-level1-c_queren" }
+
+- id: c_quxiao
+  text: 取消
+  chars: [取, 消]
+  pinyin: ["qǔ", "xiāo"]
+  level: 1
+  scene: money
+  meaning: 不想做了，就按这个
+  meaning_source: { dict: self, entry: 取消, rev: "prototype-2026-10" }
+  sentence: 不想办了，就按取消。
+  sentence_source: { corpus: self, doc: proto-money-08 }
+  image: { file: x-button.svg, lib: self, license: CC-BY-SA-4.0, alt: 一个灰白色的圆形按钮，上面有一个叉号 }
+  confusables: [消, 悄]
+  status: draft
+  gen: { model: human, prompt_ver: "seed@1", hash: "seed-level1-c_quxiao" }
+
+# ── 出门坐车 ──────────────────────────────────────────────
+
+- id: c_gongjiao
+  text: 公交
+  chars: [公, 交]
+  pinyin: ["gōng", "jiāo"]
+  level: 2
+  scene: travel
+  meaning: 大家都能坐的大车
+  meaning_source: { dict: self, entry: 公交, rev: "prototype-2026-10" }
+  sentence: 坐公交去菜市场。
+  sentence_source: { corpus: self, doc: proto-travel-01 }
+  image: { file: bus.svg, lib: self, license: CC-BY-SA-4.0, alt: 一辆绿色的公共汽车，车头有路线牌 }
+  confusables: [交, 文]
+  status: draft
+  gen: { model: human, prompt_ver: "seed@1", hash: "seed-level1-c_gongjiao" }
+
+- id: c_zhan
+  text: 站
+  chars: [站]
+  pinyin: ["zhàn"]
+  level: 2
+  scene: travel
+  meaning: 车停下来让人上下的地方
+  meaning_source: { dict: self, entry: 站, rev: "prototype-2026-10" }
+  sentence: 下一站是火车站。
+  sentence_source: { corpus: self, doc: proto-travel-02 }
+  image: { file: bus-stop.svg, lib: self, license: CC-BY-SA-4.0, alt: 路边的公交站牌，旁边有一辆公交车 }
+  confusables: [站, 占]
+  status: draft
+  gen: { model: human, prompt_ver: "seed@1", hash: "seed-level1-c_zhan" }
+
+- id: c_ditie
+  text: 地铁
+  chars: [地, 铁]
+  pinyin: ["dì", "tiě"]
+  level: 2
+  scene: travel
+  meaning: 在地下开的火车
+  meaning_source: { dict: self, entry: 地铁, rev: "prototype-2026-10" }
+  sentence: 坐地铁不堵车。
+  sentence_source: { corpus: self, doc: proto-travel-03 }
+  image: { file: subway.svg, lib: self, license: CC-BY-SA-4.0, alt: 一列从隧道里开出来的地铁 }
+  confusables: [铁, 失]
+  status: draft
+  gen: { model: human, prompt_ver: "seed@1", hash: "seed-level1-c_ditie" }
+
+- id: c_shangche
+  text: 上车
+  chars: [上, 车]
+  pinyin: ["shàng", "chē"]
+  level: 2
+  scene: travel
+  meaning: 走到车里面去
+  meaning_source: { dict: self, entry: 上车, rev: "prototype-2026-10" }
+  sentence: 从前门上车。
+  sentence_source: { corpus: self, doc: proto-travel-04 }
+  image: { file: board-bus.svg, lib: self, license: CC-BY-SA-4.0, alt: 公交车的门打开着，一个箭头指向车里 }
+  confusables: [车, 东]
+  status: draft
+  gen: { model: human, prompt_ver: "seed@1", hash: "seed-level1-c_shangche" }
+
+- id: c_xiache
+  text: 下车
+  chars: [下, 车]
+  pinyin: ["xià", "chē"]
+  level: 2
+  scene: travel
+  meaning: 从车里面走出来
+  meaning_source: { dict: self, entry: 下车, rev: "prototype-2026-10" }
+  sentence: 到站就下车。
+  sentence_source: { corpus: self, doc: proto-travel-05 }
+  image: { file: alight-bus.svg, lib: self, license: CC-BY-SA-4.0, alt: 公交车的门打开着，一个箭头从车里指向外面 }
+  confusables: [车, 东]
+  status: draft
+  gen: { model: human, prompt_ver: "seed@1", hash: "seed-level1-c_xiache" }
+
+- id: c_saoma
+  text: 扫码
+  chars: [扫, 码]
+  pinyin: ["sǎo", "mǎ"]
+  level: 2
+  scene: travel
+  meaning: 用手机对着方块图照一下
+  meaning_source: { dict: self, entry: 扫码, rev: "prototype-2026-10" }
+  sentence: 上车要扫码。
+  sentence_source: { corpus: self, doc: proto-travel-06 }
+  image: { file: qr-scan.svg, lib: self, license: CC-BY-SA-4.0, alt: 一部手机正在照一张黑白方块图，屏幕上有扫描框 }
+  confusables: [码, 马]
+  status: draft
+  gen: { model: human, prompt_ver: "seed@1", hash: "seed-level1-c_saoma" }
+
+# ── 家里使用 ──────────────────────────────────────────────
+
+- id: c_kai
+  text: 开
+  chars: [开]
+  pinyin: ["kāi"]
+  level: 1
+  scene: home
+  meaning: 让它动起来
+  meaning_source: { dict: self, entry: 开, rev: "prototype-2026-10" }
+  sentence: 帮我把电视开开。
+  sentence_source: { corpus: self, doc: proto-home-01 }
+  image: { file: switch-on.svg, lib: self, license: CC-BY-SA-4.0, alt: 一个按到右边的开关，旁边亮着一盏小灯 }
+  confusables: [开, 井]
+  status: draft
+  gen: { model: human, prompt_ver: "seed@1", hash: "seed-level1-c_kai" }
+
+- id: c_guan
+  text: 关
+  chars: [关]
+  pinyin: ["guān"]
+  level: 1
+  scene: home
+  meaning: 让它停下来
+  meaning_source: { dict: self, entry: 关, rev: "prototype-2026-10" }
+  sentence: 睡觉前把灯关了。
+  sentence_source: { corpus: self, doc: proto-home-02 }
+  image: { file: switch-off.svg, lib: self, license: CC-BY-SA-4.0, alt: 一个按到左边的开关，旁边的小灯灭着 }
+  confusables: [关, 天]
+  status: draft
+  gen: { model: human, prompt_ver: "seed@1", hash: "seed-level1-c_guan" }
+
+- id: c_da
+  text: 大
+  chars: [大]
+  pinyin: ["dà"]
+  level: 1
+  scene: home
+  meaning: 东西占的地方多
+  meaning_source: { dict: self, entry: 大, rev: "prototype-2026-10" }
+  sentence: 把声音开大一点。
+  sentence_source: { corpus: self, doc: proto-home-03 }
+  image: { file: big-ball.svg, lib: self, license: CC-BY-SA-4.0, alt: 一个大红球和一个小蓝球，大红球被圈了出来 }
+  confusables: [大, 太]
+  status: draft
+  gen: { model: human, prompt_ver: "seed@1", hash: "seed-level1-c_da" }
+
+- id: c_xiao
+  text: 小
+  chars: [小]
+  pinyin: ["xiǎo"]
+  level: 1
+  scene: home
+  meaning: 东西占的地方少
+  meaning_source: { dict: self, entry: 小, rev: "prototype-2026-10" }
+  sentence: 把声音关小一点。
+  sentence_source: { corpus: self, doc: proto-home-04 }
+  image: { file: small-ball.svg, lib: self, license: CC-BY-SA-4.0, alt: 一个大红球和一个小蓝球，小蓝球被圈了出来 }
+  confusables: [小, 少]
+  status: draft
+  gen: { model: human, prompt_ver: "seed@1", hash: "seed-level1-c_xiao" }
+
+- id: c_wendu
+  text: 温度
+  chars: [温, 度]
+  pinyin: ["wēn", "dù"]
+  level: 1
+  scene: home
+  meaning: 有多热、有多冷
+  meaning_source: { dict: self, entry: 温度, rev: "prototype-2026-10" }
+  sentence: 把温度调高一点。
+  sentence_source: { corpus: self, doc: proto-home-05 }
+  image: { file: thermometer.svg, lib: self, license: CC-BY-SA-4.0, alt: 一个温度计，红色的水银柱升到中间 }
+  confusables: [温, 湿]
+  status: draft
+  gen: { model: human, prompt_ver: "seed@1", hash: "seed-level1-c_wendu" }
+
+- id: c_shengyin
+  text: 声音
+  chars: [声, 音]
+  pinyin: ["shēng", "yīn"]
+  level: 1
+  scene: home
+  meaning: 耳朵听到的响动
+  meaning_source: { dict: self, entry: 声音, rev: "prototype-2026-10" }
+  sentence: 声音太小了，听不见。
+  sentence_source: { corpus: self, doc: proto-home-06 }
+  image: { file: speaker-waves.svg, lib: self, license: CC-BY-SA-4.0, alt: 一个喇叭，右边有三道声音的波纹 }
+  confusables: [声, 生]
+  status: draft
+  gen: { model: human, prompt_ver: "seed@1", hash: "seed-level1-c_shengyin" }
+
+# ── 联系家人 ──────────────────────────────────────────────
+
+- id: c_weixin
+  text: 微信
+  chars: [微, 信]
+  pinyin: ["wēi", "xìn"]
+  level: 1
+  scene: contact
+  meaning: 用手机和家人说话的地方
+  meaning_source: { dict: self, entry: 微信, rev: "prototype-2026-10" }
+  sentence: 我给女儿发微信。
+  sentence_source: { corpus: self, doc: proto-contact-01 }
+  image: { file: wechat.svg, lib: self, license: CC-BY-SA-4.0, alt: 两个绿色的对话气泡，里面各有一只小眼睛 }
+  confusables: [信, 言]
+  status: draft
+  gen: { model: human, prompt_ver: "seed@1", hash: "seed-level1-c_weixin" }
+
+- id: c_dianhua
+  text: 电话
+  chars: [电, 话]
+  pinyin: ["diàn", "huà"]
+  level: 1
+  scene: contact
+  meaning: 能和人说话的东西
+  meaning_source: { dict: self, entry: 电话, rev: "prototype-2026-10" }
+  sentence: 电话响了，快接。
+  sentence_source: { corpus: self, doc: proto-contact-02 }
+  image: { file: phone.svg, lib: self, license: CC-BY-SA-4.0, alt: 一部红色的座机电话，听筒放在机座上 }
+  confusables: [话, 活]
+  status: draft
+  gen: { model: human, prompt_ver: "seed@1", hash: "seed-level1-c_dianhua" }
+
+- id: c_yuyin
+  text: 语音
+  chars: [语, 音]
+  pinyin: ["yǔ", "yīn"]
+  level: 1
+  scene: contact
+  meaning: 对着手机说话
+  meaning_source: { dict: self, entry: 语音, rev: "prototype-2026-10" }
+  sentence: 给我发一条语音。
+  sentence_source: { corpus: self, doc: proto-contact-03 }
+  image: { file: mic.svg, lib: self, license: CC-BY-SA-4.0, alt: 一个银色的麦克风，周围有一圈声音的波纹 }
+  confusables: [音, 意]
+  status: draft
+  gen: { model: human, prompt_ver: "seed@1", hash: "seed-level1-c_yuyin" }
+
+- id: c_shipin
+  text: 视频
+  chars: [视, 频]
+  pinyin: ["shì", "pín"]
+  level: 1
+  scene: contact
+  meaning: 能看见人的通话
+  meaning_source: { dict: self, entry: 视频, rev: "prototype-2026-10" }
+  sentence: 晚上跟孙子视频。
+  sentence_source: { corpus: self, doc: proto-contact-04 }
+  image: { file: video-call.svg, lib: self, license: CC-BY-SA-4.0, alt: 一个屏幕上有一个笑脸，旁边是一个摄像机 }
+  confusables: [视, 现]
+  status: draft
+  gen: { model: human, prompt_ver: "seed@1", hash: "seed-level1-c_shipin" }
+
+- id: c_fa
+  text: 发
+  chars: [发]
+  pinyin: ["fā"]
+  level: 1
+  scene: contact
+  meaning: 把东西送到别人那里
+  meaning_source: { dict: self, entry: 发, rev: "prototype-2026-10" }
+  sentence: 把照片发给我。
+  sentence_source: { corpus: self, doc: proto-contact-05 }
+  image: { file: paper-plane.svg, lib: self, license: CC-BY-SA-4.0, alt: 一架纸飞机从左向右飞，后面有一条虚线 }
+  confusables: [发, 友]
+  status: draft
+  gen: { model: human, prompt_ver: "seed@1", hash: "seed-level1-c_fa" }
+
+- id: c_hongbao
+  text: 红包
+  chars: [红, 包]
+  pinyin: ["hóng", "bāo"]
+  level: 1
+  scene: contact
+  meaning: 装钱的红纸包
+  meaning_source: { dict: self, entry: 红包, rev: "prototype-2026-10" }
+  sentence: 过年给孙子发红包。
+  sentence_source: { corpus: self, doc: proto-contact-06 }
+  image: { file: red-envelope.svg, lib: self, license: CC-BY-SA-4.0, alt: 一个红色的信封，封口上有一枚金色的圆片 }
+  confusables: [包, 句]
+  status: draft
+  gen: { model: human, prompt_ver: "seed@1", hash: "seed-level1-c_hongbao" }
+
+- id: c_xiaoxi
+  text: 消息
+  chars: [消, 息]
+  pinyin: ["xiāo", "xī"]
+  level: 1
+  scene: contact
+  meaning: 别人发给你的话
+  meaning_source: { dict: self, entry: 消息, rev: "prototype-2026-10" }
+  sentence: 有一条新消息。
+  sentence_source: { corpus: self, doc: proto-contact-07 }
+  image: { file: message-bubble.svg, lib: self, license: CC-BY-SA-4.0, alt: 一个蓝色的对话气泡，里面有四个小黑点 }
+  confusables: [消, 悄]
+  status: draft
+  gen: { model: human, prompt_ver: "seed@1", hash: "seed-level1-c_xiaoxi" }
+
+# ── 办事 ──────────────────────────────────────────────────
+
+- id: c_shenfenzheng
+  text: 身份证
+  chars: [身, 份, 证]
+  pinyin: ["shēn", "fèn", "zhèng"]
+  level: 1
+  scene: gov
+  meaning: 证明你是谁的小卡片
+  meaning_source: { dict: self, entry: 身份证, rev: "prototype-2026-10" }
+  sentence: 办手续要带身份证。
+  sentence_source: { corpus: self, doc: proto-gov-01 }
+  image: { file: id-card.svg, lib: self, license: CC-BY-SA-4.0, alt: 一张身份证，左边是人像，右边是几行信息 }
+  confusables: [证, 征]
+  status: draft
+  gen: { model: human, prompt_ver: "seed@1", hash: "seed-level1-c_shenfenzheng" }
+
+- id: c_shebao
+  text: 社保
+  chars: [社, 保]
+  pinyin: ["shè", "bǎo"]
+  level: 2
+  scene: gov
+  meaning: 老了以后领的钱
+  meaning_source: { dict: self, entry: 社保, rev: "prototype-2026-10" }
+  sentence: 领社保要用社保卡。
+  sentence_source: { corpus: self, doc: proto-gov-02 }
+  image: { file: social-card.svg, lib: self, license: CC-BY-SA-4.0, alt: 一张社保卡，卡上有一位白发老人的头像 }
+  confusables: [保, 宝]
+  status: draft
+  gen: { model: human, prompt_ver: "seed@1", hash: "seed-level1-c_shebao" }
+
+- id: c_banli
+  text: 办理
+  chars: [办, 理]
+  pinyin: ["bàn", "lǐ"]
+  level: 2
+  scene: gov
+  meaning: 把一件事做成
+  meaning_source: { dict: self, entry: 办理, rev: "prototype-2026-10" }
+  sentence: 请到三号窗口办理。
+  sentence_source: { corpus: self, doc: proto-gov-03 }
+  image: { file: service-counter.svg, lib: self, license: CC-BY-SA-4.0, alt: 一个人站在柜台前，把表格递给里面的人 }
+  confusables: [办, 为]
+  status: draft
+  gen: { model: human, prompt_ver: "seed@1", hash: "seed-level1-c_banli" }
+
+- id: c_chuangkou
+  text: 窗口
+  chars: [窗, 口]
+  pinyin: ["chuāng", "kǒu"]
+  level: 2
+  scene: gov
+  meaning: 办事的柜台
+  meaning_source: { dict: self, entry: 窗口, rev: "prototype-2026-10" }
+  sentence: 请到二号窗口。
+  sentence_source: { corpus: self, doc: proto-gov-04 }
+  image: { file: service-window.svg, lib: self, license: CC-BY-SA-4.0, alt: 一个办事窗口，玻璃上有一个小圆牌，里面坐着工作人员 }
+  confusables: [口, 日]
+  status: draft
+  gen: { model: human, prompt_ver: "seed@1", hash: "seed-level1-c_chuangkou" }
+
+- id: c_tijiao
+  text: 提交
+  chars: [提, 交]
+  pinyin: ["tí", "jiāo"]
+  level: 2
+  scene: gov
+  meaning: 把材料交上去
+  meaning_source: { dict: self, entry: 提交, rev: "prototype-2026-10" }
+  sentence: 材料填好就提交。
+  sentence_source: { corpus: self, doc: proto-gov-05 }
+  image: { file: submit-tray.svg, lib: self, license: CC-BY-SA-4.0, alt: 一张纸从上往下落进一个文件托盘，旁边有向下的箭头 }
+  confusables: [提, 题]
+  status: draft
+  gen: { model: human, prompt_ver: "seed@1", hash: "seed-level1-c_tijiao" }
+
+# ── 买东西 ────────────────────────────────────────────────
+
+- id: c_fukuan
+  text: 付款
+  chars: [付, 款]
+  pinyin: ["fù", "kuǎn"]
+  level: 1
+  scene: shopping
+  meaning: 把钱给出去
+  meaning_source: { dict: self, entry: 付款, rev: "prototype-2026-10" }
+  sentence: 到柜台付款。
+  sentence_source: { corpus: self, doc: proto-shopping-01 }
+  image: { file: pay.svg, lib: self, license: CC-BY-SA-4.0, alt: 一只手拿着银行卡，靠近一个付款机器 }
+  confusables: [付, 附]
+  status: draft
+  gen: { model: human, prompt_ver: "seed@1", hash: "seed-level1-c_fukuan" }
+
+- id: c_duoshaoqian
+  text: 多少钱
+  chars: [多, 少, 钱]
+  pinyin: ["duō", "shao", "qián"]
+  level: 1
+  scene: shopping
+  meaning: 问一件东西卖几块
+  meaning_source: { dict: self, entry: 多少钱, rev: "prototype-2026-10" }
+  sentence: 老板，这个多少钱？
+  sentence_source: { corpus: self, doc: proto-shopping-02 }
+  image: { file: price-tag.svg, lib: self, license: CC-BY-SA-4.0, alt: 一个挂在商品上的价签，上面画着一枚硬币 }
+  confusables: [钱, 线]
+  status: draft
+  gen: { model: human, prompt_ver: "seed@1", hash: "seed-level1-c_duoshaoqian" }
+
+- id: c_dazhe
+  text: 打折
+  chars: [打, 折]
+  pinyin: ["dǎ", "zhé"]
+  level: 2
+  scene: shopping
+  meaning: 比原来便宜
+  meaning_source: { dict: self, entry: 打折, rev: "prototype-2026-10" }
+  sentence: 今天打八折。
+  sentence_source: { corpus: self, doc: proto-shopping-03 }
+  image: { file: discount-tag.svg, lib: self, license: CC-BY-SA-4.0, alt: 一个红色的打折标签，上面有一个百分号 }
+  confusables: [折, 拆]
+  status: draft
+  gen: { model: human, prompt_ver: "seed@1", hash: "seed-level1-c_dazhe" }
+
+- id: c_mai
+  text: 买
+  chars: [买]
+  pinyin: ["mǎi"]
+  level: 1
+  scene: shopping
+  meaning: 把钱给出去，东西拿回家
+  meaning_source: { dict: self, entry: 买, rev: "prototype-2026-10" }
+  sentence: 我去买点菜。
+  sentence_source: { corpus: self, doc: proto-shopping-04 }
+  image: { file: basket.svg, lib: self, license: CC-BY-SA-4.0, alt: 一个装满青菜和水果的购物篮 }
+  confusables: [买, 卖]
+  status: draft
+  gen: { model: human, prompt_ver: "seed@1", hash: "seed-level1-c_mai" }
+
+# ── 防骗 ──────────────────────────────────────────────────
+
+- id: c_yanzhengma
+  text: 验证码
+  chars: [验, 证, 码]
+  pinyin: ["yàn", "zhèng", "mǎ"]
+  level: 1
+  scene: safety
+  meaning: 手机上收到的一串数字
+  meaning_source: { dict: self, entry: 验证码, rev: "prototype-2026-10" }
+  sentence: 验证码不要给别人。
+  sentence_source: { corpus: self, doc: proto-safety-01 }
+  image: { file: sms-code.svg, lib: self, license: CC-BY-SA-4.0, alt: 一部手机，屏幕上有一个消息气泡和六个小圆点 }
+  confusables: [码, 马]
+  status: draft
+  gen: { model: human, prompt_ver: "seed@1", hash: "seed-level1-c_yanzhengma" }
+
+- id: c_zhongjiang
+  text: 中奖
+  chars: [中, 奖]
+  pinyin: ["zhòng", "jiǎng"]
+  level: 2
+  scene: safety
+  meaning: 说你得了奖品
+  meaning_source: { dict: self, entry: 中奖, rev: "prototype-2026-10" }
+  sentence: 陌生电话说你中奖了，不要信。
+  sentence_source: { corpus: self, doc: proto-safety-02 }
+  image: { file: trophy.svg, lib: self, license: CC-BY-SA-4.0, alt: 一个金色的奖杯，周围飘着彩色的纸片 }
+  confusables: [奖, 将]
+  status: draft
+  gen: { model: human, prompt_ver: "seed@1", hash: "seed-level1-c_zhongjiang" }
+
+- id: c_mianfei
+  text: 免费
+  chars: [免, 费]
+  pinyin: ["miǎn", "fèi"]
+  level: 2
+  scene: safety
+  meaning: 不要钱
+  meaning_source: { dict: self, entry: 免费, rev: "prototype-2026-10" }
+  sentence: 免费领东西，要小心。
+  sentence_source: { corpus: self, doc: proto-safety-03 }
+  image: { file: gift.svg, lib: self, license: CC-BY-SA-4.0, alt: 一个系着红色蝴蝶结的礼物盒，盒子上有一只手 }
+  confusables: [免, 兔]
+  status: draft
+  gen: { model: human, prompt_ver: "seed@1", hash: "seed-level1-c_mianfei" }
+
+- id: c_jingcha
+  text: 警察
+  chars: [警, 察]
+  pinyin: ["jǐng", "chá"]
+  level: 2
+  scene: safety
+  meaning: 管坏事的人
+  meaning_source: { dict: self, entry: 警察, rev: "prototype-2026-10" }
+  sentence: 拿不准就找警察。
+  sentence_source: { corpus: self, doc: proto-safety-04 }
+  image: { file: police-badge.svg, lib: self, license: CC-BY-SA-4.0, alt: 一枚金色的警察徽章，中间有一颗五角星 }
+  confusables: [警, 敬]
+  status: draft
+  gen: { model: human, prompt_ver: "seed@1", hash: "seed-level1-c_jingcha" }
+
+- id: c_yinhang
+  text: 银行
+  chars: [银, 行]
+  pinyin: ["yín", "háng"]
+  level: 1
+  scene: safety
+  meaning: 存钱、取钱的地方
+  meaning_source: { dict: self, entry: 银行, rev: "prototype-2026-10" }
+  sentence: 钱存在银行里。
+  sentence_source: { corpus: self, doc: proto-safety-05 }
+  image: { file: bank.svg, lib: self, license: CC-BY-SA-4.0, alt: 一栋有柱子的银行大楼，门口有几级台阶 }
+  confusables: [银, 很]
+  status: draft
+  gen: { model: human, prompt_ver: "seed@1", hash: "seed-level1-c_yinhang" }
+
+- id: c_buyao
+  text: 不要
+  chars: [不, 要]
+  pinyin: ["bù", "yào"]
+  level: 1
+  scene: safety
+  meaning: 告诉你别这么做
+  meaning_source: { dict: self, entry: 不要, rev: "prototype-2026-10" }
+  sentence: 不要相信陌生电话。
+  sentence_source: { corpus: self, doc: proto-safety-06 }
+  image: { file: no-entry.svg, lib: self, license: CC-BY-SA-4.0, alt: 一个红色的圆形禁止标志，中间有一只手 }
+  confusables: [要, 耍]
+  status: draft
+  gen: { model: human, prompt_ver: "seed@1", hash: "seed-level1-c_buyao" }
+
+- id: c_guaduan
+  text: 挂断
+  chars: [挂, 断]
+  pinyin: ["guà", "duàn"]
+  level: 1
+  scene: safety
+  meaning: 把电话关掉
+  meaning_source: { dict: self, entry: 挂断, rev: "prototype-2026-10" }
+  sentence: 说完了就挂断电话。
+  sentence_source: { corpus: self, doc: proto-safety-07 }
+  image: { file: hangup.svg, lib: self, license: CC-BY-SA-4.0, alt: 一个红色的电话听筒，下面有一个向下的箭头 }
+  confusables: [断, 继]
+  status: draft
+  gen: { model: human, prompt_ver: "seed@1", hash: "seed-level1-c_guaduan" }

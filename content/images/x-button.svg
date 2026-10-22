@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="一个灰白色的圆形按钮，上面有一个叉号">
+  <rect width="512" height="512" rx="40" fill="#F4EBD9"/>
+  <circle cx="256" cy="248" r="196" fill="#FCF8EF"/>
+  <ellipse cx="256" cy="421" rx="132" ry="17" fill="#DDCEB7" stroke="none" stroke-width="0" opacity="0.75"/><circle cx="248" cy="250" r="150" fill="#E7EAEE" stroke="#26313D" stroke-width="14" /><circle cx="248" cy="250" r="132" fill="#FFFFFF" stroke="none" stroke-width="0" opacity="0.7"/><line x1="202" y1="204" x2="294" y2="296" stroke="#26313D" stroke-width="26" stroke-linecap="round" /><line x1="294" y1="204" x2="202" y2="296" stroke="#26313D" stroke-width="26" stroke-linecap="round" /><path d="M 350 372 l 58 60 l 22 -30 l 32 -8 Z" fill="#FFFFFF" stroke="#26313D" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" /><path d="M 350 372 l 58 60 l 22 -30 l 32 -8 Z" fill="none" stroke="#26313D" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+</svg>

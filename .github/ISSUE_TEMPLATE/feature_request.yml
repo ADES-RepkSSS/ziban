@@ -1,0 +1,72 @@
+name: 功能建议
+description: 希望字伴多做什么，或者哪里可以更适合老人
+title: "[建议] "
+labels: ["enhancement", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        请尽量从**具体场景**出发：老人在哪一步卡住了、当时想做什么。
+        不要写“加个 AI 功能”这种大词；越具体越容易被做出来。
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: 老人卡在哪里？
+      description: 具体场景、当时的动作、原话。
+      placeholder: 例如：去银行取钱，看到机器上的字不敢按，问“这个是不是确认”。
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 你希望字伴怎么做？
+      description: 可以描述交互，不一定要写技术方案。
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: 属于哪一块？
+      options:
+        - 识字卡 / 学字
+        - 朗读 / 声音
+        - 屏幕文字（OCR / 粘贴）
+        - 网页阅读 / 解释
+        - 电脑操作教学
+        - 内容（词表、释义、图片）
+        - 无障碍 / 大字 / 对比度
+        - 打包 / 安装 / 更新
+        - 其他
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: 现在老人怎么凑合解决？
+      description: 例如叫子女、拿放大镜、放弃不办。
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: 对你来说有多急？
+      options:
+        - 紧急：现在就会让老人办不成事
+        - 重要：经常遇到
+        - 一般：偶尔遇到
+        - 想法：先记下来
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: 请确认
+      options:
+        - label: 这个建议不依赖广告、账号、内购或把老人数据上传到云端。
+          required: true
+        - label: 我没有在内容里填写真实姓名、电话、住址等个人信息。
+          required: true

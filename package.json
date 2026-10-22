@@ -1,0 +1,40 @@
+{
+  "name": "ziban",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "字伴：帮不识字的老人用电脑——认字、听音、看懂屏幕。",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ADES-RepkSSS/ziban.git"
+  },
+  "homepage": "https://ades-repksss.github.io/ziban/",
+  "bugs": {
+    "url": "https://github.com/ADES-RepkSSS/ziban/issues"
+  },
+  "packageManager": "pnpm@11.21.0",
+  "engines": {
+    "node": ">=20",
+    "pnpm": ">=11"
+  },
+  "scripts": {
+    "dev": "pnpm content:build && pnpm --filter @ziban/web dev",
+    "build": "pnpm content:build && pnpm --filter @ziban/web build",
+    "preview": "pnpm --filter @ziban/web preview",
+    "content:build": "node scripts/build-content.mjs",
+    "content:validate": "node scripts/validate-content.mjs",
+    "typecheck": "pnpm -r exec tsc --noEmit",
+    "test": "vitest run",
+    "check": "pnpm content:validate && pnpm typecheck && pnpm test && pnpm build",
+    "screenshot": "node scripts/screenshot.mjs"
+  },
+  "devDependencies": {
+    "playwright-core": "1.55.0",
+    "typescript": "5.9.3",
+    "vite": "7.1.7",
+    "vitest": "3.2.4",
+    "yaml": "^2.9.1",
+    "zod": "4.1.12"
+  }
+}

@@ -1,0 +1,238 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Card",
+  "description": "一张识字卡片。所有面向用户的文本都必须能被 TTS 顺畅朗读。",
+  "type": "object",
+  "required": [
+    "id",
+    "text",
+    "chars",
+    "pinyin",
+    "level",
+    "scene",
+    "meaning",
+    "meaning_source",
+    "image",
+    "status",
+    "gen"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z]{1,3}_[a-z0-9_]+$"
+    },
+    "text": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 6,
+      "description": "展示的词或字"
+    },
+    "chars": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 1
+      },
+      "minItems": 1
+    },
+    "pinyin": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "level": {
+      "type": "integer",
+      "enum": [
+        1,
+        2,
+        3
+      ],
+      "description": "1=生活必会 2=出门 3=办事"
+    },
+    "scene": {
+      "type": "string",
+      "enum": [
+        "health",
+        "money",
+        "travel",
+        "home",
+        "contact",
+        "gov",
+        "shopping",
+        "safety"
+      ]
+    },
+    "meaning": {
+      "type": "string",
+      "maxLength": 20,
+      "description": "口语化释义，<=20 字，只用 level 字表内的字，无括号/英文/数字符号"
+    },
+    "meaning_source": {
+      "type": "object",
+      "required": [
+        "dict",
+        "entry"
+      ],
+      "properties": {
+        "dict": {
+          "type": "string",
+          "enum": [
+            "zhwiktionary",
+            "cc-cedict",
+            "self"
+          ]
+        },
+        "entry": {
+          "type": "string"
+        },
+        "rev": {
+          "type": "string"
+        }
+      }
+    },
+    "sentence": {
+      "type": "string",
+      "maxLength": 30
+    },
+    "sentence_source": {
+      "type": "object",
+      "properties": {
+        "corpus": {
+          "type": "string",
+          "enum": [
+            "health_faq",
+            "gov_site",
+            "oss_docs",
+            "volunteer_cc0",
+            "self"
+          ]
+        },
+        "doc": {
+          "type": "string"
+        }
+      }
+    },
+    "image": {
+      "type": "object",
+      "required": [
+        "file",
+        "lib",
+        "license"
+      ],
+      "properties": {
+        "file": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]*\\.(svg|png|jpe?g|webp)$",
+          "description": "content/images 下的文件名；不允许路径分隔符"
+        },
+        "lib": {
+          "type": "string",
+          "enum": [
+            "self",
+            "arasaac",
+            "openmoji",
+            "mulberry",
+            "openverse"
+          ]
+        },
+        "license": {
+          "type": "string"
+        },
+        "alt": {
+          "type": "string",
+          "description": "给图片的一句话描述，用于无障碍"
+        },
+        "candidates": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "confusables": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "machine_ok",
+        "human_ok",
+        "published",
+        "retired"
+      ]
+    },
+    "review": {
+      "type": "object",
+      "properties": {
+        "redteam": {
+          "type": "object",
+          "properties": {
+            "pass": {
+              "type": "boolean"
+            },
+            "rounds": {
+              "type": "integer"
+            },
+            "last": {
+              "type": "string"
+            }
+          }
+        },
+        "human": {
+          "type": "object",
+          "required": [
+            "by"
+          ],
+          "properties": {
+            "by": {
+              "type": "string"
+            },
+            "at": {
+              "type": "string"
+            },
+            "note": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "gen": {
+      "type": "object",
+      "required": [
+        "model",
+        "prompt_ver",
+        "hash"
+      ],
+      "properties": {
+        "model": {
+          "type": "string"
+        },
+        "prompt_ver": {
+          "type": "string"
+        },
+        "hash": {
+          "type": "string"
+        }
+      }
+    },
+    "imageUrl": {
+      "type": "string",
+      "description": "构建产物字段：指向 public 下的图片，源 YAML 不写。"
+    },
+    "order": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "构建产物字段：YAML 中的编辑顺序，用于还原教学顺序；源 YAML 不写。"
+    }
+  }
+}

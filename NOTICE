@@ -1,0 +1,9 @@
+字伴（Ziban）
+Copyright 2026 字伴 contributors
+
+This product is licensed under the Apache License, Version 2.0 (see LICENSE).
+The learning content (word list, meanings, example sentences, hand-drawn SVG
+illustrations) is licensed under CC BY-SA 4.0; see content/LICENSE.md.
+
+Third-party runtime dependencies (React, Vite, etc.) retain their own licenses;
+see each package's LICENSE file in node_modules at build time.

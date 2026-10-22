@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="一个按到右边的开关，旁边亮着一盏小灯">
+  <rect width="512" height="512" rx="40" fill="#F4EBD9"/>
+  <circle cx="256" cy="248" r="196" fill="#FCF8EF"/>
+  <ellipse cx="256" cy="421" rx="132" ry="17" fill="#DDCEB7" stroke="none" stroke-width="0" opacity="0.75"/><rect x="124" y="116" width="264" height="292" rx="34" fill="#FFFFFF" stroke="#26313D" stroke-width="14" /><rect x="152" y="196" width="208" height="96" rx="48" fill="#4F8A5B" stroke="#26313D" stroke-width="14" /><circle cx="314" cy="244" r="36" fill="#FFFFFF" stroke="#26313D" stroke-width="10" /><circle cx="198" cy="156" r="12" fill="#E8A63C" stroke="#26313D" stroke-width="6" /><path d="M 172 132 l -14 -22 M 224 128 l 0 -26 M 128 156 l -24 -12" fill="none" stroke="#E8A63C" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" /><circle cx="256" cy="340" r="16" fill="#A9C9A4" stroke="none" stroke-width="0" /><line x1="214" y1="340" x2="298" y2="340" stroke="#D9DEE3" stroke-width="8" stroke-linecap="round" />
+</svg>

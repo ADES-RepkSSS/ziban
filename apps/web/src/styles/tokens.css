@@ -1,0 +1,50 @@
+:root {
+  color-scheme: light;
+
+  --bg: #f6efe2;
+  --bg-deep: #ecdfc8;
+  --surface: #fffdf8;
+  --surface-soft: #fbf5e9;
+  --ink: #1f2b38;
+  --ink-soft: #3f4e5c;
+  --muted: #46525f;
+  --line: #d9cdb9;
+  --line-strong: #b9a98f;
+
+  --primary: #0b5a53;
+  --primary-dark: #083f3a;
+  --primary-soft: #dcebe7;
+  --primary-softer: #eef6f3;
+
+  --accent: #9e3324;
+  --accent-soft: #f7ddd7;
+
+  --amber: #d98a1f;
+  --amber-dark: #8a530c;
+  --amber-soft: #fbeac8;
+
+  --danger: #9e2b20;
+  --danger-soft: #f8dcd7;
+
+  --green: #3f7a4a;
+  --green-soft: #e4f0e2;
+
+  --focus: #174f9c;
+
+  --shadow-lg: 0 24px 50px rgba(74, 55, 30, 0.13), 0 3px 0 rgba(74, 55, 30, 0.04);
+  --shadow-md: 0 12px 26px rgba(74, 55, 30, 0.1), 0 2px 0 rgba(74, 55, 30, 0.04);
+  --shadow-sm: 0 4px 10px rgba(74, 55, 30, 0.08);
+
+  --radius-xl: 40px;
+  --radius-lg: 30px;
+  --radius-md: 20px;
+  --radius-sm: 14px;
+
+  --font: "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC",
+    "Source Han Sans SC", "WenQuanYi Micro Hei", sans-serif;
+  --font-display: "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC",
+    "Source Han Sans SC", sans-serif;
+
+  --page-width: 1180px;
+  --page-pad: clamp(18px, 4vw, 44px);
+}

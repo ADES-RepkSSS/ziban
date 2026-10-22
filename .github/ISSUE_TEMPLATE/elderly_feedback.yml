@@ -1,0 +1,78 @@
+name: 老人使用观察
+description: 子女 / 志愿者 / 社区工作者填写：观察老人实际怎么用
+title: "[观察] "
+labels: ["elderly-test", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        这个模板是给**观察者**填的，不是给老人填的。
+        **不要记录真实姓名、电话、住址、身份证号、病历、银行卡号。**
+        只记录行为和原话，不要替老人总结“他/她觉得很好”。
+
+  - type: dropdown
+    id: task
+    attributes:
+      label: 这次让老人做什么？
+      options:
+        - 第一次打开，查一个字的念法
+        - 听到“再念一遍”并重播
+        - 用字库找一个字
+        - 粘贴/朗读一段屏幕文字
+        - 读一篇示例文章
+        - 其他
+    validations:
+      required: true
+
+  - type: textarea
+    id: observation
+    attributes:
+      label: 你看到了什么？
+      description: 只写可观察的动作：点了哪里、犹豫多久、有没有叫子女、有没有关掉软件。
+      placeholder: 例如：看到大按钮先停了两秒，用手指点了一下，听到声音后笑了一下。
+    validations:
+      required: true
+
+  - type: textarea
+    id: quotes
+    attributes:
+      label: 老人的原话
+      description: 尽量一字不改；不要写姓名和地名。
+
+  - type: textarea
+    id: stuck
+    attributes:
+      label: 卡在哪一步？
+      description: 哪个按钮/哪句话/哪个声音让他停下来了？
+
+  - type: input
+    id: device
+    attributes:
+      label: 设备和环境
+      description: 例如 Windows 10 旧笔记本、鼠标、外放音箱；不要写具体地址。
+    validations:
+      required: true
+
+  - type: dropdown
+    id: literacy
+    attributes:
+      label: 老人大致识字情况（不需要精确）
+      options:
+        - 基本不识字
+        - 认识一些常用字（<500）
+        - 能读短句但慢
+        - 不方便说
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: consent
+    attributes:
+      label: 伦理确认
+      options:
+        - label: 我已征得老人同意，并说明这是试用软件、不是考试。
+          required: true
+        - label: 我没有记录任何可识别个人身份的信息。
+          required: true
+        - label: 我没有让老人操作支付、银行卡、密码或真实政务账户。
+          required: true

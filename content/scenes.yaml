@@ -1,0 +1,59 @@
+# 场景清单：选词与内容生产的骨架
+# 来源：对公开叙述的人工研读（不保留原文，仅提炼场景与困惑点）
+
+scenes:
+  - id: health
+    name: 看病买药
+    weight: 1.0
+    narratives: 挂号、缴费、取药、看检查单、预约、医保
+    confusion: 看不懂指示牌、看不懂挂号机、不知道下一步去哪
+    seed_words: [医院, 挂号, 药, 医生, 缴费, 检查, 预约, 医保]
+
+  - id: money
+    name: 取钱转账
+    weight: 1.0
+    narratives: 取款机、存折、转账、密码、验证码、余额
+    confusion: 怕按错、怕吞卡、不知道密码框在等什么
+    seed_words: [取钱, 存钱, 密码, 卡, 余额, 转账, 确认, 取消]
+
+  - id: travel
+    name: 出门坐车
+    weight: 0.8
+    narratives: 公交站牌、地铁、打车、导航、扫码
+    confusion: 分不清方向、看不懂站名顺序
+    seed_words: [公交, 站, 地铁, 上车, 下车, 扫码, 往, 到]
+
+  - id: home
+    name: 家里使用
+    weight: 0.7
+    narratives: 电视、空调遥控、水电费、门禁
+    confusion: 遥控器按键、App 弹窗
+    seed_words: [开, 关, 大, 小, 温度, 声音, 电, 水]
+
+  - id: contact
+    name: 联系家人
+    weight: 0.9
+    narratives: 微信、语音、视频、发红包、接电话
+    confusion: 图标认不出、不知道点了会发生什么
+    seed_words: [微信, 电话, 语音, 视频, 发, 收, 红包, 消息]
+
+  - id: gov
+    name: 办事
+    weight: 0.6
+    narratives: 社保、身份证、证明、窗口、取号
+    confusion: 不知道要带什么、不知道排哪个队
+    seed_words: [身份证, 社保, 办理, 窗口, 号码, 复印, 提交]
+
+  - id: shopping
+    name: 买东西
+    weight: 0.5
+    narratives: 超市、扫码付款、称重、打折
+    confusion: 付款码和收款码分不清
+    seed_words: [付款, 多少钱, 打折, 找零, 称, 买]
+
+  - id: safety
+    name: 防骗
+    weight: 1.0
+    narratives: 中奖短信、冒充公检法、保健品、免费领
+    confusion: 分不清真假、不敢挂电话
+    seed_words: [转账, 验证码, 中奖, 免费, 警察, 银行, 不要, 挂断]

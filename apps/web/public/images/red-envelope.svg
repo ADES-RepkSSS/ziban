@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="一个红色的信封，封口上有一枚金色的圆片">
+  <rect width="512" height="512" rx="40" fill="#F4EBD9"/>
+  <circle cx="256" cy="248" r="196" fill="#FCF8EF"/>
+  <ellipse cx="256" cy="421" rx="132" ry="17" fill="#DDCEB7" stroke="none" stroke-width="0" opacity="0.75"/><rect x="128" y="116" width="256" height="296" rx="22" fill="#C9483A" stroke="#26313D" stroke-width="14" /><path d="M 128 116 h 256 l -128 132 Z" fill="#E9A59C" stroke="#26313D" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" /><circle cx="256" cy="254" r="38" fill="#E8A63C" stroke="#26313D" stroke-width="10" /><circle cx="256" cy="254" r="22" fill="#F6D08E" stroke="none" stroke-width="0" /><path d="M 238 254 l 12 12 l 24 -26" fill="none" stroke="#C9483A" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" /><path d="M 128 412 q 128 -48 256 0" fill="none" stroke="#9F2F24" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" /><circle cx="402" cy="350" r="30" fill="#F6D08E" stroke="#26313D" stroke-width="8" /><circle cx="402" cy="350" r="16" fill="#E8A63C" stroke="none" stroke-width="0" />
+</svg>

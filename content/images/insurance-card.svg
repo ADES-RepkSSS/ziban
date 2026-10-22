@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="一张带红十字和心跳线的医保卡">
+  <rect width="512" height="512" rx="40" fill="#F4EBD9"/>
+  <circle cx="256" cy="248" r="196" fill="#FCF8EF"/>
+  <ellipse cx="256" cy="421" rx="132" ry="17" fill="#DDCEB7" stroke="none" stroke-width="0" opacity="0.75"/><g transform="rotate(-5 256 286)"><rect x="72" y="180" width="368" height="214" rx="24" fill="#1D7A72" stroke="#26313D" stroke-width="14" /><rect x="72" y="180" width="368" height="54" rx="22" fill="#8FC7C1" stroke="#26313D" stroke-width="10" /><rect x="112" y="260" width="76" height="58" rx="12" fill="#F6D08E" stroke="#26313D" stroke-width="8" /><circle cx="340" cy="300" r="44" fill="#FFFFFF" stroke="#26313D" stroke-width="10" /><line x1="316" y1="300" x2="364" y2="300" stroke="#C9483A" stroke-width="12" stroke-linecap="round" /><line x1="340" y1="276" x2="340" y2="324" stroke="#C9483A" stroke-width="12" stroke-linecap="round" /><path d="M 150 356 h 60 l 20 -30 l 26 58 l 22 -38 h 66" fill="none" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" /></g>
+</svg>

@@ -1,0 +1,13 @@
+{
+  "name": "@ziban/core",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "字伴的纯函数核心：卡片、学习调度、文本处理、口语化解释。",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  }
+}
