@@ -1,8 +1,8 @@
 # 07 · 交接说明（给下一位 AI / 维护者）
 
-> 写于 2026-10-23。上一阶段把项目从“只有设计文档”推进到 **可运行、已开源、Pages 已上线** 的 v0.1 实验版。
-> **同日后续**：`apps/desktop` 加了 Electron 壳与“光标跟随取词”（不做框选）。
-> Windows 已实测；macOS 代码/CI 已写，**待真机验收**。屏幕取词的完整方案、权限、
+> 写于 2026-10-23。项目当前是 **v0.2.1 桌面取词完整版**：网页演示已上线，Windows 绿色版已发布。
+> `apps/desktop` 已有 Electron 壳与“光标跟随取词”（不做框选）。
+> Windows 已实测；macOS CI 已编译 Vision helper 并识别测试图，**真机 TCC/Retina 仍待验收**。屏幕取词的完整方案、权限、
 > 真机清单见 [docs/08-screen-lookup.md](08-screen-lookup.md)；部署与使用见
 > [docs/09-deploy-and-use.md](09-deploy-and-use.md)；本文件第 1/2/4/5/6/8/9 节已同步。
 > 操作速查见根目录 [AGENTS.md](../AGENTS.md)。
