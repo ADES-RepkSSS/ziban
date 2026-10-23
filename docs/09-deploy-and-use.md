@@ -135,7 +135,7 @@ pnpm desktop:package
 ```
 
 - 不需要安装；把整个 `ziban-win32-x64` 目录拷走，双击 `Ziban.exe`（或 `启动字伴.cmd`）；
-- 这是便携版，不会写注册表/开始菜单；数据仍在 `%APPDATA%\@ziban\desktop\`；
+- 这是便携版，不会写注册表/开始菜单；数据仍在 `%APPDATA%\字伴\`；
 - 未签名，Windows SmartScreen 可能提示“未知发布者”；正式分发前要签名；
 - 它仍然是 Electron 的绿色目录（约 200MB），不是 NSIS 安装包；安装包/自动更新尚未做。
 
@@ -183,8 +183,8 @@ pnpm desktop:start
 
 | 平台 | 路径 |
 |---|---|
-| Windows | `%APPDATA%\@ziban\desktop\` |
-| macOS | `~/Library/Application Support/@ziban/desktop/` |
+| Windows | `%APPDATA%\字伴\` |
+| macOS | `~/Library/Application Support/字伴/` |
 
 里面有：
 
@@ -261,19 +261,30 @@ pnpm desktop:start
 
 ## 7. 可选：本地语料库 / 爬虫
 
-路径：`<userData>/corpus/*.json`，格式见
+仓库已带第一批 **293 条实验语料**（7 个文件，`source=auto-*`，**机器审校草稿，未人工审校**）。
+它不会自动进入安装包；需要显式安装：
+
+```bash
+pnpm corpus:install                 # 复制 7 个文件到真实 userData
+pnpm corpus:install -- --dry-run    # 只看路径
+```
+
+路径：`<userData>/corpus/*.json`（Windows `%APPDATA%\字伴\corpus`；
+macOS `~/Library/Application Support/字伴/corpus`），格式见
 [schema/corpus.schema.json](../schema/corpus.schema.json)，说明见
-[docs/08 第 8.2 节](08-screen-lookup.md)。
+[docs/10](10-corpus-handoff.md)。
 
 - 词条变更自动热加载（防抖 500ms）；
 - 优先级：字卡 > 语料库 > 本机词表 > 大模型补缺；
 - 爬虫只负责写本地 JSON，字伴不联网抓取；
-- 每条必须有 `word`、`definition`，最好有 `source`/`license`。
+- 每条必须有 `word`、`definition`，最好有 `source`/`license`；
+- 小窗会显示“机器审校 · … · 不一定对”，不要对外称人工审校；
+- 屏幕语料**没有图片字段**，不需要为新语料画 SVG；只有新增字卡才需要。
 
 ## 8. 自检与排错
 
 ```bash
-pnpm check                    # 内容门禁 + 类型 + 60 测试 + Web 构建 + GitHub 检查
+pnpm check                    # 内容门禁 + 语料 lint + 类型 + 64 测试 + Web 构建 + GitHub 检查
 pnpm desktop:build            # 桌面构建
 pnpm desktop:package          # Windows 绿色版（release/ziban-win32-x64）
 pnpm desktop:ocr-smoke        # OCR 测试图 + “暖”→“暖和”整词断言

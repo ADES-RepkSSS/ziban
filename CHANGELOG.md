@@ -4,6 +4,29 @@
 
 ## [Unreleased]
 
+### Added
+
+- **实验语料库第一批（293 词）**：医院 51、银行 52、政务 44、手机 43、出行 35、防骗 43、购物 25；
+  每条含一句口语释义和一句生活例句，source 统一 `auto-*`，运行时显示“机器审校 · … · 不一定对”。
+  全部为**机器审校草稿**，未经人工审校，也不是老人验证内容；说明见 [corpus/README.md](corpus/README.md)、
+  [corpus/RELEASE.md](corpus/RELEASE.md)。
+- 语料流水线脚本：`corpus:lint`（schema/字数/去重/用字覆盖/安全/拼音硬 lint）、
+  `corpus:review`（合并 Judge A/B/C 与硬 lint → review.jsonl）、`corpus:build`（只发布 final=release）、
+  `corpus:metrics`（每批 metrics.md）；`corpus/chars/common2000.txt` 作为释义用字预算。
+- 语料库加载器测试 4 条：auto- 前缀降级为机器审校、非 auto 仍为高可信、超长词/空释义被丢弃，
+  以及 release 目录 7 文件/293 条全量加载 + `KnowledgeService.localLookup('候诊')` 管线验证。
+- `pnpm corpus:install`：显式把 `corpus/release/*.json` 复制到真实 `userData/corpus`；
+  默认不自动安装、不复制 workbench。
+- 修正文档里的 userData 路径：实际是 `%APPDATA%\字伴` /
+  `~/Library/Application Support/字伴`，不是 `@ziban/desktop`。
+
+### Changed
+
+- `CorpusStore` 不再把超过 8 字的词静默截断成另一个词，而是整条丢弃（lint 仍会提前拒绝）。
+- `auto-` 前缀的语料条目标记为 `generated=true`、`confidence=medium`，不再冒充人工 `high`。
+- 语料相关文档统一标注“机器审校草稿，未人工审校”；说明**屏幕语料不需要 SVG 插图**，
+  现有 50 卡 + 52 SVG 不变。重写 [docs/10](docs/10-corpus-handoff.md)、[docs/11](docs/11-corpus-batch1-handoff.md)。
+
 ## [0.2.1] - 2026-10-23
 
 ### Added

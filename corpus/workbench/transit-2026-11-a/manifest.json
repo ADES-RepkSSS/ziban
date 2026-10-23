@@ -1,0 +1,256 @@
+{
+  "batch_id": "transit-2026-11-a",
+  "theme": "transit",
+  "risk_tier": "R3",
+  "prompt_version": "corpus-gen@1.0",
+  "generator_model": "deepseek-flash",
+  "release_name": "出行乘车词表",
+  "release_source": "auto-transit-2026-11",
+  "words": [
+    {
+      "word": "站牌",
+      "evidence": "出行场景屏幕词（公交站牌、地铁站、购票机）",
+      "source_ref": "self-screen-inventory-2026-11#transit",
+      "existing": "new",
+      "priority": 1
+    },
+    {
+      "word": "站点",
+      "evidence": "出行场景屏幕词（公交站牌、地铁站、购票机）",
+      "source_ref": "self-screen-inventory-2026-11#transit",
+      "existing": "new",
+      "priority": 2
+    },
+    {
+      "word": "换乘",
+      "evidence": "出行场景屏幕词（公交站牌、地铁站、购票机）",
+      "source_ref": "self-screen-inventory-2026-11#transit",
+      "existing": "new",
+      "priority": 3
+    },
+    {
+      "word": "方向",
+      "evidence": "出行场景屏幕词（公交站牌、地铁站、购票机）",
+      "source_ref": "self-screen-inventory-2026-11#transit",
+      "existing": "new",
+      "priority": 4
+    },
+    {
+      "word": "终点",
+      "evidence": "出行场景屏幕词（公交站牌、地铁站、购票机）",
+      "source_ref": "self-screen-inventory-2026-11#transit",
+      "existing": "new",
+      "priority": 5
+    },
+    {
+      "word": "起点",
+      "evidence": "出行场景屏幕词（公交站牌、地铁站、购票机）",
+      "source_ref": "self-screen-inventory-2026-11#transit",
+      "existing": "new",
+      "priority": 6
+    },
+    {
+      "word": "到站",
+      "evidence": "出行场景屏幕词（公交站牌、地铁站、购票机）",
+      "source_ref": "self-screen-inventory-2026-11#transit",
+      "existing": "new",
+      "priority": 7
+    },
+    {
+      "word": "报站",
+      "evidence": "出行场景屏幕词（公交站牌、地铁站、购票机）",
+      "source_ref": "self-screen-inventory-2026-11#transit",
+      "existing": "new",
+      "priority": 8
+    },
+    {
+      "word": "首班",
+      "evidence": "出行场景屏幕词（公交站牌、地铁站、购票机）",
+      "source_ref": "self-screen-inventory-2026-11#transit",
+      "existing": "new",
+      "priority": 9
+    },
+    {
+      "word": "末班",
+      "evidence": "出行场景屏幕词（公交站牌、地铁站、购票机）",
+      "source_ref": "self-screen-inventory-2026-11#transit",
+      "existing": "new",
+      "priority": 10
+    },
+    {
+      "word": "班次",
+      "evidence": "出行场景屏幕词（公交站牌、地铁站、购票机）",
+      "source_ref": "self-screen-inventory-2026-11#transit",
+      "existing": "new",
+      "priority": 11
+    },
+    {
+      "word": "车厢",
+      "evidence": "出行场景屏幕词（公交站牌、地铁站、购票机）",
+      "source_ref": "self-screen-inventory-2026-11#transit",
+      "existing": "new",
+      "priority": 12
+    },
+    {
+      "word": "车门",
+      "evidence": "出行场景屏幕词（公交站牌、地铁站、购票机）",
+      "source_ref": "self-screen-inventory-2026-11#transit",
+      "existing": "new",
+      "priority": 13
+    },
+    {
+      "word": "扶梯",
+      "evidence": "出行场景屏幕词（公交站牌、地铁站、购票机）",
+      "source_ref": "self-screen-inventory-2026-11#transit",
+      "existing": "new",
+      "priority": 14
+    },
+    {
+      "word": "通道",
+      "evidence": "出行场景屏幕词（公交站牌、地铁站、购票机）",
+      "source_ref": "self-screen-inventory-2026-11#transit",
+      "existing": "new",
+      "priority": 15
+    },
+    {
+      "word": "出口",
+      "evidence": "出行场景屏幕词（公交站牌、地铁站、购票机）",
+      "source_ref": "self-screen-inventory-2026-11#transit",
+      "existing": "new",
+      "priority": 16
+    },
+    {
+      "word": "入口",
+      "evidence": "出行场景屏幕词（公交站牌、地铁站、购票机）",
+      "source_ref": "self-screen-inventory-2026-11#transit",
+      "existing": "new",
+      "priority": 17
+    },
+    {
+      "word": "票价",
+      "evidence": "出行场景屏幕词（公交站牌、地铁站、购票机）",
+      "source_ref": "self-screen-inventory-2026-11#transit",
+      "existing": "new",
+      "priority": 18
+    },
+    {
+      "word": "车票",
+      "evidence": "出行场景屏幕词（公交站牌、地铁站、购票机）",
+      "source_ref": "self-screen-inventory-2026-11#transit",
+      "existing": "new",
+      "priority": 19
+    },
+    {
+      "word": "刷卡",
+      "evidence": "出行场景屏幕词（公交站牌、地铁站、购票机）",
+      "source_ref": "self-screen-inventory-2026-11#transit",
+      "existing": "new",
+      "priority": 20
+    },
+    {
+      "word": "交通卡",
+      "evidence": "出行场景屏幕词（公交站牌、地铁站、购票机）",
+      "source_ref": "self-screen-inventory-2026-11#transit",
+      "existing": "new",
+      "priority": 21
+    },
+    {
+      "word": "候车",
+      "evidence": "出行场景屏幕词（公交站牌、地铁站、购票机）",
+      "source_ref": "self-screen-inventory-2026-11#transit",
+      "existing": "new",
+      "priority": 22
+    },
+    {
+      "word": "让座",
+      "evidence": "出行场景屏幕词（公交站牌、地铁站、购票机）",
+      "source_ref": "self-screen-inventory-2026-11#transit",
+      "existing": "new",
+      "priority": 23
+    },
+    {
+      "word": "人行道",
+      "evidence": "出行场景屏幕词（公交站牌、地铁站、购票机）",
+      "source_ref": "self-screen-inventory-2026-11#transit",
+      "existing": "new",
+      "priority": 24
+    },
+    {
+      "word": "天桥",
+      "evidence": "出行场景屏幕词（公交站牌、地铁站、购票机）",
+      "source_ref": "self-screen-inventory-2026-11#transit",
+      "existing": "new",
+      "priority": 25
+    },
+    {
+      "word": "安检",
+      "evidence": "出行场景屏幕词（公交站牌、地铁站、购票机）",
+      "source_ref": "self-screen-inventory-2026-11#transit",
+      "existing": "new",
+      "priority": 26
+    },
+    {
+      "word": "实名制",
+      "evidence": "出行场景屏幕词（公交站牌、地铁站、购票机）",
+      "source_ref": "self-screen-inventory-2026-11#transit",
+      "existing": "new",
+      "priority": 27
+    },
+    {
+      "word": "补票",
+      "evidence": "出行场景屏幕词（公交站牌、地铁站、购票机）",
+      "source_ref": "self-screen-inventory-2026-11#transit",
+      "existing": "new",
+      "priority": 28
+    },
+    {
+      "word": "退票",
+      "evidence": "出行场景屏幕词（公交站牌、地铁站、购票机）",
+      "source_ref": "self-screen-inventory-2026-11#transit",
+      "existing": "new",
+      "priority": 29
+    },
+    {
+      "word": "改签",
+      "evidence": "出行场景屏幕词（公交站牌、地铁站、购票机）",
+      "source_ref": "self-screen-inventory-2026-11#transit",
+      "existing": "new",
+      "priority": 30
+    },
+    {
+      "word": "导航",
+      "evidence": "出行场景屏幕词（公交站牌、地铁站、购票机）",
+      "source_ref": "self-screen-inventory-2026-11#transit",
+      "existing": "new",
+      "priority": 31
+    },
+    {
+      "word": "目的地",
+      "evidence": "出行场景屏幕词（公交站牌、地铁站、购票机）",
+      "source_ref": "self-screen-inventory-2026-11#transit",
+      "existing": "new",
+      "priority": 32
+    },
+    {
+      "word": "时刻表",
+      "evidence": "出行场景屏幕词（公交站牌、地铁站、购票机）",
+      "source_ref": "self-screen-inventory-2026-11#transit",
+      "existing": "new",
+      "priority": 33
+    },
+    {
+      "word": "检票",
+      "evidence": "出行场景屏幕词（公交站牌、地铁站、购票机）",
+      "source_ref": "self-screen-inventory-2026-11#transit",
+      "existing": "new",
+      "priority": 34
+    },
+    {
+      "word": "过站",
+      "evidence": "出行场景屏幕词（公交站牌、地铁站、购票机）",
+      "source_ref": "self-screen-inventory-2026-11#transit",
+      "existing": "new",
+      "priority": 35
+    }
+  ]
+}

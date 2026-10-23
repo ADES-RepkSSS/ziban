@@ -8,6 +8,7 @@ apps/desktop/resources/native/
 apps/desktop/resources/bin/
 apps/desktop/resources/web/
 release/
+work/corpus_doc/junda.html
 *.local
 .DS_Store
 Thumbs.db

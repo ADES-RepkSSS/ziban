@@ -1,0 +1,12 @@
+{"batch_id":"hospital-2026-11-a","theme":"hospital","word":"药房","reason":"本机 PLAIN_TERMS 已有，按手册第 5 节 Step 0 默认丢弃（无升级白名单）","definition":"医院里按方子拿药的那个窗口。","example":"药房在一楼大厅旁边。","dropped_at":"2026-10-23T12:30:00+08:00"}
+{"batch_id":"bank-2026-11-a","theme":"bank","word":"冻结","reason":"本机 PLAIN_TERMS 已有，按手册第 5 节 Step 0 默认丢弃（无升级白名单）","definition":"钱还在，但暂时不能取也不能转。","example":"卡被冻结了，先去银行问清楚。","dropped_at":"2026-10-23T12:30:00+08:00"}
+{"batch_id":"bank-2026-11-a","theme":"bank","word":"账户","reason":"本机 PLAIN_TERMS 已有，按手册第 5 节 Step 0 默认丢弃（无升级白名单）","definition":"你在银行开的那一个户头。","example":"钱已经打到你账户了。","dropped_at":"2026-10-23T12:30:00+08:00"}
+{"batch_id":"gov-2026-11-a","theme":"gov","word":"社区","reason":"本机 PLAIN_TERMS 已有，按手册第 5 节 Step 0 默认丢弃（无升级白名单）","definition":"家附近的一片居民区，有事能去问。","example":"社区贴了通知，说明天来办老年卡。","dropped_at":"2026-10-23T12:30:00+08:00"}
+{"batch_id":"phone-2026-11-a","theme":"phone","word":"短信","reason":"本机 PLAIN_TERMS 已有，按手册第 5 节 Step 0 默认丢弃（无升级白名单）","definition":"手机上收到的一小段文字。","example":"银行发来一条短信提醒。","dropped_at":"2026-10-23T12:30:00+08:00"}
+{"batch_id":"phone-2026-11-a","theme":"phone","word":"二维码","reason":"本机 PLAIN_TERMS 已有，按手册第 5 节 Step 0 默认丢弃（无升级白名单）","definition":"黑白小方块，扫一下就能用。","example":"门口的二维码，是让人扫码登记的。","dropped_at":"2026-10-23T12:30:00+08:00"}
+{"batch_id":"fraud-2026-11-a","theme":"fraud","word":"链接","reason":"本机 PLAIN_TERMS 已有，按手册第 5 节 Step 0 默认丢弃（无升级白名单）","definition":"短信里一点就跳到别处的那些字。","example":"短信里的链接，别随便点开。","dropped_at":"2026-10-23T12:30:00+08:00"}
+{"batch_id":"hospital-2026-11-a","theme":"hospital","word":"病床","reason":"与“床位”近义重复，保留床位","definition":"医院里给病人躺着休息的床。","example":"他躺在病床上闭眼休息。","dropped_at":"2026-10-23T12:32:00+08:00"}
+{"batch_id":"hospital-2026-11-a","theme":"hospital","word":"复查","reason":"与“复诊”近义重复，保留复诊","definition":"治完以后再去医院看看好没好。","example":"过一个月再回医院复查。","dropped_at":"2026-10-23T12:32:00+08:00"}
+{"batch_id":"hospital-2026-11-a","theme":"hospital","word":"病区","reason":"与“病房/住院部”近义重复，保留两个更常用的","definition":"医院里让病人住下来的那几层楼。","example":"护士说病房在楼上那个病区，坐电梯上去。","dropped_at":"2026-10-23T12:32:00+08:00"}
+{"batch_id":"bank-2026-11-a","theme":"bank","word":"额度","reason":"与“限额”近义重复，保留限额","definition":"最多能用多少钱的那个数。","example":"取钱超过了额度，要分几次。","dropped_at":"2026-10-23T12:32:00+08:00"}
+{"batch_id":"fraud-2026-11-a","theme":"fraud","word":"恐吓","reason":"与“威胁”近义重复，保留威胁","definition":"用吓人的话，说你出事了。","example":"电话里恐吓你的，先别慌。","dropped_at":"2026-10-23T12:32:00+08:00"}

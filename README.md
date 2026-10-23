@@ -114,7 +114,7 @@ pnpm dev
 验证：
 
 ```bash
-pnpm check      # 内容门禁 + strict 类型 + 60 个测试 + 生产构建
+pnpm check      # 内容门禁 + strict 类型 + 64 个测试 + 生产构建
 pnpm screenshot # 可选：用本机 Edge/Chrome 跑关键路径并生成截图
 ```
 
@@ -182,8 +182,20 @@ docs/                     立项、内容流水线、合规、Electron、路线�
 - 拼音仅作内部数据与家人参考，**不用于教学**；
 - **没有经过 C5 对抗审校与人工审校，禁止直接对外发布。**
 
+屏幕语料第一批 **293 条**（医院/银行/政务/手机/出行/防骗/购物 7 个文件）也全部是
+**机器审校草稿，未人工审校、未做老人测试**；`source=auto-*`，小窗会显示“机器审校 · 不一定对”。
+它不会自动装进程序；要显式安装：
+
+```bash
+pnpm corpus:install
+```
+
+这批语料**不需要新画 SVG**：屏幕小窗没有插图，语料 schema 也没有 `image` 字段；
+现有 50 张卡 + 52 张 SVG 仍完整。以后新增字卡才需要一卡一图。
+
 内容流程与加卡方式见 [content/README.md](content/README.md)；AI 流水线约束见 [docs/01-ai-content-pipeline.md](docs/01-ai-content-pipeline.md)。
-给下一位 AI 制作屏幕词库的完整格式、提示词、验收清单见 [docs/10-corpus-handoff.md](docs/10-corpus-handoff.md)。
+语料格式、批量生成提示词、验收清单见 [docs/10-corpus-handoff.md](docs/10-corpus-handoff.md)，
+第一批复盘见 [docs/11-corpus-batch1-handoff.md](docs/11-corpus-batch1-handoff.md)。
 
 ## 路线图
 
@@ -192,8 +204,8 @@ docs/                     立项、内容流水线、合规、Electron、路线�
 | v0.1（当前） | Web 识字卡 + 粘贴文字朗读/解释 + 本地进度 |
 | v0.1.x | 老人可用性测试、语音质量、内容审校、自动化回归 |
 | v0.2（当前桌面实验） | Electron 壳 + **光标跟随取词**（不做框选）；Windows WinRT 已实测，macOS Vision 待真机 |
-| v0.2.x | macOS 真机验收 + 预编译 Vision helper + 签名/公证；语料库/爬虫 200–500 词 |
-| v0.3 | 300 词内容流水线 + 金标准回归 + 更稳的复习 |
+| v0.2.x | macOS 真机验收 + 预编译 Vision helper + 签名/公证；第一批 293 条机器审校语料（已产出，待人工复核） |
+| v0.3 | 300 词内容流水线 + 金标准回归 + 更稳的复习；语料三审与真人复核 |
 | v0.4 | Windows/macOS 安装包、双平台对齐、可选本地模型 |
 | v1.0 | 网页阅读器 + 三句话摘要 + 生字本；老人留存 5/10 |
 | 长期（不承诺版本） | 验证“先使用、后识字”的儿童场景：真实探索任务、查字摩擦、重复接触；不做积分/排行榜/家长监控 |
@@ -238,7 +250,8 @@ docs/                     立项、内容流水线、合规、Electron、路线�
 | [docs/07-handoff.md](docs/07-handoff.md) | **交接：当前快照、架构、已知问题、下一步** |
 | [docs/08-screen-lookup.md](docs/08-screen-lookup.md) | **光标跟随取词：Windows/macOS 实现、权限、真机清单、语料库格式** |
 | [docs/09-deploy-and-use.md](docs/09-deploy-and-use.md) | **部署与使用：网页/桌面、GitHub Pages、macOS 权限、排错** |
-| [docs/10-corpus-handoff.md](docs/10-corpus-handoff.md) | **语料库制作交接：格式、AI 提示词、审校、验收** |
+| [docs/10-corpus-handoff.md](docs/10-corpus-handoff.md) | **语料库制作交接：格式、AI 提示词、审校、验收、图形资产判断** |
+| [docs/11-corpus-batch1-handoff.md](docs/11-corpus-batch1-handoff.md) | **第一批 293 条语料复盘：没做到什么、下一批顺序** |
 | [docs/releases/v0.2.1.md](docs/releases/v0.2.1.md) | **v0.2.1 完整版：Windows 绿色版、演示标注、验证** |
 | [docs/releases/v0.2.0.md](docs/releases/v0.2.0.md) | **v0.2.0 发布说明：能力、验证、限制** |
 | [AGENTS.md](AGENTS.md) | 给下一位 AI/维护者的操作速查与硬约束 |

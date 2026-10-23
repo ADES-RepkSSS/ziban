@@ -248,7 +248,7 @@ pnpm desktop:start
 ### 8.2 语料库文件格式（未来爬虫直接写这里）
 
 路径：`<userData>/corpus/*.json`
-（Windows：`%APPDATA%\@ziban\desktop\corpus\`；macOS：`~/Library/Application Support/@ziban/desktop/corpus/`）
+（Windows：`%APPDATA%\字伴\corpus\`；macOS：`~/Library/Application Support/字伴/corpus/`）
 
 结构校验：[`schema/corpus.schema.json`](../schema/corpus.schema.json)。
 
@@ -347,7 +347,7 @@ scripts/launch-electron.mjs         清 ELECTRON_RUN_AS_NODE 后启动 Electron
 
 ```bash
 pnpm typecheck             # 三个包 strict TS
-pnpm test                  # 60 个测试（含 screen 21 个）
+pnpm test                  # 64 个测试（含 screen 21 个 + corpus 4 个）
 pnpm check                 # 内容门禁 + 类型 + 测试 + Web 构建
 
 pnpm desktop:build         # Web + 主进程 + 资源

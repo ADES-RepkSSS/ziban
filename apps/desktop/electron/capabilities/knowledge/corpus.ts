@@ -101,21 +101,31 @@ export class CorpusStore {
         }
         files += 1;
         for (const item of raw.entries) {
-          const word = typeof item.word === 'string' ? item.word.trim().slice(0, 8) : '';
-          if (!word || Array.from(word).length > 8) continue;
+          // 先判长度再截断：超过 8 字的词直接丢弃，不能静默变成另一个词。
+          // （lint 也会提前拒绝；这里是运行时的最后一道防线。）
+          const trimmed = typeof item.word === 'string' ? item.word.trim() : '';
+          const word = Array.from(trimmed).length > 8 ? '' : trimmed;
+          if (!word) continue;
           const definition = sanitizeKnowledgeText(item.definition, 120);
           if (!definition) continue;
           const example = sanitizeKnowledgeText(item.example, 120);
           const pinyin = sanitizePinyin(item.pinyin ?? '');
+          // auto- 前缀 = 机器审校（docs/10 §9.2）：不能冒充人工高可信内容，
+          // UI 会显示“机器审校 · <name> · 不一定对”，并降为 medium 置信度。
+          const isAuto = typeof item.source === 'string' && item.source.startsWith('auto-');
           next.set(word, {
             word,
             pinyin,
             definition,
             example,
             source: 'corpus',
-            sourceLabel: raw.name ? `语料库 · ${raw.name}` : '语料库',
-            generated: false,
-            confidence: 'high',
+            sourceLabel: isAuto
+              ? `机器审校 · ${raw.name ?? '语料库'}`
+              : raw.name
+                ? `语料库 · ${raw.name}`
+                : '语料库',
+            generated: isAuto,
+            confidence: isAuto ? 'medium' : 'high',
             updatedAt: Date.now(),
           });
         }

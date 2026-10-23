@@ -1,0 +1,186 @@
+{
+  "batch_id": "shopping-2026-11-a",
+  "theme": "shopping",
+  "risk_tier": "R3",
+  "prompt_version": "corpus-gen@1.0",
+  "generator_model": "deepseek-flash",
+  "release_name": "买东西词表",
+  "release_source": "auto-shopping-2026-11",
+  "words": [
+    {
+      "word": "商品",
+      "evidence": "购物场景屏幕词（商品页、订单页、快递通知）",
+      "source_ref": "self-screen-inventory-2026-11#shopping",
+      "existing": "new",
+      "priority": 1
+    },
+    {
+      "word": "详情",
+      "evidence": "购物场景屏幕词（商品页、订单页、快递通知）",
+      "source_ref": "self-screen-inventory-2026-11#shopping",
+      "existing": "new",
+      "priority": 2
+    },
+    {
+      "word": "降价",
+      "evidence": "购物场景屏幕词（商品页、订单页、快递通知）",
+      "source_ref": "self-screen-inventory-2026-11#shopping",
+      "existing": "new",
+      "priority": 3
+    },
+    {
+      "word": "优惠",
+      "evidence": "购物场景屏幕词（商品页、订单页、快递通知）",
+      "source_ref": "self-screen-inventory-2026-11#shopping",
+      "existing": "new",
+      "priority": 4
+    },
+    {
+      "word": "优惠券",
+      "evidence": "购物场景屏幕词（商品页、订单页、快递通知）",
+      "source_ref": "self-screen-inventory-2026-11#shopping",
+      "existing": "new",
+      "priority": 5
+    },
+    {
+      "word": "包邮",
+      "evidence": "购物场景屏幕词（商品页、订单页、快递通知）",
+      "source_ref": "self-screen-inventory-2026-11#shopping",
+      "existing": "new",
+      "priority": 6
+    },
+    {
+      "word": "运费",
+      "evidence": "购物场景屏幕词（商品页、订单页、快递通知）",
+      "source_ref": "self-screen-inventory-2026-11#shopping",
+      "existing": "new",
+      "priority": 7
+    },
+    {
+      "word": "发货",
+      "evidence": "购物场景屏幕词（商品页、订单页、快递通知）",
+      "source_ref": "self-screen-inventory-2026-11#shopping",
+      "existing": "new",
+      "priority": 8
+    },
+    {
+      "word": "快递",
+      "evidence": "购物场景屏幕词（商品页、订单页、快递通知）",
+      "source_ref": "self-screen-inventory-2026-11#shopping",
+      "existing": "new",
+      "priority": 9
+    },
+    {
+      "word": "收货",
+      "evidence": "购物场景屏幕词（商品页、订单页、快递通知）",
+      "source_ref": "self-screen-inventory-2026-11#shopping",
+      "existing": "new",
+      "priority": 10
+    },
+    {
+      "word": "退货",
+      "evidence": "购物场景屏幕词（商品页、订单页、快递通知）",
+      "source_ref": "self-screen-inventory-2026-11#shopping",
+      "existing": "new",
+      "priority": 11
+    },
+    {
+      "word": "换货",
+      "evidence": "购物场景屏幕词（商品页、订单页、快递通知）",
+      "source_ref": "self-screen-inventory-2026-11#shopping",
+      "existing": "new",
+      "priority": 12
+    },
+    {
+      "word": "评价",
+      "evidence": "购物场景屏幕词（商品页、订单页、快递通知）",
+      "source_ref": "self-screen-inventory-2026-11#shopping",
+      "existing": "new",
+      "priority": 13
+    },
+    {
+      "word": "店铺",
+      "evidence": "购物场景屏幕词（商品页、订单页、快递通知）",
+      "source_ref": "self-screen-inventory-2026-11#shopping",
+      "existing": "new",
+      "priority": 14
+    },
+    {
+      "word": "购物车",
+      "evidence": "购物场景屏幕词（商品页、订单页、快递通知）",
+      "source_ref": "self-screen-inventory-2026-11#shopping",
+      "existing": "new",
+      "priority": 15
+    },
+    {
+      "word": "下单",
+      "evidence": "购物场景屏幕词（商品页、订单页、快递通知）",
+      "source_ref": "self-screen-inventory-2026-11#shopping",
+      "existing": "new",
+      "priority": 16
+    },
+    {
+      "word": "原价",
+      "evidence": "购物场景屏幕词（商品页、订单页、快递通知）",
+      "source_ref": "self-screen-inventory-2026-11#shopping",
+      "existing": "new",
+      "priority": 17
+    },
+    {
+      "word": "库存",
+      "evidence": "购物场景屏幕词（商品页、订单页、快递通知）",
+      "source_ref": "self-screen-inventory-2026-11#shopping",
+      "existing": "new",
+      "priority": 18
+    },
+    {
+      "word": "缺货",
+      "evidence": "购物场景屏幕词（商品页、订单页、快递通知）",
+      "source_ref": "self-screen-inventory-2026-11#shopping",
+      "existing": "new",
+      "priority": 19
+    },
+    {
+      "word": "签收",
+      "evidence": "购物场景屏幕词（商品页、订单页、快递通知）",
+      "source_ref": "self-screen-inventory-2026-11#shopping",
+      "existing": "new",
+      "priority": 20
+    },
+    {
+      "word": "定金",
+      "evidence": "购物场景屏幕词（商品页、订单页、快递通知）",
+      "source_ref": "self-screen-inventory-2026-11#shopping",
+      "existing": "new",
+      "priority": 21
+    },
+    {
+      "word": "满减",
+      "evidence": "购物场景屏幕词（商品页、订单页、快递通知）",
+      "source_ref": "self-screen-inventory-2026-11#shopping",
+      "existing": "new",
+      "priority": 22
+    },
+    {
+      "word": "售后",
+      "evidence": "购物场景屏幕词（商品页、订单页、快递通知）",
+      "source_ref": "self-screen-inventory-2026-11#shopping",
+      "existing": "new",
+      "priority": 23
+    },
+    {
+      "word": "积分",
+      "evidence": "购物场景屏幕词（商品页、订单页、快递通知）",
+      "source_ref": "self-screen-inventory-2026-11#shopping",
+      "existing": "new",
+      "priority": 24
+    },
+    {
+      "word": "正品",
+      "evidence": "购物场景屏幕词（商品页、订单页、快递通知）",
+      "source_ref": "self-screen-inventory-2026-11#shopping",
+      "existing": "new",
+      "priority": 25
+    }
+  ]
+}

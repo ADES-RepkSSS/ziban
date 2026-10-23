@@ -1,0 +1,368 @@
+{
+  "batch_id": "hospital-2026-11-a",
+  "theme": "hospital",
+  "risk_tier": "R1",
+  "prompt_version": "corpus-gen@1.0",
+  "generator_model": "deepseek-flash",
+  "release_name": "医院办事词表",
+  "release_source": "auto-hospital-2026-11",
+  "words": [
+    {
+      "word": "候诊",
+      "evidence": "医院场景屏幕词（叫号屏、自助机、收费单、导诊牌）",
+      "source_ref": "self-screen-inventory-2026-11#hospital",
+      "existing": "new",
+      "priority": 1
+    },
+    {
+      "word": "报告单",
+      "evidence": "医院场景屏幕词（叫号屏、自助机、收费单、导诊牌）",
+      "source_ref": "self-screen-inventory-2026-11#hospital",
+      "existing": "new",
+      "priority": 2
+    },
+    {
+      "word": "取药",
+      "evidence": "医院场景屏幕词（叫号屏、自助机、收费单、导诊牌）",
+      "source_ref": "self-screen-inventory-2026-11#hospital",
+      "existing": "new",
+      "priority": 3
+    },
+    {
+      "word": "复诊",
+      "evidence": "医院场景屏幕词（叫号屏、自助机、收费单、导诊牌）",
+      "source_ref": "self-screen-inventory-2026-11#hospital",
+      "existing": "new",
+      "priority": 4
+    },
+    {
+      "word": "门诊",
+      "evidence": "医院场景屏幕词（叫号屏、自助机、收费单、导诊牌）",
+      "source_ref": "self-screen-inventory-2026-11#hospital",
+      "existing": "new",
+      "priority": 5
+    },
+    {
+      "word": "住院",
+      "evidence": "医院场景屏幕词（叫号屏、自助机、收费单、导诊牌）",
+      "source_ref": "self-screen-inventory-2026-11#hospital",
+      "existing": "new",
+      "priority": 6
+    },
+    {
+      "word": "出院",
+      "evidence": "医院场景屏幕词（叫号屏、自助机、收费单、导诊牌）",
+      "source_ref": "self-screen-inventory-2026-11#hospital",
+      "existing": "new",
+      "priority": 7
+    },
+    {
+      "word": "病房",
+      "evidence": "医院场景屏幕词（叫号屏、自助机、收费单、导诊牌）",
+      "source_ref": "self-screen-inventory-2026-11#hospital",
+      "existing": "new",
+      "priority": 8
+    },
+    {
+      "word": "查房",
+      "evidence": "医院场景屏幕词（叫号屏、自助机、收费单、导诊牌）",
+      "source_ref": "self-screen-inventory-2026-11#hospital",
+      "existing": "new",
+      "priority": 10
+    },
+    {
+      "word": "陪护",
+      "evidence": "医院场景屏幕词（叫号屏、自助机、收费单、导诊牌）",
+      "source_ref": "self-screen-inventory-2026-11#hospital",
+      "existing": "new",
+      "priority": 11
+    },
+    {
+      "word": "病历",
+      "evidence": "医院场景屏幕词（叫号屏、自助机、收费单、导诊牌）",
+      "source_ref": "self-screen-inventory-2026-11#hospital",
+      "existing": "new",
+      "priority": 12
+    },
+    {
+      "word": "处方",
+      "evidence": "医院场景屏幕词（叫号屏、自助机、收费单、导诊牌）",
+      "source_ref": "self-screen-inventory-2026-11#hospital",
+      "existing": "new",
+      "priority": 13
+    },
+    {
+      "word": "输液",
+      "evidence": "医院场景屏幕词（叫号屏、自助机、收费单、导诊牌）",
+      "source_ref": "self-screen-inventory-2026-11#hospital",
+      "existing": "new",
+      "priority": 14
+    },
+    {
+      "word": "打针",
+      "evidence": "医院场景屏幕词（叫号屏、自助机、收费单、导诊牌）",
+      "source_ref": "self-screen-inventory-2026-11#hospital",
+      "existing": "new",
+      "priority": 15
+    },
+    {
+      "word": "抽血",
+      "evidence": "医院场景屏幕词（叫号屏、自助机、收费单、导诊牌）",
+      "source_ref": "self-screen-inventory-2026-11#hospital",
+      "existing": "new",
+      "priority": 16
+    },
+    {
+      "word": "化验",
+      "evidence": "医院场景屏幕词（叫号屏、自助机、收费单、导诊牌）",
+      "source_ref": "self-screen-inventory-2026-11#hospital",
+      "existing": "new",
+      "priority": 17
+    },
+    {
+      "word": "检查单",
+      "evidence": "医院场景屏幕词（叫号屏、自助机、收费单、导诊牌）",
+      "source_ref": "self-screen-inventory-2026-11#hospital",
+      "existing": "new",
+      "priority": 18
+    },
+    {
+      "word": "收费处",
+      "evidence": "医院场景屏幕词（叫号屏、自助机、收费单、导诊牌）",
+      "source_ref": "self-screen-inventory-2026-11#hospital",
+      "existing": "new",
+      "priority": 19
+    },
+    {
+      "word": "住院部",
+      "evidence": "医院场景屏幕词（叫号屏、自助机、收费单、导诊牌）",
+      "source_ref": "self-screen-inventory-2026-11#hospital",
+      "existing": "new",
+      "priority": 20
+    },
+    {
+      "word": "护士站",
+      "evidence": "医院场景屏幕词（叫号屏、自助机、收费单、导诊牌）",
+      "source_ref": "self-screen-inventory-2026-11#hospital",
+      "existing": "new",
+      "priority": 21
+    },
+    {
+      "word": "导诊",
+      "evidence": "医院场景屏幕词（叫号屏、自助机、收费单、导诊牌）",
+      "source_ref": "self-screen-inventory-2026-11#hospital",
+      "existing": "new",
+      "priority": 22
+    },
+    {
+      "word": "医保卡",
+      "evidence": "医院场景屏幕词（叫号屏、自助机、收费单、导诊牌）",
+      "source_ref": "self-screen-inventory-2026-11#hospital",
+      "existing": "new",
+      "priority": 23
+    },
+    {
+      "word": "报销",
+      "evidence": "医院场景屏幕词（叫号屏、自助机、收费单、导诊牌）",
+      "source_ref": "self-screen-inventory-2026-11#hospital",
+      "existing": "new",
+      "priority": 24
+    },
+    {
+      "word": "自费",
+      "evidence": "医院场景屏幕词（叫号屏、自助机、收费单、导诊牌）",
+      "source_ref": "self-screen-inventory-2026-11#hospital",
+      "existing": "new",
+      "priority": 25
+    },
+    {
+      "word": "押金",
+      "evidence": "医院场景屏幕词（叫号屏、自助机、收费单、导诊牌）",
+      "source_ref": "self-screen-inventory-2026-11#hospital",
+      "existing": "new",
+      "priority": 26
+    },
+    {
+      "word": "床位",
+      "evidence": "医院场景屏幕词（叫号屏、自助机、收费单、导诊牌）",
+      "source_ref": "self-screen-inventory-2026-11#hospital",
+      "existing": "new",
+      "priority": 27
+    },
+    {
+      "word": "手术",
+      "evidence": "医院场景屏幕词（叫号屏、自助机、收费单、导诊牌）",
+      "source_ref": "self-screen-inventory-2026-11#hospital",
+      "existing": "new",
+      "priority": 28
+    },
+    {
+      "word": "换药",
+      "evidence": "医院场景屏幕词（叫号屏、自助机、收费单、导诊牌）",
+      "source_ref": "self-screen-inventory-2026-11#hospital",
+      "existing": "new",
+      "priority": 29
+    },
+    {
+      "word": "转诊",
+      "evidence": "医院场景屏幕词（叫号屏、自助机、收费单、导诊牌）",
+      "source_ref": "self-screen-inventory-2026-11#hospital",
+      "existing": "new",
+      "priority": 31
+    },
+    {
+      "word": "抢救",
+      "evidence": "医院场景屏幕词（叫号屏、自助机、收费单、导诊牌）",
+      "source_ref": "self-screen-inventory-2026-11#hospital",
+      "existing": "new",
+      "priority": 32
+    },
+    {
+      "word": "监护",
+      "evidence": "医院场景屏幕词（叫号屏、自助机、收费单、导诊牌）",
+      "source_ref": "self-screen-inventory-2026-11#hospital",
+      "existing": "new",
+      "priority": 33
+    },
+    {
+      "word": "吸氧",
+      "evidence": "医院场景屏幕词（叫号屏、自助机、收费单、导诊牌）",
+      "source_ref": "self-screen-inventory-2026-11#hospital",
+      "existing": "new",
+      "priority": 34
+    },
+    {
+      "word": "问诊",
+      "evidence": "医院场景屏幕词（叫号屏、自助机、收费单、导诊牌）",
+      "source_ref": "self-screen-inventory-2026-11#hospital",
+      "existing": "new",
+      "priority": 36
+    },
+    {
+      "word": "症状",
+      "evidence": "医院场景屏幕词（叫号屏、自助机、收费单、导诊牌）",
+      "source_ref": "self-screen-inventory-2026-11#hospital",
+      "existing": "new",
+      "priority": 37
+    },
+    {
+      "word": "用药",
+      "evidence": "医院场景屏幕词（叫号屏、自助机、收费单、导诊牌）",
+      "source_ref": "self-screen-inventory-2026-11#hospital",
+      "existing": "new",
+      "priority": 38
+    },
+    {
+      "word": "停药",
+      "evidence": "医院场景屏幕词（叫号屏、自助机、收费单、导诊牌）",
+      "source_ref": "self-screen-inventory-2026-11#hospital",
+      "existing": "new",
+      "priority": 39
+    },
+    {
+      "word": "空腹",
+      "evidence": "医院场景屏幕词（叫号屏、自助机、收费单、导诊牌）",
+      "source_ref": "self-screen-inventory-2026-11#hospital",
+      "existing": "new",
+      "priority": 40
+    },
+    {
+      "word": "忌口",
+      "evidence": "医院场景屏幕词（叫号屏、自助机、收费单、导诊牌）",
+      "source_ref": "self-screen-inventory-2026-11#hospital",
+      "existing": "new",
+      "priority": 41
+    },
+    {
+      "word": "加号",
+      "evidence": "医院场景屏幕词（叫号屏、自助机、收费单、导诊牌）",
+      "source_ref": "self-screen-inventory-2026-11#hospital",
+      "existing": "new",
+      "priority": 42
+    },
+    {
+      "word": "叫号",
+      "evidence": "医院场景屏幕词（叫号屏、自助机、收费单、导诊牌）",
+      "source_ref": "self-screen-inventory-2026-11#hospital",
+      "existing": "new",
+      "priority": 43
+    },
+    {
+      "word": "过号",
+      "evidence": "医院场景屏幕词（叫号屏、自助机、收费单、导诊牌）",
+      "source_ref": "self-screen-inventory-2026-11#hospital",
+      "existing": "new",
+      "priority": 44
+    },
+    {
+      "word": "陪诊",
+      "evidence": "医院场景屏幕词（叫号屏、自助机、收费单、导诊牌）",
+      "source_ref": "self-screen-inventory-2026-11#hospital",
+      "existing": "new",
+      "priority": 45
+    },
+    {
+      "word": "就诊",
+      "evidence": "医院场景屏幕词（叫号屏、自助机、收费单、导诊牌）",
+      "source_ref": "self-screen-inventory-2026-11#hospital",
+      "existing": "new",
+      "priority": 46
+    },
+    {
+      "word": "体检",
+      "evidence": "医院场景屏幕词（叫号屏、自助机、收费单、导诊牌）",
+      "source_ref": "self-screen-inventory-2026-11#hospital",
+      "existing": "new",
+      "priority": 47
+    },
+    {
+      "word": "拍片",
+      "evidence": "医院场景屏幕词（叫号屏、自助机、收费单、导诊牌）",
+      "source_ref": "self-screen-inventory-2026-11#hospital",
+      "existing": "new",
+      "priority": 48
+    },
+    {
+      "word": "心电图",
+      "evidence": "医院场景屏幕词（叫号屏、自助机、收费单、导诊牌）",
+      "source_ref": "self-screen-inventory-2026-11#hospital",
+      "existing": "new",
+      "priority": 49
+    },
+    {
+      "word": "彩超",
+      "evidence": "医院场景屏幕词（叫号屏、自助机、收费单、导诊牌）",
+      "source_ref": "self-screen-inventory-2026-11#hospital",
+      "existing": "new",
+      "priority": 50
+    },
+    {
+      "word": "探视",
+      "evidence": "医院场景屏幕词（叫号屏、自助机、收费单、导诊牌）",
+      "source_ref": "self-screen-inventory-2026-11#hospital",
+      "existing": "new",
+      "priority": 52
+    },
+    {
+      "word": "疫苗",
+      "evidence": "医院场景屏幕词（叫号屏、自助机、收费单、导诊牌）",
+      "source_ref": "self-screen-inventory-2026-11#hospital",
+      "existing": "new",
+      "priority": 53
+    },
+    {
+      "word": "康复",
+      "evidence": "医院场景屏幕词（叫号屏、自助机、收费单、导诊牌）",
+      "source_ref": "self-screen-inventory-2026-11#hospital",
+      "existing": "new",
+      "priority": 54
+    },
+    {
+      "word": "内科",
+      "evidence": "医院场景屏幕词（叫号屏、自助机、收费单、导诊牌）",
+      "source_ref": "self-screen-inventory-2026-11#hospital",
+      "existing": "new",
+      "priority": 55
+    }
+  ]
+}

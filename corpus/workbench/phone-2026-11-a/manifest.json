@@ -1,0 +1,312 @@
+{
+  "batch_id": "phone-2026-11-a",
+  "theme": "phone",
+  "risk_tier": "R2",
+  "prompt_version": "corpus-gen@1.0",
+  "generator_model": "deepseek-flash",
+  "release_name": "手机屏幕词表",
+  "release_source": "auto-phone-2026-11",
+  "words": [
+    {
+      "word": "蓝牙",
+      "evidence": "手机屏幕词（设置页、微信、通知栏、通话界面）",
+      "source_ref": "self-screen-inventory-2026-11#phone",
+      "existing": "new",
+      "priority": 1
+    },
+    {
+      "word": "流量",
+      "evidence": "手机屏幕词（设置页、微信、通知栏、通话界面）",
+      "source_ref": "self-screen-inventory-2026-11#phone",
+      "existing": "new",
+      "priority": 2
+    },
+    {
+      "word": "套餐",
+      "evidence": "手机屏幕词（设置页、微信、通知栏、通话界面）",
+      "source_ref": "self-screen-inventory-2026-11#phone",
+      "existing": "new",
+      "priority": 3
+    },
+    {
+      "word": "话费",
+      "evidence": "手机屏幕词（设置页、微信、通知栏、通话界面）",
+      "source_ref": "self-screen-inventory-2026-11#phone",
+      "existing": "new",
+      "priority": 4
+    },
+    {
+      "word": "充值",
+      "evidence": "手机屏幕词（设置页、微信、通知栏、通话界面）",
+      "source_ref": "self-screen-inventory-2026-11#phone",
+      "existing": "new",
+      "priority": 5
+    },
+    {
+      "word": "欠费",
+      "evidence": "手机屏幕词（设置页、微信、通知栏、通话界面）",
+      "source_ref": "self-screen-inventory-2026-11#phone",
+      "existing": "new",
+      "priority": 6
+    },
+    {
+      "word": "停机",
+      "evidence": "手机屏幕词（设置页、微信、通知栏、通话界面）",
+      "source_ref": "self-screen-inventory-2026-11#phone",
+      "existing": "new",
+      "priority": 7
+    },
+    {
+      "word": "来电",
+      "evidence": "手机屏幕词（设置页、微信、通知栏、通话界面）",
+      "source_ref": "self-screen-inventory-2026-11#phone",
+      "existing": "new",
+      "priority": 8
+    },
+    {
+      "word": "通话",
+      "evidence": "手机屏幕词（设置页、微信、通知栏、通话界面）",
+      "source_ref": "self-screen-inventory-2026-11#phone",
+      "existing": "new",
+      "priority": 9
+    },
+    {
+      "word": "通讯录",
+      "evidence": "手机屏幕词（设置页、微信、通知栏、通话界面）",
+      "source_ref": "self-screen-inventory-2026-11#phone",
+      "existing": "new",
+      "priority": 10
+    },
+    {
+      "word": "联系人",
+      "evidence": "手机屏幕词（设置页、微信、通知栏、通话界面）",
+      "source_ref": "self-screen-inventory-2026-11#phone",
+      "existing": "new",
+      "priority": 11
+    },
+    {
+      "word": "铃声",
+      "evidence": "手机屏幕词（设置页、微信、通知栏、通话界面）",
+      "source_ref": "self-screen-inventory-2026-11#phone",
+      "existing": "new",
+      "priority": 13
+    },
+    {
+      "word": "震动",
+      "evidence": "手机屏幕词（设置页、微信、通知栏、通话界面）",
+      "source_ref": "self-screen-inventory-2026-11#phone",
+      "existing": "new",
+      "priority": 14
+    },
+    {
+      "word": "免提",
+      "evidence": "手机屏幕词（设置页、微信、通知栏、通话界面）",
+      "source_ref": "self-screen-inventory-2026-11#phone",
+      "existing": "new",
+      "priority": 15
+    },
+    {
+      "word": "扬声器",
+      "evidence": "手机屏幕词（设置页、微信、通知栏、通话界面）",
+      "source_ref": "self-screen-inventory-2026-11#phone",
+      "existing": "new",
+      "priority": 16
+    },
+    {
+      "word": "麦克风",
+      "evidence": "手机屏幕词（设置页、微信、通知栏、通话界面）",
+      "source_ref": "self-screen-inventory-2026-11#phone",
+      "existing": "new",
+      "priority": 17
+    },
+    {
+      "word": "摄像头",
+      "evidence": "手机屏幕词（设置页、微信、通知栏、通话界面）",
+      "source_ref": "self-screen-inventory-2026-11#phone",
+      "existing": "new",
+      "priority": 18
+    },
+    {
+      "word": "定位",
+      "evidence": "手机屏幕词（设置页、微信、通知栏、通话界面）",
+      "source_ref": "self-screen-inventory-2026-11#phone",
+      "existing": "new",
+      "priority": 19
+    },
+    {
+      "word": "备份",
+      "evidence": "手机屏幕词（设置页、微信、通知栏、通话界面）",
+      "source_ref": "self-screen-inventory-2026-11#phone",
+      "existing": "new",
+      "priority": 20
+    },
+    {
+      "word": "同步",
+      "evidence": "手机屏幕词（设置页、微信、通知栏、通话界面）",
+      "source_ref": "self-screen-inventory-2026-11#phone",
+      "existing": "new",
+      "priority": 21
+    },
+    {
+      "word": "云端",
+      "evidence": "手机屏幕词（设置页、微信、通知栏、通话界面）",
+      "source_ref": "self-screen-inventory-2026-11#phone",
+      "existing": "new",
+      "priority": 22
+    },
+    {
+      "word": "小程序",
+      "evidence": "手机屏幕词（设置页、微信、通知栏、通话界面）",
+      "source_ref": "self-screen-inventory-2026-11#phone",
+      "existing": "new",
+      "priority": 24
+    },
+    {
+      "word": "公众号",
+      "evidence": "手机屏幕词（设置页、微信、通知栏、通话界面）",
+      "source_ref": "self-screen-inventory-2026-11#phone",
+      "existing": "new",
+      "priority": 25
+    },
+    {
+      "word": "收藏",
+      "evidence": "手机屏幕词（设置页、微信、通知栏、通话界面）",
+      "source_ref": "self-screen-inventory-2026-11#phone",
+      "existing": "new",
+      "priority": 26
+    },
+    {
+      "word": "转发",
+      "evidence": "手机屏幕词（设置页、微信、通知栏、通话界面）",
+      "source_ref": "self-screen-inventory-2026-11#phone",
+      "existing": "new",
+      "priority": 27
+    },
+    {
+      "word": "分享",
+      "evidence": "手机屏幕词（设置页、微信、通知栏、通话界面）",
+      "source_ref": "self-screen-inventory-2026-11#phone",
+      "existing": "new",
+      "priority": 28
+    },
+    {
+      "word": "群聊",
+      "evidence": "手机屏幕词（设置页、微信、通知栏、通话界面）",
+      "source_ref": "self-screen-inventory-2026-11#phone",
+      "existing": "new",
+      "priority": 29
+    },
+    {
+      "word": "群主",
+      "evidence": "手机屏幕词（设置页、微信、通知栏、通话界面）",
+      "source_ref": "self-screen-inventory-2026-11#phone",
+      "existing": "new",
+      "priority": 30
+    },
+    {
+      "word": "头像",
+      "evidence": "手机屏幕词（设置页、微信、通知栏、通话界面）",
+      "source_ref": "self-screen-inventory-2026-11#phone",
+      "existing": "new",
+      "priority": 31
+    },
+    {
+      "word": "备注",
+      "evidence": "手机屏幕词（设置页、微信、通知栏、通话界面）",
+      "source_ref": "self-screen-inventory-2026-11#phone",
+      "existing": "new",
+      "priority": 32
+    },
+    {
+      "word": "免打扰",
+      "evidence": "手机屏幕词（设置页、微信、通知栏、通话界面）",
+      "source_ref": "self-screen-inventory-2026-11#phone",
+      "existing": "new",
+      "priority": 33
+    },
+    {
+      "word": "聊天",
+      "evidence": "手机屏幕词（设置页、微信、通知栏、通话界面）",
+      "source_ref": "self-screen-inventory-2026-11#phone",
+      "existing": "new",
+      "priority": 34
+    },
+    {
+      "word": "相册",
+      "evidence": "手机屏幕词（设置页、微信、通知栏、通话界面）",
+      "source_ref": "self-screen-inventory-2026-11#phone",
+      "existing": "new",
+      "priority": 35
+    },
+    {
+      "word": "拍摄",
+      "evidence": "手机屏幕词（设置页、微信、通知栏、通话界面）",
+      "source_ref": "self-screen-inventory-2026-11#phone",
+      "existing": "new",
+      "priority": 36
+    },
+    {
+      "word": "输入法",
+      "evidence": "手机屏幕词（设置页、微信、通知栏、通话界面）",
+      "source_ref": "self-screen-inventory-2026-11#phone",
+      "existing": "new",
+      "priority": 37
+    },
+    {
+      "word": "电池",
+      "evidence": "手机屏幕词（设置页、微信、通知栏、通话界面）",
+      "source_ref": "self-screen-inventory-2026-11#phone",
+      "existing": "new",
+      "priority": 38
+    },
+    {
+      "word": "信号",
+      "evidence": "手机屏幕词（设置页、微信、通知栏、通话界面）",
+      "source_ref": "self-screen-inventory-2026-11#phone",
+      "existing": "new",
+      "priority": 39
+    },
+    {
+      "word": "省电",
+      "evidence": "手机屏幕词（设置页、微信、通知栏、通话界面）",
+      "source_ref": "self-screen-inventory-2026-11#phone",
+      "existing": "new",
+      "priority": 40
+    },
+    {
+      "word": "广告",
+      "evidence": "手机屏幕词（设置页、微信、通知栏、通话界面）",
+      "source_ref": "self-screen-inventory-2026-11#phone",
+      "existing": "new",
+      "priority": 41
+    },
+    {
+      "word": "版本",
+      "evidence": "手机屏幕词（设置页、微信、通知栏、通话界面）",
+      "source_ref": "self-screen-inventory-2026-11#phone",
+      "existing": "new",
+      "priority": 42
+    },
+    {
+      "word": "提示",
+      "evidence": "手机屏幕词（设置页、微信、通知栏、通话界面）",
+      "source_ref": "self-screen-inventory-2026-11#phone",
+      "existing": "new",
+      "priority": 43
+    },
+    {
+      "word": "字体",
+      "evidence": "手机屏幕词（设置页、微信、通知栏、通话界面）",
+      "source_ref": "self-screen-inventory-2026-11#phone",
+      "existing": "new",
+      "priority": 44
+    },
+    {
+      "word": "存储",
+      "evidence": "手机屏幕词（设置页、微信、通知栏、通话界面）",
+      "source_ref": "self-screen-inventory-2026-11#phone",
+      "existing": "new",
+      "priority": 45
+    }
+  ]
+}

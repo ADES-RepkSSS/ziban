@@ -15,22 +15,24 @@
 | 仓库 | <https://github.com/ADES-RepkSSS/ziban> |
 | 演示站 | <https://ades-repksss.github.io/ziban/>（已验证 HTTP 200） |
 | 分支 | `main`，`origin` 已配置 |
-| 最近提交（交接前） | `1e2c1b8 ci: upgrade GitHub Actions to Node 24 compatible versions`；`66e2967 feat: 字伴 v0.1 实验版（Web）` |
-| 本次变更 | 2026-10-23 工作区：桌面 0.2 光标取词 + 整词切分 + 自适应截图 + 首页工具图 + docs/08/09；尚未提交/推送 |
+| 最近提交（交接前） | `b986ba8 docs: update handoff header for v0.2.1`；`a4354de release: v0.2.1 complete build and web demo notice` |
+| 本次变更 | 2026-10-23 工作区：桌面 0.2 光标取词 + 整词切分 + 自适应截图 + 首页工具图 + docs/08/09；语料第一批 293 条 + docs/10/11 + 64 tests；部分资料尚未提交/推送 |
 | 本地路径 | `D:\haness_agent\help_old` |
 | 包管理 | pnpm 11.21.0（`packageManager` 已锁定） |
 | Node | 本机 24；CI 用 22；`engines` 要求 >=20 |
-| 测试 | 60 个 Vitest 测试（新增 21 个屏幕取词纯函数测试） |
-| 构建 | `pnpm check` 全绿；Web 生产构建约 316 KB JS / 62 KB CSS |
+| 测试 | 64 个 Vitest 测试（新增 21 个屏幕取词纯函数测试 + 4 个语料加载器测试） |
+| 构建 | `pnpm check` 全绿；Web 生产构建约 320 KB JS / 64 KB CSS |
 | 桌面版 | `apps/desktop`（Electron 40 + esbuild + PowerShell WinRT / macOS Vision） |
 | 版本检查 | 启动 3 秒后只读 GitHub 公共版本信息；可在“设置 → 版本”关闭；只提示链接，不自动更新 |
 | Windows 绿色版 | `pnpm desktop:package` → `release/ziban-win32-x64/Ziban.exe` + zip；未签名 |
 | 屏幕取词 | Windows 11 本机实测通过（整词取词 + 自适应截图）；macOS 待真机；浏览器仍走粘贴文字 |
 | CI | GitHub Actions `CI` 成功（checkout@v7、setup-node@v7、pnpm/action-setup@v6、ubuntu-24.04） |
 | Pages | `Deploy web demo to GitHub Pages` 成功；`https://ades-repksss.github.io/ziban/` 可访问 |
-| 内容 | 50 张卡、8 场景、52 张 SVG；全部 `draft`，未审校 |
+| 内容 | 50 张卡、8 场景、52 张 SVG（含 2 张文章图）；全部 `draft`，未审校 |
+| 语料库 | 第一批 293 条（7 个文件，`auto-*` 机器审校草稿），未人工审校；见 [docs/11](11-corpus-batch1-handoff.md) |
 | 定位 | 当前以老人场景为重点；长期验证“先使用、后识字”的儿童场景（未验证，不对外称儿童产品） |
 | 本地 server | 交接时未运行；`pnpm dev` 启动到 `http://127.0.0.1:4173` |
+| 用户数据 | Windows `%APPDATA%\字伴\`；macOS `~/Library/Application Support/字伴/` |
 
 > 注意：`https://api.github.com/repos/.../pages` 在未认证请求下曾返回 404，但页面和 Actions 都成功；以实际 URL 与部署 run 为准。
 
@@ -69,6 +71,15 @@
 - 知识优先级：字卡 > 语料库 JSON > 本机词表 > 大模型补缺；语料库目录 `userData/corpus`，
   为后续爬虫留好稳定格式。
 - 大模型：OpenAI 兼容、默认关闭、密钥 safeStorage、默认只发词、可选发当前行；7 天缓存。
+
+### 语料库第一批（2026-10-23）
+
+- 7 个主题、293 条屏幕高频词，每条一句口语释义 + 一句生活例句；全部 `source=auto-*`，
+  UI 显示“机器审校 · … · 不一定对”，不冒充人工内容。
+- 新增 `corpus:lint` / `corpus:review` / `corpus:build` / `corpus:metrics` / `corpus:install` 与 4 条加载/管线测试；
+  `CorpusStore` 不再静默截断超 8 字的词。
+- **R1 三审没跑完**（C/D 超时），没有人工审校/老人测试；下一批第一件事是补评审。
+- 详细交接：[docs/11-corpus-batch1-handoff.md](11-corpus-batch1-handoff.md)。
 
 ### 明确没做
 
@@ -270,7 +281,7 @@ python tools/make_github_assets.py
 4. **macOS 真机验收屏幕取词**：按 docs/08 第 6.6 节跑完；修 TCC/Retina/全屏问题；预编译
    universal Vision helper；再做签名/公证。
 5. **sherpa-onnx + 中文 VITS**：保持 `SpeechEngine` 接口；验证逐字时间戳、安装包体积、离线。
-6. **语料库/爬虫**：按 docs/08 8.2 的 JSON 格式产出；先做 200–500 个屏幕高频词，跑人工审校。
+6. **语料库审校**：第一批 293 条已产出（机器审校草稿）；先补 R1 三审与逐词 evidence，再人工复核、装 canary。
 7. **任意网页正文**：实现 `PageReader`（Readability/扩展/桌面壳）；先做“粘贴正文”已有路径的迁移。
 
 ### P2
@@ -306,4 +317,5 @@ python tools/make_github_assets.py
 
 **Windows 上“光标停在字上，小窗告诉你意思/读音/例句”已经能用；下一步最值钱的是
 把 macOS 权限与 Retina 坐标在真机上跑通，再找 3–5 位老人试“停一下就能查”——不要先加更多功能。
-儿童场景是长期假设（“先使用、后识字”），先做有家长同意的真实观察，不要先做课程/积分/家长监控。**
+儿童场景是长期假设（“先使用、后识字”），先做有家长同意的真实观察，不要先做课程/积分/家长监控。
+语料第一批 293 条已产出，但只过了机器审校（R1 三审未完成）：先补评审与人工复核，别当正式内容。**

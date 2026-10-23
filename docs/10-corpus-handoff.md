@@ -4,6 +4,11 @@
 >
 > 先看：[schema/corpus.schema.json](../schema/corpus.schema.json) 是机器校验格式；
 > 本文是“写什么、怎么写、怎么验收”。屏幕取词的实现见 [docs/08](08-screen-lookup.md) 第 8 节。
+>
+> **当前状态（2026-10-23）**：第一批 293 条已产出到 [corpus/release](../corpus/release/)，
+> 全部 `source=auto-*`，**机器审校草稿，没有人工审校、没有老人测试**。
+> 它不会被程序自动安装；要用 `pnpm corpus:install` 显式装到 `userData/corpus`。
+> 本批复盘见 [docs/11](11-corpus-batch1-handoff.md)。
 
 ## 1. 这个语料库是干什么的
 
@@ -23,6 +28,7 @@
 - 不是做一本大词典，也不是收成语/文学词/网络梗。
 
 目标规模：**先做 200–500 条高质量词条**，不要一次性堆 5000 条。
+第一批已做到 293 条，但这只是“机器审校草稿”的规模，不是人工审校后的质量结论。
 每条都要能回答：老人为什么会在屏幕上看到它？看不懂会卡在哪？
 
 ## 2. 文件放哪里
@@ -31,8 +37,8 @@
 
 | 平台 | 目录 |
 |---|---|
-| Windows | `%APPDATA%\@ziban\desktop\corpus\*.json` |
-| macOS | `~/Library/Application Support/@ziban/desktop/corpus/*.json` |
+| Windows | `%APPDATA%\字伴\corpus\*.json` |
+| macOS | `~/Library/Application Support/字伴/corpus/*.json` |
 
 - 一个文件最多 5000 条；建议按主题拆成多个文件（例如 `medical.json`、`bank.json`），方便审校和回滚。
 - 文件改动后 **500ms 自动重载**，不用重启字伴。
@@ -151,7 +157,8 @@ pnpm corpus:validate path/to/medical.json
 完成后自检：条数、重复词、字段长度、是否有网址/HTML、是否有危险操作示范。
 ```
 
-> 生成的是 `draft`，必须人工审校后才能进入发布语料；不要把模型输出直接当正式内容。
+> 生成的是 `draft`。当前 `corpus/release` 里的 293 条也只是**机器审校草稿**，
+> 不是人工审校、不是正式内容；不要因为文件叫 release 就当成已审核发布。
 
 ## 6. 人工/自动审校清单
 
@@ -227,3 +234,93 @@ pnpm corpus:validate path/to/medical.json
 - [docs/08-screen-lookup.md](08-screen-lookup.md) 第 8.2 节
 - [scripts/validate-corpus.mjs](../scripts/validate-corpus.mjs)
 - [content/cards/level1.yaml](../content/cards/level1.yaml)（已有字卡词，去重时看）
+
+## 11. 第一批实验语料（2026-10）
+
+按 [交接手册](字伴-语料批处理与自动审核-交接手册.md) 跑出的第一批，**机器审校草稿**：
+
+| 文件 | 条数 | 风险层 |
+|---|---:|---|
+| [corpus/release/hospital.json](../corpus/release/hospital.json) | 51 | R1 |
+| [corpus/release/bank.json](../corpus/release/bank.json) | 52 | R1 |
+| [corpus/release/gov.json](../corpus/release/gov.json) | 44 | R1 |
+| [corpus/release/phone.json](../corpus/release/phone.json) | 43 | R2 |
+| [corpus/release/transit.json](../corpus/release/transit.json) | 35 | R3 |
+| [corpus/release/fraud.json](../corpus/release/fraud.json) | 43 | R1 |
+| [corpus/release/shopping.json](../corpus/release/shopping.json) | 25 | R3 |
+
+- 运行时 `source` 统一 `auto-*`；`CorpusStore` 会把这类条目显示成“机器审校 · … · 不一定对”，
+  `generated=true`、`confidence=medium`，**不会冒充人工高可信**。
+- 全部省略 `pinyin`：语料拼音会覆盖本机 `pinyin-pro`，写错比不写更糟；运行时仍有兜底拼音。
+- 生成/评审/构建脚本：`pnpm corpus:lint`、`corpus:review`、`corpus:build`、`corpus:metrics`；
+  审计材料在 [corpus/workbench/](../corpus/workbench/)，批次说明见 [corpus/RELEASE.md](../corpus/RELEASE.md)。
+- 与手册的已知差异（下一批必须补）：只跑了单稿，没跑“每词 3 稿 + 共识”；评审是同一模型家族的多个子代理，
+  不是不同模型家族；没有人工审校、没有老人测试。**不能对外说成正式内容。**
+- 逐条复盘、踩坑与下一批顺序见 [docs/11-corpus-batch1-handoff.md](11-corpus-batch1-handoff.md)。
+
+## 12. 程序可用性验证（2026-10-23）
+
+### 12.1 已通过的验证
+
+| 检查 | 结果 |
+|---|---|
+| `pnpm corpus:lint` | 293 条，0 hard fail，0 提醒 |
+| `node scripts/validate-corpus.mjs corpus/release/*.json` | 7 个文件、293 条通过 |
+| `pnpm test` | 64 个测试；新增 release 全量加载测试 |
+| `CorpusStore` | 7 个文件全部加载，合计 293 条 |
+| `KnowledgeService.localLookup('候诊')` | 返回 `source=corpus`、`sourceLabel=机器审校 · 医院办事词表`、`confidence=medium` |
+| 真实 userData 安装 | `pnpm corpus:install` 已复制 7 个文件到 `%APPDATA%\字伴\corpus`；应用启动日志确认“语料库加载：293 条（7 个文件）” |
+
+新增测试在
+[corpus.test.ts](../apps/desktop/electron/capabilities/knowledge/corpus.test.ts)：
+它把 `corpus/release/` 的 7 个文件复制到临时 `userData/corpus`，断言总数 293，
+再走 `KnowledgeService.localLookup`，确认语料真的进入知识管线，而不是只通过 lint。
+
+### 12.2 安装（显式动作，不自动发布）
+
+```bash
+pnpm corpus:install                 # 复制到真实 userData
+pnpm corpus:install -- --dry-run    # 只打印路径
+```
+
+Windows：`%APPDATA%\字伴\corpus`
+macOS：`~/Library/Application Support/字伴/corpus`
+
+- 默认覆盖同名文件；运行中的字伴 500ms 内热加载；
+- 不复制 `workbench/`；不要把 manifest/review 放进语料目录；
+- 这是机器审校草稿，小窗会显示“机器审校 · … · 不一定对”；
+- 回滚：删除这 7 个文件。
+
+### 12.3 还没做的验证
+
+- 本机当前屏幕锁着，**真实 OCR → 小窗显示“候诊”** 没跑；需要在解锁桌面后人工看一次
+  来源标签、换行、热加载和小窗高度；
+- 没有真人/老人测试；
+- 没有把 7 个文件打进安装包；`corpus:install` 是显式动作。
+
+## 13. 图形资产：这批语料需要画 SVG 吗？
+
+**不需要。** 原因：
+
+- 屏幕语料 schema 没有 `image` 字段；
+- 屏幕取词小窗只显示词、拼音、释义、例句、来源、风险，不显示插图；
+- 本次没有新增字卡：仍是 50 张卡、52 张 SVG（50 卡 + 2 文章），`pnpm content:validate` 通过。
+
+只有**新增字卡**才需要新 SVG：一张卡一张图，图片放 `content/images/`，文件名写进 YAML 的
+`image.file`。如果下一批要扩卡，统一风格提示词如下（给批量 AI 用）：
+
+```text
+为字伴识字卡生成一张 512×512 的 SVG 插画，主题对象是：【物体/场景】。
+统一风格：
+- 正方形 viewBox 0 0 512 512，圆角 40 的奶油色底 #F4EBD9；
+- 中央浅色圆 #FCF8EF，主体占画面约 60–70%，留白充分；
+- 深色手绘轮廓 #26313D，线宽 12–14，圆角连接；
+- 低饱和配色：青绿 #0B5A53、砖红 #C9483A、暖黄 #FBEAC8、浅青 #DCEEE9、粉 #E7A79C；
+- 扁平、干净、略手绘，不使用渐变、阴影、写实纹理、3D；
+- 画面里不要出现任何文字、字母、数字、二维码、真实人脸、品牌 Logo、真实个人信息；
+- 只画“东西长什么样”，不要把答案写成字（老人要认的是字，不是图里的字）；
+- 背景不要透明，不要描边外框，不要水印；
+- 输出只给 SVG 代码，不要 Markdown 代码块，不要解释。
+```
+
+批量生成后必须人工看图：物体是否一眼可辨、有没有文字、大小是否一致、是否和已有 52 张风格接近。

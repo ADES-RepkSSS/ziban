@@ -25,10 +25,11 @@
     "content:build": "node scripts/build-content.mjs",
     "content:validate": "node scripts/validate-content.mjs",
     "corpus:validate": "node scripts/validate-corpus.mjs",
+    "corpus:install": "node scripts/corpus-install.mjs",
     "typecheck": "pnpm -r exec tsc --noEmit",
     "test": "vitest run",
     "check:github": "node tools/check-github-files.cjs",
-    "check": "pnpm content:validate && pnpm typecheck && pnpm test && pnpm build && pnpm check:github",
+    "check": "pnpm content:validate && node scripts/corpus-lint.mjs && pnpm typecheck && pnpm test && pnpm build && pnpm check:github",
     "screenshot": "node scripts/screenshot.mjs",
     "desktop:build": "pnpm content:build && pnpm --filter @ziban/web build && node scripts/build-desktop.mjs && pnpm desktop:prepare",
     "desktop:prepare": "node scripts/prepare-desktop.mjs",
@@ -38,7 +39,11 @@
     "desktop:ocr-smoke": "pnpm desktop:build && node scripts/launch-electron.mjs --ocr-smoke",
     "desktop:ui-smoke": "pnpm desktop:build && node scripts/launch-electron.mjs --ui-smoke",
     "desktop:lookup-smoke": "pnpm desktop:build && node scripts/launch-electron.mjs --lookup-smoke",
-    "desktop:hover-smoke": "pnpm desktop:build && node scripts/launch-electron.mjs --hover-smoke"
+    "desktop:hover-smoke": "pnpm desktop:build && node scripts/launch-electron.mjs --hover-smoke",
+    "corpus:lint": "node scripts/corpus-lint.mjs",
+    "corpus:review": "node scripts/corpus-review.mjs",
+    "corpus:build": "node scripts/corpus-build.mjs",
+    "corpus:metrics": "node scripts/corpus-metrics.mjs"
   },
   "devDependencies": {
     "esbuild": "0.25.9",

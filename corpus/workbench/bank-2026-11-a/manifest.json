@@ -1,0 +1,375 @@
+{
+  "batch_id": "bank-2026-11-a",
+  "theme": "bank",
+  "risk_tier": "R1",
+  "prompt_version": "corpus-gen@1.0",
+  "generator_model": "deepseek-flash",
+  "release_name": "银行办事词表",
+  "release_source": "auto-bank-2026-11",
+  "words": [
+    {
+      "word": "账单",
+      "evidence": "银行场景屏幕词（网点柜台、自助机、手机银行、账单）",
+      "source_ref": "self-screen-inventory-2026-11#bank",
+      "existing": "new",
+      "priority": 1
+    },
+    {
+      "word": "解冻",
+      "evidence": "银行场景屏幕词（网点柜台、自助机、手机银行、账单）",
+      "source_ref": "self-screen-inventory-2026-11#bank",
+      "existing": "new",
+      "priority": 3
+    },
+    {
+      "word": "限额",
+      "evidence": "银行场景屏幕词（网点柜台、自助机、手机银行、账单）",
+      "source_ref": "self-screen-inventory-2026-11#bank",
+      "existing": "new",
+      "priority": 4
+    },
+    {
+      "word": "存款",
+      "evidence": "银行场景屏幕词（网点柜台、自助机、手机银行、账单）",
+      "source_ref": "self-screen-inventory-2026-11#bank",
+      "existing": "new",
+      "priority": 6
+    },
+    {
+      "word": "取款",
+      "evidence": "银行场景屏幕词（网点柜台、自助机、手机银行、账单）",
+      "source_ref": "self-screen-inventory-2026-11#bank",
+      "existing": "new",
+      "priority": 7
+    },
+    {
+      "word": "开户",
+      "evidence": "银行场景屏幕词（网点柜台、自助机、手机银行、账单）",
+      "source_ref": "self-screen-inventory-2026-11#bank",
+      "existing": "new",
+      "priority": 8
+    },
+    {
+      "word": "销户",
+      "evidence": "银行场景屏幕词（网点柜台、自助机、手机银行、账单）",
+      "source_ref": "self-screen-inventory-2026-11#bank",
+      "existing": "new",
+      "priority": 9
+    },
+    {
+      "word": "存折",
+      "evidence": "银行场景屏幕词（网点柜台、自助机、手机银行、账单）",
+      "source_ref": "self-screen-inventory-2026-11#bank",
+      "existing": "new",
+      "priority": 10
+    },
+    {
+      "word": "利息",
+      "evidence": "银行场景屏幕词（网点柜台、自助机、手机银行、账单）",
+      "source_ref": "self-screen-inventory-2026-11#bank",
+      "existing": "new",
+      "priority": 11
+    },
+    {
+      "word": "定期",
+      "evidence": "银行场景屏幕词（网点柜台、自助机、手机银行、账单）",
+      "source_ref": "self-screen-inventory-2026-11#bank",
+      "existing": "new",
+      "priority": 12
+    },
+    {
+      "word": "活期",
+      "evidence": "银行场景屏幕词（网点柜台、自助机、手机银行、账单）",
+      "source_ref": "self-screen-inventory-2026-11#bank",
+      "existing": "new",
+      "priority": 13
+    },
+    {
+      "word": "汇款",
+      "evidence": "银行场景屏幕词（网点柜台、自助机、手机银行、账单）",
+      "source_ref": "self-screen-inventory-2026-11#bank",
+      "existing": "new",
+      "priority": 14
+    },
+    {
+      "word": "收款人",
+      "evidence": "银行场景屏幕词（网点柜台、自助机、手机银行、账单）",
+      "source_ref": "self-screen-inventory-2026-11#bank",
+      "existing": "new",
+      "priority": 15
+    },
+    {
+      "word": "流水",
+      "evidence": "银行场景屏幕词（网点柜台、自助机、手机银行、账单）",
+      "source_ref": "self-screen-inventory-2026-11#bank",
+      "existing": "new",
+      "priority": 16
+    },
+    {
+      "word": "对账",
+      "evidence": "银行场景屏幕词（网点柜台、自助机、手机银行、账单）",
+      "source_ref": "self-screen-inventory-2026-11#bank",
+      "existing": "new",
+      "priority": 17
+    },
+    {
+      "word": "网点",
+      "evidence": "银行场景屏幕词（网点柜台、自助机、手机银行、账单）",
+      "source_ref": "self-screen-inventory-2026-11#bank",
+      "existing": "new",
+      "priority": 18
+    },
+    {
+      "word": "挂失",
+      "evidence": "银行场景屏幕词（网点柜台、自助机、手机银行、账单）",
+      "source_ref": "self-screen-inventory-2026-11#bank",
+      "existing": "new",
+      "priority": 19
+    },
+    {
+      "word": "补卡",
+      "evidence": "银行场景屏幕词（网点柜台、自助机、手机银行、账单）",
+      "source_ref": "self-screen-inventory-2026-11#bank",
+      "existing": "new",
+      "priority": 20
+    },
+    {
+      "word": "预留",
+      "evidence": "银行场景屏幕词（网点柜台、自助机、手机银行、账单）",
+      "source_ref": "self-screen-inventory-2026-11#bank",
+      "existing": "new",
+      "priority": 21
+    },
+    {
+      "word": "手机银行",
+      "evidence": "银行场景屏幕词（网点柜台、自助机、手机银行、账单）",
+      "source_ref": "self-screen-inventory-2026-11#bank",
+      "existing": "new",
+      "priority": 22
+    },
+    {
+      "word": "短信提醒",
+      "evidence": "银行场景屏幕词（网点柜台、自助机、手机银行、账单）",
+      "source_ref": "self-screen-inventory-2026-11#bank",
+      "existing": "new",
+      "priority": 23
+    },
+    {
+      "word": "扣款",
+      "evidence": "银行场景屏幕词（网点柜台、自助机、手机银行、账单）",
+      "source_ref": "self-screen-inventory-2026-11#bank",
+      "existing": "new",
+      "priority": 24
+    },
+    {
+      "word": "代扣",
+      "evidence": "银行场景屏幕词（网点柜台、自助机、手机银行、账单）",
+      "source_ref": "self-screen-inventory-2026-11#bank",
+      "existing": "new",
+      "priority": 25
+    },
+    {
+      "word": "信用卡",
+      "evidence": "银行场景屏幕词（网点柜台、自助机、手机银行、账单）",
+      "source_ref": "self-screen-inventory-2026-11#bank",
+      "existing": "new",
+      "priority": 26
+    },
+    {
+      "word": "储蓄卡",
+      "evidence": "银行场景屏幕词（网点柜台、自助机、手机银行、账单）",
+      "source_ref": "self-screen-inventory-2026-11#bank",
+      "existing": "new",
+      "priority": 27
+    },
+    {
+      "word": "还款",
+      "evidence": "银行场景屏幕词（网点柜台、自助机、手机银行、账单）",
+      "source_ref": "self-screen-inventory-2026-11#bank",
+      "existing": "new",
+      "priority": 28
+    },
+    {
+      "word": "分期",
+      "evidence": "银行场景屏幕词（网点柜台、自助机、手机银行、账单）",
+      "source_ref": "self-screen-inventory-2026-11#bank",
+      "existing": "new",
+      "priority": 29
+    },
+    {
+      "word": "年费",
+      "evidence": "银行场景屏幕词（网点柜台、自助机、手机银行、账单）",
+      "source_ref": "self-screen-inventory-2026-11#bank",
+      "existing": "new",
+      "priority": 30
+    },
+    {
+      "word": "汇率",
+      "evidence": "银行场景屏幕词（网点柜台、自助机、手机银行、账单）",
+      "source_ref": "self-screen-inventory-2026-11#bank",
+      "existing": "new",
+      "priority": 31
+    },
+    {
+      "word": "外币",
+      "evidence": "银行场景屏幕词（网点柜台、自助机、手机银行、账单）",
+      "source_ref": "self-screen-inventory-2026-11#bank",
+      "existing": "new",
+      "priority": 32
+    },
+    {
+      "word": "兑换",
+      "evidence": "银行场景屏幕词（网点柜台、自助机、手机银行、账单）",
+      "source_ref": "self-screen-inventory-2026-11#bank",
+      "existing": "new",
+      "priority": 33
+    },
+    {
+      "word": "支票",
+      "evidence": "银行场景屏幕词（网点柜台、自助机、手机银行、账单）",
+      "source_ref": "self-screen-inventory-2026-11#bank",
+      "existing": "new",
+      "priority": 34
+    },
+    {
+      "word": "资金",
+      "evidence": "银行场景屏幕词（网点柜台、自助机、手机银行、账单）",
+      "source_ref": "self-screen-inventory-2026-11#bank",
+      "existing": "new",
+      "priority": 35
+    },
+    {
+      "word": "户名",
+      "evidence": "银行场景屏幕词（网点柜台、自助机、手机银行、账单）",
+      "source_ref": "self-screen-inventory-2026-11#bank",
+      "existing": "new",
+      "priority": 37
+    },
+    {
+      "word": "卡号",
+      "evidence": "银行场景屏幕词（网点柜台、自助机、手机银行、账单）",
+      "source_ref": "self-screen-inventory-2026-11#bank",
+      "existing": "new",
+      "priority": 38
+    },
+    {
+      "word": "开户行",
+      "evidence": "银行场景屏幕词（网点柜台、自助机、手机银行、账单）",
+      "source_ref": "self-screen-inventory-2026-11#bank",
+      "existing": "new",
+      "priority": 39
+    },
+    {
+      "word": "小额",
+      "evidence": "银行场景屏幕词（网点柜台、自助机、手机银行、账单）",
+      "source_ref": "self-screen-inventory-2026-11#bank",
+      "existing": "new",
+      "priority": 40
+    },
+    {
+      "word": "免密",
+      "evidence": "银行场景屏幕词（网点柜台、自助机、手机银行、账单）",
+      "source_ref": "self-screen-inventory-2026-11#bank",
+      "existing": "new",
+      "priority": 41
+    },
+    {
+      "word": "刷脸",
+      "evidence": "银行场景屏幕词（网点柜台、自助机、手机银行、账单）",
+      "source_ref": "self-screen-inventory-2026-11#bank",
+      "existing": "new",
+      "priority": 42
+    },
+    {
+      "word": "收银台",
+      "evidence": "银行场景屏幕词（网点柜台、自助机、手机银行、账单）",
+      "source_ref": "self-screen-inventory-2026-11#bank",
+      "existing": "new",
+      "priority": 43
+    },
+    {
+      "word": "止付",
+      "evidence": "银行场景屏幕词（网点柜台、自助机、手机银行、账单）",
+      "source_ref": "self-screen-inventory-2026-11#bank",
+      "existing": "new",
+      "priority": 44
+    },
+    {
+      "word": "存单",
+      "evidence": "银行场景屏幕词（网点柜台、自助机、手机银行、账单）",
+      "source_ref": "self-screen-inventory-2026-11#bank",
+      "existing": "new",
+      "priority": 45
+    },
+    {
+      "word": "现金",
+      "evidence": "银行场景屏幕词（网点柜台、自助机、手机银行、账单）",
+      "source_ref": "self-screen-inventory-2026-11#bank",
+      "existing": "new",
+      "priority": 46
+    },
+    {
+      "word": "利率",
+      "evidence": "银行场景屏幕词（网点柜台、自助机、手机银行、账单）",
+      "source_ref": "self-screen-inventory-2026-11#bank",
+      "existing": "new",
+      "priority": 47
+    },
+    {
+      "word": "明细",
+      "evidence": "银行场景屏幕词（网点柜台、自助机、手机银行、账单）",
+      "source_ref": "self-screen-inventory-2026-11#bank",
+      "existing": "new",
+      "priority": 48
+    },
+    {
+      "word": "交易",
+      "evidence": "银行场景屏幕词（网点柜台、自助机、手机银行、账单）",
+      "source_ref": "self-screen-inventory-2026-11#bank",
+      "existing": "new",
+      "priority": 49
+    },
+    {
+      "word": "透支",
+      "evidence": "银行场景屏幕词（网点柜台、自助机、手机银行、账单）",
+      "source_ref": "self-screen-inventory-2026-11#bank",
+      "existing": "new",
+      "priority": 50
+    },
+    {
+      "word": "网银",
+      "evidence": "银行场景屏幕词（网点柜台、自助机、手机银行、账单）",
+      "source_ref": "self-screen-inventory-2026-11#bank",
+      "existing": "new",
+      "priority": 51
+    },
+    {
+      "word": "柜员",
+      "evidence": "银行场景屏幕词（网点柜台、自助机、手机银行、账单）",
+      "source_ref": "self-screen-inventory-2026-11#bank",
+      "existing": "new",
+      "priority": 52
+    },
+    {
+      "word": "工资卡",
+      "evidence": "银行场景屏幕词（网点柜台、自助机、手机银行、账单）",
+      "source_ref": "self-screen-inventory-2026-11#bank",
+      "existing": "new",
+      "priority": 53
+    },
+    {
+      "word": "大额",
+      "evidence": "银行场景屏幕词（网点柜台、自助机、手机银行、账单）",
+      "source_ref": "self-screen-inventory-2026-11#bank",
+      "existing": "new",
+      "priority": 54
+    },
+    {
+      "word": "回单",
+      "evidence": "银行场景屏幕词（网点柜台、自助机、手机银行、账单）",
+      "source_ref": "self-screen-inventory-2026-11#bank",
+      "existing": "new",
+      "priority": 55
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # AGENTS.md — 给下一位 AI / 维护者
 
-> 最后更新：2026-10-23。项目当前 **v0.1 实验版（Web）+ 0.2 桌面取词（Windows 实测 / macOS 待真机）**，
+> 最后更新：2026-10-23。项目当前 **v0.2.1 桌面取词完整版（Windows 实测 / macOS CI 编译识别通过、真机待验收）**，
 > 已开源到 GitHub，Pages 演示站已上线。
 > 先读完这份，再按需要读 [docs/07-handoff.md](docs/07-handoff.md)（详细交接）。
 
@@ -11,6 +11,7 @@
 3. [docs/08-screen-lookup.md](docs/08-screen-lookup.md)：光标跟随取词、Windows/macOS 实现、权限、真机清单。
 4. [docs/05-experimental-v0.1.md](docs/05-experimental-v0.1.md)：Web v0.1 做了什么、没做什么。
 5. [docs/00-charter.md](docs/00-charter.md)、[docs/01-ai-content-pipeline.md](docs/01-ai-content-pipeline.md)、[docs/02-corpus-compliance.md](docs/02-corpus-compliance.md)：产品与内容红线。
+6. [docs/11-corpus-batch1-handoff.md](docs/11-corpus-batch1-handoff.md)：第一批 293 条语料的复盘、坑与下一批顺序。
 
 ## 1. 项目一句话
 
@@ -25,10 +26,11 @@
 - 演示站：<https://ades-repksss.github.io/ziban/>（GitHub Pages，已部署成功）
 - 分支：`main`；远程：`origin` 已配置；Git Credential Manager 已能 push
 - 50 张卡 / 8 场景 / 52 张手绘 SVG
-- 60 个单元测试；`pnpm check` 全绿
+- 64 个单元测试；`pnpm check` 全绿（含语料硬 lint）
+- 实验语料库第一批 293 条（7 个文件，全部 `source=auto-*`，**机器审校草稿，未人工审校**）；见 [corpus/RELEASE.md](corpus/RELEASE.md)
 - 桌面版 `apps/desktop`：Electron 40 + esbuild；Windows WinRT OCR 实测；macOS `screencapture` + Vision 待真机
 - GitHub Actions：`CI`、`Deploy web demo to GitHub Pages`、`Desktop macOS OCR`（编译/识别测试图）
-- 内容全部 `status: draft`，未经人工审校，**禁止对外称为正式内容**
+- 字卡 50 张、屏幕语料 293 条全部是 draft/机器审校草稿，**未经人工审校，禁止对外称为正式内容**
 - 定位：当前以老人场景为重点；儿童识字场景是长期方向，未做真实验证，禁止对外说成“儿童产品”
 - 本地开发服务器当前可能没开；先 `pnpm dev`
 
@@ -37,9 +39,14 @@
 ```bash
 cd D:\haness_agent\help_old
 pnpm dev                 # http://127.0.0.1:4173
-pnpm check               # 内容门禁 + tsc + 60 tests + build + GitHub 文件检查
+pnpm check               # 内容门禁 + 语料 lint + tsc + 64 tests + build + GitHub 文件检查
 pnpm content:validate
 pnpm corpus:validate path/to/corpus.json  # 外部语料库格式检查
+pnpm corpus:lint         # 语料硬 lint（corpus/release/*.json）
+pnpm corpus:review       # 合并评审记录 → corpus/workbench/<batch>/review.jsonl
+pnpm corpus:build        # 只把 final=release 写进 corpus/release
+pnpm corpus:metrics      # 每批 metrics.md
+pnpm corpus:install      # 把 7 个 release JSON 装到 userData/corpus（显式动作）
 pnpm content:build
 pnpm test
 pnpm typecheck
@@ -93,9 +100,10 @@ apps/desktop/
   fixtures/ocr-sample.png 跨平台 OCR 测试图
 packages/core/           纯函数：types、schedule、text、plainLanguage、screen、desktop（+ tests）
 content/                 level1.yaml、52 SVG、charset、README
-scripts/                 content build/validate、screenshot
+scripts/                 content build/validate、screenshot、corpus lint/review/build/metrics
+corpus/                  实验语料（release/ 运行时 JSON、workbench/ 审计、chars/ 用字表）
 tools/                   图片生成、GitHub 素材、检查脚本
-docs/                    00–10 设计/交接文档（08 = 屏幕取词，09 = 部署与使用，10 = 语料库交接）
+docs/                    00–11 设计/交接文档（08 = 屏幕取词，09 = 部署与使用，10 = 语料库格式，11 = 第一批语料复盘）
 .github/                 CI、Pages、Dependabot、issue/PR 模板
 ```
 
@@ -140,7 +148,7 @@ docs/                    00–10 设计/交接文档（08 = 屏幕取词，09 = 
 2. **内容审校**：50 张卡走 C5 对抗审校 + 人工；补 `source_ref`；图片从手绘过渡到可授权实拍/检索图。
 3. **语音质量**：系统 TTS 只是 v0.1 兜底；接 sherpa-onnx + 中文 VITS，保持 `SpeechEngine` 接口与逐字高亮。
 4. **macOS 真机验收屏幕取词**：按 [docs/08](docs/08-screen-lookup.md) 第 6.6 节跑 TCC/Retina/全屏/双屏；预编译 universal Vision helper；再做签名/公证。
-5. **语料库/爬虫**：按 docs/08 8.2 的 JSON 格式产出 200–500 个屏幕高频词，走人工审校。
+5. **语料库审校**：第一批 293 条已产出（机器审校草稿），已 `corpus:install` 到真实 userData；下一步补三审、逐词 evidence、真人复核，并核对小窗来源标签/热加载。
 6. **任意网页正文 / 跟读**：分别实现 `PageReader`、`PronunciationCoach`；跟读优先“回声 + 声调”，不要直接判“你读错了”。
 7. **无障碍**：补 axe-core 自动检查；真机 1024×768 / 1280×800；确保 88×88、对比度 7:1。
 

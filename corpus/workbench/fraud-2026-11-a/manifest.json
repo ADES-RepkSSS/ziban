@@ -1,0 +1,312 @@
+{
+  "batch_id": "fraud-2026-11-a",
+  "theme": "fraud",
+  "risk_tier": "R1",
+  "prompt_version": "corpus-gen@1.0",
+  "generator_model": "deepseek-flash",
+  "release_name": "防骗安全词表",
+  "release_source": "auto-fraud-2026-11",
+  "words": [
+    {
+      "word": "客服",
+      "evidence": "防骗场景屏幕词（短信、来电、弹窗、聊天窗口）",
+      "source_ref": "self-screen-inventory-2026-11#fraud",
+      "existing": "new",
+      "priority": 2
+    },
+    {
+      "word": "诈骗",
+      "evidence": "防骗场景屏幕词（短信、来电、弹窗、聊天窗口）",
+      "source_ref": "self-screen-inventory-2026-11#fraud",
+      "existing": "new",
+      "priority": 3
+    },
+    {
+      "word": "骗子",
+      "evidence": "防骗场景屏幕词（短信、来电、弹窗、聊天窗口）",
+      "source_ref": "self-screen-inventory-2026-11#fraud",
+      "existing": "new",
+      "priority": 4
+    },
+    {
+      "word": "冒充",
+      "evidence": "防骗场景屏幕词（短信、来电、弹窗、聊天窗口）",
+      "source_ref": "self-screen-inventory-2026-11#fraud",
+      "existing": "new",
+      "priority": 5
+    },
+    {
+      "word": "假冒",
+      "evidence": "防骗场景屏幕词（短信、来电、弹窗、聊天窗口）",
+      "source_ref": "self-screen-inventory-2026-11#fraud",
+      "existing": "new",
+      "priority": 6
+    },
+    {
+      "word": "安全账户",
+      "evidence": "防骗场景屏幕词（短信、来电、弹窗、聊天窗口）",
+      "source_ref": "self-screen-inventory-2026-11#fraud",
+      "existing": "new",
+      "priority": 7
+    },
+    {
+      "word": "刷单",
+      "evidence": "防骗场景屏幕词（短信、来电、弹窗、聊天窗口）",
+      "source_ref": "self-screen-inventory-2026-11#fraud",
+      "existing": "new",
+      "priority": 8
+    },
+    {
+      "word": "返利",
+      "evidence": "防骗场景屏幕词（短信、来电、弹窗、聊天窗口）",
+      "source_ref": "self-screen-inventory-2026-11#fraud",
+      "existing": "new",
+      "priority": 9
+    },
+    {
+      "word": "陌生来电",
+      "evidence": "防骗场景屏幕词（短信、来电、弹窗、聊天窗口）",
+      "source_ref": "self-screen-inventory-2026-11#fraud",
+      "existing": "new",
+      "priority": 10
+    },
+    {
+      "word": "骚扰",
+      "evidence": "防骗场景屏幕词（短信、来电、弹窗、聊天窗口）",
+      "source_ref": "self-screen-inventory-2026-11#fraud",
+      "existing": "new",
+      "priority": 11
+    },
+    {
+      "word": "拦截",
+      "evidence": "防骗场景屏幕词（短信、来电、弹窗、聊天窗口）",
+      "source_ref": "self-screen-inventory-2026-11#fraud",
+      "existing": "new",
+      "priority": 12
+    },
+    {
+      "word": "黑名单",
+      "evidence": "防骗场景屏幕词（短信、来电、弹窗、聊天窗口）",
+      "source_ref": "self-screen-inventory-2026-11#fraud",
+      "existing": "new",
+      "priority": 13
+    },
+    {
+      "word": "举报",
+      "evidence": "防骗场景屏幕词（短信、来电、弹窗、聊天窗口）",
+      "source_ref": "self-screen-inventory-2026-11#fraud",
+      "existing": "new",
+      "priority": 14
+    },
+    {
+      "word": "报警",
+      "evidence": "防骗场景屏幕词（短信、来电、弹窗、聊天窗口）",
+      "source_ref": "self-screen-inventory-2026-11#fraud",
+      "existing": "new",
+      "priority": 15
+    },
+    {
+      "word": "报案",
+      "evidence": "防骗场景屏幕词（短信、来电、弹窗、聊天窗口）",
+      "source_ref": "self-screen-inventory-2026-11#fraud",
+      "existing": "new",
+      "priority": 16
+    },
+    {
+      "word": "录音",
+      "evidence": "防骗场景屏幕词（短信、来电、弹窗、聊天窗口）",
+      "source_ref": "self-screen-inventory-2026-11#fraud",
+      "existing": "new",
+      "priority": 17
+    },
+    {
+      "word": "屏幕共享",
+      "evidence": "防骗场景屏幕词（短信、来电、弹窗、聊天窗口）",
+      "source_ref": "self-screen-inventory-2026-11#fraud",
+      "existing": "new",
+      "priority": 18
+    },
+    {
+      "word": "远程控制",
+      "evidence": "防骗场景屏幕词（短信、来电、弹窗、聊天窗口）",
+      "source_ref": "self-screen-inventory-2026-11#fraud",
+      "existing": "new",
+      "priority": 19
+    },
+    {
+      "word": "木马",
+      "evidence": "防骗场景屏幕词（短信、来电、弹窗、聊天窗口）",
+      "source_ref": "self-screen-inventory-2026-11#fraud",
+      "existing": "new",
+      "priority": 20
+    },
+    {
+      "word": "虚假",
+      "evidence": "防骗场景屏幕词（短信、来电、弹窗、聊天窗口）",
+      "source_ref": "self-screen-inventory-2026-11#fraud",
+      "existing": "new",
+      "priority": 21
+    },
+    {
+      "word": "诱导",
+      "evidence": "防骗场景屏幕词（短信、来电、弹窗、聊天窗口）",
+      "source_ref": "self-screen-inventory-2026-11#fraud",
+      "existing": "new",
+      "priority": 22
+    },
+    {
+      "word": "威胁",
+      "evidence": "防骗场景屏幕词（短信、来电、弹窗、聊天窗口）",
+      "source_ref": "self-screen-inventory-2026-11#fraud",
+      "existing": "new",
+      "priority": 23
+    },
+    {
+      "word": "泄露",
+      "evidence": "防骗场景屏幕词（短信、来电、弹窗、聊天窗口）",
+      "source_ref": "self-screen-inventory-2026-11#fraud",
+      "existing": "new",
+      "priority": 25
+    },
+    {
+      "word": "个人信息",
+      "evidence": "防骗场景屏幕词（短信、来电、弹窗、聊天窗口）",
+      "source_ref": "self-screen-inventory-2026-11#fraud",
+      "existing": "new",
+      "priority": 26
+    },
+    {
+      "word": "点开",
+      "evidence": "防骗场景屏幕词（短信、来电、弹窗、聊天窗口）",
+      "source_ref": "self-screen-inventory-2026-11#fraud",
+      "existing": "new",
+      "priority": 27
+    },
+    {
+      "word": "领奖",
+      "evidence": "防骗场景屏幕词（短信、来电、弹窗、聊天窗口）",
+      "source_ref": "self-screen-inventory-2026-11#fraud",
+      "existing": "new",
+      "priority": 28
+    },
+    {
+      "word": "退税",
+      "evidence": "防骗场景屏幕词（短信、来电、弹窗、聊天窗口）",
+      "source_ref": "self-screen-inventory-2026-11#fraud",
+      "existing": "new",
+      "priority": 29
+    },
+    {
+      "word": "保健品",
+      "evidence": "防骗场景屏幕词（短信、来电、弹窗、聊天窗口）",
+      "source_ref": "self-screen-inventory-2026-11#fraud",
+      "existing": "new",
+      "priority": 30
+    },
+    {
+      "word": "投资",
+      "evidence": "防骗场景屏幕词（短信、来电、弹窗、聊天窗口）",
+      "source_ref": "self-screen-inventory-2026-11#fraud",
+      "existing": "new",
+      "priority": 31
+    },
+    {
+      "word": "高息",
+      "evidence": "防骗场景屏幕词（短信、来电、弹窗、聊天窗口）",
+      "source_ref": "self-screen-inventory-2026-11#fraud",
+      "existing": "new",
+      "priority": 32
+    },
+    {
+      "word": "返现",
+      "evidence": "防骗场景屏幕词（短信、来电、弹窗、聊天窗口）",
+      "source_ref": "self-screen-inventory-2026-11#fraud",
+      "existing": "new",
+      "priority": 33
+    },
+    {
+      "word": "抽奖",
+      "evidence": "防骗场景屏幕词（短信、来电、弹窗、聊天窗口）",
+      "source_ref": "self-screen-inventory-2026-11#fraud",
+      "existing": "new",
+      "priority": 34
+    },
+    {
+      "word": "保证金",
+      "evidence": "防骗场景屏幕词（短信、来电、弹窗、聊天窗口）",
+      "source_ref": "self-screen-inventory-2026-11#fraud",
+      "existing": "new",
+      "priority": 35
+    },
+    {
+      "word": "熟人",
+      "evidence": "防骗场景屏幕词（短信、来电、弹窗、聊天窗口）",
+      "source_ref": "self-screen-inventory-2026-11#fraud",
+      "existing": "new",
+      "priority": 36
+    },
+    {
+      "word": "弹窗",
+      "evidence": "防骗场景屏幕词（短信、来电、弹窗、聊天窗口）",
+      "source_ref": "self-screen-inventory-2026-11#fraud",
+      "existing": "new",
+      "priority": 37
+    },
+    {
+      "word": "骗局",
+      "evidence": "防骗场景屏幕词（短信、来电、弹窗、聊天窗口）",
+      "source_ref": "self-screen-inventory-2026-11#fraud",
+      "existing": "new",
+      "priority": 38
+    },
+    {
+      "word": "上当",
+      "evidence": "防骗场景屏幕词（短信、来电、弹窗、聊天窗口）",
+      "source_ref": "self-screen-inventory-2026-11#fraud",
+      "existing": "new",
+      "priority": 39
+    },
+    {
+      "word": "反诈",
+      "evidence": "防骗场景屏幕词（短信、来电、弹窗、聊天窗口）",
+      "source_ref": "self-screen-inventory-2026-11#fraud",
+      "existing": "new",
+      "priority": 40
+    },
+    {
+      "word": "洗钱",
+      "evidence": "防骗场景屏幕词（短信、来电、弹窗、聊天窗口）",
+      "source_ref": "self-screen-inventory-2026-11#fraud",
+      "existing": "new",
+      "priority": 41
+    },
+    {
+      "word": "征信",
+      "evidence": "防骗场景屏幕词（短信、来电、弹窗、聊天窗口）",
+      "source_ref": "self-screen-inventory-2026-11#fraud",
+      "existing": "new",
+      "priority": 42
+    },
+    {
+      "word": "理赔",
+      "evidence": "防骗场景屏幕词（短信、来电、弹窗、聊天窗口）",
+      "source_ref": "self-screen-inventory-2026-11#fraud",
+      "existing": "new",
+      "priority": 43
+    },
+    {
+      "word": "兼职",
+      "evidence": "防骗场景屏幕词（短信、来电、弹窗、聊天窗口）",
+      "source_ref": "self-screen-inventory-2026-11#fraud",
+      "existing": "new",
+      "priority": 44
+    },
+    {
+      "word": "传票",
+      "evidence": "防骗场景屏幕词（短信、来电、弹窗、聊天窗口）",
+      "source_ref": "self-screen-inventory-2026-11#fraud",
+      "existing": "new",
+      "priority": 45
+    }
+  ]
+}
