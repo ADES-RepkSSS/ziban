@@ -130,7 +130,8 @@ func recognize(path: String, languages: [String]) throws -> (width: Int, height:
     // 先直接用想要的语言；如果系统能列出支持列表，再过滤成系统认识的。
     // 不能因为 supportedRecognitionLanguages() 失败就退回默认的 en-US。
     request.recognitionLanguages = wanted
-    if #available(macOS 11.0, *), let supported = try? request.supportedRecognitionLanguages(),
+    // supportedRecognitionLanguages() 直到 macOS 12 才可用；macOS 11 直接使用 wanted。
+    if #available(macOS 12.0, *), let supported = try? request.supportedRecognitionLanguages(),
        !supported.isEmpty {
         let filtered = wanted.filter { supported.contains($0) }
         if !filtered.isEmpty {
