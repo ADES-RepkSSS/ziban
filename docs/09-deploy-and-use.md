@@ -84,6 +84,9 @@ pnpm preview
 2. push 到 `main`，或手动跑 `Deploy web demo to GitHub Pages`；
 3. 部署地址：<https://ades-repksss.github.io/ziban/>。
 
+> **演示站是网页版，没有屏幕取词功能**：浏览器不能读取其他软件，只能粘贴文字。
+> 首页的“看屏幕上的字”卡会明确标“网页演示版 · 没有屏幕取词”；桌面版才有光标跟随取词。
+
 工作流做的事：
 
 ```text
@@ -131,7 +134,7 @@ pnpm desktop:package
 # release\ziban-win32-x64.zip
 ```
 
-- 不需要安装；把整个 `ziban-win32-x64` 目录拷走，双击 `Ziban.exe`（或 `字伴.exe` / `启动字伴.cmd`）；
+- 不需要安装；把整个 `ziban-win32-x64` 目录拷走，双击 `Ziban.exe`（或 `启动字伴.cmd`）；
 - 这是便携版，不会写注册表/开始菜单；数据仍在 `%APPDATA%\@ziban\desktop\`；
 - 未签名，Windows SmartScreen 可能提示“未知发布者”；正式分发前要签名；
 - 它仍然是 Electron 的绿色目录（约 200MB），不是 NSIS 安装包；安装包/自动更新尚未做。

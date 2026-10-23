@@ -3,7 +3,7 @@
 > **把查字典简化成“停一下”：老人看得懂屏幕，孩子在探索里认字。**
 
 <p>
-  <img alt="status" src="https://img.shields.io/badge/status-v0.2%20desktop%20experimental-orange?style=flat-square" />
+  <img alt="status" src="https://img.shields.io/badge/status-v0.2.1%20desktop%20experimental-orange?style=flat-square" />
   <a href="LICENSE"><img alt="code license" src="https://img.shields.io/badge/code-Apache--2.0-blue?style=flat-square" /></a>
   <a href="content/LICENSE.md"><img alt="content license" src="https://img.shields.io/badge/content-CC%20BY--SA%204.0-green?style=flat-square" /></a>
   <img alt="node" src="https://img.shields.io/badge/node-%E2%89%A520-339933?style=flat-square&logo=node.js&logoColor=white" />
@@ -26,7 +26,7 @@
 
 > 这不是“把孩子丢给电脑”的借口：屏幕时间、内容安全仍由家长把关；字伴不替代监护，也不做家长监控。
 >
-> 当前是 **v0.1 Web 实验版 + 0.2 桌面取词实验版**。老人场景已有可运行版本（Windows 桌面取词实测，macOS 待真机）；**儿童场景是方向与假设，不是已验证的产品结论**。内容和能力边界写在 [docs/05](docs/05-experimental-v0.1.md) 与 [docs/08](docs/08-screen-lookup.md) 里，不把没做的功能说成能用。
+> 当前是 **v0.2.1 桌面取词实验版**（含网页演示）。老人场景已有可运行版本（Windows 桌面取词实测，macOS 待真机）；**儿童场景是方向与假设，不是已验证的产品结论**。内容和能力边界写在 [docs/05](docs/05-experimental-v0.1.md) 与 [docs/08](docs/08-screen-lookup.md) 里，不把没做的功能说成能用。
 
 我们不想做两套割裂的产品：不做“儿童识字 App 的老年皮肤”，也不做面向视障者的完整屏幕阅读器。我们想做的是一层很薄的“查字”能力：**老人用它跨过屏幕上的字，孩子用它追自己想看的内容。**
 
@@ -143,7 +143,10 @@ pnpm desktop:start
 完整的部署步骤、首页工具说明、老人使用流程、macOS 权限、数据目录和排错见
 **[docs/09-deploy-and-use.md](docs/09-deploy-and-use.md)**。
 
-> 当前桌面版从源码运行，还没有 DMG/NSIS 安装包；不要把它说成“下载即用”。
+> **在线演示是网页版，没有屏幕取词功能**：它不能读取其他软件，只能粘贴文字。
+> 光标取词请用 Windows/macOS 桌面版；Windows 已有免安装绿色版。
+
+> 当前桌面版还没有 DMG/NSIS 安装包；不要把它说成“下载即用”。
 
 ## 技术结构
 
@@ -236,6 +239,7 @@ docs/                     立项、内容流水线、合规、Electron、路线�
 | [docs/08-screen-lookup.md](docs/08-screen-lookup.md) | **光标跟随取词：Windows/macOS 实现、权限、真机清单、语料库格式** |
 | [docs/09-deploy-and-use.md](docs/09-deploy-and-use.md) | **部署与使用：网页/桌面、GitHub Pages、macOS 权限、排错** |
 | [docs/10-corpus-handoff.md](docs/10-corpus-handoff.md) | **语料库制作交接：格式、AI 提示词、审校、验收** |
+| [docs/releases/v0.2.1.md](docs/releases/v0.2.1.md) | **v0.2.1 完整版：Windows 绿色版、演示标注、验证** |
 | [docs/releases/v0.2.0.md](docs/releases/v0.2.0.md) | **v0.2.0 发布说明：能力、验证、限制** |
 | [AGENTS.md](AGENTS.md) | 给下一位 AI/维护者的操作速查与硬约束 |
 | [content/README.md](content/README.md) | 卡片/图片/字表维护 |
@@ -262,7 +266,7 @@ It started with older adults: people aged 65–85 with very limited literacy but
 
 We are also exploring a learning paradigm for school-age children: instead of studying characters first and using a computer later, children explore the internet first. The wish to understand what is on screen becomes intrinsic motivation, and Ziban only removes the friction of looking things up. This child scenario is a direction and a hypothesis, not a validated product; screen time and content safety remain the guardian's responsibility.
 
-Current status: v0.1 experimental web app plus a v0.2 Electron desktop shell with cursor-following lookup on Windows (tested) and macOS (code complete, device verification pending). Code is Apache-2.0, content is CC BY-SA 4.0. Start with [docs/05-experimental-v0.1.md](docs/05-experimental-v0.1.md), [docs/08-screen-lookup.md](docs/08-screen-lookup.md) and [CONTRIBUTING.md](CONTRIBUTING.md).
+Current status: v0.2.1 desktop experimental app plus a web demo with cursor-following lookup on Windows (tested) and macOS (code complete, device verification pending). Code is Apache-2.0, content is CC BY-SA 4.0. Start with [docs/05-experimental-v0.1.md](docs/05-experimental-v0.1.md), [docs/08-screen-lookup.md](docs/08-screen-lookup.md) and [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ---
 

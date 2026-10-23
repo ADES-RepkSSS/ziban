@@ -1,6 +1,6 @@
 {
   "name": "ziban",
-  "version": "0.1.0",
+  "version": "0.2.1",
   "private": true,
   "type": "module",
   "description": "字伴：把查字典简化成一次停留——老人看得懂屏幕，孩子在探索里认字。",

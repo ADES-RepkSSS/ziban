@@ -4,6 +4,17 @@
 
 ## [Unreleased]
 
+## [0.2.1] - 2026-10-23
+
+### Added
+
+- Windows 免安装绿色版作为 GitHub Release 附件：`ziban-win32-x64.zip`（解压后双击 `Ziban.exe`）。
+
+### Changed
+
+- 网页演示首页明确标注 **“网页演示版 · 没有屏幕取词”**；演示站只能粘贴文字，不读取其他软件。
+- 版本号统一为 `0.2.1`；发布说明见 [docs/releases/v0.2.1.md](docs/releases/v0.2.1.md)。
+
 ## [0.2.0] - 2026-10-23
 
 ### Added

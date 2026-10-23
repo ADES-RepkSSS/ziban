@@ -43,6 +43,21 @@
   border-color: var(--line);
 }
 
+.screen-callout__demo-badge {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  margin-bottom: 4px;
+  padding: 3px 10px;
+  color: var(--accent);
+  background: #fff3df;
+  border: 2px solid #e8c98d;
+  border-radius: 999px;
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+}
+
 .screen-callout.is-running {
   border-color: var(--primary);
   box-shadow: 0 0 0 4px rgba(11, 90, 83, 0.09), var(--shadow-sm);

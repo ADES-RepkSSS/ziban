@@ -86,15 +86,8 @@ fs.cpSync(
 
 // Electron 的 exe 改名；保留 DLL/资源目录不动。
 const exeSource = path.join(outRoot, 'electron.exe');
-const exeTarget = path.join(outRoot, '字伴.exe');
-const asciiExe = path.join(outRoot, 'Ziban.exe');
+const exeTarget = path.join(outRoot, 'Ziban.exe');
 fs.renameSync(exeSource, exeTarget);
-// ASCII 文件名给 .cmd / 老工具链用；优先硬链接，失败再复制。
-try {
-  fs.linkSync(exeTarget, asciiExe);
-} catch {
-  fs.copyFileSync(exeTarget, asciiExe);
-}
 
 fs.writeFileSync(
   path.join(outRoot, '启动字伴.cmd'),
@@ -106,7 +99,7 @@ fs.writeFileSync(
   [
     '字伴 Windows 绿色版（实验）',
     '',
-    '双击 Ziban.exe（或 字伴.exe / 启动字伴.cmd）即可运行。',
+    '双击 Ziban.exe（或 启动字伴.cmd）即可运行。',
     '不需要安装；出现 SmartScreen 提示是因为还没有代码签名。',
     '',
     '数据目录：%APPDATA%\\@ziban\\desktop\\',
@@ -135,5 +128,5 @@ try {
 }
 
 console.log(`✓ Windows 绿色版：${outRoot}`);
-console.log(`  双击：${asciiExe}`);
+console.log(`  双击：${exeTarget}`);
 console.log(`  压缩包：${fs.existsSync(zipPath) ? zipPath : '（未生成）'}`);

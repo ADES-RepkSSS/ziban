@@ -1,6 +1,6 @@
 {
   "name": "@ziban/desktop",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "private": true,
   "productName": "字伴",
   "description": "字伴桌面壳：光标跟随屏幕取词、系统 OCR、小窗讲解。",

@@ -20,9 +20,11 @@ export function ScreenLookupCard() {
           <img src="./features/screen-lookup.svg" alt="" />
         </span>
         <div className="screen-callout__body">
+          <span className="screen-callout__demo-badge">网页演示版 · 没有屏幕取词</span>
           <h2 id="screen-callout-title">看屏幕上的字</h2>
           <p>
-            电脑版：鼠标停在哪，小窗就念哪。网页版看不到别的软件，可以先把屏幕上的字粘贴进来。
+            这个在线演示只能粘贴文字，不能读取别的软件。
+            要鼠标停在哪就查哪，请用 Windows/macOS 桌面版。
           </p>
         </div>
         <div className="screen-callout__actions">
