@@ -1,0 +1,271 @@
+{
+  "version": 1,
+  "name": "政务办事词表",
+  "license": "CC-BY-SA-4.0",
+  "entries": [
+    {
+      "word": "政务",
+      "definition": "和政府有关的那些事，比如办证。",
+      "example": "很多事在网上政务大厅就能办。",
+      "source": "auto-gov-2026-11"
+    },
+    {
+      "word": "大厅",
+      "definition": "一个大屋子，很多窗口在里面办事。",
+      "example": "办事大厅就在一楼进门左手边。",
+      "source": "auto-gov-2026-11"
+    },
+    {
+      "word": "取号",
+      "definition": "到大厅先拿一个号，等着叫。",
+      "example": "进门以后先在机器上取号。",
+      "source": "auto-gov-2026-11"
+    },
+    {
+      "word": "受理",
+      "definition": "窗口收下你的材料，开始办。",
+      "example": "材料齐全了，窗口才受理。",
+      "source": "auto-gov-2026-11"
+    },
+    {
+      "word": "审核",
+      "definition": "工作人员看看你交的东西合不合要求。",
+      "example": "审核一般要等三个工作日。",
+      "source": "auto-gov-2026-11"
+    },
+    {
+      "word": "审批",
+      "definition": "上面的人看过了，同意才办得成。",
+      "example": "这个证明要等审批下来。",
+      "source": "auto-gov-2026-11"
+    },
+    {
+      "word": "办结",
+      "definition": "交上去的那件事已经办完了。",
+      "example": "三天后收到短信，说已经办结。",
+      "source": "auto-gov-2026-11"
+    },
+    {
+      "word": "材料",
+      "definition": "办事要带的那些纸和证件。",
+      "example": "把材料按顺序放好再交。",
+      "source": "auto-gov-2026-11"
+    },
+    {
+      "word": "复印件",
+      "definition": "把原件放机器上印出来的一份。",
+      "example": "身份证要带原件和复印件。",
+      "source": "auto-gov-2026-11"
+    },
+    {
+      "word": "原件",
+      "definition": "最早的那一份，不是复印的。",
+      "example": "原件看完以后会还给你。",
+      "source": "auto-gov-2026-11"
+    },
+    {
+      "word": "盖章",
+      "definition": "在纸上盖一个红印，才算数。",
+      "example": "这张表要拿到单位去盖章。",
+      "source": "auto-gov-2026-11"
+    },
+    {
+      "word": "签字",
+      "definition": "在纸的最后写下自己的名字。",
+      "example": "看清楚纸上的字再签字。",
+      "source": "auto-gov-2026-11"
+    },
+    {
+      "word": "填表",
+      "definition": "把空着的地方按要求写满。",
+      "example": "先填好表，再排队交材料。",
+      "source": "auto-gov-2026-11"
+    },
+    {
+      "word": "表格",
+      "definition": "分成一格一格、要填字的纸。",
+      "example": "这张表格要用黑笔来填。",
+      "source": "auto-gov-2026-11"
+    },
+    {
+      "word": "证明",
+      "definition": "请单位开一张纸，说明这件事。",
+      "example": "办这个事情要单位开证明。",
+      "source": "auto-gov-2026-11"
+    },
+    {
+      "word": "户籍",
+      "definition": "登记你家在哪儿的那份记录。",
+      "example": "转户籍要去派出所办理。",
+      "source": "auto-gov-2026-11"
+    },
+    {
+      "word": "户口本",
+      "definition": "一个家里所有人的信息都在上面。",
+      "example": "孩子办入学要带户口本。",
+      "source": "auto-gov-2026-11"
+    },
+    {
+      "word": "居住证",
+      "definition": "外地人在这儿住，办的一张证。",
+      "example": "住满半年可以办居住证。",
+      "source": "auto-gov-2026-11"
+    },
+    {
+      "word": "社保卡",
+      "definition": "看病、领钱都用的一张卡。",
+      "example": "社保卡要本人去银行领。",
+      "source": "auto-gov-2026-11"
+    },
+    {
+      "word": "公积金",
+      "definition": "每月存一点，买房能用的钱。",
+      "example": "公积金在手机上就能查。",
+      "source": "auto-gov-2026-11"
+    },
+    {
+      "word": "补贴",
+      "definition": "国家或单位另外给的一点钱。",
+      "example": "高龄补贴每月打到卡里。",
+      "source": "auto-gov-2026-11"
+    },
+    {
+      "word": "低保",
+      "definition": "家里困难，国家给的最低生活钱。",
+      "example": "家里困难可以申请低保。",
+      "source": "auto-gov-2026-11"
+    },
+    {
+      "word": "残疾证",
+      "definition": "证明身体有残疾的那张证。",
+      "example": "有残疾证坐车能少花钱。",
+      "source": "auto-gov-2026-11"
+    },
+    {
+      "word": "优待证",
+      "definition": "当过兵的人用的证，能享受一些照顾。",
+      "example": "拿着优待证到窗口就能办。",
+      "source": "auto-gov-2026-11"
+    },
+    {
+      "word": "老年卡",
+      "definition": "老人坐车、进公园用的卡。",
+      "example": "老年卡每年要去审一次。",
+      "source": "auto-gov-2026-11"
+    },
+    {
+      "word": "年审",
+      "definition": "每年检查一次，卡还能不能用。",
+      "example": "老年卡的年审在社区办。",
+      "source": "auto-gov-2026-11"
+    },
+    {
+      "word": "认证",
+      "definition": "证明你就是你本人的那一步。",
+      "example": "领养老金的人每年要认证。",
+      "source": "auto-gov-2026-11"
+    },
+    {
+      "word": "人脸识别",
+      "definition": "把脸对着镜头，让机器认一认。",
+      "example": "办认证的时候要人脸识别。",
+      "source": "auto-gov-2026-11"
+    },
+    {
+      "word": "指南",
+      "definition": "写着怎么办、带什么的说明。",
+      "example": "出门以前先看办事指南。",
+      "source": "auto-gov-2026-11"
+    },
+    {
+      "word": "咨询",
+      "definition": "打电话或者去窗口问清楚。",
+      "example": "有不清楚的就打热线咨询。",
+      "source": "auto-gov-2026-11"
+    },
+    {
+      "word": "投诉",
+      "definition": "办事不满意，可以去反映。",
+      "example": "窗口服务不好，可以投诉。",
+      "source": "auto-gov-2026-11"
+    },
+    {
+      "word": "热线",
+      "definition": "专门接电话的号码，打过去有人答。",
+      "example": "有不清楚的事打热线问。",
+      "source": "auto-gov-2026-11"
+    },
+    {
+      "word": "服务台",
+      "definition": "大厅里最先去问事的地方。",
+      "example": "进门先去服务台问一下。",
+      "source": "auto-gov-2026-11"
+    },
+    {
+      "word": "自助机",
+      "definition": "自己动手办，不用排窗口的机器。",
+      "example": "打印证明可以去自助机上办。",
+      "source": "auto-gov-2026-11"
+    },
+    {
+      "word": "申领",
+      "definition": "申请领一张证或者一笔钱。",
+      "example": "老年卡可以在社区申领。",
+      "source": "auto-gov-2026-11"
+    },
+    {
+      "word": "换证",
+      "definition": "旧证到期了，换一张新的。",
+      "example": "身份证到期要提前换证。",
+      "source": "auto-gov-2026-11"
+    },
+    {
+      "word": "补办",
+      "definition": "证件丢了，重新去办一张。",
+      "example": "身份证丢了要赶紧补办。",
+      "source": "auto-gov-2026-11"
+    },
+    {
+      "word": "有效期",
+      "definition": "这张证可以一直用到哪一天。",
+      "example": "拿出来看看证上的有效期。",
+      "source": "auto-gov-2026-11"
+    },
+    {
+      "word": "到期",
+      "definition": "到了那一天，证就不能再用。",
+      "example": "社保卡到期以前要换新的。",
+      "source": "auto-gov-2026-11"
+    },
+    {
+      "word": "出示",
+      "definition": "把证件拿出来给人看一看。",
+      "example": "进大厅的时候要出示身份证。",
+      "source": "auto-gov-2026-11"
+    },
+    {
+      "word": "派出所",
+      "definition": "管户口和身份证的地方，出了事也能去说。",
+      "example": "身份证丢了，孩子陪我去派出所补办。",
+      "source": "auto-gov-2026-11"
+    },
+    {
+      "word": "村委会",
+      "definition": "村里管事的办公室，大事小事都去这问。",
+      "example": "村里通知让去村委会领表，我明天去。",
+      "source": "auto-gov-2026-11"
+    },
+    {
+      "word": "登记",
+      "definition": "把名字和事写在册子上，算报上名了。",
+      "example": "社区让老人去登记，带上身份证就行。",
+      "source": "auto-gov-2026-11"
+    },
+    {
+      "word": "公告",
+      "definition": "贴在墙上或网上，让大家都知道的事。",
+      "example": "门口贴了张公告，说明天上午停水。",
+      "source": "auto-gov-2026-11"
+    }
+  ]
+}

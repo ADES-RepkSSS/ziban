@@ -7,7 +7,7 @@ apps/desktop/resources/cards.generated.json
 apps/desktop/resources/native/
 apps/desktop/resources/bin/
 apps/desktop/resources/web/
-release/
+/release/
 work/corpus_doc/junda.html
 *.local
 .DS_Store

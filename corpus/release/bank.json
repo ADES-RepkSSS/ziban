@@ -1,0 +1,319 @@
+{
+  "version": 1,
+  "name": "银行办事词表",
+  "license": "CC-BY-SA-4.0",
+  "entries": [
+    {
+      "word": "账单",
+      "definition": "写着这个月花了多少钱的单子。",
+      "example": "手机上能看到这个月的账单。",
+      "source": "auto-bank-2026-11"
+    },
+    {
+      "word": "解冻",
+      "definition": "把冻结的钱重新放开，能用了。",
+      "example": "本人带证件去银行解冻。",
+      "source": "auto-bank-2026-11"
+    },
+    {
+      "word": "限额",
+      "definition": "一次最多能花多少、转多少。",
+      "example": "这张卡每天取钱有限额。",
+      "source": "auto-bank-2026-11"
+    },
+    {
+      "word": "存款",
+      "definition": "存在银行里、还没取出来的钱。",
+      "example": "他有一笔存款明年到期。",
+      "source": "auto-bank-2026-11"
+    },
+    {
+      "word": "取款",
+      "definition": "从银行里把自己存的钱拿出来。",
+      "example": "他拿着卡去取款机取款。",
+      "source": "auto-bank-2026-11"
+    },
+    {
+      "word": "开户",
+      "definition": "第一次在银行开一个自己的户。",
+      "example": "开户要带身份证去网点。",
+      "source": "auto-bank-2026-11"
+    },
+    {
+      "word": "销户",
+      "definition": "不用这个户了，去银行把它关掉。",
+      "example": "这个户不用了，去银行销户。",
+      "source": "auto-bank-2026-11"
+    },
+    {
+      "word": "存折",
+      "definition": "像小本子一样，记着存了多少钱。",
+      "example": "老人喜欢用存折看余额。",
+      "source": "auto-bank-2026-11"
+    },
+    {
+      "word": "利息",
+      "definition": "钱存在银行，银行多给的一点钱。",
+      "example": "定期存款的利息会高一些。",
+      "source": "auto-bank-2026-11"
+    },
+    {
+      "word": "定期",
+      "definition": "把钱存够一段时间，中间不取。",
+      "example": "这笔钱存三年定期，不动它。",
+      "source": "auto-bank-2026-11"
+    },
+    {
+      "word": "活期",
+      "definition": "随时能取的钱，利息少一点。",
+      "example": "平常要用的钱存活期方便。",
+      "source": "auto-bank-2026-11"
+    },
+    {
+      "word": "汇款",
+      "definition": "把钱从一个地方寄到另一个地方。",
+      "example": "汇款要把对方的户名写对。",
+      "source": "auto-bank-2026-11"
+    },
+    {
+      "word": "收款人",
+      "definition": "这笔钱最后交给的那个人。",
+      "example": "汇款时别把收款人名字写错。",
+      "source": "auto-bank-2026-11"
+    },
+    {
+      "word": "流水",
+      "definition": "卡里一笔一笔进出钱的记录。",
+      "example": "打一份流水，能看清每笔钱。",
+      "source": "auto-bank-2026-11"
+    },
+    {
+      "word": "对账",
+      "definition": "拿单子和自己记的钱数比一比。",
+      "example": "月底拿账单跟存折对账。",
+      "source": "auto-bank-2026-11"
+    },
+    {
+      "word": "网点",
+      "definition": "银行在街上办事的那个地方。",
+      "example": "最近的网点就在菜市场旁边。",
+      "source": "auto-bank-2026-11"
+    },
+    {
+      "word": "挂失",
+      "definition": "卡丢了，赶紧告诉银行停掉。",
+      "example": "卡丢了要马上打电话挂失。",
+      "source": "auto-bank-2026-11"
+    },
+    {
+      "word": "补卡",
+      "definition": "卡坏了或丢了，重新办一张。",
+      "example": "补卡要本人带身份证去。",
+      "source": "auto-bank-2026-11"
+    },
+    {
+      "word": "预留",
+      "definition": "开户时留在银行的那个手机号。",
+      "example": "换手机号要去改预留号码。",
+      "source": "auto-bank-2026-11"
+    },
+    {
+      "word": "手机银行",
+      "definition": "在手机上办银行业务的软件。",
+      "example": "转账用手机银行不用跑网点。",
+      "source": "auto-bank-2026-11"
+    },
+    {
+      "word": "短信提醒",
+      "definition": "卡里钱一动，手机就收到一条消息。",
+      "example": "开着短信提醒，钱少了能知道。",
+      "source": "auto-bank-2026-11"
+    },
+    {
+      "word": "扣款",
+      "definition": "银行直接从卡里把钱拿走。",
+      "example": "每月自动扣款交水电费。",
+      "source": "auto-bank-2026-11"
+    },
+    {
+      "word": "代扣",
+      "definition": "你同意后，银行按时自动交钱。",
+      "example": "水费办了代扣，不用每月跑。",
+      "source": "auto-bank-2026-11"
+    },
+    {
+      "word": "信用卡",
+      "definition": "可以先花钱，过些天再还的卡。",
+      "example": "信用卡这个月花了多少要还。",
+      "source": "auto-bank-2026-11"
+    },
+    {
+      "word": "储蓄卡",
+      "definition": "里面有钱才能花的那张银行卡。",
+      "example": "每月的工资打在储蓄卡里。",
+      "source": "auto-bank-2026-11"
+    },
+    {
+      "word": "还款",
+      "definition": "把刷卡花掉的钱还回银行。",
+      "example": "每月几号要还款，别忘了。",
+      "source": "auto-bank-2026-11"
+    },
+    {
+      "word": "分期",
+      "definition": "大件的钱分成几个月慢慢还。",
+      "example": "买冰箱办了分期，每月还一点。",
+      "source": "auto-bank-2026-11"
+    },
+    {
+      "word": "年费",
+      "definition": "这张卡每年要交的一点钱。",
+      "example": "这张卡每年都不收年费。",
+      "source": "auto-bank-2026-11"
+    },
+    {
+      "word": "汇率",
+      "definition": "一种钱能换多少另一种钱。",
+      "example": "换外币前先看看今天的汇率。",
+      "source": "auto-bank-2026-11"
+    },
+    {
+      "word": "外币",
+      "definition": "外国的钱，比如美元、日元。",
+      "example": "出国前要去银行换外币。",
+      "source": "auto-bank-2026-11"
+    },
+    {
+      "word": "兑换",
+      "definition": "拿着一种钱，去换成另一种钱。",
+      "example": "去网点就可以兑换外币。",
+      "source": "auto-bank-2026-11"
+    },
+    {
+      "word": "支票",
+      "definition": "一张纸，写着付给谁多少钱。",
+      "example": "这张支票要拿到银行去取。",
+      "source": "auto-bank-2026-11"
+    },
+    {
+      "word": "资金",
+      "definition": "一笔钱的总数，卡里的钱也算。",
+      "example": "这笔资金要留着交房租。",
+      "source": "auto-bank-2026-11"
+    },
+    {
+      "word": "户名",
+      "definition": "开户的时候写的那个名字。",
+      "example": "汇款以前先核对一下户名。",
+      "source": "auto-bank-2026-11"
+    },
+    {
+      "word": "卡号",
+      "definition": "银行卡上的那一长串数字。",
+      "example": "卡号不要随便告诉别人。",
+      "source": "auto-bank-2026-11"
+    },
+    {
+      "word": "开户行",
+      "definition": "这个户是在哪家银行、哪个网点开的。",
+      "example": "汇款的时候要写清楚开户行。",
+      "source": "auto-bank-2026-11"
+    },
+    {
+      "word": "小额",
+      "definition": "钱数不多、平常花的那点钱。",
+      "example": "几块钱的小额花费，常常不用密码。",
+      "source": "auto-bank-2026-11"
+    },
+    {
+      "word": "免密",
+      "definition": "不用输密码，直接就能付钱。",
+      "example": "免密支付方便，但要注意安全。",
+      "source": "auto-bank-2026-11"
+    },
+    {
+      "word": "刷脸",
+      "definition": "看一眼镜头，认一下是不是你。",
+      "example": "在机器前刷脸就能取钱。",
+      "source": "auto-bank-2026-11"
+    },
+    {
+      "word": "收银台",
+      "definition": "商店里排队交钱的那个台子。",
+      "example": "东西选好了，去收银台交钱。",
+      "source": "auto-bank-2026-11"
+    },
+    {
+      "word": "止付",
+      "definition": "临时让这张卡不能再付钱。",
+      "example": "发现钱少了，先打电话止付。",
+      "source": "auto-bank-2026-11"
+    },
+    {
+      "word": "存单",
+      "definition": "存定期时给的一张纸单子。",
+      "example": "存单要收好，取钱时要用。",
+      "source": "auto-bank-2026-11"
+    },
+    {
+      "word": "现金",
+      "definition": "手里拿着的现钱，不是卡里的数。",
+      "example": "取钱时柜员问我要现金还是打卡里。",
+      "source": "auto-bank-2026-11"
+    },
+    {
+      "word": "利率",
+      "definition": "把钱存银行，银行按这个数给利息。",
+      "example": "存单上印着利率，我看不懂就问柜员。",
+      "source": "auto-bank-2026-11"
+    },
+    {
+      "word": "明细",
+      "definition": "一笔一笔写清楚的单子，钱去哪了都看得见。",
+      "example": "我想知道钱花哪了，让孩子打一份明细。",
+      "source": "auto-bank-2026-11"
+    },
+    {
+      "word": "交易",
+      "definition": "一笔钱的进出，存了钱、取了钱都算。",
+      "example": "手机上说有交易，我看不懂，先问家里人。",
+      "source": "auto-bank-2026-11"
+    },
+    {
+      "word": "透支",
+      "definition": "卡里的钱花完了，还接着花，就欠银行钱。",
+      "example": "单子上写着透支，我看不懂，先问问孩子。",
+      "source": "auto-bank-2026-11"
+    },
+    {
+      "word": "网银",
+      "definition": "在电脑上办银行的事，不用去银行。",
+      "example": "孩子说网银能看钱有没有到，我不敢用。",
+      "source": "auto-bank-2026-11"
+    },
+    {
+      "word": "柜员",
+      "definition": "银行里坐在柜台后头，帮你办业务的人。",
+      "example": "我不会填单子，柜员帮我一项一项填好。",
+      "source": "auto-bank-2026-11"
+    },
+    {
+      "word": "工资卡",
+      "definition": "单位往里打工资的那张银行卡。",
+      "example": "退休后工资卡换了，我让孩子陪我去改。",
+      "source": "auto-bank-2026-11"
+    },
+    {
+      "word": "大额",
+      "definition": "钱数比较多的一笔，跟平时不一样。",
+      "example": "银行牌子上写着大额，我看不懂，就去问柜员。",
+      "source": "auto-bank-2026-11"
+    },
+    {
+      "word": "回单",
+      "definition": "在柜台办完事，给你一张纸条，写着办了什么。",
+      "example": "柜员把回单递给我，我夹在本子里收好。",
+      "source": "auto-bank-2026-11"
+    }
+  ]
+}
