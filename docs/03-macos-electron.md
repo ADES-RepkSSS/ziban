@@ -1,5 +1,11 @@
 # 03 · macOS / Electron 工程要点
 
+> **2026-10 更新**：`apps/desktop` 已落地第一版 Electron 壳与“光标跟随取词”。
+> macOS 走 `/usr/sbin/screencapture -R` + Apple Vision（Swift helper），
+> **只需要“屏幕录制”权限，不需要“辅助功能”**。完整方案、权限话术、真机清单见
+> [docs/08-screen-lookup.md](08-screen-lookup.md)。下文第 ③ 节的 TCC 说明仍然有效；
+> 正式发布前必须补签名/公证与固定 bundle id。
+
 ## 1. 架构
 
 ```
@@ -71,13 +77,22 @@ interface PlatformCaps {
 - `systemPreferences.isTrustedAccessibilityClient(true)` 引导辅助功能；
 - 老人看不懂「系统设置 → 隐私与安全性 → 辅助功能」，必须做**图文引导 + 一键跳转**：
   `open "x-apple.systempreferences:com.apple.preference.security?Privacy_Accessibility"`
+- 当前取词方案**不需要辅助功能**，只需要屏幕录制；跳转链接：
+  `x-apple.systempreferences:com.apple.preference.security?Privacy_ScreenCapture`。
+  只有将来做 AX 读屏/模拟按键时才申请辅助功能。
 - **Bundle ID 永不变更**：卸载重装后授权会失效，改了 ID 等于让所有老用户重走一遍。
+- **macOS 15 Sequoia** 对屏幕录制有更频繁的提示；若 `screencapture` 触发每周/每月提示，
+  后续换 ScreenCaptureKit；当前先按 docs/08 的降级与说明处理。
 
 ### ④ Apple Vision OCR 接入
 
-Swift 写一个极薄静态库，接口只暴露 `recognize(buffer, langs) -> [{text, bbox, conf}]`，用 `node-addon-api` 包一层。`xcodebuild ARCHS="x86_64 arm64"` 出 fat `.a`。
+当前实现（docs/08）是一个**独立的 Swift CLI**，不是 Node 原生模块：
+stdin 每行一个 JSON（图片路径），stdout 回逐行/逐字 bbox。Node 侧只管 spawn 和 NDJSON，
+Vision 类型完全不出现在 JS 层。首次运行用 `xcrun swiftc` 编译；发布前应预编译
+universal 二进制（`lipo -create x86_64 arm64`）随包分发，避免老人装 Xcode CLI Tools。
 
-**接口必须极简，别把 Vision 的类型泄漏到 JS 层**，这样将来换 RapidOCR 不用改调用方。
+以后若需要常驻 ScreenCaptureKit/更低延迟，可以把 Swift CLI 换成 XPC/静态库，但
+**保持 `ScreenEngine` 的输出形状不变**，Windows 与 UI 都不用改。
 
 ### ⑤ 语音：不要把系统 TTS 当主力
 
@@ -120,10 +135,10 @@ macOS「婷婷」默认是 compact 音质，机械感强；Windows SAPI 更差�
 | 指标 | 预算 |
 |---|---|
 | 冷启动到可交互 | < 2.5s |
-| 框选 OCR 到出声 | < 1.5s（Vision）/ < 3s（RapidOCR 兜底）|
+| 光标停稳到小窗出声 | < 1.5s（Vision）/ < 3s（RapidOCR 兜底）；Windows 实测 0.4–1s |
 | 常驻内存 | < 250MB |
 | 安装包 | < 400MB（含模型与 50 词内容） |
-| 空闲 CPU | ~0（无轮询；热键走系统级注册） |
+| 空闲 CPU | ~0（只轮询光标坐标，不截屏；热键走系统级注册） |
 
 ## 7. 构建矩阵
 

@@ -65,15 +65,15 @@ def make_social_preview() -> None:
     text(draw, (190, 64), "字伴", 78, INK, True)
     text(draw, (192, 148), "ZIBAN", 24, INK_SOFT, True)
 
-    text(draw, (76, 208), "按一下，字就会说话。", 44, INK, True)
-    text(draw, (76, 270), "帮不识字的老人用电脑：", 27, INK_SOFT, False)
-    text(draw, (76, 306), "认字、听音、看懂屏幕。", 27, INK_SOFT, False)
+    text(draw, (76, 208), "把查字典，变成停一下。", 42, INK, True)
+    text(draw, (76, 270), "老人看得懂屏幕，", 27, INK_SOFT, False)
+    text(draw, (76, 306), "孩子在探索里认字。", 27, INK_SOFT, False)
 
     x = 76
-    for label in ("50 张识字卡", "8 个生活场景", "离线优先"):
+    for label in ("50 张识字卡", "光标取词", "离线优先"):
         x += pill(draw, x, 370, label) + 12
 
-    text(draw, (76, 474), "v0.1 实验版", 22, ACCENT, True)
+    text(draw, (76, 474), "v0.2 桌面取词实验版", 22, ACCENT, True)
     text(draw, (76, 512), "开源 · 公益 · 无广告 · 无账号", 22, INK_SOFT, False)
     text(draw, (76, 548), "学过的字只存在这台电脑里", 22, INK_SOFT, False)
 
@@ -86,7 +86,7 @@ def make_social_preview() -> None:
     canvas.paste(shot, (615, 120), shot)
     draw.rounded_rectangle((615, 120, 1225, 501), radius=24, outline="#E4D6BE", width=2)
 
-    text(draw, (615, 525), "识字卡 · 逐字高亮 · 图片配对", 22, INK_SOFT, False)
+    text(draw, (615, 525), "识字卡 · 光标取词 · 逐字高亮", 22, INK_SOFT, False)
 
     OUT.mkdir(parents=True, exist_ok=True)
     canvas.save(OUT / "social-preview.png", optimize=True)

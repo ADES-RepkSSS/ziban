@@ -4,7 +4,6 @@ import {
   findFinishedSessionToday,
   learnedCards,
   pickSessionCards,
-  SCENE_META,
   startAnotherSession,
   type Card,
 } from '@ziban/core';
@@ -13,7 +12,18 @@ import { useSpeech } from '../../app/SpeechProvider';
 import { navigate } from '../../app/router';
 import { Icon } from '../../components/Icon';
 import { cards, getCard, imageUrl } from '../../content/deck';
+import { ScreenLookupCard } from '../screen/ScreenLookupCard';
+import { UpdateBanner } from '../update/UpdateBanner';
 
+/**
+ * 首页是“工具入口”，不是课程首页。
+ *
+ * 老人第一次打开时最先想解决的是“屏幕上这行字是什么”，所以把“看屏幕”
+ * 放在第一张大卡；下面是三项常用工具，每项配一张特征图，方便不识字的人
+ * 按图找入口，而不是读标题。
+ *
+ * 每一天三个字仍然保留，但降为第二入口：它是可选的练习，不是使用前提。
+ */
 export function HomePage() {
   const { progress, update, storageOk } = useProgress();
   const { speak, stop } = useSpeech();
@@ -39,21 +49,12 @@ export function HomePage() {
     ? `还剩 ${active.cardIds.length - active.completedIds.length} 个没看完`
     : canLearnAgain
       ? '今天已经认完了，还能再认三个'
-      : '点一下，开始';
+      : '一天三个，有图有声音';
 
   const spokenIntro =
-    '这是字伴。点上面的大卡片，开始认字。点下面的字库，可以看图找字。点帮我看屏幕，我会念屏幕上的字。';
+    '这是字伴。最上面是看屏幕：鼠标停在哪，我就念哪。下面是每天认三个字、看图找字、帮我看屏幕。点一下就能用。';
 
   const help = () => speak({ text: spokenIntro, segmentId: 'home-help', rate: 0.8 });
-
-  const speakPreview = () => {
-    if (!preview) return;
-    speak({
-      text: `${preview.text}。${preview.meaning}`,
-      segmentId: 'home-preview',
-      rate: progress.settings.rate,
-    });
-  };
 
   const startLearning = () => {
     stop();
@@ -106,84 +107,77 @@ export function HomePage() {
           </p>
         ) : null}
 
-        <div className="home-hero">
-          <button
-            type="button"
-            className="home-hero__main"
-            onClick={startLearning}
-            aria-label={`${title}。${subtitle}`}
-          >
-            <span className="home-hero__copy">
-              <span className="home-hero__eyebrow">
-                <Icon name="sparkle" size={24} />
-                每天三个字
-              </span>
-              <span className="home-hero__title">{title}</span>
-              <span className="home-hero__subtitle">{subtitle}</span>
-              <span className="home-hero__cta">
-                <Icon name="play" size={30} />
-                开始
-              </span>
-            </span>
+        <UpdateBanner />
 
-            <span className="home-hero__preview">
-              {preview ? (
-                <>
-                  <span className="home-hero__image">
-                    <img src={imageUrl(preview)} alt={preview.image.alt ?? ''} />
-                  </span>
-                  <span className="home-hero__word">{preview.text}</span>
-                  <span className="home-hero__scene">{SCENE_META[preview.scene].short}</span>
-                </>
-              ) : (
-                <span className="home-hero__empty">字库还没有内容</span>
-              )}
-            </span>
-          </button>
+        {/* 第一入口：看屏幕。图 + 大字 + 一个大按钮，不识字也能按图找。 */}
+        <ScreenLookupCard />
 
-          {preview ? (
+        <section className="home-tools" aria-labelledby="home-tools-title">
+          <div className="home-tools__head">
+            <h2 id="home-tools-title">还可以做什么</h2>
+            <span className="home-tools__hint">点图就能用</span>
+          </div>
+
+          <div className="home-tools__grid">
             <button
               type="button"
-              className="home-hero__sound"
-              aria-label="先听一听这个字"
-              onClick={speakPreview}
+              className="home-tool home-tool--learn"
+              onClick={startLearning}
+              aria-label={`${title}。${subtitle}`}
             >
-              <Icon name="speaker" size={26} />
+              <span className="home-tool__art">
+                <img
+                  src={preview ? imageUrl(preview) : './features/learn.svg'}
+                  alt=""
+                  loading="lazy"
+                />
+                {preview ? <span className="home-tool__badge">{preview.text}</span> : null}
+              </span>
+              <span className="home-tool__body">
+                <span className="home-tool__eyebrow">
+                  <Icon name="sparkle" size={20} />
+                  每天三个字
+                </span>
+                <span className="home-tool__title">{title}</span>
+                <span className="home-tool__sub">{subtitle}</span>
+                <span className="home-tool__cta">
+                  <Icon name="play" size={24} />
+                  开始
+                </span>
+              </span>
             </button>
-          ) : null}
-        </div>
 
-        <div className="home-tiles">
-          <button
-            type="button"
-            className="home-tile home-tile--library"
-            onClick={() => navigate('#/library')}
-          >
-            <span className="home-tile__icon">
-              <Icon name="grid" size={56} />
-            </span>
-            <span className="home-tile__text">
-              <span className="home-tile__title">看图找字</span>
-              <span className="home-tile__sub">忘了的字，点图就能听</span>
-            </span>
-            <Icon name="chevronRight" size={30} />
-          </button>
+            <button
+              type="button"
+              className="home-tool home-tool--library"
+              onClick={() => navigate('#/library')}
+            >
+              <span className="home-tool__art">
+                <img src="./features/library.svg" alt="" loading="lazy" />
+              </span>
+              <span className="home-tool__body">
+                <span className="home-tool__title">看图找字</span>
+                <span className="home-tool__sub">忘了的字，点图就能听</span>
+              </span>
+              <Icon name="chevronRight" size={28} />
+            </button>
 
-          <button
-            type="button"
-            className="home-tile home-tile--helper"
-            onClick={() => navigate('#/helper')}
-          >
-            <span className="home-tile__icon">
-              <Icon name="screen" size={56} />
-            </span>
-            <span className="home-tile__text">
-              <span className="home-tile__title">帮我看屏幕</span>
-              <span className="home-tile__sub">念一段字，讲一讲</span>
-            </span>
-            <Icon name="chevronRight" size={30} />
-          </button>
-        </div>
+            <button
+              type="button"
+              className="home-tool home-tool--paste"
+              onClick={() => navigate('#/helper')}
+            >
+              <span className="home-tool__art">
+                <img src="./features/paste.svg" alt="" loading="lazy" />
+              </span>
+              <span className="home-tool__body">
+                <span className="home-tool__title">帮我看屏幕</span>
+                <span className="home-tool__sub">短信、通知、网页，粘贴进来念</span>
+              </span>
+              <Icon name="chevronRight" size={28} />
+            </button>
+          </div>
+        </section>
 
         {learned.length > 0 ? (
           <section className="learned" aria-labelledby="learned-title">
@@ -214,10 +208,16 @@ export function HomePage() {
           <Icon name="heart" size={20} />
           没有广告，不收费，学过的字只存在这台电脑里。
         </span>
-        <button type="button" className="footer-link" onClick={() => navigate('#/settings')}>
-          <Icon name="settings" size={20} />
-          设置
-        </button>
+        <div className="home-footer__links">
+          <button type="button" className="footer-link" onClick={() => navigate('#/welcome')}>
+            <Icon name="info" size={20} />
+            怎么用
+          </button>
+          <button type="button" className="footer-link" onClick={() => navigate('#/settings')}>
+            <Icon name="settings" size={20} />
+            设置
+          </button>
+        </div>
       </footer>
     </div>
   );

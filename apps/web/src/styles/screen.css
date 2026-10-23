@@ -1,0 +1,391 @@
+/*
+ * “看屏幕 / 光标取词”的首页卡片与设置区。
+ *
+ * 这一块只在 Electron 里出现（浏览器 ScreenLookupCard 返回 null），
+ * 但样式和主站共用 tokens，保证桌面版与网页版看起来是同一个产品。
+ */
+
+.screen-callout {
+  display: grid;
+  grid-template-columns: 190px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 22px;
+  margin: 6px 0 18px;
+  padding: 20px 22px;
+  background:
+    radial-gradient(480px 220px at 10% 0%, #e7f4ee 0%, rgba(231, 244, 238, 0) 70%),
+    var(--surface);
+  border: 3px solid var(--primary-soft);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+}
+
+.screen-callout__art {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 190px;
+  height: 150px;
+  padding: 4px;
+  overflow: hidden;
+  background: var(--surface-soft);
+  border: 2px solid var(--line);
+  border-radius: 26px;
+}
+
+.screen-callout__art img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.screen-callout--browser {
+  border-color: var(--line);
+}
+
+.screen-callout.is-running {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 4px rgba(11, 90, 83, 0.09), var(--shadow-sm);
+}
+
+.screen-callout__icon {
+  display: grid;
+  place-items: center;
+  width: 76px;
+  height: 76px;
+  color: var(--primary);
+  background: var(--primary-soft);
+  border-radius: 22px;
+}
+
+.screen-callout.is-running .screen-callout__icon {
+  color: #fff;
+  background: var(--primary);
+}
+
+.screen-callout__body {
+  min-width: 0;
+}
+
+.screen-callout__body h2 {
+  margin: 0;
+  font-size: clamp(28px, 3vw, 36px);
+  line-height: 1.2;
+}
+
+.screen-callout__body p {
+  margin: 4px 0 0;
+  color: var(--muted);
+  font-size: 19px;
+  line-height: 1.5;
+}
+
+.screen-callout__hint {
+  color: var(--primary-dark) !important;
+  font-weight: 700;
+}
+
+.screen-callout__hint--warn {
+  color: var(--accent) !important;
+}
+
+.screen-callout__hotkey {
+  font-size: 17px !important;
+}
+
+.screen-callout__hotkey kbd,
+.screen-toggle-row__hotkey kbd {
+  display: inline-block;
+  padding: 1px 7px;
+  color: var(--ink);
+  background: var(--surface-soft);
+  border: 1px solid var(--line-strong);
+  border-bottom-width: 3px;
+  border-radius: 7px;
+  font-family: inherit;
+  font-size: 0.95em;
+  font-weight: 700;
+}
+
+.screen-callout__actions {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 6px;
+  min-width: 190px;
+}
+
+.screen-callout__button {
+  min-height: 76px;
+  padding: 10px 24px;
+  color: #fff;
+  background: var(--primary);
+  border-radius: 20px;
+  font-size: 27px;
+  font-weight: 800;
+  box-shadow: 0 5px 0 var(--primary-dark);
+}
+
+.screen-callout__button:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 var(--primary-dark);
+}
+
+.screen-callout__button--stop {
+  background: var(--accent);
+  box-shadow: 0 4px 0 #6f2018;
+}
+
+.screen-callout__link {
+  min-height: 40px;
+  color: var(--primary-dark);
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/* 设置页 */
+
+.screen-permission {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin: 12px 0;
+  padding: 16px 18px;
+  background: var(--amber-soft);
+  border: 2px solid rgba(138, 83, 12, 0.25);
+  border-radius: var(--radius-sm);
+}
+
+.screen-permission__icon {
+  display: grid;
+  flex: none;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  color: var(--amber-dark);
+  background: #fff7e5;
+  border-radius: 16px;
+}
+
+.screen-permission strong {
+  display: block;
+  color: #4c360e;
+  font-size: 23px;
+}
+
+.screen-permission p {
+  margin: 4px 0 0;
+  color: var(--ink-soft);
+  font-size: 19px;
+  line-height: 1.5;
+}
+
+.screen-permission__actions,
+.screen-advanced__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.screen-toggle-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  margin: 14px 0;
+  padding: 16px 18px;
+  background: var(--surface);
+  border: 2px solid var(--line);
+  border-radius: var(--radius-sm);
+}
+
+.screen-toggle-row strong {
+  display: block;
+  font-size: 24px;
+}
+
+.screen-toggle-row p {
+  margin: 4px 0 0;
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.screen-toggle-row__hotkey {
+  font-size: 16px !important;
+}
+
+.screen-toggle-button {
+  display: inline-flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-width: 132px;
+  min-height: 64px;
+  padding: 8px 18px;
+  color: var(--primary-dark);
+  background: var(--primary-soft);
+  border: 2px solid var(--primary);
+  border-radius: 18px;
+  font-size: 23px;
+  font-weight: 800;
+}
+
+.screen-toggle-button.is-on {
+  color: #fff;
+  background: var(--primary);
+}
+
+.screen-test-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 10px 0;
+}
+
+.screen-check {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--ink-soft);
+  font-size: 19px;
+  line-height: 1.4;
+  cursor: pointer;
+}
+
+.screen-check input {
+  width: 24px;
+  height: 24px;
+  accent-color: var(--primary);
+}
+
+.screen-check--strong {
+  margin: 8px 0;
+  color: var(--ink);
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.screen-advanced {
+  margin-top: 16px;
+  padding: 16px 18px;
+  background: var(--surface-soft);
+  border: 2px solid var(--line);
+  border-radius: var(--radius-sm);
+}
+
+.screen-advanced summary {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  font-size: 21px;
+  font-weight: 800;
+  cursor: pointer;
+  list-style: none;
+}
+
+.screen-advanced summary::-webkit-details-marker {
+  display: none;
+}
+
+.screen-advanced__intro,
+.screen-advanced__privacy,
+.screen-advanced__warn {
+  margin: 8px 0;
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.55;
+}
+
+.screen-advanced__warn {
+  color: var(--accent);
+}
+
+.screen-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin: 10px 0;
+}
+
+.screen-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.screen-form label:first-child {
+  grid-column: 1 / -1;
+}
+
+.screen-form span {
+  color: var(--ink-soft);
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.screen-form input {
+  width: 100%;
+  min-height: 52px;
+  padding: 8px 12px;
+  color: var(--ink);
+  background: #fff;
+  border: 2px solid var(--line-strong);
+  border-radius: 10px;
+  font-size: 19px;
+}
+
+.screen-form input:focus-visible {
+  outline: 4px solid var(--focus);
+  outline-offset: 1px;
+}
+
+.capability-badge--desktop-only {
+  color: #fff;
+  background: var(--primary);
+}
+
+@media (max-width: 900px) {
+  .screen-callout {
+    grid-template-columns: 130px minmax(0, 1fr);
+    gap: 16px;
+  }
+
+  .screen-callout__art {
+    width: 130px;
+    height: 110px;
+  }
+
+  .screen-callout__actions {
+    grid-column: 1 / -1;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+@media (max-width: 760px) {
+  .screen-callout {
+    grid-template-columns: auto 1fr;
+  }
+
+  .screen-toggle-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .screen-toggle-button {
+    width: 100%;
+  }
+
+  .screen-form {
+    grid-template-columns: 1fr;
+  }
+}

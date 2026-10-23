@@ -82,6 +82,9 @@ export class BrowserSpeechEngine implements SpeechEngine {
     };
 
     try {
+      // 小窗是 showInactive()/后台窗口；某些 Chromium 版本会把语音队列挂起。
+      // 用户点击“念”时主动 resume 一次，避免“没有报错但没有声音”。
+      synth.resume();
       synth.speak(utterance);
     } catch (error) {
       options.onError?.(error instanceof Error ? error.message : '语音播放失败');

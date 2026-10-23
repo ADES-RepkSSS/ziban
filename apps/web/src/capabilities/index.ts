@@ -9,7 +9,7 @@
 export * from './contracts';
 export { localExplainer } from './explainer';
 
-export type CapabilityState = 'ready' | 'text-only' | 'planned';
+export type CapabilityState = 'ready' | 'text-only' | 'desktop-only' | 'planned';
 
 export interface CapabilityStatus {
   id: string;
@@ -45,9 +45,10 @@ export const CAPABILITIES: CapabilityStatus[] = [
   },
   {
     id: 'screen-ocr',
-    name: '框选屏幕取词',
-    state: 'planned',
-    detail: 'Electron 壳接入屏幕截图与 OCR 后开放。接口已按能力层预留。',
+    name: '光标取词（看屏幕）',
+    state: 'desktop-only',
+    detail:
+      '电脑版：不用框选，鼠标停在哪就查哪；只截光标周围一小块，不录整屏。网页版请先用粘贴文字。',
   },
   {
     id: 'asr',

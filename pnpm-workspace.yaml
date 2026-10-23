@@ -6,9 +6,11 @@ packages:
 # 安装仍由 `pnpm install` 显式完成。
 verifyDepsBeforeRun: false
 
-# Vite 依赖 esbuild 的平台二进制；允许它的安装脚本。
+# Vite 依赖 esbuild 的平台二进制；Electron 的 postinstall 会下载对应平台运行时。
+# 两者都必须显式允许，否则 pnpm 10+ 会跳过安装脚本，Electron 启动时报找不到二进制。
 allowBuilds:
   esbuild: true
+  electron: true
 
 # 锁文件生成时固定了 rollup 版本（受限网络环境）；升级 Vite/rollup 时一起更新锁文件。
 overrides:

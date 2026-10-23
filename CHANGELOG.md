@@ -4,16 +4,66 @@
 
 ## [Unreleased]
 
+## [0.2.0] - 2026-10-23
+
+### Added
+
+- **桌面版 0.2：光标跟随屏幕取词**（不做框选）。Electron 壳、小窗、全局快捷键、托盘。
+- Windows：常驻 PowerShell + `System.Drawing` 截屏 + WinRT `Windows.Media.Ocr` 中文 OCR；
+  只截光标周围自适应小区域（260–420 DIP，随分辨率/缩放变化），实测截屏+OCR 20–60ms。
+- macOS：`/usr/sbin/screencapture -R` + Apple Vision（Swift helper）；只需“屏幕录制”权限，
+  不需要辅助功能；首次运行用 Xcode CLI Tools 编译 helper。
+- 知识管线：50 张字卡 + 约 120 条离线词表 + `pinyin-pro`；语料库 JSON 热加载；
+  可选 OpenAI 兼容大模型补缺；7 天 JSON 缓存。
+- 小窗展示词/拼音/释义/例句/来源/风险；`setContentProtection` 防止 OCR 自己；
+  `showInactive` 不抢焦点；自动念“词 + 释义”。
+- 设置页“看屏幕上的字”与首页入口；macOS 权限图文引导与系统设置深链。
+- `packages/core/src/screen.ts` + 21 个纯函数测试（OCR 归一化、光标找字、整词切分、自适应区域、知识合并）。
+- 桌面冒烟：`desktop:ocr-smoke` / `lookup-smoke` / `hover-smoke` / `ui-smoke`。
+- GitHub Actions `Desktop macOS OCR`：编译 Vision helper 并识别跨平台测试图。
+- 交接文档 [docs/08-screen-lookup.md](docs/08-screen-lookup.md)。
+- **取词单位改为整词**：词表最长匹配 → `Intl.Segmenter` 中文分词 → 最后才单字；
+  “今天很暖和”会取“暖和”，而不是“暖”；“我的/这个/因为”等语法组合跳过。
+- 截图区域**按显示器工作区/缩放自适应**（宽约 26%，260–420 DIP；高约 52%，140–230 DIP），不再写死 340×180。
+- 首页重做为**看图找工具**：第一张大卡是“看屏幕上的字”，下面按图列出每天三个字、看图找字、帮我看屏幕；
+  每项有特征图，方便不识字老人按图识别；浏览器版明确降级为“粘贴文字”。
+- 修复小窗“念”按钮：鼠标进入小窗时先激活窗口，避免 Windows 首次点击只激活；
+  播放时按钮显示“正在念”，语音错误显示可读提示。
+- 新增**版本检查**：启动 3 秒后只读 GitHub 公共版本信息，发现新版在首页提示并给 GitHub 链接；
+  不做软件内下载/安装；默认开、可在设置关闭，缓存 24h，`ZIBAN_DISABLE_UPDATE_CHECK=1` 可完全关闭。
+- 新增 **Windows 免安装绿色版**：`pnpm desktop:package` → `release/ziban-win32-x64/Ziban.exe` + zip。
+- 新增 [docs/10-corpus-handoff.md](docs/10-corpus-handoff.md) 与 `pnpm corpus:validate`：给下一位 AI 的语料库格式、提示词、审校与验收。
+- 新增 [docs/09-deploy-and-use.md](docs/09-deploy-and-use.md)：网页/桌面部署、GitHub Pages、macOS 权限、数据目录、使用与排错。
+
+### Changed
+
+- **重写项目介绍**：从“帮不识字的老人用电脑”扩展为“把查字典简化成一次停留——老人看得懂屏幕，孩子在探索里认字”。
+  明确当前以老人场景为重点；长期验证“先使用、后识字”的儿童识字范式，儿童场景是未验证假设，不做课程/积分/排行榜/家长监控。
+- **首次打开直接进工具首页**，不再强制看完三步欢迎；欢迎页保留在首页底部“怎么用”，需要时再看。
+- 能力清单新增 `desktop-only` 状态；“框选屏幕取词”改为“光标取词（看屏幕）”。
+- `pnpm check` 的测试数从 39 增至 60；Web 构建约 316 KB JS / 62 KB CSS。
+- README、PRIVACY、SECURITY、NOTICE、AGENTS、docs/00/03/04/05/06/07/08 同步桌面取词边界、整词取词与自适应截图。
+- 更新 GitHub About / 短版简介文案（docs/06），供仓库主页 About 直接粘贴。
+
+### Security
+
+- 屏幕截图不落盘（OCR 后立即删除）；小窗内容保护；只截光标周围小区域。
+- 大模型默认关闭；API Key 只在主进程，safeStorage 加密；默认只发词，发当前行需显式勾选。
+- 生产 CSP、`app://ziban/` 自定义协议、白名单 IPC、`contextIsolation`/`sandbox`。
+
 ### Docs
 
 - 增加 [AGENTS.md](AGENTS.md) 与 [docs/07-handoff.md](docs/07-handoff.md)：交接快照、关键不变量、已知坑、下一步优先级。
 - 给语音队列、每日会话、内容构建、路由、进度存储等关键模块补充源码注释。
+- 新增 [docs/09-deploy-and-use.md](docs/09-deploy-and-use.md)：从“怎么启动”到 GitHub Pages/静态托管、
+  Windows/macOS 源码运行、macOS 权限、数据目录、大模型/语料库配置和排错。
 
 ### Planned
 
+- **macOS 真机验收**：TCC 弹框、Retina 坐标、全屏/双屏；预编译 universal Vision helper；签名/公证。
 - 老人可用性测试（3–5 位）与卡点修复
 - sherpa-onnx + 中文 VITS 语音适配
-- Electron 壳 + 框选屏幕 OCR（macOS / Windows）
+- 语料库/爬虫 200–500 个屏幕高频词 + 人工审校
 - 内容 C5 对抗审校与金标准回归
 - 回声跟读 / 声调优先的发音练习
 

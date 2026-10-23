@@ -6,6 +6,8 @@ import { BigButton } from '../../components/BigButton';
 import { Icon } from '../../components/Icon';
 import { PageHeader } from '../../components/PageHeader';
 import { CAPABILITIES, type CapabilityState } from '../../capabilities';
+import { ScreenSettingsSection } from '../screen/ScreenSettingsSection';
+import { UpdateSettingsSection } from '../update/UpdateSettingsSection';
 
 const RATE_OPTIONS = [
   { value: 0.65, label: '很慢', hint: '一个字一个字地念' },
@@ -16,6 +18,7 @@ const RATE_OPTIONS = [
 const STATE_LABEL: Record<CapabilityState, string> = {
   ready: '能用',
   'text-only': '实验',
+  'desktop-only': '电脑版',
   planned: '还没做',
 };
 
@@ -248,6 +251,10 @@ export function SettingsPage() {
             </p>
           ) : null}
         </section>
+
+        <ScreenSettingsSection />
+
+        <UpdateSettingsSection />
 
         <section className="settings-group" aria-labelledby="display-title">
           <div className="settings-group__head">

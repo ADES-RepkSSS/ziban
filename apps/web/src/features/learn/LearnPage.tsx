@@ -27,12 +27,9 @@ export function LearnPage() {
   // 只在“今天还没有会话”时创建；已完成会话也保留，让 /learn 继续显示“今天认完了”。
   // 不要在 render 里创建——StrictMode 会双调用，可能写入两个会话/两次抽卡。
   useEffect(() => {
-    if (!progress.onboarded) return;
     if (progress.session && progress.session.date === today) return;
     update((previous) => ensureSession(cards, previous).progress);
-  }, [progress.onboarded, progress.session, today, update]);
-
-  if (!progress.onboarded) return null;
+  }, [progress.session, today, update]);
 
   if (!session) {
     return (

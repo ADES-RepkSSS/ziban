@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/ADES-RepkSSS/ziban/schema/corpus.schema.json",
+  "title": "字伴外部语料库文件 v1",
+  "description": "放在 <userData>/corpus/*.json 的文件格式。爬虫/人工语料都按这个格式产出；字伴只读本地文件，不联网抓取。",
+  "type": "object",
+  "required": ["version", "entries"],
+  "additionalProperties": false,
+  "properties": {
+    "version": { "const": 1 },
+    "name": {
+      "type": "string",
+      "maxLength": 40,
+      "description": "显示在来源标签里的名字，例如“社区办事词表”。"
+    },
+    "license": {
+      "type": "string",
+      "maxLength": 40,
+      "description": "语料许可，例如 CC-BY-SA-4.0；必须与来源允许的许可一致。"
+    },
+    "entries": {
+      "type": "array",
+      "maxItems": 5000,
+      "items": {
+        "type": "object",
+        "required": ["word", "definition"],
+        "additionalProperties": false,
+        "properties": {
+          "word": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 8,
+            "description": "要解释的词；建议 2–4 个汉字。"
+          },
+          "pinyin": {
+            "type": "string",
+            "maxLength": 40,
+            "description": "带声调拼音，音节空格分隔；不确定就省略。"
+          },
+          "definition": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 120,
+            "description": "一句口语解释；不要英文/网址/HTML。"
+          },
+          "example": {
+            "type": "string",
+            "maxLength": 120,
+            "description": "一句生活例句；不要示范危险操作。"
+          },
+          "source": {
+            "type": "string",
+            "maxLength": 80,
+            "description": "来源标识，例如 community-2026-10；必须可追溯。"
+          }
+        }
+      }
+    }
+  }
+}

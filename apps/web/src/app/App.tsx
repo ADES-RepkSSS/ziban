@@ -1,5 +1,4 @@
 import { Component, useEffect, type ErrorInfo, type ReactNode } from 'react';
-import { useProgress } from './ProgressProvider';
 import { useRoute, navigate, type Route } from './router';
 import { HomePage } from '../features/home/HomePage';
 import { WelcomePage } from '../features/welcome/WelcomePage';
@@ -8,6 +7,7 @@ import { LibraryPage } from '../features/library/LibraryPage';
 import { CardPage } from '../features/card/CardPage';
 import { HelperPage } from '../features/helper/HelperPage';
 import { ReaderPage } from '../features/reader/ReaderPage';
+import { LookupPage } from '../features/lookup/LookupPage';
 import { SettingsPage } from '../features/settings/SettingsPage';
 import { BigButton } from '../components/BigButton';
 import { Icon } from '../components/Icon';
@@ -19,13 +19,13 @@ const TITLES: Record<Route['name'], string> = {
   library: '字库 · 字伴',
   card: '看字 · 字伴',
   helper: '帮我看屏幕 · 字伴',
+  lookup: '看字 · 字伴',
   reader: '读文章 · 字伴',
   settings: '设置 · 字伴',
 };
 
 export default function App() {
   const route = useRoute();
-  const { progress } = useProgress();
   const routeKey =
     route.name === 'card' || route.name === 'reader' ? `${route.name}:${route.id}` : route.name;
 
@@ -39,7 +39,7 @@ export default function App() {
 
   return (
     <AppErrorBoundary>
-      {!progress.onboarded && route.name !== 'welcome' ? <WelcomePage /> : <Page route={route} />}
+      <Page route={route} />
     </AppErrorBoundary>
   );
 }
@@ -56,6 +56,8 @@ function Page({ route }: { route: Route }) {
       return <CardPage id={route.id} />;
     case 'helper':
       return <HelperPage />;
+    case 'lookup':
+      return <LookupPage />;
     case 'reader':
       return <ReaderPage id={route.id} />;
     case 'settings':

@@ -7,7 +7,8 @@
 
 | 版本 | 支持 |
 |---|---|
-| v0.1.x 实验版 | ✅ 接受报告 |
+| v0.2.x 桌面取词实验版 | ✅ 接受报告 |
+| v0.1.x Web 实验版 | ✅ 接受报告 |
 | 更早的提交 | ❌ 不单独维护 |
 
 ## 如何报告
@@ -33,7 +34,12 @@
 - 权限提示误导、伪装系统弹窗；
 - 依赖供应链问题（恶意包、锁文件篡改）；
 - 内容流水线中的提示词注入导致错误内容被标记为通过；
-- Electron/桌面壳将来的 IPC 越权、任意文件读取、nodeIntegration 误开。
+- Electron IPC 越权、任意文件读取、nodeIntegration 误开、CSP 绕过；
+- 屏幕取词：截图落盘/残留、全屏录制、把自己小窗 OCR 进去、权限提示误导；
+- 大模型：默认联网、密钥回传渲染层、把整屏/敏感上下文发出去、模型输出注入 HTML/URL；
+- 语料库 JSON 路径穿越、超长/恶意字段、XSS；
+- 更新检查的链接被篡改 / `openExternal` 打开任意 URL（主进程只接受 github.com/ADES-RepkSSS/ziban/...）；
+- 以“儿童识字”为名收集儿童个人信息、屏幕/声音，或绕过家长同意。
 
 ## 不在范围内
 
@@ -48,10 +54,16 @@
 ## 安全设计基线
 
 - 生产页面无内联脚本/样式，CSP 可收紧到 `default-src 'self'; img-src 'self' data:`；
-- 默认不发网络请求；不引入广告、账号、统计；
+- 默认不发网络请求（唯一例外：只读 GitHub 公共版本信息，可关）；不引入广告、账号、统计；
 - 用户内容按纯文本渲染，不使用 `dangerouslySetInnerHTML`；
 - 学习记录只存 `localStorage`；清除入口在设置页；
-- Electron 版：`contextIsolation: true`、`nodeIntegration: false`、`sandbox: true`，能力通过白名单 IPC 暴露；
+- Electron 版：`contextIsolation: true`、`nodeIntegration: false`、`sandbox: true`，
+  能力通过白名单 IPC 暴露；生产用自定义协议 `app://ziban/` 加载 `dist`，不用 `file://`；
+- 桌面取词只截光标周围小区域，OCR 后立即删图；小窗 `setContentProtection(true)`；
+- 大模型 API Key 只在主进程，`getConfig()` 只返回 `hasApiKey`；密钥用系统安全存储加密，
+  不能安全保存时只放内存；
+- 大模型默认关闭；默认只发词，发送当前行必须用户显式勾选；返回内容去 HTML、拒绝 URL、限长；
+- 语料库只读 `userData/corpus/*.json`，不执行其中的任何脚本；字段限长、纯文本渲染；
 - 内容入库前过 schema、来源、注入与金标准回归。
 
 ## 响应

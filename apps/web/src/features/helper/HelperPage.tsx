@@ -12,6 +12,7 @@ import { BigButton } from '../../components/BigButton';
 import { Icon } from '../../components/Icon';
 import { PageHeader } from '../../components/PageHeader';
 import { localExplainer } from '../../capabilities/explainer';
+import { getDesktopBridge } from '../../capabilities/desktop';
 import { articles } from '../../data/articles';
 
 /**
@@ -26,6 +27,7 @@ import { articles } from '../../data/articles';
  * 将来接 Electron OCR / 本地模型时，保持同样的输入输出，不要让这个页面直接依赖平台 API。
  */
 export function HelperPage() {
+  const desktop = getDesktopBridge();
   const { progress } = useProgress();
   const {
     speak,
@@ -353,9 +355,11 @@ export function HelperPage() {
                 <Icon name="info" size={30} />
               </span>
               <div>
-                <h3>实验版怎么用</h3>
+                <h3>{desktop ? '电脑版可以直接看屏幕' : '实验版怎么用'}</h3>
                 <p>
-                  现在还不会直接看屏幕。请家里人把字粘贴到上面。电脑版会加“框选屏幕”，按一下就念。
+                  {desktop
+                    ? '把鼠标停在不认识的字上，停一下，小窗就会出来。这里仍然可以粘贴一段文字，让我整段念。'
+                    : '网页版看不到别的软件里的字。请家里人把字粘贴到上面；电脑版不用框选，鼠标停在哪就念哪。'}
                 </p>
               </div>
             </section>

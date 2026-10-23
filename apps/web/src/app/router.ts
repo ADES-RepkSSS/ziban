@@ -15,6 +15,7 @@ export type Route =
   | { name: 'library' }
   | { name: 'card'; id: string }
   | { name: 'helper' }
+  | { name: 'lookup' }
   | { name: 'reader'; id: string }
   | { name: 'settings' };
 
@@ -42,6 +43,9 @@ export function parseRoute(hash: string): Route {
       return tail ? { name: 'card', id: decode(tail) } : { name: 'library' };
     case 'helper':
       return { name: 'helper' };
+    case 'lookup':
+      // 只给 Electron 小窗用；浏览器里直接打开也要能安全显示降级说明。
+      return { name: 'lookup' };
     case 'reader':
       return tail ? { name: 'reader', id: decode(tail) } : { name: 'helper' };
     case 'settings':
@@ -65,6 +69,8 @@ export function routePath(route: Route): string {
       return `#/card/${encodeURIComponent(route.id)}`;
     case 'helper':
       return '#/helper';
+    case 'lookup':
+      return '#/lookup';
     case 'reader':
       return `#/reader/${encodeURIComponent(route.id)}`;
     case 'settings':

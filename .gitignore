@@ -1,5 +1,13 @@
 node_modules/
 dist/
+dist-native/
+apps/desktop/dist-electron/
+apps/desktop/resources/
+apps/desktop/resources/cards.generated.json
+apps/desktop/resources/native/
+apps/desktop/resources/bin/
+apps/desktop/resources/web/
+release/
 *.local
 .DS_Store
 Thumbs.db
@@ -7,6 +15,7 @@ Thumbs.db
 tools/output/
 screenshots/
 coverage/
+__pycache__/
 *.log
 *.tsbuildinfo
 

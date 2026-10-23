@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="几张识字卡和朗读声音">
+  <rect width="512" height="512" rx="40" fill="#F4EBD9"/>
+  <circle cx="256" cy="248" r="196" fill="#FCF8EF"/>
+  <g transform="rotate(-8 236 292)">
+    <rect x="96" y="164" width="250" height="270" rx="26" fill="#E8DCC8" stroke="#26313D" stroke-width="12"/>
+  </g>
+  <g transform="rotate(4 270 280)">
+    <rect x="140" y="136" width="250" height="292" rx="26" fill="#FFFDF8" stroke="#26313D" stroke-width="14"/>
+    <rect x="174" y="174" width="182" height="132" rx="20" fill="#FBEAC8"/>
+    <circle cx="236" cy="240" r="30" fill="#FFFDF8" stroke="#26313D" stroke-width="8"/>
+    <path d="M 254 258 l 32 32" stroke="#9E3324" stroke-width="12" stroke-linecap="round"/>
+    <path d="M 296 210 q 22 20 0 40 M 320 196 q 34 34 0 68" fill="none" stroke="#0B5A53" stroke-width="10" stroke-linecap="round"/>
+    <circle cx="196" cy="350" r="10" fill="#0B5A53"/>
+    <circle cx="236" cy="350" r="10" fill="#D9CDB9"/>
+    <circle cx="276" cy="350" r="10" fill="#D9CDB9"/>
+  </g>
+</svg>

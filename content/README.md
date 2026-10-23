@@ -1,5 +1,8 @@
 # 内容说明（v0.1 实验版）
 
+> 屏幕取词的词库是另一套 JSON，不要塞进 `cards/level1.yaml`。格式、AI 提示词、审校与验收见
+> [docs/10-corpus-handoff.md](../docs/10-corpus-handoff.md)。
+
 ## 状态
 
 - `cards/level1.yaml`：50 张卡，全部 `status: draft`。

@@ -1,0 +1,91 @@
+/* 版本提示：只在确实有新版本时出现，不抢“看屏幕/认字”的主视觉。 */
+
+.update-banner {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 14px;
+  margin: 0 0 16px;
+  padding: 14px 16px;
+  background: #fff8e8;
+  border: 2px solid #e8c98d;
+  border-radius: 18px;
+}
+
+.update-banner__icon {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  color: var(--accent);
+  background: #fffdf8;
+  border: 2px solid #e8c98d;
+  border-radius: 14px;
+}
+
+.update-banner__body strong {
+  display: block;
+  font-size: 21px;
+  font-weight: 900;
+}
+
+.update-banner__body p {
+  margin: 2px 0 0;
+  color: var(--ink-soft);
+  font-size: 17px;
+  line-height: 1.4;
+}
+
+.update-banner__actions {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 4px;
+}
+
+.update-banner__button,
+.update-banner__dismiss {
+  min-height: 44px;
+  padding: 4px 14px;
+  border-radius: 12px;
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.update-banner__button {
+  color: #fff;
+  background: var(--primary);
+}
+
+.update-banner__dismiss {
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.update-settings__row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 14px 4px 0;
+}
+
+.update-settings__version {
+  flex: 1;
+  min-width: 220px;
+  color: var(--ink-soft);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+@media (max-width: 760px) {
+  .update-banner {
+    grid-template-columns: auto minmax(0, 1fr);
+  }
+
+  .update-banner__actions {
+    grid-column: 1 / -1;
+    flex-direction: row;
+    align-items: center;
+  }
+}

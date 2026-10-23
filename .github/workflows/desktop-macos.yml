@@ -1,0 +1,74 @@
+name: Desktop macOS OCR
+
+# macOS 的屏幕取词依赖两件本机能力：
+# 1. /usr/sbin/screencapture（系统自带，需要“屏幕录制”权限）；
+# 2. Apple Vision OCR（我们用 Swift 写的极薄 helper）。
+#
+# 这个 workflow 不需要 GUI/屏幕权限，只验证 Vision helper 能在真实 macOS
+# runner 上编译并识别仓库里的中文测试图。权限/悬浮窗必须人工在 Mac 上测，
+# 步骤见 docs/08-screen-lookup.md。
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'apps/desktop/**'
+      - 'packages/core/**'
+      - 'scripts/**'
+      - '.github/workflows/desktop-macos.yml'
+  pull_request:
+    paths:
+      - 'apps/desktop/**'
+      - 'packages/core/**'
+      - 'scripts/**'
+      - '.github/workflows/desktop-macos.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: desktop-macos-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  vision-ocr:
+    name: Vision OCR compile / recognize / typecheck
+    runs-on: macos-15
+    timeout-minutes: 25
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v6
+        with:
+          version: 11.21.0
+
+      - name: Setup Node
+        uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Install
+        run: pnpm install --frozen-lockfile
+
+      - name: Build Vision helper
+        run: bash apps/desktop/electron/native/macos/build-vision-ocr.sh
+
+      - name: Recognize the Chinese fixture
+        shell: bash
+        run: |
+          set -euo pipefail
+          OUT="$(printf '%s\n' "{\"id\":\"1\",\"cmd\":\"ocr-file\",\"path\":\"$PWD/apps/desktop/fixtures/ocr-sample.png\"}" \
+            | apps/desktop/dist-native/ziban-vision-ocr)"
+          echo "$OUT"
+          # Vision 可能在中文字之间插空格；先去掉空白再做子串断言。
+          NORMALIZED="$(printf '%s' "$OUT" | tr -d '[:space:]')"
+          echo "$NORMALIZED" | grep -q '医院'
+          echo "$NORMALIZED" | grep -q '验证码'
+          echo "Vision OCR fixture OK"
+
+      - name: Typecheck all workspaces
+        run: pnpm typecheck

@@ -1,0 +1,25 @@
+{
+  "name": "@ziban/desktop",
+  "version": "0.2.0",
+  "private": true,
+  "productName": "字伴",
+  "description": "字伴桌面壳：光标跟随屏幕取词、系统 OCR、小窗讲解。",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=22.12"
+  },
+  "main": "dist-electron/main.cjs",
+  "scripts": {
+    "start": "node ../../scripts/launch-electron.mjs",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@ziban/core": "workspace:*",
+    "pinyin-pro": "3.29.5"
+  },
+  "devDependencies": {
+    "@types/node": "24.10.0",
+    "electron": "40.10.6",
+    "typescript": "5.9.3"
+  }
+}

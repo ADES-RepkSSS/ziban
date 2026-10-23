@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="把短信或通知粘贴进来说给你听">
+  <rect width="512" height="512" rx="40" fill="#F4EBD9"/>
+  <circle cx="256" cy="248" r="196" fill="#FCF8EF"/>
+  <rect x="118" y="82" width="276" height="348" rx="34" fill="#FFFDF8" stroke="#26313D" stroke-width="14"/>
+  <rect x="152" y="126" width="208" height="36" rx="18" fill="#DCEEE9"/>
+  <rect x="152" y="186" width="170" height="18" rx="9" fill="#D9CDB9"/>
+  <rect x="152" y="218" width="204" height="18" rx="9" fill="#D9CDB9"/>
+  <rect x="152" y="250" width="132" height="18" rx="9" fill="#D9CDB9"/>
+  <rect x="152" y="306" width="208" height="62" rx="20" fill="#FBEAC8" stroke="#D98A1F" stroke-width="8"/>
+  <path d="M 188 338 h136" stroke="#8A530C" stroke-width="12" stroke-linecap="round"/>
+  <path d="M 92 250 L 70 230 L 70 270 Z" fill="#9E3324" stroke="#26313D" stroke-width="8" stroke-linejoin="round"/>
+  <rect x="330" y="54" width="128" height="86" rx="26" fill="#FFFDF8" stroke="#26313D" stroke-width="10"/>
+  <path d="M 392 140 L 382 164 L 412 140" fill="#FFFDF8" stroke="#26313D" stroke-width="10" stroke-linejoin="round"/>
+  <path d="M 366 96 q 22 16 0 32 M 390 84 q 30 28 0 56" fill="none" stroke="#0B5A53" stroke-width="10" stroke-linecap="round"/>
+</svg>

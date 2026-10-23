@@ -62,6 +62,9 @@ async function goto(hash) {
 try {
   console.log(`浏览器：${executablePath}`);
   await goto('');
+  await shot('00-home');
+
+  await goto('#/welcome');
   await shot('01-welcome');
 
   await page.getByRole('button', { name: '下一步' }).click();
@@ -128,7 +131,8 @@ try {
 
   await page.setViewportSize({ width: 1024, height: 768 });
   await goto('#/');
-  await page.locator('.home-hero__main').click();
+  await shot('14-home-1024');
+  await page.locator('.home-tool--learn').click();
   await page.waitForTimeout(1000);
   await shot('13-study-1024');
 

@@ -9,6 +9,8 @@ describe('hash router', () => {
     expect(parseRoute('#/learn')).toEqual({ name: 'learn' });
     expect(parseRoute('#/library')).toEqual({ name: 'library' });
     expect(parseRoute('#/helper')).toEqual({ name: 'helper' });
+    expect(parseRoute('#/lookup')).toEqual({ name: 'lookup' });
+    expect(routePath({ name: 'lookup' })).toBe('#/lookup');
     expect(parseRoute('#/settings')).toEqual({ name: 'settings' });
   });
 
