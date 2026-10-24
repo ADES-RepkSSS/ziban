@@ -15,7 +15,7 @@
 | 仓库 | <https://github.com/ADES-RepkSSS/ziban> |
 | 演示站 | <https://ades-repksss.github.io/ziban/>（已验证 HTTP 200） |
 | 分支 | `main`，`origin` 已配置 |
-| 最近提交（交接前） | `49351fb fix: track corpus/release runtime JSON`；云端 TTS 改动见本次提交 |
+| 最近提交（交接前） | `0a7be24 feat: enable web cloud TTS with local browser key`；`d8cd9c0 feat: add optional cloud text-to-speech with user API key` |
 | 本次变更 | 2026-10-24 工作区：桌面 0.2 光标取词 + 整词切分 + 自适应截图 + 首页工具图 + docs/08/09；语料第一批 293 条 + docs/10/11；可选云端 TTS + docs/12；67 tests |
 | 本地路径 | `D:\haness_agent\help_old` |
 | 包管理 | pnpm 11.21.0（`packageManager` 已锁定） |

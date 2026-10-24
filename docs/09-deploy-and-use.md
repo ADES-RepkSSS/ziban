@@ -244,7 +244,7 @@ pnpm desktop:start
 - 网址：OpenAI 兼容 `/v1`，例如 `https://api.openai.com/v1`；
 - 模型：例如 `tts-1`；
 - 音色：例如 `alloy`；
-- 密钥：只在主进程使用；Windows DPAPI / macOS Keychain 加密；
+- 密钥：桌面版只在主进程使用（Windows DPAPI / macOS Keychain 加密）；网页版按用户要求存当前浏览器 `localStorage`；
 - 保存后点“打开”；打开后，字卡、例句、屏幕讲解的朗读都会走云端。
 
 注意：
