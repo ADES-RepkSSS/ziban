@@ -97,6 +97,23 @@ export interface DesktopPublicConfig {
     /** 本机安全存储是否可用；不可用时不要持久化密钥。 */
     keyStorage: 'safe' | 'memory-only';
   };
+  /** 可选云端 TTS（OpenAI 兼容 /audio/speech）；默认关闭，密钥只在主进程。 */
+  tts: {
+    enabled: boolean;
+    endpoint: string;
+    model: string;
+    voice: string;
+    hasApiKey: boolean;
+    keyStorage: 'safe' | 'memory-only';
+  };
+}
+
+/** 主进程合成语音后返回给渲染层播放；不把 API Key 或原始请求带回去。 */
+export interface CloudSpeechResult {
+  ok: boolean;
+  audio: Uint8Array | null;
+  mimeType: string | null;
+  message: string | null;
 }
 
 export interface DesktopConfigPatch {
@@ -109,6 +126,12 @@ export interface DesktopConfigPatch {
   llmModel?: string;
   /** 只写不读；空字符串表示清除。 */
   llmApiKey?: string;
+  ttsEnabled?: boolean;
+  ttsEndpoint?: string;
+  ttsModel?: string;
+  ttsVoice?: string;
+  /** 只写不读；空字符串表示清除。 */
+  ttsApiKey?: string;
   captureWidthDip?: number;
   captureHeightDip?: number;
 }
@@ -150,6 +173,8 @@ export interface DesktopBridgeApi {
   getConfig(): Promise<DesktopPublicConfig>;
   updateConfig(patch: DesktopConfigPatch): Promise<DesktopPublicConfig>;
   testLlm(): Promise<LlmTestResult>;
+  /** 文字交给主进程，使用设置里的云端 TTS 合成；返回值不含密钥。 */
+  synthesizeSpeech(text: string): Promise<CloudSpeechResult>;
   clearCache(): Promise<number>;
   getUpdateStatus(): Promise<DesktopUpdateStatus>;
   checkForUpdates(): Promise<DesktopUpdateStatus>;

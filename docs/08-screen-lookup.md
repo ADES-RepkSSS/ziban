@@ -347,7 +347,7 @@ scripts/launch-electron.mjs         清 ELECTRON_RUN_AS_NODE 后启动 Electron
 
 ```bash
 pnpm typecheck             # 三个包 strict TS
-pnpm test                  # 64 个测试（含 screen 21 个 + corpus 4 个）
+pnpm test                  # 67 个测试（含 screen 21 个 + corpus 4 个 + TTS 3 个）
 pnpm check                 # 内容门禁 + 类型 + 测试 + Web 构建
 
 pnpm desktop:build         # Web + 主进程 + 资源

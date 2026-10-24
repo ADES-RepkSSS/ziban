@@ -80,6 +80,7 @@
 | 50 张识字卡 | 看病、取钱、出门、家里、联系、办事、买东西、防骗 8 个场景 |
 | 图片配字 | 52 张手绘 SVG；点图片会念图片描述，不把“答案”画成文字 |
 | 朗读 | 自动念“词 + 释义”；点单字只念这个字；点释义/例句分别朗读 |
+| 云端朗读（可选） | 电脑版设置里填 OpenAI 兼容 TTS 的 API Key；**默认关**，打开后要念的文字才发到用户选的服务，音频不落盘。见 [docs/12](docs/12-cloud-tts.md) |
 | 逐字高亮 | 读词时按字高亮；TTS boundary 不可靠时有字时长兜底 |
 | 每天三个字 | 新卡 3 张 + 最多 3 张到期复习；1/3/7/14/30/60 天温和排期 |
 | 不指责 | 没有“错误/失败/你错了”；朗读失败只说“这次没念出来，再点一下” |
@@ -114,7 +115,7 @@ pnpm dev
 验证：
 
 ```bash
-pnpm check      # 内容门禁 + strict 类型 + 64 个测试 + 生产构建
+pnpm check      # 内容门禁 + strict 类型 + 67 个测试 + 生产构建
 pnpm screenshot # 可选：用本机 Edge/Chrome 跑关键路径并生成截图
 ```
 
@@ -252,6 +253,7 @@ pnpm corpus:install
 | [docs/09-deploy-and-use.md](docs/09-deploy-and-use.md) | **部署与使用：网页/桌面、GitHub Pages、macOS 权限、排错** |
 | [docs/10-corpus-handoff.md](docs/10-corpus-handoff.md) | **语料库制作交接：格式、AI 提示词、审校、验收、图形资产判断** |
 | [docs/11-corpus-batch1-handoff.md](docs/11-corpus-batch1-handoff.md) | **第一批 293 条语料复盘：没做到什么、下一批顺序** |
+| [docs/12-cloud-tts.md](docs/12-cloud-tts.md) | **云端文本转语音：API Key、接口、隐私与验收** |
 | [docs/releases/v0.2.1.md](docs/releases/v0.2.1.md) | **v0.2.1 完整版：Windows 绿色版、演示标注、验证** |
 | [docs/releases/v0.2.0.md](docs/releases/v0.2.0.md) | **v0.2.0 发布说明：能力、验证、限制** |
 | [AGENTS.md](AGENTS.md) | 给下一位 AI/维护者的操作速查与硬约束 |

@@ -1,6 +1,6 @@
 # AGENTS.md — 给下一位 AI / 维护者
 
-> 最后更新：2026-10-23。项目当前 **v0.2.1 桌面取词完整版（Windows 实测 / macOS CI 编译识别通过、真机待验收）**，
+> 最后更新：2026-10-24。项目当前 **v0.2.1 桌面取词完整版（Windows 实测 / macOS CI 编译识别通过、真机待验收）**，
 > 已开源到 GitHub，Pages 演示站已上线。
 > 先读完这份，再按需要读 [docs/07-handoff.md](docs/07-handoff.md)（详细交接）。
 
@@ -12,6 +12,7 @@
 4. [docs/05-experimental-v0.1.md](docs/05-experimental-v0.1.md)：Web v0.1 做了什么、没做什么。
 5. [docs/00-charter.md](docs/00-charter.md)、[docs/01-ai-content-pipeline.md](docs/01-ai-content-pipeline.md)、[docs/02-corpus-compliance.md](docs/02-corpus-compliance.md)：产品与内容红线。
 6. [docs/11-corpus-batch1-handoff.md](docs/11-corpus-batch1-handoff.md)：第一批 293 条语料的复盘、坑与下一批顺序。
+7. [docs/12-cloud-tts.md](docs/12-cloud-tts.md)：可选云端 TTS（文字转语音）的 API Key、接口、隐私与验收。
 
 ## 1. 项目一句话
 
@@ -26,8 +27,9 @@
 - 演示站：<https://ades-repksss.github.io/ziban/>（GitHub Pages，已部署成功）
 - 分支：`main`；远程：`origin` 已配置；Git Credential Manager 已能 push
 - 50 张卡 / 8 场景 / 52 张手绘 SVG
-- 64 个单元测试；`pnpm check` 全绿（含语料硬 lint）
+- 67 个单元测试；`pnpm check` 全绿（含语料硬 lint）
 - 实验语料库第一批 293 条（7 个文件，全部 `source=auto-*`，**机器审校草稿，未人工审校**）；见 [corpus/RELEASE.md](corpus/RELEASE.md)
+- 可选**云端文本转语音**：设置里填 OpenAI 兼容 `/audio/speech` 的 API Key；默认关，打开后文字才发到用户选的服务，音频不落盘；见 [docs/12](docs/12-cloud-tts.md)
 - 桌面版 `apps/desktop`：Electron 40 + esbuild；Windows WinRT OCR 实测；macOS `screencapture` + Vision 待真机
 - GitHub Actions：`CI`、`Deploy web demo to GitHub Pages`、`Desktop macOS OCR`（编译/识别测试图）
 - 字卡 50 张、屏幕语料 293 条全部是 draft/机器审校草稿，**未经人工审校，禁止对外称为正式内容**
@@ -39,7 +41,7 @@
 ```bash
 cd D:\haness_agent\help_old
 pnpm dev                 # http://127.0.0.1:4173
-pnpm check               # 内容门禁 + 语料 lint + tsc + 64 tests + build + GitHub 文件检查
+pnpm check               # 内容门禁 + 语料 lint + tsc + 67 tests + build + GitHub 文件检查
 pnpm content:validate
 pnpm corpus:validate path/to/corpus.json  # 外部语料库格式检查
 pnpm corpus:lint         # 语料硬 lint（corpus/release/*.json）
@@ -73,7 +75,7 @@ git push origin main
 ## 4. 三条不可谈判原则
 
 1. **老人不会被指责。** 文案禁止“错误 / 失败 / 你错了”；朗读失败只说“这次没念出来，再点一下”。
-2. **默认不联网。** 唯一例外是 GitHub 公开版本检查（可在设置关闭）；不能新增其他默认 fetch/XHR、广告、账号、埋点、外链。语音默认本机中文声音；在线声音必须用户主动选且标注“在线”。
+2. **默认不联网。** 默认例外只有 GitHub 公开版本检查（可在设置关闭）；不能新增其他默认 fetch/XHR、广告、账号、埋点、外链。语音默认本机中文声音；云端 TTS 必须用户自己填 API Key 并显式打开，才把要念的文字发到用户选的服务。
 3. **没有广告、没有内购、没有第三方跳转。** 产品 UI 不放大模型网页/支付/外链。
 
 改这三条要 2/3 维护者同意 + 14 天 RFC；见 [GOVERNANCE.md](GOVERNANCE.md)。
@@ -96,6 +98,7 @@ apps/desktop/
   electron/overlay.ts    小窗定位/显隐/内容保护
   electron/capabilities/screen/   ScreenEngine：Windows PowerShell / macOS Vision
   electron/capabilities/knowledge/ 字卡/语料库/LLM/缓存
+  electron/capabilities/speech/ 云端 TTS 请求、超时、端点校验
   electron/native/       ocr-host.ps1、vision-ocr.swift
   fixtures/ocr-sample.png 跨平台 OCR 测试图
 packages/core/           纯函数：types、schedule、text、plainLanguage、screen、desktop（+ tests）
@@ -103,7 +106,7 @@ content/                 level1.yaml、52 SVG、charset、README
 scripts/                 content build/validate、screenshot、corpus lint/review/build/metrics
 corpus/                  实验语料（release/ 运行时 JSON、workbench/ 审计、chars/ 用字表）
 tools/                   图片生成、GitHub 素材、检查脚本
-docs/                    00–11 设计/交接文档（08 = 屏幕取词，09 = 部署与使用，10 = 语料库格式，11 = 第一批语料复盘）
+docs/                    00–12 设计/交接文档（08 = 屏幕取词，09 = 部署与使用，10 = 语料库格式，11 = 第一批语料复盘，12 = 云端 TTS）
 .github/                 CI、Pages、Dependabot、issue/PR 模板
 ```
 
@@ -119,6 +122,7 @@ docs/                    00–11 设计/交接文档（08 = 屏幕取词，09 = 
 - **屏幕取词**：不做全屏录制/框选。`hover.ts` 光标停稳 380ms 才截自适应小区域（工作区宽约 26%，260–420 DIP）；OCR 后立即删图；小窗 `setContentProtection`；不要把轮询间隔改到 100ms 以下。
 - **屏幕权限**：macOS 只需要“屏幕录制”（不需要辅助功能）；必须在用户点击的同一调用栈里触发；拒绝后只能引导去系统设置，不能静默重试刷屏。
 - **知识优先级**：字卡 > `userData/corpus` > 本机词表 > 大模型补缺；模型不得覆盖人工释义；生成内容必须 `generated=true`，UI 标“不一定对”。
+- **云端 TTS**：默认关；密钥只在主进程，渲染层只知道 `hasApiKey`；只把要念的文字发给用户配置的 https 服务；不落盘、不自动回退、不重试轰炸；打开后所有朗读（含屏幕取词自动念）都走云端。
 - **默认不联网**：大模型默认关闭；没有密钥/开关时一个请求都不发；版本检查只读 GitHub 公共信息、可关、缓存 24h；API Key 只在主进程，渲染层只能看到 `hasApiKey`。
 - **内容红线**：释义/例句必须有来源；没有把握的讲解返回 `plain: null`，UI 显示“只会念，还讲不好”，不许编。
 
@@ -146,7 +150,7 @@ docs/                    00–11 设计/交接文档（08 = 屏幕取词，09 = 
 
 1. **真人可用性测试**：3–5 位老人，无指导试“第一次查字 / 再念一遍 / 粘贴一段字”，记录卡点；先修阻塞，不加功能。
 2. **内容审校**：50 张卡走 C5 对抗审校 + 人工；补 `source_ref`；图片从手绘过渡到可授权实拍/检索图。
-3. **语音质量**：系统 TTS 只是 v0.1 兜底；接 sherpa-onnx + 中文 VITS，保持 `SpeechEngine` 接口与逐字高亮。
+3. **语音质量**：系统 TTS 只是默认兜底；云端 TTS 已可作为可选引擎（自己填 Key），保持 `SpeechEngine` 接口与逐字高亮；以后可接本地 sherpa-onnx + 中文 VITS。
 4. **macOS 真机验收屏幕取词**：按 [docs/08](docs/08-screen-lookup.md) 第 6.6 节跑 TCC/Retina/全屏/双屏；预编译 universal Vision helper；再做签名/公证。
 5. **语料库审校**：第一批 293 条已产出（机器审校草稿），已 `corpus:install` 到真实 userData；下一步补三审、逐词 evidence、真人复核，并核对小窗来源标签/热加载。
 6. **任意网页正文 / 跟读**：分别实现 `PageReader`、`PronunciationCoach`；跟读优先“回声 + 声调”，不要直接判“你读错了”。

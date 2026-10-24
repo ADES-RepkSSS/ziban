@@ -19,6 +19,7 @@ import type {
   DesktopConfigPatch,
   DesktopPublicConfig,
 } from '@ziban/core';
+import { validateSpeechEndpoint } from '../speech/tts.js';
 
 export interface StoredScreenConfig {
   version: 1;
@@ -31,6 +32,12 @@ export interface StoredScreenConfig {
   llmModel: string;
   /** safeStorage.encryptString() 后的 base64；没有就是不保存。 */
   llmApiKeyEncrypted: string | null;
+  ttsEnabled: boolean;
+  ttsEndpoint: string;
+  ttsModel: string;
+  ttsVoice: string;
+  /** 云端 TTS 的密钥；与 LLM 密钥分开保存。 */
+  ttsApiKeyEncrypted: string | null;
   captureWidthDip: number;
   captureHeightDip: number;
 }
@@ -45,6 +52,12 @@ const DEFAULT_CONFIG: StoredScreenConfig = {
   llmEndpoint: '',
   llmModel: '',
   llmApiKeyEncrypted: null,
+  // 云端 TTS 默认关闭；只填了密钥也不会自动开启。
+  ttsEnabled: false,
+  ttsEndpoint: 'https://api.openai.com/v1',
+  ttsModel: 'tts-1',
+  ttsVoice: 'alloy',
+  ttsApiKeyEncrypted: null,
   // 0 表示自动：由 core/captureSizeForWorkArea 按显示器工作区计算。
   // 保留字段是为了以后做“手动框定读取范围”的调试入口。
   captureWidthDip: 0,
@@ -91,6 +104,7 @@ export class ScreenConfigStore {
   private readonly filePath: string;
   private config: StoredScreenConfig;
   private memoryApiKey: string | null = null;
+  private memoryTtsApiKey: string | null = null;
   private safeStorageAvailable: boolean;
 
   constructor(userDataPath: string) {
@@ -123,6 +137,14 @@ export class ScreenConfigStore {
         llmApiKeyEncrypted:
           typeof raw.llmApiKeyEncrypted === 'string' && raw.llmApiKeyEncrypted.length > 0
             ? raw.llmApiKeyEncrypted
+            : null,
+        ttsEnabled: asBoolean(raw.ttsEnabled, DEFAULT_CONFIG.ttsEnabled),
+        ttsEndpoint: asString(raw.ttsEndpoint, DEFAULT_CONFIG.ttsEndpoint, 300),
+        ttsModel: asString(raw.ttsModel, DEFAULT_CONFIG.ttsModel, 120),
+        ttsVoice: asString(raw.ttsVoice, DEFAULT_CONFIG.ttsVoice, 80),
+        ttsApiKeyEncrypted:
+          typeof raw.ttsApiKeyEncrypted === 'string' && raw.ttsApiKeyEncrypted.length > 0
+            ? raw.ttsApiKeyEncrypted
             : null,
         captureWidthDip: clamp(raw.captureWidthDip ?? 0, 0, 520, DEFAULT_CONFIG.captureWidthDip),
         captureHeightDip: clamp(raw.captureHeightDip ?? 0, 0, 300, DEFAULT_CONFIG.captureHeightDip),
@@ -161,6 +183,17 @@ export class ScreenConfigStore {
     }
   }
 
+  getTtsApiKey(): string | null {
+    if (this.memoryTtsApiKey) return this.memoryTtsApiKey;
+    if (!this.config.ttsApiKeyEncrypted || !this.safeStorageAvailable) return null;
+    try {
+      const buffer = Buffer.from(this.config.ttsApiKeyEncrypted, 'base64');
+      return safeStorage.decryptString(buffer);
+    } catch {
+      return null;
+    }
+  }
+
   getPublic(): DesktopPublicConfig {
     return {
       hoverEnabled: this.config.hoverEnabled,
@@ -177,6 +210,14 @@ export class ScreenConfigStore {
         hasApiKey: Boolean(this.getApiKey()),
         keyStorage: this.safeStorageAvailable ? 'safe' : 'memory-only',
       },
+      tts: {
+        enabled: this.config.ttsEnabled,
+        endpoint: this.config.ttsEndpoint,
+        model: this.config.ttsModel,
+        voice: this.config.ttsVoice,
+        hasApiKey: Boolean(this.getTtsApiKey()),
+        keyStorage: this.safeStorageAvailable ? 'safe' : 'memory-only',
+      },
     };
   }
 
@@ -184,6 +225,7 @@ export class ScreenConfigStore {
   update(patch: DesktopConfigPatch): string | null {
     const previousConfig = { ...this.config };
     const previousMemoryKey = this.memoryApiKey;
+    const previousTtsMemoryKey = this.memoryTtsApiKey;
 
     if (typeof patch.llmEndpoint === 'string') {
       const endpoint = patch.llmEndpoint.trim().slice(0, 300);
@@ -199,6 +241,21 @@ export class ScreenConfigStore {
     if (typeof patch.checkUpdates === 'boolean') this.config.checkUpdates = patch.checkUpdates;
     if (typeof patch.shareContext === 'boolean') this.config.shareContext = patch.shareContext;
     if (typeof patch.llmEnabled === 'boolean') this.config.llmEnabled = patch.llmEnabled;
+
+    if (typeof patch.ttsEndpoint === 'string') {
+      const endpoint = patch.ttsEndpoint.trim().slice(0, 300);
+      const validation = validateSpeechEndpoint(endpoint);
+      if (validation) return validation;
+      this.config.ttsEndpoint = endpoint;
+    }
+    if (typeof patch.ttsModel === 'string') {
+      this.config.ttsModel = patch.ttsModel.trim().slice(0, 120);
+    }
+    if (typeof patch.ttsVoice === 'string') {
+      this.config.ttsVoice = patch.ttsVoice.trim().slice(0, 80);
+    }
+    if (typeof patch.ttsEnabled === 'boolean') this.config.ttsEnabled = patch.ttsEnabled;
+
     if (typeof patch.captureWidthDip === 'number') {
       this.config.captureWidthDip = clamp(patch.captureWidthDip, 0, 520, 0);
     }
@@ -225,6 +282,49 @@ export class ScreenConfigStore {
       }
     }
 
+    if (typeof patch.ttsApiKey === 'string') {
+      const key = patch.ttsApiKey.trim();
+      if (!key) {
+        this.config.ttsApiKeyEncrypted = null;
+        this.memoryTtsApiKey = null;
+      } else if (this.safeStorageAvailable) {
+        try {
+          this.config.ttsApiKeyEncrypted = safeStorage.encryptString(key).toString('base64');
+          this.memoryTtsApiKey = null;
+        } catch {
+          this.memoryTtsApiKey = key;
+          this.config.ttsApiKeyEncrypted = null;
+        }
+      } else {
+        this.memoryTtsApiKey = key;
+        this.config.ttsApiKeyEncrypted = null;
+      }
+    }
+
+    const touchesTts =
+      patch.ttsEnabled !== undefined ||
+      patch.ttsEndpoint !== undefined ||
+      patch.ttsModel !== undefined ||
+      patch.ttsVoice !== undefined ||
+      patch.ttsApiKey !== undefined;
+    if (this.config.ttsEnabled && touchesTts) {
+      const problem = !this.config.ttsEndpoint
+        ? '请先填写云端语音的网址（例如 https://api.openai.com/v1）。'
+        : !this.config.ttsModel
+          ? '请先填写云端语音的模型名字（例如 tts-1）。'
+          : !this.config.ttsVoice
+            ? '请先填写云端语音的音色（例如 alloy）。'
+            : !this.getTtsApiKey()
+              ? '请先填写云端语音的密钥（API Key）。'
+              : null;
+      if (problem) {
+        this.config = previousConfig;
+        this.memoryApiKey = previousMemoryKey;
+        this.memoryTtsApiKey = previousTtsMemoryKey;
+        return problem;
+      }
+    }
+
     // 只在“确实在改电脑讲解”时校验完整性：
     // 否则用户只是开关“看屏幕”，却因为上次密钥没保存而连开关都存不上。
     const touchesLlm =
@@ -245,6 +345,7 @@ export class ScreenConfigStore {
         // 回滚，避免 UI 以为已经打开但实际没保存。
         this.config = previousConfig;
         this.memoryApiKey = previousMemoryKey;
+        this.memoryTtsApiKey = previousTtsMemoryKey;
         return problem;
       }
     }

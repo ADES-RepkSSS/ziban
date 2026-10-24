@@ -13,9 +13,12 @@ import {
   charIndexAtElapsed,
   estimateSpeechMs,
   type CharTiming,
+  type DesktopPublicConfig,
 } from '@ziban/core';
 import { useProgress } from './ProgressProvider';
 import { browserSpeech } from '../capabilities/speech/webSpeech';
+import { cloudSpeech } from '../capabilities/speech/cloudSpeech';
+import { getDesktopBridge } from '../capabilities/desktop';
 import type { SpeechEngine, VoiceInfo } from '../capabilities/speech/engine';
 
 /**
@@ -63,11 +66,14 @@ interface SpeechContextValue {
 
 const SpeechContext = createContext<SpeechContextValue | null>(null);
 
-const engine: SpeechEngine = browserSpeech;
+const systemEngine: SpeechEngine = browserSpeech;
+const cloudEngine: SpeechEngine = cloudSpeech;
 
 export function SpeechProvider({ children }: { children: ReactNode }) {
   const { progress, update } = useProgress();
-  const [voices, setVoices] = useState<VoiceInfo[]>(() => engine.listVoices());
+  const bridge = getDesktopBridge();
+  const [voices, setVoices] = useState<VoiceInfo[]>(() => systemEngine.listVoices());
+  const [ttsEnabled, setTtsEnabled] = useState(false);
   const [speaking, setSpeaking] = useState(false);
   const [activeSegment, setActiveSegment] = useState<string | null>(null);
   const [charIndex, setCharIndex] = useState(-1);
@@ -85,13 +91,34 @@ export function SpeechProvider({ children }: { children: ReactNode }) {
   const startedRef = useRef(false);
   const rateRef = useRef(progress.settings.rate);
   const voiceNameRef = useRef<string | null>(progress.settings.voiceName);
+  const engine = ttsEnabled ? cloudEngine : systemEngine;
   const supported = engine.isAvailable();
 
   rateRef.current = progress.settings.rate;
   voiceNameRef.current = progress.settings.voiceName;
 
+  useEffect(() => {
+    if (!bridge) return;
+    let alive = true;
+    const apply = (config: DesktopPublicConfig) => {
+      if (alive) setTtsEnabled(Boolean(config.tts.enabled && config.tts.hasApiKey));
+    };
+    void bridge
+      .getConfig()
+      .then(apply)
+      .catch(() => {
+        // 读不到配置就继续用本机声音，不阻塞朗读。
+      });
+    const unsubscribe = bridge.onConfig(apply);
+    return () => {
+      alive = false;
+      unsubscribe();
+    };
+  }, [bridge]);
+
   const refreshVoices = useCallback(() => {
-    const list = engine.listVoices();
+    // 系统声音列表始终留给设置页；云端音色由云端 TTS 自己的设置管理。
+    const list = systemEngine.listVoices();
     if (list.length > 0) setVoices(list);
   }, []);
 
@@ -194,7 +221,7 @@ export function SpeechProvider({ children }: { children: ReactNode }) {
         },
       });
     },
-    [finishCurrent],
+    [engine, finishCurrent],
   );
 
   startSegmentRef.current = startSegment;
@@ -218,7 +245,7 @@ export function SpeechProvider({ children }: { children: ReactNode }) {
       }
       startSegment(first, generation);
     },
-    [clearTimers, startSegment],
+    [clearTimers, engine, startSegment],
   );
 
   const speak = useCallback(
@@ -252,7 +279,7 @@ export function SpeechProvider({ children }: { children: ReactNode }) {
     setSpeaking(false);
     setActiveSegment(null);
     setCharIndex(-1);
-  }, [clearTimers]);
+  }, [clearTimers, engine]);
 
   useEffect(() => () => stop(), [stop]);
 
@@ -331,6 +358,9 @@ function humanizeSpeechError(reason: string): string {
   }
   if (/network/i.test(reason)) {
     return '声音需要联网，但这次没连上。再点一下试试。';
+  }
+  if (/云端|密钥|额度|模型|音色|网址/.test(reason)) {
+    return reason;
   }
   return '这次没念出来。再点一下「再念一遍」。';
 }

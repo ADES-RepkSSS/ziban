@@ -77,6 +77,8 @@ export class OverlayController {
         nodeIntegration: false,
         sandbox: true,
         backgroundThrottling: false,
+        // 小窗的“自动念”与主窗口一样，需要允许无手势播放云端音频。
+        autoplayPolicy: 'no-user-gesture-required',
         additionalArguments: ['--ziban-overlay=1'],
       },
     });

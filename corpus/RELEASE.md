@@ -62,7 +62,7 @@ node scripts/validate-corpus.mjs corpus/release/hospital.json ...（7 个文件�
 | 释义用字覆盖率 | 平均 100%（目标 ≥95%） |
 | 释义/例句长度 | 释义 10–19 字（均值 12.2）；例句 10–18 字（均值 11.4） |
 | PII / 网址 / HTML / 危险操作示范 | 0 |
-| `pnpm test` | 64 条通过（含 4 条语料加载器测试） |
+| `pnpm test` | 67 条通过（含 4 条语料加载器测试） |
 | `pnpm typecheck` | 通过 |
 | 真实用户数据目录安装 | 已安装到 `%APPDATA%\字伴\corpus`（7 文件）；应用启动日志确认“语料库加载：293 条（7 个文件）”；release 全量加载 + 知识管线测试通过；小窗 OCR 待解锁桌面复验 |
 

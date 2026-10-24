@@ -23,7 +23,7 @@ export const CAPABILITIES: CapabilityStatus[] = [
     id: 'speech',
     name: '字卡朗读',
     state: 'ready',
-    detail: '使用这台电脑自带的中文语音，逐字高亮跟读。',
+    detail: '默认使用这台电脑自带的中文语音，逐字高亮跟读；也可在设置里选云端 TTS（自己填 API Key，会联网）。',
   },
   {
     id: 'read-text',

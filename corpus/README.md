@@ -57,7 +57,7 @@ pnpm corpus:install -- --dry-run    # 只看路径
 
 先备份旧文件；应用运行中会在 500ms 内热加载。不要复制 `workbench/`。
 不安装也能验收：`pnpm corpus:lint` + `pnpm corpus:validate` 已覆盖格式与内容门槛；
-程序内加载由 64 个测试里的 4 个语料测试覆盖。
+程序内加载由 67 个测试里的 4 个语料测试覆盖。
 
 ## 不要做
 

@@ -6,6 +6,7 @@ import { BigButton } from '../../components/BigButton';
 import { Icon } from '../../components/Icon';
 import { PageHeader } from '../../components/PageHeader';
 import { CAPABILITIES, type CapabilityState } from '../../capabilities';
+import { CloudSpeechSettingsSection } from '../speech/CloudSpeechSettingsSection';
 import { ScreenSettingsSection } from '../screen/ScreenSettingsSection';
 import { UpdateSettingsSection } from '../update/UpdateSettingsSection';
 
@@ -175,7 +176,10 @@ export function SettingsPage() {
         <section className="settings-group" aria-labelledby="voice-title">
           <div className="settings-group__head">
             <h2 id="voice-title">用哪个声音？</h2>
-            <p>点一下，就能听到这个声音。优先用本机的声音，不联网。</p>
+            <p>
+              点一下，就能听到这个声音。优先用本机的声音，不联网；打开下面“云端声音”后，
+              这一栏选的是关掉云端时用的本机声音。
+            </p>
           </div>
 
           {!supported ? (
@@ -251,6 +255,8 @@ export function SettingsPage() {
             </p>
           ) : null}
         </section>
+
+        <CloudSpeechSettingsSection />
 
         <ScreenSettingsSection />
 

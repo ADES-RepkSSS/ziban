@@ -40,6 +40,7 @@ import {
   captureSizeForWorkArea,
   lookupAtPoint,
   normalizeOcrPage,
+  type CloudSpeechResult,
   type DesktopConfigPatch,
   type DesktopPublicConfig,
   type DesktopScreenStatus,
@@ -56,6 +57,7 @@ import {
 } from './capabilities/screen/permissions.js';
 import { ScreenConfigStore } from './capabilities/knowledge/config.js';
 import { UpdateChecker } from './capabilities/update.js';
+import { synthesizeCloudSpeech } from './capabilities/speech/tts.js';
 import { loadLocalLexicon, type LocalLexicon } from './capabilities/knowledge/localLexicon.js';
 import { CorpusStore } from './capabilities/knowledge/corpus.js';
 import { KnowledgeCache } from './capabilities/knowledge/cache.js';
@@ -198,6 +200,8 @@ function createMainWindow(): BrowserWindow {
       nodeIntegration: false,
       sandbox: true,
       spellcheck: false,
+      // 字卡进入后会自动朗读；云端 TTS 用 <audio> 播放，不能被自动播放策略拦掉。
+      autoplayPolicy: 'no-user-gesture-required',
     },
   });
 
@@ -517,6 +521,24 @@ class ScreenRuntime {
     return this.knowledge.testLlm();
   }
 
+  async synthesizeSpeech(text: string): Promise<CloudSpeechResult> {
+    const stored = this.config.get();
+    if (!stored.ttsEnabled) {
+      return {
+        ok: false,
+        audio: null,
+        mimeType: null,
+        message: '云端语音关着。可以在设置里打开，或者继续用本机声音。',
+      };
+    }
+    return synthesizeCloudSpeech(text, {
+      endpoint: stored.ttsEndpoint,
+      model: stored.ttsModel,
+      voice: stored.ttsVoice,
+      apiKey: this.config.getTtsApiKey(),
+    });
+  }
+
   clearCache(): number {
     const before = this.knowledge.cacheSize;
     this.knowledge.clearCache();
@@ -637,6 +659,28 @@ function registerIpc(): void {
     assertTrusted(event);
     if (!runtime) throw new Error('还没有准备好');
     return runtime.testLlm();
+  });
+
+  ipcMain.handle('ziban:synthesize-speech', async (event, text: unknown) => {
+    assertTrusted(event);
+    if (!runtime) throw new Error('还没有准备好');
+    if (typeof text !== 'string' || !text.trim()) {
+      return {
+        ok: false,
+        audio: null,
+        mimeType: null,
+        message: '没有要念的字。',
+      } satisfies CloudSpeechResult;
+    }
+    if (Array.from(text).length > 2_000) {
+      return {
+        ok: false,
+        audio: null,
+        mimeType: null,
+        message: '一次要念的字太多了，先分段。',
+      } satisfies CloudSpeechResult;
+    }
+    return runtime.synthesizeSpeech(text);
   });
 
   ipcMain.handle('ziban:clear-cache', (event) => {

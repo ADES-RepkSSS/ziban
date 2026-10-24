@@ -87,7 +87,7 @@ manifest.json（冻结词表 + evidence + source_ref）
 | 释义用字覆盖率 | 平均 100%（目标 ≥95%） |
 | 释义 / 例句汉字数 | 平均 12.1 / 11.3（目标 12–40 / 10–40） |
 | PII / 网址 / HTML / 危险操作示范 | 0 |
-| `pnpm check` | 全绿（内容门禁 + 语料 lint + tsc + 64 tests + build + 链接检查） |
+| `pnpm check` | 全绿（内容门禁 + 语料 lint + tsc + 67 tests + build + 链接检查） |
 
 硬 lint 规则（[scripts/corpus-lint.mjs](../scripts/corpus-lint.mjs)）：
 schema 字段白名单、word 2–8 纯汉字、字卡/本机/跨文件去重、
@@ -163,7 +163,7 @@ macOS:   ~/Library/Application Support/字伴/corpus
 - [x] 7 个 release 文件、293 条、schema 通过、跨文件 0 重复
 - [x] `source=auto-*`、UI 会标“机器审校 · 不一定对”
 - [x] `pnpm corpus:lint` 0 hard fail / 0 warning
-- [x] `pnpm check` 全绿（64 tests）
+- [x] `pnpm check` 全绿（67 tests）
 - [x] review.jsonl 每条有 judge 记录或 resolution；dropped.jsonl 有 12 条原因
 - [x] CHANGELOG / docs/10 / AGENTS 已更新
 - [ ] R1 三审（未完成，下一批第一件事）

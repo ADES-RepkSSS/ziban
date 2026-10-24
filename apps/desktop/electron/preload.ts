@@ -9,6 +9,7 @@
 
 import { contextBridge, ipcRenderer } from 'electron';
 import type {
+  CloudSpeechResult,
   DesktopBridgeApi,
   DesktopConfigPatch,
   DesktopPublicConfig,
@@ -45,6 +46,8 @@ const api: DesktopBridgeApi = {
   updateConfig: (patch: DesktopConfigPatch) =>
     ipcRenderer.invoke('ziban:update-config', patch) as Promise<DesktopPublicConfig>,
   testLlm: () => ipcRenderer.invoke('ziban:test-llm') as Promise<LlmTestResult>,
+  synthesizeSpeech: (text: string) =>
+    ipcRenderer.invoke('ziban:synthesize-speech', text) as Promise<CloudSpeechResult>,
   clearCache: () => ipcRenderer.invoke('ziban:clear-cache') as Promise<number>,
   getUpdateStatus: () =>
     ipcRenderer.invoke('ziban:update-status') as Promise<DesktopUpdateStatus>,

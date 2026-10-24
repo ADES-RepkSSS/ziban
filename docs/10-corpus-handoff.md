@@ -266,7 +266,7 @@ pnpm corpus:validate path/to/medical.json
 |---|---|
 | `pnpm corpus:lint` | 293 条，0 hard fail，0 提醒 |
 | `node scripts/validate-corpus.mjs corpus/release/*.json` | 7 个文件、293 条通过 |
-| `pnpm test` | 64 个测试；新增 release 全量加载测试 |
+| `pnpm test` | 67 个测试；新增 release 全量加载测试 |
 | `CorpusStore` | 7 个文件全部加载，合计 293 条 |
 | `KnowledgeService.localLookup('候诊')` | 返回 `source=corpus`、`sourceLabel=机器审校 · 医院办事词表`、`confidence=medium` |
 | 真实 userData 安装 | `pnpm corpus:install` 已复制 7 个文件到 `%APPDATA%\字伴\corpus`；应用启动日志确认“语料库加载：293 条（7 个文件）” |

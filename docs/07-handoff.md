@@ -1,6 +1,6 @@
 # 07 · 交接说明（给下一位 AI / 维护者）
 
-> 写于 2026-10-23。项目当前是 **v0.2.1 桌面取词完整版**：网页演示已上线，Windows 绿色版已发布。
+> 写于 2026-10-24。项目当前是 **v0.2.1 桌面取词完整版**：网页演示已上线，Windows 绿色版已发布。
 > `apps/desktop` 已有 Electron 壳与“光标跟随取词”（不做框选）。
 > Windows 已实测；macOS CI 已编译 Vision helper 并识别测试图，**真机 TCC/Retina 仍待验收**。屏幕取词的完整方案、权限、
 > 真机清单见 [docs/08-screen-lookup.md](08-screen-lookup.md)；部署与使用见
@@ -15,17 +15,18 @@
 | 仓库 | <https://github.com/ADES-RepkSSS/ziban> |
 | 演示站 | <https://ades-repksss.github.io/ziban/>（已验证 HTTP 200） |
 | 分支 | `main`，`origin` 已配置 |
-| 最近提交（交接前） | `b986ba8 docs: update handoff header for v0.2.1`；`a4354de release: v0.2.1 complete build and web demo notice` |
-| 本次变更 | 2026-10-23 工作区：桌面 0.2 光标取词 + 整词切分 + 自适应截图 + 首页工具图 + docs/08/09；语料第一批 293 条 + docs/10/11 + 64 tests；部分资料尚未提交/推送 |
+| 最近提交（交接前） | `49351fb fix: track corpus/release runtime JSON`；云端 TTS 改动见本次提交 |
+| 本次变更 | 2026-10-24 工作区：桌面 0.2 光标取词 + 整词切分 + 自适应截图 + 首页工具图 + docs/08/09；语料第一批 293 条 + docs/10/11；可选云端 TTS + docs/12；67 tests |
 | 本地路径 | `D:\haness_agent\help_old` |
 | 包管理 | pnpm 11.21.0（`packageManager` 已锁定） |
 | Node | 本机 24；CI 用 22；`engines` 要求 >=20 |
-| 测试 | 64 个 Vitest 测试（新增 21 个屏幕取词纯函数测试 + 4 个语料加载器测试） |
+| 测试 | 67 个 Vitest 测试（新增 21 个屏幕取词纯函数测试 + 4 个语料加载/管线测试 + 3 个云端 TTS 端点测试） |
 | 构建 | `pnpm check` 全绿；Web 生产构建约 320 KB JS / 64 KB CSS |
 | 桌面版 | `apps/desktop`（Electron 40 + esbuild + PowerShell WinRT / macOS Vision） |
 | 版本检查 | 启动 3 秒后只读 GitHub 公共版本信息；可在“设置 → 版本”关闭；只提示链接，不自动更新 |
 | Windows 绿色版 | `pnpm desktop:package` → `release/ziban-win32-x64/Ziban.exe` + zip；未签名 |
 | 屏幕取词 | Windows 11 本机实测通过（整词取词 + 自适应截图）；macOS 待真机；浏览器仍走粘贴文字 |
+| 云端语音 | 可选桌面 TTS：OpenAI 兼容 `/audio/speech`，用户自填 API Key；默认关，音频不落盘；本地 mock 端到端通过，真实服务商 Key 待用户试听 |
 | CI | GitHub Actions `CI` 成功（checkout@v7、setup-node@v7、pnpm/action-setup@v6、ubuntu-24.04） |
 | Pages | `Deploy web demo to GitHub Pages` 成功；`https://ades-repksss.github.io/ziban/` 可访问 |
 | 内容 | 50 张卡、8 场景、52 张 SVG（含 2 张文章图）；全部 `draft`，未审校 |
@@ -80,6 +81,7 @@
   `CorpusStore` 不再静默截断超 8 字的词。
 - **R1 三审没跑完**（C/D 超时），没有人工审校/老人测试；下一批第一件事是补评审。
 - 详细交接：[docs/11-corpus-batch1-handoff.md](11-corpus-batch1-handoff.md)。
+- 云端 TTS：[docs/12-cloud-tts.md](12-cloud-tts.md)。
 
 ### 明确没做
 
