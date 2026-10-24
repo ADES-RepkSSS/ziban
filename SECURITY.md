@@ -61,10 +61,13 @@
 - Electron 版：`contextIsolation: true`、`nodeIntegration: false`、`sandbox: true`，
   能力通过白名单 IPC 暴露；生产用自定义协议 `app://ziban/` 加载 `dist`，不用 `file://`；
 - 桌面取词只截光标周围小区域，OCR 后立即删图；小窗 `setContentProtection(true)`；
-- 大模型/云端 TTS 的 API Key 只在主进程，`getConfig()` 只返回 `hasApiKey`；密钥用系统安全存储加密，
+- 大模型/桌面云端 TTS 的 API Key 只在主进程，`getConfig()` 只返回 `hasApiKey`；密钥用系统安全存储加密，
   不能安全保存时只放内存；
 - 云端 TTS 默认关闭；只接受 https（本机模型可用 http://127.0.0.1），无 Key/开关不发请求；
   只把当前要念的文字交给主进程，音频不落盘、不经渲染层以外的进程；
+- 网页版云端 TTS 按用户明确选择把 Key 存当前浏览器 `localStorage`，由浏览器直接请求服务商；
+  页面不把 Key 发到字伴服务器；服务必须支持 CORS，公共代理会看到 Key，禁止引导用户使用；
+  网页版 Key 不是安全存储，UI 必须明确警告；
 - 大模型默认关闭；默认只发词，发送当前行必须用户显式勾选；返回内容去 HTML、拒绝 URL、限长；
 - 语料库只读 `userData/corpus/*.json`，不执行其中的任何脚本；字段限长、纯文本渲染；
 - 内容入库前过 schema、来源、注入与金标准回归。

@@ -18,6 +18,10 @@ import {
 import { useProgress } from './ProgressProvider';
 import { browserSpeech } from '../capabilities/speech/webSpeech';
 import { cloudSpeech } from '../capabilities/speech/cloudSpeech';
+import {
+  loadWebCloudTtsConfig,
+  subscribeWebCloudTts,
+} from '../capabilities/speech/webCloudTts';
 import { getDesktopBridge } from '../capabilities/desktop';
 import type { SpeechEngine, VoiceInfo } from '../capabilities/speech/engine';
 
@@ -74,6 +78,7 @@ export function SpeechProvider({ children }: { children: ReactNode }) {
   const bridge = getDesktopBridge();
   const [voices, setVoices] = useState<VoiceInfo[]>(() => systemEngine.listVoices());
   const [ttsEnabled, setTtsEnabled] = useState(false);
+  const [webTtsEnabled, setWebTtsEnabled] = useState(false);
   const [speaking, setSpeaking] = useState(false);
   const [activeSegment, setActiveSegment] = useState<string | null>(null);
   const [charIndex, setCharIndex] = useState(-1);
@@ -91,15 +96,28 @@ export function SpeechProvider({ children }: { children: ReactNode }) {
   const startedRef = useRef(false);
   const rateRef = useRef(progress.settings.rate);
   const voiceNameRef = useRef<string | null>(progress.settings.voiceName);
-  const engine = ttsEnabled ? cloudEngine : systemEngine;
+  const engine = (bridge ? ttsEnabled : webTtsEnabled) ? cloudEngine : systemEngine;
   const supported = engine.isAvailable();
 
   rateRef.current = progress.settings.rate;
   voiceNameRef.current = progress.settings.voiceName;
 
   useEffect(() => {
-    if (!bridge) return;
     let alive = true;
+    if (!bridge) {
+      const applyWeb = () => {
+        if (!alive) return;
+        const config = loadWebCloudTtsConfig();
+        setWebTtsEnabled(Boolean(config.enabled && config.apiKey));
+      };
+      applyWeb();
+      const unsubscribe = subscribeWebCloudTts(applyWeb);
+      return () => {
+        alive = false;
+        unsubscribe();
+      };
+    }
+
     const apply = (config: DesktopPublicConfig) => {
       if (alive) setTtsEnabled(Boolean(config.tts.enabled && config.tts.hasApiKey));
     };

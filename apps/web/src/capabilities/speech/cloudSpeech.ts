@@ -6,6 +6,10 @@
  */
 
 import { getDesktopBridge } from '../desktop';
+import {
+  loadWebCloudTtsConfig,
+  synthesizeWebCloudSpeech,
+} from './webCloudTts';
 import type { SpeakOptions, SpeechEngine, SpeechHandle, VoiceInfo } from './engine';
 
 const CLOUD_VOICE: VoiceInfo = {
@@ -22,7 +26,8 @@ export class CloudSpeechEngine implements SpeechEngine {
   private generation = 0;
 
   isAvailable(): boolean {
-    return getDesktopBridge() !== null;
+    // 桌面版走主进程；网页版走浏览器 fetch + <audio>，两者都必须有 Audio。
+    return typeof Audio !== 'undefined';
   }
 
   listVoices(): VoiceInfo[] {
@@ -48,14 +53,17 @@ export class CloudSpeechEngine implements SpeechEngine {
     const generation = this.generation;
     let cancelled = false;
     const bridge = getDesktopBridge();
-
-    if (!bridge) {
-      queueMicrotask(() => options.onError?.('云端语音只在电脑版可用。'));
+    const webConfig = bridge ? null : loadWebCloudTtsConfig();
+    if (!bridge && (!webConfig?.enabled || !webConfig.apiKey)) {
+      queueMicrotask(() => options.onError?.('网页版云端声音还没打开或没填密钥。'));
       return { cancel: () => undefined };
     }
 
-    void bridge
-      .synthesizeSpeech(options.text)
+    const request = bridge
+      ? bridge.synthesizeSpeech(options.text)
+      : synthesizeWebCloudSpeech(options.text, webConfig!);
+
+    void request
       .then((result) => {
         if (cancelled || generation !== this.generation) return;
         if (!result.ok || !result.audio) {
