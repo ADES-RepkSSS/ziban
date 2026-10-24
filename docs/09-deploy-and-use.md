@@ -241,9 +241,10 @@ pnpm desktop:start
 
 默认用系统自带中文语音。想让朗读更像真人，可以在 **设置 → 云端声音（可选）** 填：
 
-- 网址：OpenAI 兼容 `/v1`，例如 `https://api.openai.com/v1`；
-- 模型：例如 `tts-1`；
-- 音色：例如 `alloy`；
+- 服务：OpenAI 兼容 `/audio/speech`，或阿里云百炼 **Qwen-TTS**；
+- 网址：OpenAI 填 `https://api.openai.com/v1`；Qwen 默认 `https://dashscope.aliyuncs.com/api/v1`（北京）；
+- 模型：OpenAI 如 `tts-1`；Qwen 如 `qwen3-tts-flash`；
+- 音色：OpenAI 如 `alloy`；Qwen 如 `Cherry`；
 - 密钥：桌面版只在主进程使用（Windows DPAPI / macOS Keychain 加密）；网页版按用户要求存当前浏览器 `localStorage`；
 - 保存后点“打开”；打开后，字卡、例句、屏幕讲解的朗读都会走云端。
 
@@ -254,7 +255,7 @@ pnpm desktop:start
 - 音频不落盘；失败只提示，不自动重试；
 - 屏幕取词的自动念也会走云端，不想让屏幕文字离开电脑就不要打开；
 - 网页演示版也能用：Key 按用户要求存在当前浏览器 `localStorage`，请求直接从浏览器发到服务商；
-  服务必须允许 CORS，Key 可被同源脚本读取，公共电脑不要保存，详见 docs/12。
+  服务必须允许 CORS（百炼实测允许），Key 可被同源脚本读取，公共电脑不要保存，详见 docs/12。
 
 详见 [docs/12-cloud-tts.md](12-cloud-tts.md)。
 

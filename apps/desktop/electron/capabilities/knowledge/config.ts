@@ -18,6 +18,7 @@ import { safeStorage } from 'electron';
 import type {
   DesktopConfigPatch,
   DesktopPublicConfig,
+  TtsProvider,
 } from '@ziban/core';
 import { validateSpeechEndpoint } from '../speech/tts.js';
 
@@ -33,6 +34,7 @@ export interface StoredScreenConfig {
   /** safeStorage.encryptString() 后的 base64；没有就是不保存。 */
   llmApiKeyEncrypted: string | null;
   ttsEnabled: boolean;
+  ttsProvider: TtsProvider;
   ttsEndpoint: string;
   ttsModel: string;
   ttsVoice: string;
@@ -54,6 +56,7 @@ const DEFAULT_CONFIG: StoredScreenConfig = {
   llmApiKeyEncrypted: null,
   // 云端 TTS 默认关闭；只填了密钥也不会自动开启。
   ttsEnabled: false,
+  ttsProvider: 'openai',
   ttsEndpoint: 'https://api.openai.com/v1',
   ttsModel: 'tts-1',
   ttsVoice: 'alloy',
@@ -139,6 +142,7 @@ export class ScreenConfigStore {
             ? raw.llmApiKeyEncrypted
             : null,
         ttsEnabled: asBoolean(raw.ttsEnabled, DEFAULT_CONFIG.ttsEnabled),
+        ttsProvider: raw.ttsProvider === 'qwen' ? 'qwen' : 'openai',
         ttsEndpoint: asString(raw.ttsEndpoint, DEFAULT_CONFIG.ttsEndpoint, 300),
         ttsModel: asString(raw.ttsModel, DEFAULT_CONFIG.ttsModel, 120),
         ttsVoice: asString(raw.ttsVoice, DEFAULT_CONFIG.ttsVoice, 80),
@@ -212,6 +216,7 @@ export class ScreenConfigStore {
       },
       tts: {
         enabled: this.config.ttsEnabled,
+        provider: this.config.ttsProvider,
         endpoint: this.config.ttsEndpoint,
         model: this.config.ttsModel,
         voice: this.config.ttsVoice,
@@ -242,6 +247,9 @@ export class ScreenConfigStore {
     if (typeof patch.shareContext === 'boolean') this.config.shareContext = patch.shareContext;
     if (typeof patch.llmEnabled === 'boolean') this.config.llmEnabled = patch.llmEnabled;
 
+    if (patch.ttsProvider === 'openai' || patch.ttsProvider === 'qwen') {
+      this.config.ttsProvider = patch.ttsProvider;
+    }
     if (typeof patch.ttsEndpoint === 'string') {
       const endpoint = patch.ttsEndpoint.trim().slice(0, 300);
       const validation = validateSpeechEndpoint(endpoint);
@@ -303,6 +311,7 @@ export class ScreenConfigStore {
 
     const touchesTts =
       patch.ttsEnabled !== undefined ||
+      patch.ttsProvider !== undefined ||
       patch.ttsEndpoint !== undefined ||
       patch.ttsModel !== undefined ||
       patch.ttsVoice !== undefined ||

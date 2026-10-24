@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import type { TtsProvider } from '@ziban/core';
 import { Icon } from '../../components/Icon';
 import { useScreenStatus } from '../screen/useScreenStatus';
 import {
@@ -8,6 +9,22 @@ import {
   subscribeWebCloudTts,
   type WebCloudTtsConfig,
 } from '../../capabilities/speech/webCloudTts';
+
+const PROVIDER_DEFAULTS: Record<
+  TtsProvider,
+  { endpoint: string; model: string; voice: string }
+> = {
+  openai: {
+    endpoint: 'https://api.openai.com/v1',
+    model: 'tts-1',
+    voice: 'alloy',
+  },
+  qwen: {
+    endpoint: 'https://dashscope.aliyuncs.com/api/v1',
+    model: 'qwen3-tts-flash',
+    voice: 'Cherry',
+  },
+};
 
 /**
  * 设置页的“云端声音”区域。
@@ -20,6 +37,7 @@ export function CloudSpeechSettingsSection() {
   const { bridge, config, updateConfig, busy, error } = useScreenStatus();
   const isDesktop = Boolean(bridge);
   const [enabled, setEnabled] = useState(false);
+  const [provider, setProvider] = useState<TtsProvider>('openai');
   const [endpoint, setEndpoint] = useState('https://api.openai.com/v1');
   const [model, setModel] = useState('tts-1');
   const [voice, setVoice] = useState('alloy');
@@ -33,6 +51,7 @@ export function CloudSpeechSettingsSection() {
   useEffect(() => {
     if (!config || dirty || !isDesktop) return;
     setEnabled(config.tts.enabled);
+    setProvider(config.tts.provider);
     setEndpoint(config.tts.endpoint);
     setModel(config.tts.model);
     setVoice(config.tts.voice);
@@ -46,6 +65,7 @@ export function CloudSpeechSettingsSection() {
       const next = loadWebCloudTtsConfig();
       setWebConfig(next);
       setEnabled(next.enabled);
+      setProvider(next.provider);
       setEndpoint(next.endpoint);
       setModel(next.model);
       setVoice(next.voice);
@@ -60,11 +80,22 @@ export function CloudSpeechSettingsSection() {
     : Boolean(webConfig.apiKey);
   const keyStorage = isDesktop ? config?.tts.keyStorage : 'local';
 
+  const chooseProvider = (next: TtsProvider) => {
+    setProvider(next);
+    const preset = PROVIDER_DEFAULTS[next];
+    setEndpoint(preset.endpoint);
+    setModel(preset.model);
+    setVoice(preset.voice);
+    setDirty(true);
+    setNotice(null);
+  };
+
   const save = async () => {
     setNotice(null);
     if (isDesktop) {
       const next = await updateConfig({
         ttsEnabled: enabled,
+        ttsProvider: provider,
         ttsEndpoint: endpoint,
         ttsModel: model,
         ttsVoice: voice,
@@ -86,6 +117,7 @@ export function CloudSpeechSettingsSection() {
 
     const next: WebCloudTtsConfig = {
       enabled,
+      provider,
       endpoint,
       model,
       voice,
@@ -124,6 +156,7 @@ export function CloudSpeechSettingsSection() {
     const nextConfig: WebCloudTtsConfig = {
       ...webConfig,
       enabled: next,
+      provider,
       endpoint,
       model,
       voice,
@@ -213,16 +246,27 @@ export function CloudSpeechSettingsSection() {
           家里人设置：云端语音接口和密钥
         </summary>
         <p className="screen-advanced__intro">
-          支持 OpenAI 兼容的 <code>/audio/speech</code> 接口。默认填的是 OpenAI 的地址和
-          <code>tts-1</code>，也可以换成别的兼容服务；模型名、音色以服务商文档为准。
+          {provider === 'qwen'
+            ? '使用阿里云百炼 Qwen-TTS 原生接口（qwen3-tts-flash / Cherry）。Key 用百炼 API Key；北京和新加坡域名不同。'
+            : '使用 OpenAI 兼容的 /audio/speech 接口。模型名、音色以服务商文档为准。'}
           {!isDesktop
-            ? ' 网页版要求服务允许浏览器跨域（CORS）；不支持 CORS 的服务只能改用电脑版。'
+            ? ' 网页版要求服务允许浏览器跨域（CORS）；百炼和多数兼容服务支持，具体以服务商为准。'
             : null}
         </p>
 
         <div className="screen-form">
           <label>
-            <span>网址（OpenAI 兼容 /v1）</span>
+            <span>服务</span>
+            <select
+              value={provider}
+              onChange={(event) => chooseProvider(event.target.value as TtsProvider)}
+            >
+              <option value="openai">OpenAI 兼容 /audio/speech</option>
+              <option value="qwen">阿里云百炼 Qwen-TTS</option>
+            </select>
+          </label>
+          <label>
+            <span>网址</span>
             <input
               type="url"
               value={endpoint}
@@ -230,7 +274,7 @@ export function CloudSpeechSettingsSection() {
                 setEndpoint(event.target.value);
                 setDirty(true);
               }}
-              placeholder="https://api.openai.com/v1"
+              placeholder={PROVIDER_DEFAULTS[provider].endpoint}
               autoComplete="off"
               spellCheck={false}
             />
@@ -244,7 +288,7 @@ export function CloudSpeechSettingsSection() {
                 setModel(event.target.value);
                 setDirty(true);
               }}
-              placeholder="tts-1"
+              placeholder={PROVIDER_DEFAULTS[provider].model}
               autoComplete="off"
               spellCheck={false}
             />
@@ -258,7 +302,7 @@ export function CloudSpeechSettingsSection() {
                 setVoice(event.target.value);
                 setDirty(true);
               }}
-              placeholder="alloy"
+              placeholder={PROVIDER_DEFAULTS[provider].voice}
               autoComplete="off"
               spellCheck={false}
             />

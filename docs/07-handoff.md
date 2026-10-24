@@ -26,7 +26,7 @@
 | 版本检查 | 启动 3 秒后只读 GitHub 公共版本信息；可在“设置 → 版本”关闭；只提示链接，不自动更新 |
 | Windows 绿色版 | `pnpm desktop:package` → `release/ziban-win32-x64/Ziban.exe` + zip；未签名 |
 | 屏幕取词 | Windows 11 本机实测通过（整词取词 + 自适应截图）；macOS 待真机；浏览器仍走粘贴文字 |
-| 云端语音 | 可选桌面/网页 TTS：OpenAI 兼容 `/audio/speech`，用户自填 API Key；桌面存主进程、网页存 localStorage 并需 CORS；默认关，音频不落盘；本地 mock 端到端通过，真实服务商 Key 待用户试听 |
+| 云端语音 | 可选桌面/网页 TTS：OpenAI 兼容 `/audio/speech` 或阿里云百炼 Qwen-TTS，用户自填 API Key；桌面存主进程、网页存 localStorage 并需 CORS；默认关，音频不落盘；本地 mock 端到端通过，真实服务商 Key 待用户试听 |
 | CI | GitHub Actions `CI` 成功（checkout@v7、setup-node@v7、pnpm/action-setup@v6、ubuntu-24.04） |
 | Pages | `Deploy web demo to GitHub Pages` 成功；`https://ades-repksss.github.io/ziban/` 可访问 |
 | 内容 | 50 张卡、8 场景、52 张 SVG（含 2 张文章图）；全部 `draft`，未审校 |

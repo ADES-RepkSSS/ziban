@@ -29,7 +29,7 @@
 - 50 张卡 / 8 场景 / 52 张手绘 SVG
 - 67 个单元测试；`pnpm check` 全绿（含语料硬 lint）
 - 实验语料库第一批 293 条（7 个文件，全部 `source=auto-*`，**机器审校草稿，未人工审校**）；见 [corpus/RELEASE.md](corpus/RELEASE.md)
-- 可选**云端文本转语音**：设置里填 OpenAI 兼容 `/audio/speech` 的 API Key；默认关，打开后文字才发到用户选的服务，音频不落盘；见 [docs/12](docs/12-cloud-tts.md)
+- 可选**云端文本转语音**：设置里填 OpenAI 兼容 `/audio/speech` 或阿里云百炼 Qwen-TTS 的 API Key；默认关，打开后文字才发到用户选的服务，音频不落盘；见 [docs/12](docs/12-cloud-tts.md)
 - 桌面版 `apps/desktop`：Electron 40 + esbuild；Windows WinRT OCR 实测；macOS `screencapture` + Vision 待真机
 - GitHub Actions：`CI`、`Deploy web demo to GitHub Pages`、`Desktop macOS OCR`（编译/识别测试图）
 - 字卡 50 张、屏幕语料 293 条全部是 draft/机器审校草稿，**未经人工审校，禁止对外称为正式内容**
@@ -122,7 +122,7 @@ docs/                    00–12 设计/交接文档（08 = 屏幕取词，09 = 
 - **屏幕取词**：不做全屏录制/框选。`hover.ts` 光标停稳 380ms 才截自适应小区域（工作区宽约 26%，260–420 DIP）；OCR 后立即删图；小窗 `setContentProtection`；不要把轮询间隔改到 100ms 以下。
 - **屏幕权限**：macOS 只需要“屏幕录制”（不需要辅助功能）；必须在用户点击的同一调用栈里触发；拒绝后只能引导去系统设置，不能静默重试刷屏。
 - **知识优先级**：字卡 > `userData/corpus` > 本机词表 > 大模型补缺；模型不得覆盖人工释义；生成内容必须 `generated=true`，UI 标“不一定对”。
-- **云端 TTS**：默认关；桌面版密钥只在主进程（渲染层只知道 `hasApiKey`），网页版按用户要求存当前浏览器 `localStorage` 并由浏览器直连服务商（需 CORS，UI 必须警告）；只把要念的文字发给用户配置的 https 服务；不落盘、不自动回退、不重试轰炸；打开后所有朗读（含屏幕取词自动念）都走云端。
+- **云端 TTS**：默认关；桌面版密钥只在主进程（渲染层只知道 `hasApiKey`），网页版按用户要求存当前浏览器 `localStorage` 并由浏览器直连服务商（需 CORS，UI 必须警告）；只把要念的文字发给用户配置的 https 服务；不落盘、不自动回退、不重试轰炸；打开后所有朗读（含屏幕取词自动念）都走云端。Qwen 用原生接口，默认 `qwen3-tts-flash` / `Cherry`。
 - **默认不联网**：大模型默认关闭；没有密钥/开关时一个请求都不发；版本检查只读 GitHub 公共信息、可关、缓存 24h；桌面版 API Key 只在主进程，渲染层只能看到 `hasApiKey`；网页版云端 TTS 的 Key 按用户要求存本地 `localStorage`。
 - **内容红线**：释义/例句必须有来源；没有把握的讲解返回 `plain: null`，UI 显示“只会念，还讲不好”，不许编。
 

@@ -532,6 +532,7 @@ class ScreenRuntime {
       };
     }
     return synthesizeCloudSpeech(text, {
+      provider: stored.ttsProvider,
       endpoint: stored.ttsEndpoint,
       model: stored.ttsModel,
       voice: stored.ttsVoice,
@@ -901,6 +902,7 @@ async function runLookupSmoke(): Promise<void> {
     captureHeightDip: 0,
     shareContext: false,
     llm: { enabled: false, endpoint: '', model: '', hasApiKey: false, keyStorage: 'safe' },
+    tts: { enabled: false, provider: 'openai', endpoint: '', model: '', voice: '', hasApiKey: false, keyStorage: 'safe' },
   }));
   ipcMain.handle('ziban:resize-overlay', () => undefined);
 
@@ -1015,6 +1017,7 @@ async function runHoverSmoke(): Promise<void> {
     captureHeightDip: 0,
     shareContext: false,
     llm: { enabled: false, endpoint: '', model: '', hasApiKey: false, keyStorage: 'safe' },
+    tts: { enabled: false, provider: 'openai', endpoint: '', model: '', voice: '', hasApiKey: false, keyStorage: 'safe' },
   }));
   ipcMain.handle('ziban:resize-overlay', (_event, value: unknown) => {
     const heightValue = typeof value === 'number' ? value : Number(value);
@@ -1110,6 +1113,15 @@ async function runUiSmoke(): Promise<void> {
       enabled: false,
       endpoint: '',
       model: '',
+      hasApiKey: false,
+      keyStorage: 'safe',
+    },
+    tts: {
+      enabled: false,
+      provider: 'openai',
+      endpoint: '',
+      model: '',
+      voice: '',
       hasApiKey: false,
       keyStorage: 'safe',
     },

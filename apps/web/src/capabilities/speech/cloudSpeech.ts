@@ -22,7 +22,7 @@ const CLOUD_VOICE: VoiceInfo = {
 export class CloudSpeechEngine implements SpeechEngine {
   readonly id = 'cloud-tts';
   private currentAudio: HTMLAudioElement | null = null;
-  private currentUrl: string | null = null;
+  private currentObjectUrl: string | null = null;
   private generation = 0;
 
   isAvailable(): boolean {
@@ -42,9 +42,9 @@ export class CloudSpeechEngine implements SpeechEngine {
       this.currentAudio.pause();
       this.currentAudio = null;
     }
-    if (this.currentUrl) {
-      URL.revokeObjectURL(this.currentUrl);
-      this.currentUrl = null;
+    if (this.currentObjectUrl) {
+      URL.revokeObjectURL(this.currentObjectUrl);
+      this.currentObjectUrl = null;
     }
   }
 
@@ -66,24 +66,29 @@ export class CloudSpeechEngine implements SpeechEngine {
     void request
       .then((result) => {
         if (cancelled || generation !== this.generation) return;
-        if (!result.ok || !result.audio) {
+        if (!result.ok || (!result.audio && !result.audioUrl)) {
           options.onError?.(result.message ?? '云端语音没念出来，再试一次。');
           return;
         }
 
-        const bytes =
-          result.audio instanceof Uint8Array ? result.audio : new Uint8Array(result.audio);
-        // 复制成独立的 ArrayBuffer，避免 Blob 拿到 SharedArrayBuffer/偏移切片。
-        const audioBuffer = bytes.buffer.slice(
-          bytes.byteOffset,
-          bytes.byteOffset + bytes.byteLength,
-        ) as ArrayBuffer;
-        const url = URL.createObjectURL(
-          new Blob([audioBuffer], { type: result.mimeType ?? 'audio/mpeg' }),
-        );
+        let url: string;
+        if (result.audioUrl) {
+          // 千问返回签名音频地址；直接播放，避免二次下载和 CORS。
+          url = result.audioUrl;
+        } else {
+          const bytes = result.audio as Uint8Array;
+          // 复制成独立的 ArrayBuffer，避免 Blob 拿到 SharedArrayBuffer/偏移切片。
+          const audioBuffer = bytes.buffer.slice(
+            bytes.byteOffset,
+            bytes.byteOffset + bytes.byteLength,
+          ) as ArrayBuffer;
+          url = URL.createObjectURL(
+            new Blob([audioBuffer], { type: result.mimeType ?? 'audio/mpeg' }),
+          );
+          this.currentObjectUrl = url;
+        }
         const audio = new Audio(url);
         this.currentAudio = audio;
-        this.currentUrl = url;
         audio.playbackRate = Math.min(1.5, Math.max(0.5, options.rate));
 
         const finish = (ended: boolean) => {

@@ -6,9 +6,12 @@
 
 ## 1. 用户看到什么
 
-设置页多一块 **“云端声音（可选）”**：
+设置页多一块 **“云端声音（可选）”**，可选择：
 
-- 默认关着；关着时一个请求都不发；
+- **OpenAI 兼容** `/audio/speech`；
+- **阿里云百炼 Qwen-TTS**（`qwen3-tts-flash`，原生 DashScope 接口）。
+
+两种都默认关着；关着时一个请求都不发。
 - 打开后，字卡朗读、例句、屏幕讲解的“念”都改用云端声音；
 - 音色由服务商的 `voice` 参数决定；系统声音设置只在关掉云端后生效；
 - 没网、密钥错、额度用完时，会显示一句人话，不会反复重试轰炸用户；
@@ -38,7 +41,9 @@
 
 ## 3. 兼容接口
 
-按 OpenAI 的语音合成接口实现：
+### 3.1 OpenAI 兼容 `/audio/speech`
+
+设置里的“服务”选 **OpenAI 兼容**：
 
 ```http
 POST {endpoint}/audio/speech
@@ -75,14 +80,50 @@ OpenAI 官方接口在浏览器里可能被 CORS 拦住，实际以服务商策�
 > 不同兼容服务对 `model`、`voice`、`response_format` 的支持不一样；以服务商文档为准。
 > 字伴不内置任何服务商密钥，也不会替用户选择服务商。
 
+### 3.2 阿里云百炼 Qwen-TTS
+
+设置里的“服务”选 **阿里云百炼 Qwen-TTS**。字伴调用百炼原生接口：
+
+```http
+POST {endpoint}/services/aigc/multimodal-generation/generation
+Authorization: Bearer <DASHSCOPE_API_KEY>
+Content-Type: application/json
+
+{
+  "model": "qwen3-tts-flash",
+  "input": {
+    "text": "要念的中文",
+    "voice": "Cherry",
+    "language_type": "Chinese"
+  }
+}
+```
+
+默认网址：
+
+```text
+https://dashscope.aliyuncs.com/api/v1        # 北京
+https://dashscope-intl.aliyuncs.com/api/v1   # 新加坡
+```
+
+- 北京和新加坡的 API Key 不通用，按你开通的地域填；
+- 默认模型 `qwen3-tts-flash`，默认音色 `Cherry`；
+- 返回 JSON 里的 `output.audio.url` 是 24 小时签名地址；桌面版下载成字节再播放，网页版直接播放该地址（自动把 http 升级为 https，避免混合内容）；
+- 千问单次最多 600 字；字伴每段只有几十字，正常够用；
+- 具体模型/音色/计费以[百炼非实时语音合成文档](https://help.aliyun.com/zh/model-studio/non-realtime-tts-user-guide)和[Qwen-TTS API](https://www.alibabacloud.com/help/ja/model-studio/qwen-tts-api)为准；
+- 企业业务空间如果使用专属域名，把域名填进“网址”，路径会自动补全。
+
+百炼接口的 CORS 预检实测允许 `Authorization` 和 `Content-Type`，所以网页版直连 Qwen-TTS 可行；如果换成别的地域/代理，仍以实际响应为准。
+
 ## 4. 配置步骤
 
 1. 打开 **设置 → 云端声音（可选）**；
 2. 展开“家里人设置：云端语音接口和密钥”；
-3. 填网址、模型、音色、API Key；
-4. 点 **保存**（保存接口和密钥）；
-5. 点上面的 **打开**（立即生效，不需要再保存）；
-6. 去“帮我看屏幕”粘贴一句话，点“念给我听”试听。
+3. 选“服务”：OpenAI 兼容或阿里云百炼 Qwen-TTS；
+4. 填网址、模型、音色、API Key（Qwen-TTS 默认已填好北京地址、`qwen3-tts-flash`、`Cherry`）；
+5. 点 **保存**（保存接口和密钥）；
+6. 点上面的 **打开**（立即生效，不需要再保存）；
+7. 去“帮我看屏幕”粘贴一句话，点“念给我听”试听。
 
 如果密钥不能安全保存（桌面 `keyStorage=memory-only`），关掉字伴后要重填；公用电脑不要打开。
 
@@ -96,7 +137,7 @@ OpenAI 官方接口在浏览器里可能被 CORS 拦住，实际以服务商策�
 ## 5. 代码位置
 
 ```text
-apps/desktop/electron/capabilities/speech/tts.ts   主进程请求、超时、错误映射、端点校验
+apps/desktop/electron/capabilities/speech/tts.ts   主进程 OpenAI 兼容 + Qwen-TTS 请求、超时、错误映射、端点校验
 apps/desktop/electron/capabilities/knowledge/config.ts  密钥加密/公开配置/更新校验
 apps/desktop/electron/preload.ts                  synthesizeSpeech 白名单
 apps/desktop/electron/main.ts                     IPC + runtime.synthesizeSpeech
@@ -131,6 +172,8 @@ packages/core/src/desktop.ts                      公共配置与 CloudSpeechRes
 - **系统声音列表不变**：设置页仍显示系统中文声音，但云端打开时系统声音不生效。
 - **网页版受 CORS 限制**：服务不允许浏览器跨域时无法播放；这不是字伴能绕过的浏览器安全边界。
 - **网页版 Key 不是安全存储**：`localStorage` 明文，XSS/扩展/共用电脑都可能读取；桌面版更安全。
+- **Qwen 单次 600 字**：字伴按段合成，通常不会撞到；超长会提示分段。
+- **Qwen 音频 URL 24 小时**：网页版直接播放签名地址，不保存；过期后下次会重新合成。
 
 ## 7. 验收清单
 
@@ -138,8 +181,10 @@ packages/core/src/desktop.ts                      公共配置与 CloudSpeechRes
 - [x] `pnpm test` 67 个测试通过（新增 3 个端点校验测试）
 - [x] `pnpm desktop:build` 通过
 - [x] 桌面版本地 mock `/v1/audio/speech` 端到端：配置保存 → 设置切换 → 点“念给我听” → 请求带 `Bearer`、文本、模型、音色 → 返回音频并播放
-- [x] 网页版 CORS mock 端到端：设置页保存 localStorage → 打开 → 浏览器直接请求 → 带 `Origin`/`Bearer` → 音频播放
-- [ ] 用真实服务商 Key 试听一次（涉及计费，需用户自己提供 Key；并确认服务允许 CORS）
+- [x] 网页版 OpenAI 兼容 CORS mock 端到端：设置页保存 localStorage → 打开 → 浏览器直接请求 → 带 `Origin`/`Bearer` → 音频播放
+- [x] 网页版 Qwen-TTS mock 端到端：选 Qwen → 保存 → 打开 → 请求原生 `/services/aigc/multimodal-generation/generation` → 返回签名 URL → 音频播放
+- [x] 桌面版 Qwen-TTS mock 端到端：主进程请求 → 下载签名音频 → 播放
+- [ ] 用真实服务商 Key 试听一次（涉及计费，需用户自己提供阿里云百炼或 OpenAI 兼容 Key）
 - [ ] 真人/老人试听云端音色（未做）
 
 ## 8. 相关文档

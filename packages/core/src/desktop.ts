@@ -76,6 +76,8 @@ export interface DesktopScreenStatus {
   lastError: string | null;
 }
 
+export type TtsProvider = 'openai' | 'qwen';
+
 /**
  * 渲染层可以读的配置。
  * API Key 永远不回传，只回传 hasApiKey；避免小窗/页面被 XSS 时泄露密钥。
@@ -97,9 +99,11 @@ export interface DesktopPublicConfig {
     /** 本机安全存储是否可用；不可用时不要持久化密钥。 */
     keyStorage: 'safe' | 'memory-only';
   };
-  /** 可选云端 TTS（OpenAI 兼容 /audio/speech）；默认关闭，密钥只在主进程。 */
+  /** 可选云端 TTS；默认关闭，密钥只在主进程。 */
   tts: {
     enabled: boolean;
+    /** openai = OpenAI 兼容 /audio/speech；qwen = 阿里云百炼 Qwen-TTS。 */
+    provider: TtsProvider;
     endpoint: string;
     model: string;
     voice: string;
@@ -114,6 +118,8 @@ export interface CloudSpeechResult {
   audio: Uint8Array | null;
   mimeType: string | null;
   message: string | null;
+  /** 网页版 Qwen-TTS 直接返回受签名保护的音频 URL；桌面版仍下载成字节。 */
+  audioUrl?: string | null;
 }
 
 export interface DesktopConfigPatch {
@@ -127,6 +133,7 @@ export interface DesktopConfigPatch {
   /** 只写不读；空字符串表示清除。 */
   llmApiKey?: string;
   ttsEnabled?: boolean;
+  ttsProvider?: TtsProvider;
   ttsEndpoint?: string;
   ttsModel?: string;
   ttsVoice?: string;

@@ -8,10 +8,11 @@
  *   公共 CORS 代理会看到 Key，不要用。
  */
 
-import type { CloudSpeechResult } from '@ziban/core';
+import type { CloudSpeechResult, TtsProvider } from '@ziban/core';
 
 export interface WebCloudTtsConfig {
   enabled: boolean;
+  provider: TtsProvider;
   endpoint: string;
   model: string;
   voice: string;
@@ -23,6 +24,7 @@ export const WEB_CLOUD_TTS_CHANGED = 'ziban:cloud-tts-changed';
 
 const DEFAULT_CONFIG: WebCloudTtsConfig = {
   enabled: false,
+  provider: 'openai',
   endpoint: 'https://api.openai.com/v1',
   model: 'tts-1',
   voice: 'alloy',
@@ -40,6 +42,7 @@ export function loadWebCloudTtsConfig(): WebCloudTtsConfig {
     const parsed = JSON.parse(raw) as Partial<WebCloudTtsConfig>;
     return {
       enabled: parsed.enabled === true,
+      provider: parsed.provider === 'qwen' ? 'qwen' : 'openai',
       endpoint: text(parsed.endpoint, DEFAULT_CONFIG.endpoint, 300),
       model: text(parsed.model, DEFAULT_CONFIG.model, 120),
       voice: text(parsed.voice, DEFAULT_CONFIG.voice, 80),
@@ -53,6 +56,7 @@ export function loadWebCloudTtsConfig(): WebCloudTtsConfig {
 export function saveWebCloudTtsConfig(config: WebCloudTtsConfig): string | null {
   const next: WebCloudTtsConfig = {
     enabled: Boolean(config.enabled),
+    provider: config.provider === 'qwen' ? 'qwen' : 'openai',
     endpoint: config.endpoint.trim().slice(0, 300),
     model: config.model.trim().slice(0, 120),
     voice: config.voice.trim().slice(0, 80),
@@ -122,6 +126,30 @@ function speechEndpoint(endpoint: string): string {
   return `${base}/v1/audio/speech`;
 }
 
+function qwenSpeechEndpoint(endpoint: string): string {
+  const base = endpoint.trim().replace(/\/+$/, '');
+  if (/\/services\/aigc\/multimodal-generation\/generation$/i.test(base)) return base;
+  if (/\/api\/v1$/i.test(base)) return `${base}/services/aigc/multimodal-generation/generation`;
+  if (/\/api$/i.test(base)) return `${base}/v1/services/aigc/multimodal-generation/generation`;
+  return `${base}/api/v1/services/aigc/multimodal-generation/generation`;
+}
+
+function httpsAudioUrl(url: string): string {
+  try {
+    const parsed = new URL(url);
+    if (
+      parsed.protocol === 'http:' &&
+      parsed.hostname !== '127.0.0.1' &&
+      parsed.hostname !== 'localhost'
+    ) {
+      parsed.protocol = 'https:';
+    }
+    return parsed.toString();
+  } catch {
+    return url;
+  }
+}
+
 export async function synthesizeWebCloudSpeech(
   text: string,
   config: WebCloudTtsConfig,
@@ -138,6 +166,9 @@ export async function synthesizeWebCloudSpeech(
   }
   if (!config.apiKey) {
     return { ok: false, audio: null, mimeType: null, message: '还没填云端语音的密钥。' };
+  }
+  if (config.provider === 'qwen') {
+    return synthesizeWebQwenSpeech(input, config);
   }
 
   const controller = new AbortController();
@@ -202,4 +233,111 @@ export async function synthesizeWebCloudSpeech(
     return { ok: false, audio: null, mimeType: null, message: '这段语音太长了，先分段。' };
   }
   return { ok: true, audio: new Uint8Array(buffer), mimeType, message: null };
+}
+
+interface QwenWebResponse {
+  status_code?: number;
+  code?: string;
+  message?: string;
+  output?: {
+    audio?: {
+      data?: string;
+      url?: string;
+    } | null;
+  } | null;
+}
+
+async function synthesizeWebQwenSpeech(
+  text: string,
+  config: WebCloudTtsConfig,
+): Promise<CloudSpeechResult> {
+  if (Array.from(text).length > 600) {
+    return { ok: false, audio: null, mimeType: null, message: '千问一次最多 600 字，先分段。' };
+  }
+
+  const controller = new AbortController();
+  const timer = window.setTimeout(() => controller.abort(), 45_000);
+  let response: Response;
+  try {
+    response = await fetch(qwenSpeechEndpoint(config.endpoint), {
+      method: 'POST',
+      headers: {
+        Authorization: `Bearer ${config.apiKey}`,
+        'Content-Type': 'application/json',
+        Accept: 'application/json',
+      },
+      body: JSON.stringify({
+        model: config.model,
+        input: {
+          text,
+          voice: config.voice,
+          language_type: 'Chinese',
+        },
+      }),
+      redirect: 'error',
+      signal: controller.signal,
+    });
+  } catch {
+    return {
+      ok: false,
+      audio: null,
+      mimeType: null,
+      message: '网页版没连上千问语音。确认百炼接口允许浏览器跨域（CORS），或改用电脑版。',
+    };
+  } finally {
+    window.clearTimeout(timer);
+  }
+
+  if (!response.ok) {
+    return {
+      ok: false,
+      audio: null,
+      mimeType: null,
+      message:
+        response.status === 401 || response.status === 403
+          ? '千问语音密钥不对，或没有百炼权限。'
+          : response.status === 429
+            ? '千问语音调用太频繁或额度用完了。'
+            : `千问语音没念出来（HTTP ${response.status}）。`,
+    };
+  }
+
+  let payload: QwenWebResponse;
+  try {
+    payload = (await response.json()) as QwenWebResponse;
+  } catch {
+    return { ok: false, audio: null, mimeType: null, message: '千问返回的不是 JSON，检查接口地址。' };
+  }
+  if ((payload.status_code && payload.status_code >= 400) || payload.code) {
+    return {
+      ok: false,
+      audio: null,
+      mimeType: null,
+      message: payload.message ? `千问：${payload.message}` : '千问语音请求没成功。',
+    };
+  }
+
+  const audio = payload.output?.audio;
+  if (audio?.data) {
+    try {
+      const binary = window.atob(audio.data);
+      const bytes = new Uint8Array(binary.length);
+      for (let i = 0; i < binary.length; i += 1) bytes[i] = binary.charCodeAt(i);
+      return { ok: true, audio: bytes, mimeType: 'audio/wav', message: null };
+    } catch {
+      return { ok: false, audio: null, mimeType: null, message: '千问返回的音频解不开。' };
+    }
+  }
+  if (!audio?.url) {
+    return { ok: false, audio: null, mimeType: null, message: '千问没有返回音频地址。' };
+  }
+
+  // 音频 URL 是签名地址，<audio> 播放不需要 CORS；把 http 升级成 https 以避免混合内容。
+  return {
+    ok: true,
+    audio: null,
+    audioUrl: httpsAudioUrl(audio.url),
+    mimeType: null,
+    message: null,
+  };
 }
