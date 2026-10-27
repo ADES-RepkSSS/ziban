@@ -10,10 +10,13 @@ import { cards, imageUrl } from '../../content/deck';
 
 type Filter = SceneId | 'all';
 
+const PAGE_SIZE = 60;
+
 export function LibraryPage() {
   const { progress } = useProgress();
   const { speak, stop } = useSpeech();
   const [filter, setFilter] = useState<Filter>('all');
+  const [shown, setShown] = useState(PAGE_SIZE);
 
   useEffect(() => () => stop(), [stop]);
 
@@ -21,6 +24,11 @@ export function LibraryPage() {
     () => (filter === 'all' ? cards : cards.filter((card) => card.scene === filter)),
     [filter],
   );
+  const displayed = useMemo(() => visible.slice(0, shown), [visible, shown]);
+
+  useEffect(() => {
+    setShown(PAGE_SIZE);
+  }, [filter]);
 
   const learnedCount = Object.keys(progress.cards).length;
 
@@ -83,11 +91,11 @@ export function LibraryPage() {
         </div>
 
         <p className="library-count" aria-live="polite">
-          {filter === 'all' ? '全部' : SCENE_META[filter].name} · {visible.length} 张
+          {filter === 'all' ? '全部' : SCENE_META[filter].name} · 显示 {displayed.length} / {visible.length} 张
         </p>
 
         <div className="card-grid">
-          {visible.map((card) => {
+          {displayed.map((card) => {
             const learned = Boolean(progress.cards[card.id]);
             return (
               <button
@@ -116,6 +124,15 @@ export function LibraryPage() {
             );
           })}
         </div>
+
+        {shown < visible.length ? (
+          <div className="library-more">
+            <BigButton variant="secondary" icon="next" onClick={() => setShown((value) => value + PAGE_SIZE)}>
+              再看一些
+            </BigButton>
+            <p>还有 {visible.length - shown} 张</p>
+          </div>
+        ) : null}
 
         {visible.length === 0 ? (
           <div className="empty-state">

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="一台白色的冰箱，门上有一个把手">
+  <rect width="512" height="512" rx="40" fill="#F4EBD9"/>
+  <circle cx="256" cy="248" r="196" fill="#FCF8EF"/>
+  <ellipse cx="256" cy="421" rx="132" ry="17" fill="#DDCEB7" stroke="none" stroke-width="0" opacity="0.75"/><rect x="150" y="92" width="212" height="320" rx="24" fill="#FFFFFF" stroke="#26313D" stroke-width="14" /><line x1="150" y1="214" x2="362" y2="214" stroke="#26313D" stroke-width="12" stroke-linecap="round" /><rect x="326" y="136" width="16" height="52" rx="8" fill="#D9DEE3" stroke="#26313D" stroke-width="8" /><rect x="326" y="238" width="16" height="52" rx="8" fill="#D9DEE3" stroke="#26313D" stroke-width="8" /><circle cx="184" cy="154" r="12" fill="#1D7A72" stroke="#26313D" stroke-width="6" /><rect x="178" y="300" width="70" height="50" rx="12" fill="#E9A59C" stroke="#26313D" stroke-width="6" /><ellipse cx="306" cy="332" rx="24" ry="16" fill="#F6D08E" stroke="#26313D" stroke-width="6" /><rect x="206" y="468" width="100" height="8" rx="4" fill="#3E6FA6" stroke="none" stroke-width="0" opacity="0.85"/>
+</svg>

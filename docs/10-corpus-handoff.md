@@ -160,7 +160,7 @@ pnpm corpus:validate path/to/medical.json
 > 生成的是 `draft`。当前 `corpus/release` 里的 293 条也只是**机器审校草稿**，
 > 不是人工审校、不是正式内容；不要因为文件叫 release 就当成已审核发布。
 
-## 6. 人工/自动审校清单
+## 6. 自动检查 + 可选人工抽检
 
 每条至少过一遍：
 
@@ -174,12 +174,12 @@ pnpm corpus:validate path/to/medical.json
 - [ ] 医疗/金融/法律词有保守提醒；
 - [ ] 通过 `pnpm corpus:validate`。
 
-建议审校抽样：
+可选人工抽检（不做也可以发布，但必须标机器审校草稿）：
 
-- 100% 看 `word` 和 `definition`；
+- 建议看 `word` 和 `definition`；不做不阻塞。
 - 30% 抽查 `pinyin`；
 - 100% 看风险词（验证码/转账/冻结/退款/中奖/密码/链接）；
-- 至少 10 条拿给真实老人读一遍，记录“听不懂/不想看”的原话。
+- 有条件时拿几条给真实老人读一遍，记录“听不懂/不想看”的原话；没有条件就如实写“未做”。
 
 ## 7. 加载与验收
 
@@ -304,7 +304,7 @@ macOS：`~/Library/Application Support/字伴/corpus`
 
 - 屏幕语料 schema 没有 `image` 字段；
 - 屏幕取词小窗只显示词、拼音、释义、例句、来源、风险，不显示插图；
-- 本次没有新增字卡：仍是 50 张卡、52 张 SVG（50 卡 + 2 文章），`pnpm content:validate` 通过。
+- 语料批次本身不含插图；当前字卡已扩到 550 张 / 552 张 SVG，`pnpm content:validate` 通过。
 
 只有**新增字卡**才需要新 SVG：一张卡一张图，图片放 `content/images/`，文件名写进 YAML 的
 `image.file`。如果下一批要扩卡，统一风格提示词如下（给批量 AI 用）：
@@ -323,4 +323,4 @@ macOS：`~/Library/Application Support/字伴/corpus`
 - 输出只给 SVG 代码，不要 Markdown 代码块，不要解释。
 ```
 
-批量生成后必须人工看图：物体是否一眼可辨、有没有文字、大小是否一致、是否和已有 52 张风格接近。
+批量生成后建议人工看图（没有条件时至少跑机器检查）：物体是否一眼可辨、有没有文字、大小是否一致、是否和已有 552 张风格接近。

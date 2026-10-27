@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="一口平底锅，里面煎着一个蛋">
+  <rect width="512" height="512" rx="40" fill="#F4EBD9"/>
+  <circle cx="256" cy="248" r="196" fill="#FCF8EF"/>
+  <ellipse cx="256" cy="421" rx="132" ry="17" fill="#DDCEB7" stroke="none" stroke-width="0" opacity="0.75"/><ellipse cx="238" cy="300" rx="132" ry="34" fill="#26313D" stroke="#26313D" stroke-width="10" /><rect x="106" y="284" width="264" height="34" rx="17" fill="#26313D" stroke="#26313D" stroke-width="0" /><line x1="370" y1="300" x2="452" y2="254" stroke="#26313D" stroke-width="18" stroke-linecap="round" /><ellipse cx="238" cy="282" rx="86" ry="44" fill="#FFFFFF" stroke="#26313D" stroke-width="8" /><circle cx="238" cy="278" r="36" fill="#E8A63C" stroke="#26313D" stroke-width="8" /><circle cx="238" cy="278" r="18" fill="#F6D08E" stroke="#26313D" stroke-width="4" /><path d="M 168 220 q -16 -22 0 -42 M 308 220 q 16 -22 0 -42" fill="none" stroke="#9AA4AE" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" /><rect x="206" y="468" width="100" height="8" rx="4" fill="#3E6FA6" stroke="none" stroke-width="0" opacity="0.85"/>
+</svg>

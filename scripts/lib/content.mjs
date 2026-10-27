@@ -22,6 +22,7 @@ export const ROOT = path.resolve(here, '..', '..');
 export const CARDS_DIR = path.join(ROOT, 'content', 'cards');
 export const IMAGES_DIR = path.join(ROOT, 'content', 'images');
 export const CHARSET_FILE = path.join(ROOT, 'content', 'charset.level1.txt');
+export const CHARSET_LEVEL2_FILE = path.join(ROOT, 'content', 'charset.level2.txt');
 export const WEB_DIR = path.join(ROOT, 'apps', 'web');
 export const PUBLIC_IMAGES_DIR = path.join(WEB_DIR, 'public', 'images');
 export const GENERATED_FILE = path.join(WEB_DIR, 'src', 'content', 'cards.generated.json');
@@ -179,15 +180,21 @@ export function loadCards({ quiet = false } = {}) {
     }
   }
 
-  const charset = loadCharset();
-  if (charset.size > 0) {
-    for (const card of cards) {
-      const unknown = [...new Set([...card.meaning].filter((char) => /[\u4e00-\u9fff]/.test(char) && !charset.has(char)))];
-      if (unknown.length > 0) {
-        errors.push(
-          `${card.id}: 释义用了字表外的字「${unknown.join('')}」：「${card.meaning}」`,
-        );
-      }
+  // level1 继续用“已学字”白名单；level2 是扩量生活词，用 common2000 做门禁。
+  // 不要把 level1 的字表换掉：那会放宽 50 张基线卡的限制。
+  const charsets = new Map([
+    ['level1.yaml', loadCharset(CHARSET_FILE)],
+    ['level2.yaml', loadCharset(CHARSET_LEVEL2_FILE)],
+  ]);
+  const fallbackCharset = charsets.get('level1.yaml');
+  for (const card of cards) {
+    const charset = charsets.get(card.__file) ?? fallbackCharset;
+    if (!charset || charset.size === 0) continue;
+    const unknown = [...new Set([...card.meaning].filter((char) => /[\u4e00-\u9fff]/.test(char) && !charset.has(char)))];
+    if (unknown.length > 0) {
+      errors.push(
+        `${card.id}: 释义用了字表外的字「${unknown.join('')}」：「${card.meaning}」`,
+      );
     }
   }
 
@@ -203,11 +210,11 @@ export function loadCards({ quiet = false } = {}) {
   return { cards, warnings, files };
 }
 
-export function loadCharset() {
-  if (!fs.existsSync(CHARSET_FILE)) return new Set();
+export function loadCharset(filePath = CHARSET_FILE) {
+  if (!fs.existsSync(filePath)) return new Set();
   return new Set(
     fs
-      .readFileSync(CHARSET_FILE, 'utf8')
+      .readFileSync(filePath, 'utf8')
       .replace(/#.*$/gm, '')
       .split(/\s+/)
       .filter(Boolean)

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="一把带靠背的椅子">
+  <rect width="512" height="512" rx="40" fill="#F4EBD9"/>
+  <circle cx="256" cy="248" r="196" fill="#FCF8EF"/>
+  <ellipse cx="256" cy="421" rx="132" ry="17" fill="#DDCEB7" stroke="none" stroke-width="0" opacity="0.75"/><rect x="146" y="132" width="220" height="174" rx="26" fill="#8FC7C1" stroke="#26313D" stroke-width="14" /><rect x="126" y="286" width="260" height="54" rx="20" fill="#1D7A72" stroke="#26313D" stroke-width="14" /><rect x="142" y="336" width="28" height="76" rx="8" fill="#26313D" stroke="#26313D" stroke-width="0" /><rect x="342" y="336" width="28" height="76" rx="8" fill="#26313D" stroke="#26313D" stroke-width="0" /><rect x="170" y="280" width="172" height="18" rx="9" fill="#FCF8EF" stroke="#26313D" stroke-width="0" /><circle cx="256" cy="218" r="34" fill="#FCF8EF" stroke="#26313D" stroke-width="6" /><path d="M 238 218 q 18 -20 36 0" fill="none" stroke="#1D7A72" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" /><rect x="206" y="468" width="100" height="8" rx="4" fill="#3E6FA6" stroke="none" stroke-width="0" opacity="0.85"/>
+</svg>

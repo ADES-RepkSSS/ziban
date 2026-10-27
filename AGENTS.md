@@ -1,6 +1,6 @@
 # AGENTS.md — 给下一位 AI / 维护者
 
-> 最后更新：2026-10-24。项目当前 **v0.2.1 桌面取词完整版（Windows 实测 / macOS CI 编译识别通过、真机待验收）**，
+> 最后更新：2026-10-27。项目当前 **v0.2.1 桌面取词完整版（Windows 实测 / macOS CI 编译识别通过、真机待验收）**，
 > 已开源到 GitHub，Pages 演示站已上线。
 > 先读完这份，再按需要读 [docs/07-handoff.md](docs/07-handoff.md)（详细交接）。
 
@@ -13,6 +13,7 @@
 5. [docs/00-charter.md](docs/00-charter.md)、[docs/01-ai-content-pipeline.md](docs/01-ai-content-pipeline.md)、[docs/02-corpus-compliance.md](docs/02-corpus-compliance.md)：产品与内容红线。
 6. [docs/11-corpus-batch1-handoff.md](docs/11-corpus-batch1-handoff.md)：第一批 293 条语料的复盘、坑与下一批顺序。
 7. [docs/12-cloud-tts.md](docs/12-cloud-tts.md)：可选云端 TTS（文字转语音）的 API Key、接口、隐私与验收。
+8. [docs/13-maintainer-policy.md](docs/13-maintainer-policy.md)：个人开发者内容边界；人工审校/老人测试不再是发布前置条件。
 
 ## 1. 项目一句话
 
@@ -26,13 +27,14 @@
 - 仓库：<https://github.com/ADES-RepkSSS/ziban>
 - 演示站：<https://ades-repksss.github.io/ziban/>（GitHub Pages，已部署成功）
 - 分支：`main`；远程：`origin` 已配置；Git Credential Manager 已能 push
-- 50 张卡 / 8 场景 / 52 张手绘 SVG
+- 550 张卡 / 8 场景 / 552 张手绘 SVG（50 张基线 + 500 张扩量）
 - 67 个单元测试；`pnpm check` 全绿（含语料硬 lint）
 - 实验语料库第一批 293 条（7 个文件，全部 `source=auto-*`，**机器审校草稿，未人工审校**）；见 [corpus/RELEASE.md](corpus/RELEASE.md)
 - 可选**云端文本转语音**：设置里填 OpenAI 兼容 `/audio/speech` 或阿里云百炼 Qwen-TTS 的 API Key；默认关，打开后文字才发到用户选的服务，音频不落盘；见 [docs/12](docs/12-cloud-tts.md)
 - 桌面版 `apps/desktop`：Electron 40 + esbuild；Windows WinRT OCR 实测；macOS `screencapture` + Vision 待真机
 - GitHub Actions：`CI`、`Deploy web demo to GitHub Pages`、`Desktop macOS OCR`（编译/识别测试图）
-- 字卡 50 张、屏幕语料 293 条全部是 draft/机器审校草稿，**未经人工审校，禁止对外称为正式内容**
+- 字卡 550 张、屏幕语料 293 条全部是 draft/机器审校草稿，**未经人工审校，禁止对外称为正式内容**；
+  个人开发者不把人工审校/老人测试作为发布前置（见 [docs/13](docs/13-maintainer-policy.md)）
 - 定位：当前以老人场景为重点；儿童识字场景是长期方向，未做真实验证，禁止对外说成“儿童产品”
 - 本地开发服务器当前可能没开；先 `pnpm dev`
 
@@ -102,11 +104,11 @@ apps/desktop/
   electron/native/       ocr-host.ps1、vision-ocr.swift
   fixtures/ocr-sample.png 跨平台 OCR 测试图
 packages/core/           纯函数：types、schedule、text、plainLanguage、screen、desktop（+ tests）
-content/                 level1.yaml、52 SVG、charset、README
+content/                 level1.yaml、level2.yaml（500 张扩量）、552 SVG、charset、README
 scripts/                 content build/validate、screenshot、corpus lint/review/build/metrics
 corpus/                  实验语料（release/ 运行时 JSON、workbench/ 审计、chars/ 用字表）
 tools/                   图片生成、GitHub 素材、检查脚本
-docs/                    00–12 设计/交接文档（08 = 屏幕取词，09 = 部署与使用，10 = 语料库格式，11 = 第一批语料复盘，12 = 云端 TTS）
+docs/                    00–13 设计/交接文档（08 = 屏幕取词，09 = 部署与使用，10 = 语料库格式，11 = 第一批语料复盘，12 = 云端 TTS，13 = 个人开发者内容边界）
 .github/                 CI、Pages、Dependabot、issue/PR 模板
 ```
 
@@ -115,7 +117,7 @@ docs/                    00–12 设计/交接文档（08 = 屏幕取词，09 = 
 - **会话**：`packages/core/src/schedule.ts`。`ensureSession()` 同一天必须续上已有会话；已完成会话也保留给“今天认完了”；`completeCard()` 只记“见过”，不记对错；日期用本地日历。
 - **语音队列**：`apps/web/src/app/SpeechProvider.tsx`。`generation + segmentToken + watchdog` 三层保护；中文 boundary 不可靠，靠 `buildCharTimings()` 时间轴；不要为了“简化”去掉 token，否则 watchdog 与迟到的 `onend` 会重复推进队列。
 - **单卡自动朗读**：`apps/web/src/features/learn/useCardSpeech.ts`。进入 450ms 后念“词 + 释义”，**不自动念例句**；用户点任何字/释义/例句/图片都会取消未触发的自动朗读。
-- **内容生成**：`content/cards/level1.yaml` → `scripts/build-content.mjs` → `apps/web/src/content/cards.generated.json`。不要手改生成 JSON；`imageUrl`/`order` 是构建注入字段。
+- **内容生成**：`content/cards/level*.yaml` → `scripts/build-content.mjs` → `apps/web/src/content/cards.generated.json`。不要手改生成 JSON；`imageUrl`/`order` 是构建注入字段。
 - **路由**：`apps/web/src/app/router.ts` 用 hash，不用 BrowserRouter；为了 GitHub Pages 子路径与 Electron 自定义协议。
 - **进度**：只写 `localStorage` key `ziban.progress.v1`；旧数据由 `normalizeProgress()` 兜底。
 - **能力层**：平台判断只能在 `apps/web/src/capabilities/`；UI 不直接碰系统 API。桌面版同理，平台判断只在 `apps/desktop/electron/capabilities/`。
@@ -144,15 +146,15 @@ docs/                    00–12 设计/交接文档（08 = 屏幕取词，09 = 
 - **Windows PowerShell 5.1 读无 BOM UTF-8 会按 GBK 解码**：`ocr-host.ps1` 由 Node 复制到临时目录并加 BOM 再执行；不要直接 `-File` 源文件。
 - **macOS Vision helper 需要 Xcode CLI Tools**：首次运行 `xcrun swiftc` 编译；发布前要预编译 universal 二进制，见 docs/08。
 - **屏幕截图不落盘**：临时 PNG 在 OCR 后立即删除；不要为了调试保留历史帧。
-- **小窗高度**：带风险提示约 400×517 DIP；800×600 屏会内部滚动，尚未真人测试。
+- **小窗高度**：带风险提示约 400×517 DIP；800×600 屏会内部滚动，尚未做真人测试；个人开发者不把它作为发布阻塞项。
 
 ## 8. 下一步优先级
 
-1. **真人可用性测试**：3–5 位老人，无指导试“第一次查字 / 再念一遍 / 粘贴一段字”，记录卡点；先修阻塞，不加功能。
-2. **内容审校**：50 张卡走 C5 对抗审校 + 人工；补 `source_ref`；图片从手绘过渡到可授权实拍/检索图。
+1. **可用性反馈（可选，不作为发布前置）**：有条件时再找 3–5 位老人做无指导试用；个人开发者不承诺固定人数或时间表，也不把结果写成已验证。
+2. **内容质量（机器优先）**：550 张卡以 schema/用字/图片/重复/风险词门禁为主；C5 与人工抽检是可选改进，不再阻塞发布；有条件的贡献者可按 docs/01 记录审校范围。
 3. **语音质量**：系统 TTS 只是默认兜底；云端 TTS 已可作为可选引擎（自己填 Key），保持 `SpeechEngine` 接口与逐字高亮；以后可接本地 sherpa-onnx + 中文 VITS。
 4. **macOS 真机验收屏幕取词**：按 [docs/08](docs/08-screen-lookup.md) 第 6.6 节跑 TCC/Retina/全屏/双屏；预编译 universal Vision helper；再做签名/公证。
-5. **语料库审校**：第一批 293 条已产出（机器审校草稿），已 `corpus:install` 到真实 userData；下一步补三审、逐词 evidence、真人复核，并核对小窗来源标签/热加载。
+5. **语料库质量**：第一批 293 条已产出（机器审校草稿），已 `corpus:install` 到真实 userData；下一步补机器可做的逐词 evidence/重复检查，人工三审与真人复核改为可选，不再作为安装/发布门槛。
 6. **任意网页正文 / 跟读**：分别实现 `PageReader`、`PronunciationCoach`；跟读优先“回声 + 声调”，不要直接判“你读错了”。
 7. **无障碍**：补 axe-core 自动检查；真机 1024×768 / 1280×800；确保 88×88、对比度 7:1。
 

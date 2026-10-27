@@ -9,7 +9,7 @@
 ## 0. 一句话
 
 按 7 个主题产出 **293 条**屏幕高频词（每条一句口语释义 + 一句生活例句），
-全部 `source=auto-*`，通过硬 lint 与 schema 校验；**R1 三审没有跑完**，发布前必须人工复核。
+全部 `source=auto-*`，通过硬 lint 与 schema 校验；**R1 三审没有跑完**。个人开发者不把人工复核作为发布前置，内容始终标“机器审校草稿”。
 
 ## 1. 这次交付了什么
 
@@ -167,6 +167,6 @@ macOS:   ~/Library/Application Support/字伴/corpus
 - [x] review.jsonl 每条有 judge 记录或 resolution；dropped.jsonl 有 12 条原因
 - [x] CHANGELOG / docs/10 / AGENTS 已更新
 - [ ] R1 三审（未完成，下一批第一件事）
-- [ ] 人工审校 / 老人测试（未做）
+- [ ] 人工审校 / 老人测试（未做；可选，不作为发布前置）
 - [x] 真实 userData 安装（7 文件；小窗 OCR 待解锁桌面复验）
 - [ ] 逐词 evidence（现在是模板）

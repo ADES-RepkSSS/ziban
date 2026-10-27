@@ -82,6 +82,18 @@
   gap: 16px;
 }
 
+.library-more {
+  display: grid;
+  justify-items: center;
+  gap: 8px;
+  margin: 24px 0 8px;
+}
+
+.library-more p {
+  color: var(--muted);
+  font-size: 18px;
+}
+
 .card-tile {
   position: relative;
   display: flex;

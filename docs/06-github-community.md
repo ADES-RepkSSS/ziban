@@ -206,7 +206,7 @@ git push origin v0.1.0
 然后 GitHub → Releases → **Draft a new release**：
 
 - Tag：`v0.1.0`
-- Title：`v0.1.0 实验版：50 张识字卡 + 粘贴文字朗读`
+- Title：`v0.1.0 实验版：50 张基线卡 + 500 张扩量卡 + 粘贴文字朗读`
 - 说明可直接从 [CHANGELOG.md](../CHANGELOG.md) 复制 0.1.0 段；
 - 勾选 “Set as the latest release”；
 - **不要**把未审校内容说成“正式版”。
@@ -271,7 +271,7 @@ Settings → Code security and analysis：
 不要用“欢迎贡献”当第一屏；给具体任务。
 
 1. `good first issue` 补一张 Windows 启动图文教程（含 `pnpm install` 失败怎么办）
-2. `content` 审校 50 张卡片的释义与例句（每条带来源/理由）
+2. `content` 可选抽看 550 张卡片的释义与例句（每条带来源/理由）
 3. `elderly-test` 找 3 位老人做“第一次查字”无指导测试
 4. `accessibility` 跑 axe-core + 对比度 + 1024×768 检查，列出 critical
 5. `help wanted` macOS 真机验收：屏幕录制 TCC、Retina 坐标、全屏/双屏；预编译 Vision helper
@@ -341,7 +341,7 @@ Apache-2.0 **不授予**项目名称/Logo 的商标权。社区变大后建议�
 ```text
 字伴是一个开源、离线优先的中文识字助手：把查字典简化成“停一下”。当前从老人场景开始——鼠标停在屏幕上的字，小窗就念读音、讲意思、给例句；长期想验证“先使用、后识字”的儿童场景。
 现在 v0.1 Web + 0.2 桌面取词刚开源，最缺：
-1) 中文老师/编辑帮审 50 张卡片的释义（每条要有来源）；
+1) 中文老师/编辑可自愿抽看 550 张卡片的释义（每条要有来源）；
 2) 家里有 65–85 岁、识字量低的老人，帮做 20 分钟无指导试用；
 3) macOS 真机验收（屏幕录制权限/Vision）与 sherpa-onnx 语音接入；
 4) 帮设计“有家长同意、不收集孩子个人信息”的儿童识字观察方案（暂不直接招儿童测试）。
