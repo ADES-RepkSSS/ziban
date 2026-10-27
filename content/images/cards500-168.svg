@@ -1,5 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="指示灯立在路边，脚下是斑马线">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="一段铺着方砖的人行道，一个人提着红袋子走在上面，下面是一段带白色虚线的马路，左边有一棵树">
   <rect width="512" height="512" rx="40" fill="#F4EBD9"/>
   <circle cx="256" cy="248" r="196" fill="#FCF8EF"/>
-  <ellipse cx="256" cy="421" rx="132" ry="17" fill="#DDCEB7" stroke="none" stroke-width="0" opacity="0.75"/><rect x="196" y="72" width="120" height="264" rx="26" fill="#26313D" stroke="#26313D" stroke-width="10" /><circle cx="256" cy="124" r="30" fill="#C9483A" stroke="#26313D" stroke-width="6" /><circle cx="256" cy="204" r="30" fill="#E8A63C" stroke="#26313D" stroke-width="6" /><circle cx="256" cy="284" r="30" fill="#4F8A5B" stroke="#26313D" stroke-width="6" /><rect x="244" y="336" width="24" height="72" rx="8" fill="#9AA4AE" stroke="#26313D" stroke-width="6" /><rect x="172" y="394" width="168" height="18" rx="8" fill="#D9DEE3" stroke="#26313D" stroke-width="6" /><polygon points="80 430 160 430 144 454 96 454" fill="#FFFFFF" stroke="#26313D" stroke-width="6" stroke-linejoin="round" /><polygon points="216 430 296 430 280 454 232 454" fill="#FFFFFF" stroke="#26313D" stroke-width="6" stroke-linejoin="round" /><polygon points="352 430 432 430 416 454 368 454" fill="#FFFFFF" stroke="#26313D" stroke-width="6" stroke-linejoin="round" /><rect x="206" y="468" width="100" height="8" rx="4" fill="#4F8A5B" stroke="none" stroke-width="0" opacity="0.85"/>
+  <g stroke="#26313D" stroke-width="12" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="104" y="156" width="24" height="66" rx="8" fill="#9A6B4A"/>
+    <path d="M 116 52 q 30 0 38 26 q 28 4 28 30 q 0 26 -30 28 q -8 22 -36 22 q -28 0 -36 -22 q -30 -2 -30 -28 q 0 -26 28 -30 q 8 -26 38 -26 Z" fill="#4F8A5B"/>
+    <rect x="56" y="206" width="400" height="122" fill="#D9DEE3"/>
+    <path d="M 122 206 V 328 M 188 206 V 328 M 254 206 V 328 M 320 206 V 328 M 386 206 V 328" fill="none" stroke="#BFC8CF" stroke-width="6"/>
+    <path d="M 56 247 H 456 M 56 287 H 456" fill="none" stroke="#BFC8CF" stroke-width="6"/>
+    <rect x="56" y="328" width="400" height="20" fill="#FCF8EF"/>
+    <rect x="56" y="348" width="400" height="82" fill="#9AA4AE"/>
+    <line x1="70" y1="389" x2="442" y2="389" stroke="#FFFFFF" stroke-width="8" stroke-dasharray="44 30"/>
+    <circle cx="306" cy="170" r="25" fill="#E9B98F" stroke-width="8"/>
+    <path d="M 281 168 q -2 -32 26 -32 q 26 0 26 30 q -12 -12 -26 -12 q -14 0 -26 14 Z" fill="#9AA4AE" stroke-width="8"/>
+    <circle cx="317" cy="166" r="4" fill="#26313D" stroke="none"/>
+    <path d="M 286 202 q 24 -14 44 -2 l 0 58 q -24 10 -48 2 Z" fill="#3E6FA6"/>
+    <path d="M 300 262 L 284 308 M 318 260 L 330 300" fill="none" stroke="#3E6FA6" stroke-width="16"/>
+    <path d="M 272 306 h 24 v 10 h -24 z M 316 296 h 24 v 10 h -24 z" fill="#26313D" stroke="#26313D" stroke-width="4"/>
+    <path d="M 330 260 h 36 l 4 34 h -44 z M 338 260 q 9 -16 18 0 z" fill="#C9483A"/>
+  </g>
 </svg>

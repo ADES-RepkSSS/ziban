@@ -1,5 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="一个结账的台子，上面放着硬币">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="商店收银台上放着收银机，旁边有一篮商品，一只手拿着硬币来交钱">
   <rect width="512" height="512" rx="40" fill="#F4EBD9"/>
   <circle cx="256" cy="248" r="196" fill="#FCF8EF"/>
-  <ellipse cx="256" cy="421" rx="132" ry="17" fill="#DDCEB7" stroke="none" stroke-width="0" opacity="0.75"/><rect x="64" y="152" width="384" height="196" rx="24" fill="#FFFFFF" stroke="#26313D" stroke-width="14" /><rect x="64" y="320" width="384" height="92" rx="18" fill="#DDE6E4" stroke="#26313D" stroke-width="14" /><rect x="88" y="340" width="336" height="20" rx="10" fill="#8FC7C1" stroke="#26313D" stroke-width="0" /><circle cx="300" cy="210" r="36" fill="#E9B98F" stroke="#26313D" stroke-width="14" /><path d="M 246 320 q 0 -62 54 -62 q 54 0 54 62" fill="#1D7A72" stroke="#26313D" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" /><circle cx="180" cy="244" r="34" fill="#B9B2AA" stroke="#26313D" stroke-width="14" /><path d="M 120 372 q 0 -74 60 -74 q 60 0 60 74" fill="#3E6FA6" stroke="#26313D" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" /><rect x="220" y="274" width="92" height="58" rx="8" fill="#FFFFFF" stroke="#26313D" stroke-width="8" /><line x1="238" y1="292" x2="294" y2="292" stroke="#D9DEE3" stroke-width="6" stroke-linecap="round" /><line x1="238" y1="310" x2="280" y2="310" stroke="#D9DEE3" stroke-width="6" stroke-linecap="round" /><g transform="translate(412 112) scale(0.72) translate(-50 -50)"><circle cx="50" cy="50" r="30" fill="#E8A63C" stroke="#26313D" stroke-width="7" /><circle cx="50" cy="50" r="18" fill="#F6D08E" stroke="#26313D" stroke-width="4" /></g><rect x="206" y="468" width="100" height="8" rx="4" fill="#E8A63C" stroke="none" stroke-width="0" opacity="0.85"/>
+  <rect x="80" y="284" width="352" height="52" rx="14" fill="#9A6B4A" stroke="#26313D" stroke-width="12"/>
+  <rect x="120" y="336" width="272" height="48" rx="8" fill="#DDCEB7" stroke="#26313D" stroke-width="10"/>
+  <circle cx="140" cy="198" r="17" fill="#4F8A5B" stroke="#26313D" stroke-width="10"/>
+  <rect x="164" y="180" width="44" height="30" rx="10" fill="#F6D08E" stroke="#26313D" stroke-width="10"/>
+  <path d="M 100 208 h 118 l -16 76 h -86 Z" fill="#E8A63C" stroke="#26313D" stroke-width="12" stroke-linejoin="round"/>
+  <path d="M 112 208 q 47 -44 94 0" fill="none" stroke="#26313D" stroke-width="12" stroke-linecap="round"/>
+  <rect x="300" y="248" width="118" height="36" rx="8" fill="#9AA4AE" stroke="#26313D" stroke-width="10"/>
+  <rect x="336" y="260" width="46" height="9" rx="4" fill="#26313D"/>
+  <rect x="312" y="200" width="94" height="48" rx="8" fill="#DCEEE9" stroke="#26313D" stroke-width="10"/>
+  <rect x="330" y="172" width="58" height="28" rx="6" fill="#A8C4DF" stroke="#26313D" stroke-width="10"/>
+  <path d="M 322 210 h 16 v 10 h -16 Z M 346 210 h 16 v 10 h -16 Z M 370 210 h 16 v 10 h -16 Z M 322 228 h 16 v 10 h -16 Z M 346 228 h 16 v 10 h -16 Z M 370 228 h 16 v 10 h -16 Z" fill="#26313D"/>
+  <circle cx="284" cy="272" r="14" fill="#E8A63C" stroke="#26313D" stroke-width="8"/>
+  <rect x="177" y="327" width="100" height="40" rx="14" fill="#E9A59C" stroke="#26313D" stroke-width="10" transform="rotate(-60 227 347)"/>
+  <ellipse cx="252" cy="288" rx="25" ry="17" fill="#E9B98F" stroke="#26313D" stroke-width="10" transform="rotate(-30 252 288)"/>
 </svg>

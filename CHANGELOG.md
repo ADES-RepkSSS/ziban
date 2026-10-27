@@ -25,6 +25,7 @@
 
 ### Changed
 
+- **500 词卡 SVG 重校验**：10 个复核子代理记 175 条（A63/B91/C21）；A 类 63 条全部处理（58 张重画 + 5 张由 `smartphone` 图标修复），另重画 25 条高影响 B，共 83 张。新增 `work/cards500/SVG_REVIEW_REPORT.md`、`review/`、`redraws/`、`custom-svgs/`；`generate_svgs.py` 优先读 `custom-svgs/`。付款码/收款码改为不可扫的色块码区；医疗词红叉改加号。550 卡 / 552 图的 App 内容已重建，`pnpm check` 全绿。
 - `CorpusStore` 不再把超过 8 字的词静默截断成另一个词，而是整条丢弃（lint 仍会提前拒绝）。
 - `auto-` 前缀的语料条目标记为 `generated=true`、`confidence=medium`，不再冒充人工 `high`。
 - 语料相关文档统一标注“机器审校草稿，未人工审校”；说明**屏幕语料不需要 SVG 插图**，

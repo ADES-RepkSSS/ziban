@@ -1,5 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="几个人围坐在一起，其中一个挂着圆牌">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="三个人站在一起，中间的人个子高一些，头上戴着一顶小皇冠">
   <rect width="512" height="512" rx="40" fill="#F4EBD9"/>
   <circle cx="256" cy="248" r="196" fill="#FCF8EF"/>
-  <ellipse cx="256" cy="421" rx="132" ry="17" fill="#DDCEB7" stroke="none" stroke-width="0" opacity="0.75"/><rect x="96" y="188" width="320" height="210" rx="22" fill="#FFFFFF" stroke="#26313D" stroke-width="14" /><polygon points="256 92 432 188 80 188" fill="#8FC7C1" stroke="#26313D" stroke-width="14" stroke-linejoin="round" /><rect x="140" y="224" width="76" height="76" rx="12" fill="#A8C4DF" stroke="#26313D" stroke-width="8" /><rect x="296" y="224" width="76" height="76" rx="12" fill="#A8C4DF" stroke="#26313D" stroke-width="8" /><circle cx="256" cy="284" r="34" fill="#E9B98F" stroke="#26313D" stroke-width="8" /><path d="M 206 360 q 0 -54 50 -54 q 50 0 50 54" fill="#C9483A" stroke="#26313D" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" /><path d="M 256 268 q -34 -26 -52 -4 q -20 24 52 66 q 72 -42 52 -66 q -18 -22 -52 4 Z" fill="#E9A59C" stroke="#26313D" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" /><rect x="220" y="398" width="72" height="14" rx="7" fill="#8FC7C1" stroke="#26313D" stroke-width="0" /><g transform="translate(412 112) scale(0.72) translate(-50 -50)"><circle cx="50" cy="50" r="30" fill="#3E6FA6" stroke="#26313D" stroke-width="6" /><circle cx="50" cy="50" r="16" fill="#FCF8EF" stroke="#26313D" stroke-width="4" /><circle cx="50" cy="50" r="6" fill="#3E6FA6" stroke="none" stroke-width="0" /></g><rect x="206" y="468" width="100" height="8" rx="4" fill="#1D7A72" stroke="none" stroke-width="0" opacity="0.85"/>
+  <g stroke="#26313D" stroke-width="12" stroke-linecap="round" stroke-linejoin="round">
+    <ellipse cx="256" cy="436" rx="150" ry="16" fill="#DDCEB7" stroke="none" opacity="0.75"/>
+    <path d="M 92 412 V 340 Q 92 278 140 278 Q 188 278 188 340 V 412 Z" fill="#3E6FA6"/>
+    <path d="M 324 412 V 340 Q 324 278 372 278 Q 420 278 420 340 V 412 Z" fill="#4F8A5B"/>
+    <path d="M 190 412 V 316 Q 190 232 256 232 Q 322 232 322 316 V 412 Z" fill="#0B5A53"/>
+    <circle cx="140" cy="240" r="42" fill="#E9B98F"/>
+    <circle cx="372" cy="240" r="42" fill="#E9B98F"/>
+    <circle cx="256" cy="188" r="48" fill="#E9B98F"/>
+    <path d="M 127 233 a 6 6 0 1 0 12 0 a 6 6 0 1 0 -12 0 M 153 233 a 6 6 0 1 0 12 0 a 6 6 0 1 0 -12 0" fill="#26313D" stroke="none"/>
+    <path d="M 359 233 a 6 6 0 1 0 12 0 a 6 6 0 1 0 -12 0 M 385 233 a 6 6 0 1 0 12 0 a 6 6 0 1 0 -12 0" fill="#26313D" stroke="none"/>
+    <path d="M 239 180 a 7 7 0 1 0 14 0 a 7 7 0 1 0 -14 0 M 273 180 a 7 7 0 1 0 14 0 a 7 7 0 1 0 -14 0" fill="#26313D" stroke="none"/>
+    <path d="M 125 252 Q 140 265 155 252" fill="none" stroke-width="9"/>
+    <path d="M 357 252 Q 372 265 387 252" fill="none" stroke-width="9"/>
+    <path d="M 240 200 Q 256 216 272 200" fill="none" stroke-width="9"/>
+    <path d="M 220 136 L 226 92 L 244 112 L 256 80 L 268 112 L 286 92 L 292 136 Z" fill="#E8A63C" stroke-width="10"/>
+  </g>
 </svg>

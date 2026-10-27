@@ -1,5 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="菜刀正在案板上切青菜">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="一只手按住一根黄瓜，菜刀斜着切进黄瓜里，案板上已经切下两片">
   <rect width="512" height="512" rx="40" fill="#F4EBD9"/>
   <circle cx="256" cy="248" r="196" fill="#FCF8EF"/>
-  <ellipse cx="256" cy="421" rx="132" ry="17" fill="#DDCEB7" stroke="none" stroke-width="0" opacity="0.75"/><rect x="86" y="238" width="286" height="148" rx="24" fill="#F6D08E" stroke="#26313D" stroke-width="14" /><circle cx="392" cy="262" r="26" fill="#F6D08E" stroke="#26313D" stroke-width="12" /><rect x="116" y="160" width="220" height="28" rx="12" fill="#D9DEE3" stroke="#26313D" stroke-width="10" /><rect x="304" y="138" width="48" height="112" rx="12" fill="#1D7A72" stroke="#26313D" stroke-width="10" /><circle cx="328" cy="132" r="22" fill="#1D7A72" stroke="#26313D" stroke-width="8" /><polygon points="196 274 254 274 232 332 174 332" fill="#E9A59C" stroke="#26313D" stroke-width="10" stroke-linejoin="round" /><path d="M 232 274 q 18 -36 50 -36 q -6 30 -50 36" fill="#A9C9A4" stroke="#26313D" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" /><line x1="160" y1="352" x2="300" y2="352" stroke="#26313D" stroke-width="6" stroke-linecap="round" opacity="0.35"/><rect x="206" y="468" width="100" height="8" rx="4" fill="#E8A63C" stroke="none" stroke-width="0" opacity="0.85"/>
+  <ellipse cx="256" cy="440" rx="166" ry="11" fill="#DDCEB7" stroke="none" opacity="0.7"/>
+  <g stroke="#26313D" stroke-width="14" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 84 332 L 434 332 L 474 388 L 44 388 Z" fill="#F6D08E"/>
+    <path d="M 44 388 L 474 388 L 474 414 Q 474 426 460 426 L 58 426 Q 44 426 44 414 Z" fill="#F6D08E"/>
+    <rect x="104" y="264" width="248" height="68" rx="34" fill="#4F8A5B"/>
+    <circle cx="350" cy="362" r="19" fill="#A9C9A4" stroke-width="12"/>
+    <circle cx="396" cy="364" r="19" fill="#A9C9A4" stroke-width="12"/>
+    <g transform="rotate(-45 300 286)">
+      <rect x="300" y="210" width="120" height="76" rx="8" fill="#D9DEE3"/>
+      <rect x="308" y="266" width="104" height="16" rx="6" fill="#FFFFFF" stroke-width="8"/>
+      <rect x="418" y="228" width="18" height="42" rx="5" fill="#9AA4AE" stroke-width="10"/>
+      <rect x="434" y="230" width="78" height="38" rx="14" fill="#9A6B4A"/>
+      <line x1="452" y1="249" x2="496" y2="249" stroke="#FFFFFF" stroke-width="6" opacity="0.4"/>
+    </g>
+    <g>
+      <rect x="62" y="170" width="72" height="68" rx="18" fill="#3E6FA6" transform="rotate(-20 98 204)"/>
+      <path d="M 100 186 Q 86 230 112 244 L 110 290 Q 110 302 120 302 Q 130 302 130 290 L 130 268 L 136 288 Q 138 302 148 302 Q 158 302 158 290 L 158 268 L 164 288 Q 166 302 176 302 Q 186 302 186 290 L 188 248 Q 196 228 190 208 Q 182 182 146 178 Q 114 174 100 186 Z" fill="#E9B98F"/>
+    </g>
+  </g>
 </svg>

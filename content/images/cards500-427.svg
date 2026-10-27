@@ -1,5 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="两扇电梯门，旁边一排按钮">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="一栋三层商场，楼上是彩色橱窗，一部扶梯斜着从一层通到二层">
   <rect width="512" height="512" rx="40" fill="#F4EBD9"/>
   <circle cx="256" cy="248" r="196" fill="#FCF8EF"/>
-  <ellipse cx="256" cy="421" rx="132" ry="17" fill="#DDCEB7" stroke="none" stroke-width="0" opacity="0.75"/><rect x="106" y="74" width="300" height="348" rx="18" fill="#FFFFFF" stroke="#26313D" stroke-width="14" /><rect x="130" y="98" width="252" height="296" rx="12" fill="#D9DEE3" stroke="#26313D" stroke-width="10" /><line x1="256" y1="106" x2="256" y2="386" stroke="#26313D" stroke-width="12" stroke-linecap="round" /><rect x="196" y="112" width="120" height="34" rx="10" fill="#FCF8EF" stroke="#26313D" stroke-width="8" /><polygon points="226 122 240 136 212 136" fill="#1D7A72" stroke="#26313D" stroke-width="5" stroke-linejoin="round" /><polygon points="286 136 300 122 272 122" fill="#1D7A72" stroke="#26313D" stroke-width="5" stroke-linejoin="round" /><rect x="398" y="196" width="48" height="112" rx="10" fill="#FCF8EF" stroke="#26313D" stroke-width="8" /><circle cx="422" cy="226" r="11" fill="#1D7A72" stroke="#26313D" stroke-width="5" /><circle cx="422" cy="264" r="11" fill="#C9483A" stroke="#26313D" stroke-width="5" /><rect x="96" y="424" width="320" height="16" rx="8" fill="#D9DEE3" stroke="#26313D" stroke-width="0" /><rect x="206" y="468" width="100" height="8" rx="4" fill="#3E6FA6" stroke="none" stroke-width="0" opacity="0.85"/>
+  <ellipse cx="256" cy="436" rx="150" ry="12" fill="#DDCEB7" opacity="0.75"/>
+  <rect x="94" y="70" width="324" height="28" rx="10" fill="#C9483A" stroke="#26313D" stroke-width="11"/>
+  <rect x="104" y="96" width="304" height="334" rx="16" fill="#FFFFFF" stroke="#26313D" stroke-width="13"/>
+  <rect x="112" y="206" width="288" height="14" rx="4" fill="#D9DEE3" stroke="#26313D" stroke-width="9"/>
+  <rect x="112" y="316" width="288" height="14" rx="4" fill="#D9DEE3" stroke="#26313D" stroke-width="9"/>
+  <rect x="122" y="130" width="124" height="74" rx="8" fill="#A8C4DF" stroke="#26313D" stroke-width="9"/>
+  <rect x="260" y="130" width="124" height="74" rx="8" fill="#F6D08E" stroke="#26313D" stroke-width="9"/>
+  <rect x="122" y="240" width="104" height="74" rx="8" fill="#A9C9A4" stroke="#26313D" stroke-width="9"/>
+  <rect x="260" y="240" width="124" height="74" rx="8" fill="#E9A59C" stroke="#26313D" stroke-width="9"/>
+  <path d="M 326 422 V 380 Q 326 346 356 346 Q 386 346 386 380 V 422 Z" fill="#0B5A53" stroke="#26313D" stroke-width="10" stroke-linejoin="round"/>
+  <path d="M 150 420 H 194 L 322 316 H 278 Z" fill="#3E6FA6" stroke="#26313D" stroke-width="12" stroke-linejoin="round"/>
+  <path d="M 167.2 406 H 211.2 L 226 394 H 182 Z M 189.5 388 H 233.5 L 248.2 376 H 204.2 Z M 211.5 370 H 255.5 L 270.3 358 H 226.3 Z M 233.7 352 H 277.7 L 292.5 340 H 248.5 Z M 255.9 334 H 299.9 L 314.7 322 H 270.7 Z" fill="#A8C4DF" stroke="none"/>
+  <path d="M 132 198 H 236 M 270 198 H 374 M 132 308 H 216 M 270 308 H 374" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round"/>
+  <path d="M 138 412.6 L 266 308.6" fill="none" stroke="#26313D" stroke-width="13" stroke-linecap="round"/>
 </svg>

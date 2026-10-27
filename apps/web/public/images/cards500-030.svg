@@ -1,5 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="一张病床旁边有一颗心">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="一位病人躺在担架车上盖着被子，两位医护人员守在床边，旁边有一个急救箱">
   <rect width="512" height="512" rx="40" fill="#F4EBD9"/>
   <circle cx="256" cy="248" r="196" fill="#FCF8EF"/>
-  <ellipse cx="256" cy="421" rx="132" ry="17" fill="#DDCEB7" stroke="none" stroke-width="0" opacity="0.75"/><rect x="86" y="170" width="52" height="220" rx="16" fill="#1D7A72" stroke="#26313D" stroke-width="14" /><rect x="128" y="284" width="300" height="78" rx="18" fill="#FFFFFF" stroke="#26313D" stroke-width="14" /><rect x="150" y="230" width="100" height="50" rx="14" fill="#FFFFFF" stroke="#26313D" stroke-width="14" /><rect x="250" y="252" width="178" height="52" rx="14" fill="#A8C4DF" stroke="#26313D" stroke-width="14" /><rect x="128" y="362" width="20" height="40" rx="6" fill="#26313D" stroke="#26313D" stroke-width="0" /><rect x="408" y="362" width="20" height="40" rx="6" fill="#26313D" stroke="#26313D" stroke-width="0" /><line x1="392" y1="160" x2="392" y2="340" stroke="#9AA4AE" stroke-width="10" stroke-linecap="round" /><rect x="364" y="118" width="56" height="64" rx="12" fill="#FFFFFF" stroke="#26313D" stroke-width="10" /><path d="M 392 182 v 120" fill="none" stroke="#8FC7C1" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" /><path d="M 376 144 h 32 M 392 128 v 32" fill="none" stroke="#C9483A" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" /><circle cx="370" cy="112" r="12" fill="#1D7A72" stroke="#26313D" stroke-width="6" /><g transform="translate(412 112) scale(0.72) translate(-50 -50)"><path d="M 50 84 q -40 -26 -40 -50 q 0 -22 22 -22 q 14 0 18 14 q 4 -14 18 -14 q 22 0 22 22 q 0 24 -40 50 Z" fill="#E9A59C" stroke="#26313D" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" /></g><rect x="206" y="468" width="100" height="8" rx="4" fill="#C9483A" stroke="none" stroke-width="0" opacity="0.85"/>
+  <path d="M 78 246 H 130 M 72 266 H 124 M 78 286 H 130" fill="none" stroke="#9AA4AE" stroke-width="10" stroke-linecap="round"/>
+  <path d="M 202 340 v -108 q 0 -46 45 -46 q 45 0 45 46 v 108 Z" fill="#0B5A53" stroke="#26313D" stroke-width="12" stroke-linejoin="round"/>
+  <circle cx="247" cy="178" r="30" fill="#E9B98F" stroke="#26313D" stroke-width="12"/>
+  <path d="M 217 178 a 30 30 0 0 1 60 0 q -12 -20 -30 -20 q -18 0 -30 20 Z" fill="#26313D" stroke="#26313D" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M 350 340 v -104 q 0 -46 40 -46 q 40 0 40 46 v 104 Z" fill="#FFFFFF" stroke="#26313D" stroke-width="12" stroke-linejoin="round"/>
+  <circle cx="390" cy="182" r="28" fill="#E9B98F" stroke="#26313D" stroke-width="12"/>
+  <path d="M 358 182 a 32 32 0 0 1 64 0 Z" fill="#DCEEE9" stroke="#26313D" stroke-width="10" stroke-linejoin="round"/>
+  <rect x="100" y="292" width="312" height="54" rx="16" fill="#FFFFFF" stroke="#26313D" stroke-width="12"/>
+  <path d="M 140 352 H 372 M 170 382 a 24 24 0 1 0 48 0 a 24 24 0 1 0 -48 0 M 294 382 a 24 24 0 1 0 48 0 a 24 24 0 1 0 -48 0" fill="#9AA4AE" stroke="#26313D" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="156" cy="270" r="28" fill="#E9B98F" stroke="#26313D" stroke-width="12"/>
+  <path d="M 140 262 q 6 5 12 0 M 164 262 q 6 5 12 0 M 152 282 q 8 6 16 0" fill="none" stroke="#26313D" stroke-width="7" stroke-linecap="round"/>
+  <rect x="186" y="264" width="210" height="80" rx="26" fill="#A8C4DF" stroke="#26313D" stroke-width="12"/>
+  <path d="M 282 222 Q 322 238 316 280" fill="none" stroke="#0B5A53" stroke-width="20" stroke-linecap="round"/>
+  <circle cx="318" cy="286" r="15" fill="#E9B98F" stroke="#26313D" stroke-width="10"/>
+  <rect x="348" y="232" width="66" height="56" rx="8" fill="#FFFFFF" stroke="#26313D" stroke-width="12"/>
+  <path d="M 374 239 h 14 v 14 h 14 v 14 h -14 v 14 h -14 v -14 h -14 v -14 h 14 Z" fill="#C9483A"/>
 </svg>

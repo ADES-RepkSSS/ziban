@@ -1,5 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="一张地图旁边有一个心形">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="一个年轻人扶着白发戴眼镜老人的胳膊，两人并排走向前面的医院门口，医院有雨棚、十字招牌和玻璃门">
   <rect width="512" height="512" rx="40" fill="#F4EBD9"/>
   <circle cx="256" cy="248" r="196" fill="#FCF8EF"/>
-  <ellipse cx="256" cy="421" rx="132" ry="17" fill="#DDCEB7" stroke="none" stroke-width="0" opacity="0.75"/><polygon points="104 132 208 100 304 132 408 100 408 376 304 408 208 376 104 408" fill="#FCF8EF" stroke="#26313D" stroke-width="12" stroke-linejoin="round" /><line x1="208" y1="100" x2="208" y2="376" stroke="#D9DEE3" stroke-width="8" stroke-linecap="round" /><line x1="304" y1="132" x2="304" y2="408" stroke="#D9DEE3" stroke-width="8" stroke-linecap="round" /><path d="M 144 336 q 54 -8 76 -64 q 20 -50 76 -38 q 44 8 52 -30" fill="none" stroke="#C9483A" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="10 12"/><path d="M 328 176 q 34 0 34 34 q 0 26 -34 56 q -34 -30 -34 -56 q 0 -34 34 -34" fill="#1D7A72" stroke="#26313D" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" /><circle cx="328" cy="208" r="12" fill="#FCF8EF" stroke="#26313D" stroke-width="4" /><g transform="translate(412 112) scale(0.72) translate(-50 -50)"><path d="M 50 84 q -40 -26 -40 -50 q 0 -22 22 -22 q 14 0 18 14 q 4 -14 18 -14 q 22 0 22 22 q 0 24 -40 50 Z" fill="#E9A59C" stroke="#26313D" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" /></g><rect x="206" y="468" width="100" height="8" rx="4" fill="#D98C8C" stroke="none" stroke-width="0" opacity="0.85"/>
+  <path d="M 60 430 H 456" fill="none" stroke="#D9DEE3" stroke-width="10" stroke-linecap="round"/>
+  <rect x="292" y="186" width="160" height="244" rx="8" fill="#FFFFFF" stroke="#26313D" stroke-width="12"/>
+  <rect x="284" y="286" width="176" height="20" rx="6" fill="#0B5A53" stroke="#26313D" stroke-width="10"/>
+  <path d="M 362 203 h 20 v 20 h 20 v 20 h -20 v 20 h -20 v -20 h -20 v -20 h 20 z" fill="#C9483A" stroke="#26313D" stroke-width="9" stroke-linejoin="round"/>
+  <path d="M 300 210 h 30 v 30 h -30 z M 414 210 h 30 v 30 h -30 z" fill="#A8C4DF" stroke="#26313D" stroke-width="9"/>
+  <rect x="336" y="306" width="72" height="124" rx="6" fill="#A8C4DF" stroke="#26313D" stroke-width="12"/>
+  <path d="M 74 414 V 338 C 74 316 88 306 114 306 C 140 306 154 316 154 338 V 414 Z" fill="#C9483A" stroke="#26313D" stroke-width="12" stroke-linejoin="round"/>
+  <circle cx="114" cy="282" r="28" fill="#E9B98F" stroke="#26313D" stroke-width="12"/>
+  <path d="M 86 282 a 28 28 0 0 1 56 0 q -14 -22 -28 -17 q -14 -5 -28 17 Z" fill="#B9B2AA" stroke="#26313D" stroke-width="10" stroke-linejoin="round"/>
+  <path d="M 92 284 a 8 8 0 1 0 16 0 a 8 8 0 1 0 -16 0 M 118 284 a 8 8 0 1 0 16 0 a 8 8 0 1 0 -16 0 M 108 284 h 10" fill="none" stroke="#26313D" stroke-width="6"/>
+  <path d="M 184 414 V 310 C 184 288 198 278 228 278 C 258 278 272 288 272 310 V 414 Z" fill="#3E6FA6" stroke="#26313D" stroke-width="12" stroke-linejoin="round"/>
+  <circle cx="228" cy="250" r="32" fill="#E9B98F" stroke="#26313D" stroke-width="12"/>
+  <path d="M 196 250 a 32 32 0 0 1 64 0 q -16 -26 -32 -20 q -16 -6 -32 20 Z" fill="#26313D" stroke="#26313D" stroke-width="10" stroke-linejoin="round"/>
+  <path d="M 95 282 q 5 4 10 0 M 121 282 q 5 4 10 0 M 102 298 q 9 7 18 0 M 212 248 q 5 4 10 0 M 238 248 q 5 4 10 0 M 218 264 q 9 7 18 0" fill="none" stroke="#26313D" stroke-width="7" stroke-linecap="round"/>
+  <path d="M 190 290 C 182 308 172 324 152 330 L 164 342 C 180 335 194 316 203 302 Z" fill="#3E6FA6" stroke="#26313D" stroke-width="12" stroke-linejoin="round"/>
+  <circle cx="156" cy="336" r="11" fill="#E9B98F" stroke="#26313D" stroke-width="9"/>
+  <path d="M 96 421 a 14 9 0 1 0 28 0 a 14 9 0 1 0 -28 0 M 132 421 a 14 9 0 1 0 28 0 a 14 9 0 1 0 -28 0 M 206 421 a 15 9 0 1 0 30 0 a 15 9 0 1 0 -30 0 M 242 421 a 15 9 0 1 0 30 0 a 15 9 0 1 0 -30 0" fill="#26313D" stroke="none"/>
 </svg>

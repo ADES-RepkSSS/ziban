@@ -1,5 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="一把宽菜刀放在案板上，旁边有青菜">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="一把宽刀身的菜刀，木柄朝右，斜放在案板边上">
   <rect width="512" height="512" rx="40" fill="#F4EBD9"/>
   <circle cx="256" cy="248" r="196" fill="#FCF8EF"/>
-  <ellipse cx="256" cy="421" rx="132" ry="17" fill="#DDCEB7" stroke="none" stroke-width="0" opacity="0.75"/><rect x="86" y="238" width="286" height="148" rx="24" fill="#F6D08E" stroke="#26313D" stroke-width="14" /><circle cx="392" cy="262" r="26" fill="#F6D08E" stroke="#26313D" stroke-width="12" /><rect x="116" y="160" width="220" height="28" rx="12" fill="#D9DEE3" stroke="#26313D" stroke-width="10" /><rect x="304" y="138" width="48" height="112" rx="12" fill="#1D7A72" stroke="#26313D" stroke-width="10" /><circle cx="328" cy="132" r="22" fill="#1D7A72" stroke="#26313D" stroke-width="8" /><polygon points="196 274 254 274 232 332 174 332" fill="#E9A59C" stroke="#26313D" stroke-width="10" stroke-linejoin="round" /><path d="M 232 274 q 18 -36 50 -36 q -6 30 -50 36" fill="#A9C9A4" stroke="#26313D" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" /><line x1="160" y1="352" x2="300" y2="352" stroke="#26313D" stroke-width="6" stroke-linecap="round" opacity="0.35"/><rect x="206" y="468" width="100" height="8" rx="4" fill="#E8A63C" stroke="none" stroke-width="0" opacity="0.85"/>
+  <ellipse cx="258" cy="460" rx="172" ry="12" fill="#DDCEB7" stroke="none" opacity="0.7"/>
+  <g stroke="#26313D" stroke-width="14" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="60" y="380" width="392" height="58" rx="18" fill="#F6D08E" transform="rotate(-5 256 409)"/>
+    <g transform="rotate(-30 256 256)">
+      <rect x="110" y="186" width="232" height="130" rx="10" fill="#D9DEE3"/>
+      <rect x="120" y="298" width="210" height="18" rx="8" fill="#FFFFFF" stroke-width="8"/>
+      <line x1="128" y1="208" x2="320" y2="208" stroke="#FFFFFF" stroke-width="7" opacity="0.85"/>
+      <rect x="340" y="230" width="26" height="46" rx="6" fill="#9AA4AE" stroke-width="10"/>
+      <rect x="362" y="232" width="102" height="42" rx="18" fill="#9A6B4A"/>
+      <line x1="384" y1="253" x2="438" y2="253" stroke="#FFFFFF" stroke-width="6" opacity="0.4"/>
+    </g>
+  </g>
 </svg>

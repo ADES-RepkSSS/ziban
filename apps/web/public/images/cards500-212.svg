@@ -1,5 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="一个带门的柜子，里面摆着一摞碗">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="一个碗柜，柜门向外打开，柜里两层架子上放着一摞盘子和两只碗">
   <rect width="512" height="512" rx="40" fill="#F4EBD9"/>
   <circle cx="256" cy="248" r="196" fill="#FCF8EF"/>
-  <ellipse cx="256" cy="421" rx="132" ry="17" fill="#DDCEB7" stroke="none" stroke-width="0" opacity="0.75"/><rect x="130" y="82" width="252" height="334" rx="18" fill="#FFFFFF" stroke="#26313D" stroke-width="14" /><rect x="118" y="70" width="276" height="34" rx="14" fill="#F6D08E" stroke="#26313D" stroke-width="10" /><line x1="256" y1="104" x2="256" y2="400" stroke="#26313D" stroke-width="12" stroke-linecap="round" /><circle cx="236" cy="246" r="10" fill="#26313D" stroke="none" stroke-width="0" /><circle cx="276" cy="246" r="10" fill="#26313D" stroke="none" stroke-width="0" /><path d="M 176 148 q 0 -36 38 -36 h 20 v 92 h -18 q -40 0 -40 -56" fill="#8FC7C1" stroke="#26313D" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" /><path d="M 306 148 q 0 -36 38 -36 h 4 v 92 h -2 q -40 0 -40 -56" fill="#D98C8C" stroke="#26313D" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" /><rect x="206" y="468" width="100" height="8" rx="4" fill="#1D7A72" stroke="none" stroke-width="0" opacity="0.85"/>
+  <ellipse cx="256" cy="424" rx="140" ry="16" fill="#DDCEB7" stroke="none" opacity="0.75"/>
+  <g stroke="#26313D" stroke-width="14" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="120" y="150" width="220" height="252" rx="14" fill="#F6D08E"/>
+    <rect x="144" y="174" width="172" height="204" rx="10" fill="#FCF8EF" stroke-width="10"/>
+    <line x1="146" y1="268" x2="314" y2="268" stroke-width="10"/>
+    <line x1="146" y1="330" x2="314" y2="330" stroke-width="10"/>
+    <ellipse cx="188" cy="262" rx="36" ry="10" fill="#FFFFFF" stroke-width="8"/>
+    <ellipse cx="188" cy="250" rx="36" ry="10" fill="#FFFFFF" stroke-width="8"/>
+    <ellipse cx="188" cy="238" rx="36" ry="10" fill="#FFFFFF" stroke-width="8"/>
+    <circle cx="190" cy="304" r="26" fill="#FFFFFF" stroke-width="10"/>
+    <circle cx="252" cy="304" r="26" fill="#A8C4DF" stroke-width="10"/>
+    <path d="M 166 346 L 222 346 Q 218 376 194 376 Q 170 376 166 346 Z" fill="#E9A59C" stroke-width="10"/>
+    <path d="M 234 346 L 290 346 Q 286 376 262 376 Q 238 376 234 346 Z" fill="#A9C9A4" stroke-width="10"/>
+    <path d="M 340 156 L 402 178 L 402 382 L 340 396 Z" fill="#F6D08E"/>
+    <rect x="380" y="252" width="12" height="32" rx="6" fill="#9AA4AE" stroke-width="8"/>
+    <rect x="134" y="402" width="20" height="22" rx="6" fill="#9A6B4A" stroke-width="10"/>
+    <rect x="306" y="402" width="20" height="22" rx="6" fill="#9A6B4A" stroke-width="10"/>
+  </g>
 </svg>

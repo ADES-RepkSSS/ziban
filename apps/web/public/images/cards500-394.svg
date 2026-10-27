@@ -1,5 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="一扇门旁边放着一张小卡片">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="一只手拿着一张白色小卡片贴在门边的黑色读卡器上，读卡器亮起绿灯并显示对勾">
   <rect width="512" height="512" rx="40" fill="#F4EBD9"/>
   <circle cx="256" cy="248" r="196" fill="#FCF8EF"/>
-  <ellipse cx="256" cy="421" rx="132" ry="17" fill="#DDCEB7" stroke="none" stroke-width="0" opacity="0.75"/><rect x="116" y="76" width="280" height="348" rx="18" fill="#FFFFFF" stroke="#26313D" stroke-width="14" /><rect x="140" y="100" width="232" height="300" rx="14" fill="#F6D08E" stroke="#26313D" stroke-width="12" /><rect x="170" y="136" width="172" height="96" rx="10" fill="#FCF8EF" stroke="#26313D" stroke-width="8" /><rect x="170" y="258" width="172" height="108" rx="10" fill="#FCF8EF" stroke="#26313D" stroke-width="8" /><circle cx="332" cy="260" r="12" fill="#26313D" stroke="#26313D" stroke-width="6" /><circle cx="370" cy="188" r="18" fill="#FFFFFF" stroke="#26313D" stroke-width="8" /><circle cx="370" cy="188" r="8" fill="#E8A63C" stroke="#26313D" stroke-width="4" /><rect x="96" y="424" width="320" height="16" rx="8" fill="#D9DEE3" stroke="#26313D" stroke-width="0" /><rect x="206" y="468" width="100" height="8" rx="4" fill="#E8A63C" stroke="none" stroke-width="0" opacity="0.85"/>
+  <rect x="44" y="56" width="152" height="330" rx="10" fill="#FFFFFF" stroke="#26313D" stroke-width="14"/>
+  <rect x="58" y="70" width="124" height="316" rx="6" fill="#9A6B4A" stroke="#26313D" stroke-width="10"/>
+  <rect x="76" y="94" width="88" height="112" rx="8" fill="none" stroke="#F6D08E" stroke-width="8"/>
+  <circle cx="160" cy="230" r="13" fill="#E8A63C" stroke="#26313D" stroke-width="8"/>
+  <rect x="232" y="148" width="96" height="132" rx="16" fill="#26313D" stroke="#26313D" stroke-width="12"/>
+  <rect x="248" y="166" width="64" height="56" rx="8" fill="#0B5A53" stroke="none" stroke-width="0"/>
+  <path d="M 264 194 l 9 10 l 19 -23" fill="none" stroke="#A9C9A4" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="319" cy="174" r="9" fill="#4F8A5B" stroke="none" stroke-width="0"/>
+  <rect x="250" y="226" width="142" height="92" rx="12" fill="#FFFFFF" stroke="#26313D" stroke-width="12" transform="rotate(-14 321 272)"/>
+  <rect x="268" y="252" width="36" height="28" rx="6" fill="#E8A63C" stroke="#26313D" stroke-width="6" transform="rotate(-14 321 272)"/>
+  <rect x="406" y="312" width="100" height="56" rx="22" fill="#3E6FA6" stroke="#26313D" stroke-width="12"/>
+  <rect x="352" y="300" width="56" height="48" rx="18" fill="#E9B98F" stroke="#26313D" stroke-width="11" transform="rotate(-14 380 324)"/>
+  <path d="M 368 314 v 14 M 382 312 v 15" fill="none" stroke="#26313D" stroke-width="5" stroke-linecap="round" transform="rotate(-14 380 324)"/>
+  <ellipse cx="352" cy="308" rx="16" ry="9" fill="#E9B98F" stroke="#26313D" stroke-width="8" transform="rotate(-40 352 308)"/>
 </svg>

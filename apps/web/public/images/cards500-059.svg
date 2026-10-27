@@ -1,5 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="一盒药旁边有一个对勾">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="一位老人闭着眼仰头，一只手把一粒白色药片送到嘴边，旁边的桌上放着一杯水">
   <rect width="512" height="512" rx="40" fill="#F4EBD9"/>
   <circle cx="256" cy="248" r="196" fill="#FCF8EF"/>
-  <ellipse cx="256" cy="421" rx="132" ry="17" fill="#DDCEB7" stroke="none" stroke-width="0" opacity="0.75"/><rect x="118" y="214" width="276" height="190" rx="26" fill="#FFFFFF" stroke="#26313D" stroke-width="14" /><rect x="118" y="214" width="276" height="62" rx="26" fill="#E9A59C" stroke="#26313D" stroke-width="14" /><rect x="118" y="248" width="276" height="10" rx="0" fill="#E9A59C" stroke="#26313D" stroke-width="0" /><circle cx="256" cy="320" r="54" fill="#FFFFFF" stroke="#26313D" stroke-width="12" /><line x1="226" y1="320" x2="286" y2="320" stroke="#C9483A" stroke-width="16" stroke-linecap="round" /><line x1="256" y1="290" x2="256" y2="350" stroke="#C9483A" stroke-width="16" stroke-linecap="round" /><g transform="rotate(-28 354 168)"><rect x="296" y="142" width="116" height="52" rx="26" fill="#FFFFFF" stroke="#26313D" stroke-width="12" /><path d="M 352 142 L 352 194" stroke="#C9483A" stroke-width="12"/><path d="M 296 142 Q 296 194 352 194 L 352 142 Z" fill="#E9A59C" stroke="none"/></g><g transform="rotate(22 400 238)"><rect x="342" y="212" width="116" height="52" rx="26" fill="#FFFFFF" stroke="#26313D" stroke-width="12" /><path d="M 398 212 L 398 264" stroke="#C9483A" stroke-width="12"/><path d="M 342 212 Q 342 264 398 264 L 398 212 Z" fill="#E9A59C" stroke="none"/></g><g transform="translate(412 112) scale(0.72) translate(-50 -50)"><path d="M 20 52 l 20 22 l 42 -48" fill="none" stroke="#4F8A5B" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" /></g><rect x="206" y="468" width="100" height="8" rx="4" fill="#1D7A72" stroke="none" stroke-width="0" opacity="0.85"/>
+  <g stroke="#26313D" stroke-width="12" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="176" y="238" width="200" height="182" rx="48" fill="#DCEEE9"/>
+    <circle cx="268" cy="176" r="62" fill="#E9B98F"/>
+    <path d="M 208 182 C 200 88 336 88 328 182 C 316 136 220 136 208 182 Z" fill="#9AA4AE" stroke-width="10"/>
+    <path d="M 236 172 q 12 8 24 0 M 278 172 q 12 8 24 0" fill="none" stroke-width="9"/>
+    <ellipse cx="268" cy="204" rx="17" ry="14" fill="#C9483A" stroke-width="9"/>
+    <path d="M 358 302 L 384 344 L 312 252" fill="none" stroke-width="28"/>
+    <path d="M 358 302 L 384 344 L 312 252" fill="none" stroke="#E9B98F" stroke-width="14"/>
+    <circle cx="300" cy="238" r="17" fill="#E9B98F" stroke-width="10"/>
+    <rect x="272" y="210" width="26" height="18" rx="9" fill="#FFFFFF" stroke-width="8" transform="rotate(-20 285 219)"/>
+    <rect x="72" y="336" width="96" height="14" rx="7" fill="#9A6B4A"/>
+    <path d="M 88 350 v 56 M 154 350 v 56" fill="none"/>
+    <rect x="94" y="286" width="52" height="50" rx="8" fill="#FFFFFF"/>
+    <rect x="102" y="308" width="36" height="20" rx="6" fill="#A8C4DF" stroke="none"/>
+  </g>
 </svg>

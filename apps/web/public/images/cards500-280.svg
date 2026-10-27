@@ -1,5 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="楼房外的小平台，晾着衣服，摆着一盆花">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="从室内看出去的阳台，地面伸向远处的栏杆，栏杆上晾着衣服，左边一扇门，右前方地上一盆花">
   <rect width="512" height="512" rx="40" fill="#F4EBD9"/>
   <circle cx="256" cy="248" r="196" fill="#FCF8EF"/>
-  <ellipse cx="256" cy="421" rx="132" ry="17" fill="#DDCEB7" stroke="none" stroke-width="0" opacity="0.75"/><rect x="100" y="104" width="312" height="260" rx="14" fill="#FFFFFF" stroke="#26313D" stroke-width="14" /><rect x="122" y="126" width="268" height="216" rx="8" fill="#A8C4DF" stroke="#26313D" stroke-width="8" /><line x1="256" y1="126" x2="256" y2="342" stroke="#26313D" stroke-width="12" stroke-linecap="round" /><line x1="122" y1="234" x2="390" y2="234" stroke="#26313D" stroke-width="12" stroke-linecap="round" /><path d="M 100 104 q -34 0 -34 34 v 220 q 0 34 34 34" fill="#E9A59C" stroke="#26313D" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" /><path d="M 412 104 q 34 0 34 34 v 220 q 0 34 -34 34" fill="#E9A59C" stroke="#26313D" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" /><rect x="108" y="360" width="296" height="20" rx="8" fill="#FCF8EF" stroke="#26313D" stroke-width="8" /><path d="M 330 356 q 0 -42 30 -42 q 30 0 30 42" fill="#A9C9A4" stroke="#26313D" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" /><line x1="360" y1="356" x2="360" y2="330" stroke="#4F8A5B" stroke-width="6" stroke-linecap="round" /><g transform="translate(412 112) scale(0.72) translate(-50 -50)"><path d="M 18 72 q 0 -52 64 -56 q 0 54 -64 56" fill="#4F8A5B" stroke="#26313D" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" /><line x1="24" y1="68" x2="70" y2="28" stroke="#A9C9A4" stroke-width="4" stroke-linecap="round" /></g><rect x="206" y="468" width="100" height="8" rx="4" fill="#4F8A5B" stroke="none" stroke-width="0" opacity="0.85"/>
+  <polygon points="24,452 110,356 402,356 488,452" fill="#D9DEE3" stroke="#26313D" stroke-width="12" stroke-linejoin="round"/>
+  <path d="M 74 396 L 438 396 M 46 428 L 466 428" fill="none" stroke="#9AA4AE" stroke-width="6" stroke-linecap="round" opacity="0.7"/>
+  <path d="M 110 226 L 110 356 M 402 226 L 402 356" fill="none" stroke="#26313D" stroke-width="14" stroke-linecap="round"/>
+  <path d="M 158 230 L 158 356 M 206 230 L 206 356 M 254 230 L 254 356 M 302 230 L 302 356 M 350 230 L 350 356" fill="none" stroke="#26313D" stroke-width="9" stroke-linecap="round"/>
+  <line x1="102" y1="222" x2="410" y2="222" stroke="#26313D" stroke-width="16" stroke-linecap="round"/>
+  <path d="M 142 214 L 128 230 L 142 250 L 156 240 L 156 300 L 186 300 L 186 240 L 200 250 L 214 230 L 200 214 L 188 214 Q 170 230 152 214 Z" fill="#3E6FA6" stroke="#26313D" stroke-width="9" stroke-linejoin="round"/>
+  <path d="M 240 214 L 312 214 L 312 310 L 288 310 L 280 266 L 272 310 L 240 310 Z" fill="#E9A59C" stroke="#26313D" stroke-width="9" stroke-linejoin="round"/>
+  <polygon points="40,198 100,244 100,367 40,434" fill="#9A6B4A" stroke="#26313D" stroke-width="10" stroke-linejoin="round"/>
+  <circle cx="92" cy="318" r="7" fill="#E8A63C" stroke="#26313D" stroke-width="4"/>
+  <polygon points="334,388 390,388 382,432 342,432" fill="#C9483A" stroke="#26313D" stroke-width="10" stroke-linejoin="round"/>
+  <path d="M 356 388 C 352 362 348 340 344 320 M 362 388 C 368 362 376 342 382 324" fill="none" stroke="#4F8A5B" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="342" cy="312" r="11" fill="#E8A63C" stroke="#26313D" stroke-width="6"/>
+  <circle cx="384" cy="316" r="9" fill="#C9483A" stroke="#26313D" stroke-width="6"/>
+  <circle cx="364" cy="300" r="10" fill="#D98C8C" stroke="#26313D" stroke-width="6"/>
+  <rect x="206" y="470" width="100" height="8" rx="4" fill="#4F8A5B" stroke="none" stroke-width="0" opacity="0.85"/>
 </svg>

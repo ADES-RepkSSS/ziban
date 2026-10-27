@@ -1,5 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="一个黄色的警告牌，上面有感叹号">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="左边是一盒药和两粒胶囊，右边一个人一只手扶着额头，头顶上方绕着三道晕线，脸上皱着眉">
   <rect width="512" height="512" rx="40" fill="#F4EBD9"/>
   <circle cx="256" cy="248" r="196" fill="#FCF8EF"/>
-  <ellipse cx="256" cy="421" rx="132" ry="17" fill="#DDCEB7" stroke="none" stroke-width="0" opacity="0.75"/><polygon points="256 88 438 396 74 396" fill="#E8A63C" stroke="#26313D" stroke-width="14" stroke-linejoin="round" /><polygon points="256 142 392 366 120 366" fill="#F6D08E" stroke="#26313D" stroke-width="8" stroke-linejoin="round" /><rect x="242" y="196" width="28" height="104" rx="12" fill="#26313D" stroke="#26313D" stroke-width="0" /><circle cx="256" cy="334" r="16" fill="#26313D" stroke="none" stroke-width="0" /><g transform="translate(412 112) scale(0.72) translate(-50 -50)"><rect x="43" y="14" width="14" height="46" rx="7" fill="#C9483A" stroke="#26313D" stroke-width="0" /><circle cx="50" cy="78" r="9" fill="#C9483A" stroke="none" stroke-width="0" /></g><rect x="206" y="468" width="100" height="8" rx="4" fill="#C9483A" stroke="none" stroke-width="0" opacity="0.85"/>
+  <line x1="72" y1="444" x2="440" y2="444" stroke="#D9DEE3" stroke-width="10" stroke-linecap="round"/>
+  <rect x="64" y="286" width="124" height="158" rx="12" fill="#FFFFFF" stroke="#26313D" stroke-width="12"/>
+  <path d="M 64 298 q 0 -12 12 -12 h 100 q 12 0 12 12 v 30 h -124 z" fill="#C9483A" stroke="#26313D" stroke-width="12" stroke-linejoin="round"/>
+  <rect x="88" y="356" width="76" height="42" rx="21" fill="#F6D08E" stroke="#26313D" stroke-width="10"/>
+  <path d="M 120 214 h 44 a 17 17 0 0 1 0 34 h -44 a 17 17 0 0 1 0 -34 z M 124 252 h 40 a 16 16 0 0 1 0 32 h -40 a 16 16 0 0 1 0 -32 z" fill="#F6D08E" stroke="#26313D" stroke-width="10"/>
+  <path d="M 126 356 v 42 M 142 214 v 34 M 144 252 v 32" fill="none" stroke="#26313D" stroke-width="7" stroke-linecap="round"/>
+  <path d="M 272 128 q 20 -16 40 0 q 20 16 40 0 M 284 102 q 15 -13 30 0 q 15 13 30 0 M 296 78 q 12 -10 24 0 q 12 10 24 0" fill="none" stroke="#E8A63C" stroke-width="10" stroke-linecap="round"/>
+  <rect x="328" y="214" width="32" height="54" fill="#E9B98F" stroke="#26313D" stroke-width="12"/>
+  <path d="M 274 444 V 330 C 274 288 300 262 344 262 C 388 262 414 288 414 330 V 444 Z" fill="#3E6FA6" stroke="#26313D" stroke-width="12" stroke-linejoin="round"/>
+  <circle cx="344" cy="190" r="43" fill="#E9B98F" stroke="#26313D" stroke-width="12"/>
+  <path d="M 301 190 a 43 43 0 0 1 86 0 q -21 -30 -43 -24 q -21 -6 -43 24 Z" fill="#B9B2AA" stroke="#26313D" stroke-width="10" stroke-linejoin="round"/>
+  <path d="M 318 178 l 12 9 l -12 9 M 370 178 l -12 9 l 12 9 M 328 210 q 8 -6 16 0 q 8 6 16 0" fill="none" stroke="#26313D" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="391" y="263" width="36" height="62" rx="18" fill="#E9B98F" stroke="#26313D" stroke-width="12" transform="rotate(33.2 409 294)"/>
+  <rect x="389" y="162" width="34" height="110" rx="17" fill="#E9B98F" stroke="#26313D" stroke-width="12" transform="rotate(-21.4 406 217)"/>
+  <circle cx="386" cy="166" r="19" fill="#E9B98F" stroke="#26313D" stroke-width="12"/>
 </svg>

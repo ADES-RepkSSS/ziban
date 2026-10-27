@@ -1,5 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="被子叠好放在床上，套着布套">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="一个套在被芯外面的被套，里面装着被芯，下边开着口露出被角，口子上一半拉着拉链">
   <rect width="512" height="512" rx="40" fill="#F4EBD9"/>
   <circle cx="256" cy="248" r="196" fill="#FCF8EF"/>
-  <ellipse cx="256" cy="421" rx="132" ry="17" fill="#DDCEB7" stroke="none" stroke-width="0" opacity="0.75"/><rect x="88" y="170" width="54" height="220" rx="16" fill="#1D7A72" stroke="#26313D" stroke-width="14" /><rect x="130" y="284" width="292" height="80" rx="18" fill="#FFFFFF" stroke="#26313D" stroke-width="14" /><rect x="152" y="224" width="106" height="54" rx="16" fill="#FFFFFF" stroke="#26313D" stroke-width="14" /><rect x="252" y="246" width="172" height="56" rx="16" fill="#E9A59C" stroke="#26313D" stroke-width="14" /><rect x="130" y="364" width="22" height="40" rx="6" fill="#26313D" stroke="#26313D" stroke-width="0" /><rect x="414" y="364" width="22" height="40" rx="6" fill="#26313D" stroke="#26313D" stroke-width="0" /><path d="M 270 258 q 34 22 0 44" fill="none" stroke="#C9483A" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" /><rect x="206" y="468" width="100" height="8" rx="4" fill="#D98C8C" stroke="none" stroke-width="0" opacity="0.85"/>
+  <ellipse cx="256" cy="446" rx="170" ry="12" fill="#DDCEB7" stroke="none" opacity="0.7"/>
+  <g stroke="#26313D" stroke-width="14" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 88 378 L 424 378 L 424 392 Q 424 404 412 404 L 100 404 Q 88 404 88 392 Z" fill="#D9DEE3"/>
+    <rect x="122" y="404" width="26" height="34" rx="8" fill="#9A6B4A" stroke-width="12"/>
+    <rect x="364" y="404" width="26" height="34" rx="8" fill="#9A6B4A" stroke-width="12"/>
+    <path d="M 100 158 Q 100 112 146 112 L 354 112 Q 400 112 400 158 L 400 316 Q 400 362 354 362 L 146 362 Q 100 362 100 316 Z" fill="#FFFFFF"/>
+    <path d="M 128 310 Q 130 294 152 294 L 344 294 Q 392 292 408 316 Q 432 338 424 360 Q 414 382 366 378 L 160 374 Q 118 372 116 342 Q 114 322 128 310 Z" fill="#F6D08E" stroke-width="12"/>
+    <path d="M 344 306 Q 362 336 350 366" fill="none" stroke="#E8A63C" stroke-width="8"/>
+    <path d="M 104 150 Q 104 116 142 116 L 358 116 Q 396 116 396 150 L 396 276 Q 396 314 358 314 L 142 314 Q 104 314 104 276 Z" fill="#FFFFFF"/>
+    <path d="M 170 152 Q 160 220 172 292 M 246 148 Q 236 222 248 294 M 322 152 Q 312 224 324 292" fill="none" stroke="#A8C4DF" stroke-width="8"/>
+    <path d="M 124 320 L 136 308 L 148 320 L 160 308 L 172 320 L 184 308 L 196 320 L 208 308 L 220 320 L 232 308 L 244 320 L 256 308 L 268 320 L 280 308 L 292 320" fill="none" stroke-width="7"/>
+    <rect x="296" y="296" width="30" height="28" rx="8" fill="#9AA4AE" stroke-width="10"/>
+    <circle cx="311" cy="334" r="10" fill="#FFFFFF" stroke-width="8"/>
+  </g>
 </svg>

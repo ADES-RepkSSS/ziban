@@ -1,5 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="两列车之间有一个换方向的箭头">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="上下两条铁轨上各停着一列车，一列青绿、一列蓝色，一个红色箭头从上面那列车的车门弯到下面那列车的车门">
   <rect width="512" height="512" rx="40" fill="#F4EBD9"/>
   <circle cx="256" cy="248" r="196" fill="#FCF8EF"/>
-  <ellipse cx="256" cy="421" rx="132" ry="17" fill="#DDCEB7" stroke="none" stroke-width="0" opacity="0.75"/><path d="M 70 420 v -170 q 0 -120 186 -120 q 186 0 186 120 v 170 Z" fill="#D9DEE3" stroke="#26313D" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" /><path d="M 106 420 v -150 q 0 -88 150 -88 q 150 0 150 88 v 150 Z" fill="#B9C3CA" stroke="#26313D" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" /><rect x="148" y="168" width="216" height="212" rx="42" fill="#1D7A72" stroke="#26313D" stroke-width="14" /><rect x="176" y="196" width="66" height="70" rx="14" fill="#FCF8EF" stroke="#26313D" stroke-width="8" /><rect x="270" y="196" width="66" height="70" rx="14" fill="#FCF8EF" stroke="#26313D" stroke-width="8" /><circle cx="202" cy="326" r="14" fill="#E8A63C" stroke="#26313D" stroke-width="8" /><circle cx="310" cy="326" r="14" fill="#E8A63C" stroke="#26313D" stroke-width="8" /><rect x="196" y="348" width="120" height="20" rx="8" fill="#155B56" stroke="#26313D" stroke-width="0" /><line x1="92" y1="428" x2="420" y2="428" stroke="#26313D" stroke-width="14" stroke-linecap="round" /><line x1="130" y1="412" x2="166" y2="440" stroke="#9AA4AE" stroke-width="12" stroke-linecap="round" /><line x1="382" y1="412" x2="418" y2="440" stroke="#9AA4AE" stroke-width="12" stroke-linecap="round" /><g transform="translate(412 112) scale(0.72) translate(-50 -50)"><line x1="16" y1="50" x2="78" y2="50" stroke="#1D7A72" stroke-width="10" stroke-linecap="round" /><polygon points="78 50 56 32 56 68" fill="#1D7A72" stroke="#26313D" stroke-width="4" stroke-linejoin="round" /></g><rect x="206" y="468" width="100" height="8" rx="4" fill="#3E6FA6" stroke="none" stroke-width="0" opacity="0.85"/>
+  <path d="M 60 204 H 452 M 84 195 v 18 M 132 195 v 18 M 180 195 v 18 M 228 195 v 18 M 276 195 v 18 M 324 195 v 18 M 372 195 v 18 M 420 195 v 18" fill="none" stroke="#9AA4AE" stroke-width="9" stroke-linecap="round"/>
+  <path d="M 126 188 a 14 14 0 1 0 28 0 a 14 14 0 1 0 -28 0 M 316 188 a 14 14 0 1 0 28 0 a 14 14 0 1 0 -28 0" fill="#9AA4AE" stroke="#26313D" stroke-width="10"/>
+  <rect x="72" y="100" width="304" height="88" rx="18" fill="#0B5A53" stroke="#26313D" stroke-width="12"/>
+  <rect x="96" y="124" width="72" height="46" rx="8" fill="#DCEEE9" stroke="#26313D" stroke-width="8"/>
+  <rect x="180" y="124" width="72" height="46" rx="8" fill="#DCEEE9" stroke="#26313D" stroke-width="8"/>
+  <rect x="282" y="124" width="56" height="64" rx="8" fill="#FCF8EF" stroke="#26313D" stroke-width="8"/>
+  <path d="M 60 414 H 452 M 84 405 v 18 M 132 405 v 18 M 180 405 v 18 M 228 405 v 18 M 276 405 v 18 M 324 405 v 18 M 372 405 v 18 M 420 405 v 18" fill="none" stroke="#9AA4AE" stroke-width="9" stroke-linecap="round"/>
+  <path d="M 190 398 a 14 14 0 1 0 28 0 a 14 14 0 1 0 -28 0 M 380 398 a 14 14 0 1 0 28 0 a 14 14 0 1 0 -28 0" fill="#9AA4AE" stroke="#26313D" stroke-width="10"/>
+  <rect x="136" y="310" width="304" height="88" rx="18" fill="#3E6FA6" stroke="#26313D" stroke-width="12"/>
+  <rect x="150" y="334" width="56" height="64" rx="8" fill="#FCF8EF" stroke="#26313D" stroke-width="8"/>
+  <rect x="232" y="334" width="72" height="46" rx="8" fill="#DCEEE9" stroke="#26313D" stroke-width="8"/>
+  <rect x="316" y="334" width="72" height="46" rx="8" fill="#DCEEE9" stroke="#26313D" stroke-width="8"/>
+  <path d="M 310 198 C 310 250 178 258 178 318 M 164 306 L 178 322 L 192 306" fill="none" stroke="#C9483A" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>

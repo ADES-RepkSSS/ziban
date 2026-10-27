@@ -1,5 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="一张卡片旁边有一个小圆牌">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="一张身份证叠在一个红棕色的小本子上，卡上有照片、几行信息和一枚小圆章">
   <rect width="512" height="512" rx="40" fill="#F4EBD9"/>
   <circle cx="256" cy="248" r="196" fill="#FCF8EF"/>
-  <ellipse cx="256" cy="421" rx="132" ry="17" fill="#DDCEB7" stroke="none" stroke-width="0" opacity="0.75"/><rect x="92" y="166" width="328" height="196" rx="24" fill="#A8C4DF" stroke="#26313D" stroke-width="14" /><rect x="92" y="200" width="328" height="34" rx="0" fill="#26313D" stroke="#26313D" stroke-width="0" /><rect x="124" y="250" width="76" height="58" rx="10" fill="#E8A63C" stroke="#26313D" stroke-width="8" /><line x1="136" y1="264" x2="188" y2="264" stroke="#F6D08E" stroke-width="4" stroke-linecap="round" /><line x1="136" y1="284" x2="188" y2="284" stroke="#F6D08E" stroke-width="4" stroke-linecap="round" /><line x1="136" y1="304" x2="188" y2="304" stroke="#F6D08E" stroke-width="4" stroke-linecap="round" /><circle cx="356" cy="274" r="30" fill="none" stroke="#FFFFFF" stroke-width="8" opacity="0.8"/><circle cx="356" cy="274" r="18" fill="none" stroke="#FFFFFF" stroke-width="6" opacity="0.8"/><line x1="124" y1="332" x2="264" y2="332" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" opacity="0.8"/><g transform="translate(412 112) scale(0.72) translate(-50 -50)"><circle cx="50" cy="50" r="30" fill="#3E6FA6" stroke="#26313D" stroke-width="6" /><circle cx="50" cy="50" r="16" fill="#FCF8EF" stroke="#26313D" stroke-width="4" /><circle cx="50" cy="50" r="6" fill="#3E6FA6" stroke="none" stroke-width="0" /></g><rect x="206" y="468" width="100" height="8" rx="4" fill="#3E6FA6" stroke="none" stroke-width="0" opacity="0.85"/>
+  <rect x="126" y="176" width="232" height="196" rx="16" fill="#FCF8EF" stroke="#26313D" stroke-width="14" transform="rotate(-8 242 274)"/>
+  <rect x="134" y="186" width="232" height="196" rx="16" fill="#9A6B4A" stroke="#26313D" stroke-width="14" transform="rotate(-8 250 284)"/>
+  <rect x="154" y="206" width="192" height="156" rx="10" fill="none" stroke="#F6D08E" stroke-width="7" transform="rotate(-8 250 284)"/>
+  <rect x="204" y="110" width="240" height="152" rx="16" fill="#FFFFFF" stroke="#26313D" stroke-width="14" transform="rotate(6 324 186)"/>
+  <g transform="rotate(6 324 186)">
+    <rect x="222" y="132" width="88" height="108" rx="10" fill="#DCEEE9" stroke="#26313D" stroke-width="8"/>
+    <circle cx="266" cy="164" r="23" fill="#E9B98F" stroke="#26313D" stroke-width="6"/>
+    <path d="M 238 238 q 0 -32 28 -32 q 28 0 28 32 Z" fill="#0B5A53" stroke="#26313D" stroke-width="6"/>
+    <path d="M 326 146 h 92 M 326 178 h 92 M 326 210 h 58" fill="none" stroke="#D9DEE3" stroke-width="10" stroke-linecap="round"/>
+    <circle cx="410" cy="230" r="17" fill="#E9A59C" stroke="#C9483A" stroke-width="6"/>
+    <circle cx="410" cy="230" r="6" fill="#C9483A" stroke="none" stroke-width="0"/>
+  </g>
 </svg>

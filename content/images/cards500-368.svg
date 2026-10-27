@@ -1,5 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="一张小卡片，角上有一个十字">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="一张证件卡，左边是照片，右边是几条信息，卡角贴着一个轮椅标志">
   <rect width="512" height="512" rx="40" fill="#F4EBD9"/>
   <circle cx="256" cy="248" r="196" fill="#FCF8EF"/>
-  <ellipse cx="256" cy="421" rx="132" ry="17" fill="#DDCEB7" stroke="none" stroke-width="0" opacity="0.75"/><g transform="rotate(-4 256 286)"><rect x="64" y="168" width="384" height="232" rx="24" fill="#FFFFFF" stroke="#26313D" stroke-width="14" /><rect x="64" y="168" width="384" height="52" rx="22" fill="#A8C4DF" stroke="#26313D" stroke-width="10" /><circle cx="166" cy="290" r="56" fill="#DDF0EE" stroke="#26313D" stroke-width="10" /><circle cx="166" cy="274" r="24" fill="#E9B98F" stroke="none" stroke-width="0" /><path d="M 126 330 q 40 -40 80 0" fill="#1D7A72" stroke="#26313D" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" /><rect x="250" y="250" width="154" height="12" rx="6" fill="#D9DEE3" stroke="#26313D" stroke-width="0" /><rect x="250" y="286" width="154" height="12" rx="6" fill="#D9DEE3" stroke="#26313D" stroke-width="0" /><rect x="250" y="322" width="112" height="12" rx="6" fill="#D9DEE3" stroke="#26313D" stroke-width="0" /><rect x="318" y="350" width="74" height="34" rx="8" fill="#F6D08E" stroke="#26313D" stroke-width="8" /><line x1="420" y1="194" x2="444" y2="194" stroke="#C9483A" stroke-width="8" stroke-linecap="round" /><line x1="432" y1="182" x2="432" y2="206" stroke="#C9483A" stroke-width="8" stroke-linecap="round" /></g><g transform="translate(412 112) scale(0.72) translate(-50 -50)"><line x1="22" y1="22" x2="78" y2="78" stroke="#C9483A" stroke-width="11" stroke-linecap="round" /><line x1="78" y1="22" x2="22" y2="78" stroke="#C9483A" stroke-width="11" stroke-linecap="round" /></g><rect x="206" y="468" width="100" height="8" rx="4" fill="#3E6FA6" stroke="none" stroke-width="0" opacity="0.85"/>
+  <ellipse cx="256" cy="440" rx="148" ry="16" fill="#DDCEB7" stroke="none" opacity="0.75"/>
+  <g transform="rotate(-3 256 276)">
+    <g stroke="#26313D" stroke-width="12" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="72" y="152" width="360" height="244" rx="24" fill="#FFFFFF" stroke-width="14"/>
+      <path d="M 96 152 H 408 A 24 24 0 0 1 432 176 V 206 H 72 V 176 A 24 24 0 0 1 96 152 Z" fill="#A8C4DF" stroke-width="12"/>
+      <rect x="100" y="224" width="104" height="132" rx="8" fill="#DDF0EE" stroke-width="10"/>
+      <path d="M 120 352 V 322 Q 120 290 152 290 Q 184 290 184 322 V 352 Z" fill="#0B5A53" stroke-width="8"/>
+      <circle cx="152" cy="272" r="20" fill="#E9B98F" stroke-width="8"/>
+      <rect x="228" y="224" width="160" height="14" rx="7" fill="#D9DEE3" stroke="none"/>
+      <rect x="228" y="256" width="124" height="14" rx="7" fill="#D9DEE3" stroke="none"/>
+      <rect x="228" y="288" width="160" height="14" rx="7" fill="#D9DEE3" stroke="none"/>
+      <circle cx="398" cy="368" r="54" fill="#3E6FA6"/>
+      <circle cx="400" cy="374" r="25" fill="none" stroke="#FFFFFF" stroke-width="7"/>
+      <circle cx="376" cy="338" r="8" fill="#FFFFFF" stroke="none"/>
+      <path d="M 382 348 L 374 374 H 396 V 392" fill="none" stroke="#FFFFFF" stroke-width="7"/>
+    </g>
+  </g>
 </svg>

@@ -1,5 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="一个瓶子接着一根管子，旁边有几道波纹">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="一位老人戴着氧气面罩，管子接到旁边的氧气瓶和氧气表上">
   <rect width="512" height="512" rx="40" fill="#F4EBD9"/>
   <circle cx="256" cy="248" r="196" fill="#FCF8EF"/>
-  <ellipse cx="256" cy="421" rx="132" ry="17" fill="#DDCEB7" stroke="none" stroke-width="0" opacity="0.75"/><rect x="186" y="166" width="140" height="202" rx="22" fill="#FFFFFF" stroke="#26313D" stroke-width="14" /><rect x="198" y="120" width="116" height="54" rx="12" fill="#C9483A" stroke="#26313D" stroke-width="12" /><rect x="206" y="208" width="100" height="112" rx="10" fill="#FCF8EF" stroke="#26313D" stroke-width="6" /><line x1="222" y1="236" x2="290" y2="236" stroke="#D9DEE3" stroke-width="6" stroke-linecap="round" /><line x1="222" y1="258" x2="278" y2="258" stroke="#D9DEE3" stroke-width="6" stroke-linecap="round" /><line x1="222" y1="280" x2="286" y2="280" stroke="#D9DEE3" stroke-width="6" stroke-linecap="round" /><g transform="rotate(-28 140 330)"><rect x="82" y="304" width="116" height="52" rx="26" fill="#FFFFFF" stroke="#26313D" stroke-width="12" /><path d="M 138 304 L 138 356" stroke="#C9483A" stroke-width="12"/><path d="M 82 304 Q 82 356 138 356 L 138 304 Z" fill="#E9A59C" stroke="none"/></g><g transform="rotate(24 372 350)"><rect x="314" y="324" width="116" height="52" rx="26" fill="#FFFFFF" stroke="#26313D" stroke-width="12" /><path d="M 370 324 L 370 376" stroke="#C9483A" stroke-width="12"/><path d="M 314 324 Q 314 376 370 376 L 370 324 Z" fill="#E9A59C" stroke="none"/></g><g transform="translate(412 112) scale(0.72) translate(-50 -50)"><path d="M 20 38 q 18 -20 36 0" fill="none" stroke="#1D7A72" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" /><path d="M 12 58 q 26 -28 52 0" fill="none" stroke="#1D7A72" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" /><path d="M 4 78 q 34 -36 68 0" fill="none" stroke="#1D7A72" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" /></g><rect x="206" y="468" width="100" height="8" rx="4" fill="#3E6FA6" stroke="none" stroke-width="0" opacity="0.85"/>
+  <line x1="72" y1="428" x2="444" y2="428" stroke="#26313D" stroke-width="12" stroke-linecap="round"/>
+  <path d="M 92 428 q 0 -128 104 -128 q 104 0 104 128 Z" fill="#A8C4DF" stroke="#26313D" stroke-width="12" stroke-linejoin="round"/>
+  <circle cx="196" cy="232" r="64" fill="#E9B98F" stroke="#26313D" stroke-width="12"/>
+  <path d="M 140 218 q 6 -56 56 -56 q 50 0 56 56 q -28 -28 -56 -28 q -28 0 -56 28 Z" fill="#9AA4AE" stroke="#26313D" stroke-width="10" stroke-linejoin="round"/>
+  <circle cx="176" cy="224" r="6" fill="#26313D"/>
+  <circle cx="216" cy="224" r="6" fill="#26313D"/>
+  <path d="M 158 250 q 38 -10 76 0 q 4 28 -18 42 q -20 12 -40 0 q -22 -14 -18 -42 Z" fill="#DCEEE9" stroke="#26313D" stroke-width="11" stroke-linejoin="round"/>
+  <path d="M 160 252 q -24 -6 -30 14 M 232 252 q 24 -6 30 14" fill="none" stroke="#26313D" stroke-width="8" stroke-linecap="round"/>
+  <path d="M 230 292 C 268 310 320 304 368 300" fill="none" stroke="#26313D" stroke-width="10" stroke-linecap="round"/>
+  <rect x="352" y="302" width="72" height="126" rx="20" fill="#4F8A5B" stroke="#26313D" stroke-width="12"/>
+  <rect x="372" y="276" width="32" height="30" rx="8" fill="#9AA4AE" stroke="#26313D" stroke-width="10"/>
+  <circle cx="388" cy="258" r="22" fill="#FFFFFF" stroke="#26313D" stroke-width="10"/>
+  <line x1="388" y1="258" x2="400" y2="244" stroke="#26313D" stroke-width="7" stroke-linecap="round"/>
+  <path d="M 122 244 q -16 18 0 36 M 100 232 q -24 28 0 58" fill="none" stroke="#3E6FA6" stroke-width="8" stroke-linecap="round"/>
 </svg>

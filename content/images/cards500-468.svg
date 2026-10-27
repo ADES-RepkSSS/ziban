@@ -1,5 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="一块电池，旁边滴下一滴水">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="一张银行卡的卡号化成红点，从卡边漏出去，落到下面变成水滴">
   <rect width="512" height="512" rx="40" fill="#F4EBD9"/>
   <circle cx="256" cy="248" r="196" fill="#FCF8EF"/>
-  <ellipse cx="256" cy="421" rx="132" ry="17" fill="#DDCEB7" stroke="none" stroke-width="0" opacity="0.75"/><rect x="166" y="168" width="180" height="220" rx="18" fill="#A9C9A4" stroke="#26313D" stroke-width="14" /><rect x="214" y="136" width="84" height="40" rx="10" fill="#9AA4AE" stroke="#26313D" stroke-width="10" /><polygon points="268 202 214 292 250 292 224 356 310 258 268 258 292 202" fill="#E8A63C" stroke="#26313D" stroke-width="8" stroke-linejoin="round" /><rect x="186" y="352" width="140" height="14" rx="7" fill="#4F8A5B" stroke="#26313D" stroke-width="0" /><path d="M 370 220 q 28 28 0 56" fill="none" stroke="#4F8A5B" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" /><g transform="translate(412 112) scale(0.72) translate(-50 -50)"><path d="M 50 12 q 34 38 34 56 q 0 28 -34 28 q -34 0 -34 -28 q 0 -18 34 -56" fill="#3E6FA6" stroke="#26313D" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" /></g><rect x="206" y="468" width="100" height="8" rx="4" fill="#C9483A" stroke="none" stroke-width="0" opacity="0.85"/>
+  <rect x="186" y="86" width="168" height="230" rx="12" fill="#FFFFFF" stroke="#26313D" stroke-width="12"/>
+  <path d="M 212 126 H 328 M 212 158 H 328 M 212 190 H 300" fill="none" stroke="#D9DEE3" stroke-width="10" stroke-linecap="round"/>
+  <rect x="112" y="230" width="250" height="152" rx="18" fill="#A8C4DF" stroke="#26313D" stroke-width="14"/>
+  <rect x="128" y="254" width="218" height="28" rx="4" fill="#26313D"/>
+  <rect x="136" y="300" width="50" height="38" rx="8" fill="#E8A63C" stroke="#26313D" stroke-width="10"/>
+  <path d="M 148 312 H 176 M 148 326 H 176" fill="none" stroke="#F6D08E" stroke-width="6" stroke-linecap="round"/>
+  <line x1="214" y1="344" x2="334" y2="344" stroke="#26313D" stroke-width="12" stroke-linecap="round" stroke-dasharray="2 18"/>
+  <path d="M 340 348 q 42 2 46 38 q 2 18 -10 28" fill="none" stroke="#C9483A" stroke-width="12" stroke-linecap="round" stroke-dasharray="2 18"/>
+  <path d="M 378 408 q 11 15 11 22 a 11 11 0 0 1 -22 0 q 0 -7 11 -22 z" fill="#C9483A" stroke="#26313D" stroke-width="10" stroke-linejoin="round"/>
 </svg>

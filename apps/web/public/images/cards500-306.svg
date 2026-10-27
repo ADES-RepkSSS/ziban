@@ -1,5 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="几道弯弯的信号线，上方飘着几颗小星">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="一朵大云里放着两张小照片和一个文件夹，云边挂着一把小锁，下方的手机用一条虚线连到云上">
   <rect width="512" height="512" rx="40" fill="#F4EBD9"/>
   <circle cx="256" cy="248" r="196" fill="#FCF8EF"/>
-  <ellipse cx="256" cy="421" rx="132" ry="17" fill="#DDCEB7" stroke="none" stroke-width="0" opacity="0.75"/><rect x="146" y="286" width="220" height="84" rx="20" fill="#FFFFFF" stroke="#26313D" stroke-width="14" /><line x1="180" y1="286" x2="160" y2="230" stroke="#26313D" stroke-width="10" stroke-linecap="round" /><line x1="332" y1="286" x2="352" y2="230" stroke="#26313D" stroke-width="10" stroke-linecap="round" /><circle cx="188" cy="330" r="9" fill="#4F8A5B" stroke="#26313D" stroke-width="4" /><circle cx="220" cy="330" r="9" fill="#E8A63C" stroke="#26313D" stroke-width="4" /><circle cx="252" cy="330" r="9" fill="#C9483A" stroke="#26313D" stroke-width="4" /><path d="M 202 220 q 54 -38 108 0" fill="none" stroke="#1D7A72" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" /><path d="M 168 220 q 88 -62 176 0" fill="none" stroke="#1D7A72" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" /><path d="M 134 220 q 122 -85 244 0" fill="none" stroke="#1D7A72" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" /><circle cx="256" cy="230" r="12" fill="#1D7A72" stroke="#26313D" stroke-width="4" /><g transform="translate(412 112) scale(0.72) translate(-50 -50)"><polygon points="50 8 60 38 90 50 60 62 50 92 40 62 10 50 40 38" fill="#E8A63C" stroke="#26313D" stroke-width="4" stroke-linejoin="round" /></g><rect x="206" y="468" width="100" height="8" rx="4" fill="#3E6FA6" stroke="none" stroke-width="0" opacity="0.85"/>
+  <path d="M 128 272 C 88 264 86 198 142 184 C 160 138 192 122 228 130 C 252 94 312 96 328 138 C 374 130 412 158 398 202 C 426 222 432 266 390 276 Z" fill="#DCEEE9" stroke="#26313D" stroke-width="14" stroke-linejoin="round"/>
+  <rect x="178" y="160" width="56" height="46" rx="6" fill="#FFFFFF" stroke="#26313D" stroke-width="10"/>
+  <path d="M 186 196 L 202 174 L 212 188 L 220 178 L 228 196 Z" fill="#4F8A5B" stroke="#26313D" stroke-width="6" stroke-linejoin="round"/>
+  <circle cx="216" cy="172" r="5.5" fill="#E8A63C" stroke="none" stroke-width="0"/>
+  <rect x="242" y="160" width="56" height="46" rx="6" fill="#FFFFFF" stroke="#26313D" stroke-width="10"/>
+  <path d="M 250 196 L 264 176 L 272 188 L 280 174 L 290 196 Z" fill="#A9C9A4" stroke="#26313D" stroke-width="6" stroke-linejoin="round"/>
+  <circle cx="286" cy="170" r="5.5" fill="#E8A63C" stroke="none" stroke-width="0"/>
+  <path d="M 208 210 L 242 210 L 250 224 L 300 224 L 300 256 L 208 256 Z" fill="#F6D08E" stroke="#26313D" stroke-width="10" stroke-linejoin="round"/>
+  <rect x="392" y="286" width="48" height="44" rx="8" fill="#E8A63C" stroke="#26313D" stroke-width="10"/>
+  <path d="M 404 288 L 404 270 A 12 12 0 0 1 428 270 L 428 288" fill="none" stroke="#26313D" stroke-width="9" stroke-linecap="round"/>
+  <circle cx="416" cy="306" r="6" fill="#26313D" stroke="none" stroke-width="0"/>
+  <path d="M 256 330 L 256 282" fill="none" stroke="#3E6FA6" stroke-width="9" stroke-linecap="round" stroke-dasharray="1 18"/>
+  <rect x="212" y="334" width="88" height="116" rx="18" fill="#3E6FA6" stroke="#26313D" stroke-width="12"/>
+  <rect x="224" y="350" width="64" height="76" rx="8" fill="#FCF8EF" stroke="#26313D" stroke-width="6"/>
+  <circle cx="256" cy="432" r="6" fill="#FCF8EF" stroke="none" stroke-width="0"/>
+  <rect x="206" y="468" width="100" height="8" rx="4" fill="#3E6FA6" stroke="none" stroke-width="0" opacity="0.85"/>
 </svg>

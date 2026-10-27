@@ -1,5 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="两种纸币之间画着来去的箭头">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="两张颜色不同的纸币左右相对，一张浅蓝、一张浅黄，中间有一去一回两个箭头">
   <rect width="512" height="512" rx="40" fill="#F4EBD9"/>
   <circle cx="256" cy="248" r="196" fill="#FCF8EF"/>
-  <ellipse cx="256" cy="421" rx="132" ry="17" fill="#DDCEB7" stroke="none" stroke-width="0" opacity="0.75"/><rect x="78" y="148" width="128" height="256" rx="24" fill="#FFFFFF" stroke="#26313D" stroke-width="14" /><rect x="94" y="172" width="96" height="184" rx="10" fill="#DDF0EE" stroke="#26313D" stroke-width="0" /><circle cx="142" cy="240" r="36" fill="#8FC7C1" stroke="#26313D" stroke-width="8" /><path d="M 112 330 q 30 -34 60 0" fill="none" stroke="#1D7A72" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" /><circle cx="142" cy="376" r="10" fill="#D9DEE3" stroke="none" stroke-width="0" /><rect x="306" y="148" width="128" height="256" rx="24" fill="#FFFFFF" stroke="#26313D" stroke-width="14" /><rect x="322" y="172" width="96" height="184" rx="10" fill="#DDF0EE" stroke="#26313D" stroke-width="0" /><circle cx="370" cy="240" r="36" fill="#8FC7C1" stroke="#26313D" stroke-width="8" /><path d="M 340 330 q 30 -34 60 0" fill="none" stroke="#1D7A72" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" /><circle cx="370" cy="376" r="10" fill="#D9DEE3" stroke="none" stroke-width="0" /><line x1="224" y1="262" x2="288" y2="262" stroke="#C9483A" stroke-width="16" stroke-linecap="round" /><path d="M 264 238 l 30 24 l -30 24" fill="none" stroke="#C9483A" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" /><circle cx="256" cy="330" r="34" fill="#F6D08E" stroke="#26313D" stroke-width="10" /><circle cx="256" cy="330" r="18" fill="#E8A63C" stroke="none" stroke-width="0" /><g transform="translate(412 112) scale(0.72) translate(-50 -50)"><line x1="16" y1="50" x2="78" y2="50" stroke="#1D7A72" stroke-width="10" stroke-linecap="round" /><polygon points="78 50 56 32 56 68" fill="#1D7A72" stroke="#26313D" stroke-width="4" stroke-linejoin="round" /></g><rect x="206" y="468" width="100" height="8" rx="4" fill="#3E6FA6" stroke="none" stroke-width="0" opacity="0.85"/>
+  <g transform="rotate(-8 132 234)">
+    <rect x="52" y="178" width="160" height="112" rx="12" fill="#A8C4DF" stroke="#26313D" stroke-width="12"/>
+    <rect x="68" y="194" width="128" height="80" rx="8" fill="none" stroke="#3E6FA6" stroke-width="7"/>
+    <circle cx="104" cy="234" r="24" fill="#FCF8EF" stroke="#26313D" stroke-width="8"/>
+    <circle cx="104" cy="234" r="9" fill="#3E6FA6" stroke="none"/>
+    <line x1="146" y1="212" x2="182" y2="212" stroke="#3E6FA6" stroke-width="7" stroke-linecap="round"/>
+    <line x1="146" y1="230" x2="182" y2="230" stroke="#3E6FA6" stroke-width="7" stroke-linecap="round"/>
+  </g>
+  <g transform="rotate(8 376 234)">
+    <rect x="296" y="178" width="160" height="112" rx="12" fill="#F6D08E" stroke="#26313D" stroke-width="12"/>
+    <rect x="312" y="194" width="128" height="80" rx="8" fill="none" stroke="#E8A63C" stroke-width="7"/>
+    <path d="M 410 204 L 436 234 L 410 264 L 384 234 Z" fill="#FCF8EF" stroke="#26313D" stroke-width="8" stroke-linejoin="round"/>
+    <path d="M 410 220 L 424 234 L 410 248 L 396 234 Z" fill="#E8A63C" stroke="none"/>
+    <line x1="326" y1="212" x2="362" y2="212" stroke="#E8A63C" stroke-width="7" stroke-linecap="round"/>
+    <line x1="326" y1="230" x2="362" y2="230" stroke="#E8A63C" stroke-width="7" stroke-linecap="round"/>
+  </g>
+  <path d="M 222 214 H 276 M 264 202 L 278 214 L 264 226" fill="none" stroke="#0B5A53" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 286 254 H 238 M 250 242 L 236 254 L 250 266" fill="none" stroke="#0B5A53" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>

@@ -1,5 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="一张床，上面铺着被子和枕头">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="一个人躺在床上盖着被子，闭着眼皱着眉，额头上搭着一条毛巾，床边的柜子上放着药瓶">
   <rect width="512" height="512" rx="40" fill="#F4EBD9"/>
   <circle cx="256" cy="248" r="196" fill="#FCF8EF"/>
-  <ellipse cx="256" cy="421" rx="132" ry="17" fill="#DDCEB7" stroke="none" stroke-width="0" opacity="0.75"/><rect x="88" y="170" width="54" height="220" rx="16" fill="#1D7A72" stroke="#26313D" stroke-width="14" /><rect x="130" y="284" width="292" height="80" rx="18" fill="#FFFFFF" stroke="#26313D" stroke-width="14" /><rect x="152" y="224" width="106" height="54" rx="16" fill="#FFFFFF" stroke="#26313D" stroke-width="14" /><rect x="252" y="246" width="172" height="56" rx="16" fill="#E9A59C" stroke="#26313D" stroke-width="14" /><rect x="130" y="364" width="22" height="40" rx="6" fill="#26313D" stroke="#26313D" stroke-width="0" /><rect x="414" y="364" width="22" height="40" rx="6" fill="#26313D" stroke="#26313D" stroke-width="0" /><path d="M 270 258 q 34 22 0 44" fill="none" stroke="#C9483A" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" /><rect x="206" y="468" width="100" height="8" rx="4" fill="#3E6FA6" stroke="none" stroke-width="0" opacity="0.85"/>
+  <g stroke="#26313D" stroke-width="12" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="56" y1="406" x2="456" y2="406" stroke="#9AA4AE" stroke-width="9"/>
+    <rect x="92" y="212" width="32" height="120" rx="12" fill="#9A6B4A"/>
+    <rect x="96" y="306" width="260" height="44" rx="16" fill="#DCEEE9"/>
+    <path d="M 124 350 v 56 M 328 350 v 56" fill="none"/>
+    <rect x="110" y="254" width="120" height="52" rx="14" fill="#FFFFFF" stroke-width="10"/>
+    <rect x="228" y="282" width="126" height="60" rx="18" fill="#A9C9A4"/>
+    <circle cx="196" cy="246" r="46" fill="#E9B98F"/>
+    <path d="M 152 246 C 146 190 246 190 240 246 C 228 216 164 216 152 246 Z" fill="#9AA4AE" stroke-width="9"/>
+    <path d="M 172 248 q 9 8 18 0 M 202 248 q 9 8 18 0 M 186 272 q 10 -9 20 0" fill="none" stroke-width="8"/>
+    <rect x="136" y="212" width="122" height="26" rx="8" fill="#A8C4DF" stroke-width="9" transform="rotate(-6 197 225)"/>
+    <rect x="252" y="264" width="76" height="24" rx="12" fill="#E9B98F" stroke-width="10"/>
+    <circle cx="334" cy="276" r="14" fill="#E9B98F" stroke-width="9"/>
+    <path d="M 362 298 h 74 v 14 h -74 Z M 376 312 h 6 v 94 h -6 Z M 422 312 h 6 v 94 h -6 Z" fill="#9A6B4A" stroke-width="9"/>
+    <rect x="382" y="264" width="32" height="34" rx="8" fill="#FFFFFF" stroke-width="8"/>
+    <rect x="388" y="244" width="20" height="22" rx="6" fill="#C9483A" stroke-width="8"/>
+  </g>
 </svg>

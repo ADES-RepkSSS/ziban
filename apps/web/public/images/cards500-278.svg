@@ -1,5 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="一台洗衣机，旁边放着一盆衣服">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="一个大盆里泡着衣服，水面上有几个泡沫，盆边搭着一条毛巾，旁边是一台洗衣机">
   <rect width="512" height="512" rx="40" fill="#F4EBD9"/>
   <circle cx="256" cy="248" r="196" fill="#FCF8EF"/>
-  <ellipse cx="256" cy="421" rx="132" ry="17" fill="#DDCEB7" stroke="none" stroke-width="0" opacity="0.75"/><rect x="126" y="120" width="260" height="300" rx="26" fill="#FFFFFF" stroke="#26313D" stroke-width="14" /><rect x="148" y="142" width="216" height="48" rx="12" fill="#D9DEE3" stroke="#26313D" stroke-width="8" /><circle cx="330" cy="166" r="14" fill="#1D7A72" stroke="#26313D" stroke-width="6" /><circle cx="292" cy="166" r="10" fill="#C9483A" stroke="#26313D" stroke-width="6" /><circle cx="256" cy="294" r="92" fill="#A8C4DF" stroke="#26313D" stroke-width="12" /><circle cx="256" cy="294" r="70" fill="#FCF8EF" stroke="#26313D" stroke-width="8" opacity="0.7"/><path d="M 218 300 q 26 -40 54 -4 q 22 28 32 -6" fill="none" stroke="#3E6FA6" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" /><circle cx="256" cy="294" r="8" fill="#FFFFFF" stroke="#26313D" stroke-width="4" /><rect x="206" y="468" width="100" height="8" rx="4" fill="#3E6FA6" stroke="none" stroke-width="0" opacity="0.85"/>
+  <ellipse cx="256" cy="428" rx="182" ry="13" fill="#DDCEB7" stroke="none" stroke-width="0" opacity="0.7"/>
+  <rect x="330" y="190" width="140" height="226" rx="20" fill="#D9DEE3" stroke="#26313D" stroke-width="12"/>
+  <line x1="344" y1="226" x2="456" y2="226" stroke="#26313D" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="360" cy="208" r="10" fill="#E8A63C" stroke="#26313D" stroke-width="6"/>
+  <circle cx="400" cy="316" r="48" fill="#A8C4DF" stroke="#26313D" stroke-width="10"/>
+  <circle cx="400" cy="316" r="30" fill="#FCF8EF" stroke="#26313D" stroke-width="6"/>
+  <path d="M 62 300 C 62 344 70 388 96 406 L 264 406 C 290 388 298 344 298 300" fill="#FCF8EF" stroke="#26313D" stroke-width="12" stroke-linejoin="round"/>
+  <ellipse cx="180" cy="300" rx="118" ry="30" fill="#DCEEE9" stroke="#26313D" stroke-width="12"/>
+  <ellipse cx="180" cy="306" rx="88" ry="17" fill="#A8C4DF" stroke="none" stroke-width="0"/>
+  <path d="M 130 244 L 116 260 L 132 282 L 146 272 L 146 316 L 190 316 L 190 272 L 204 282 L 218 260 L 204 244 L 192 244 Q 162 260 142 244 Z" fill="#3E6FA6" stroke="#26313D" stroke-width="10" stroke-linejoin="round"/>
+  <path d="M 62 300 C 62 316.6 114.8 330 180 330 C 245.2 330 298 316.6 298 300" fill="none" stroke="#26313D" stroke-width="14" stroke-linecap="round"/>
+  <path d="M 244 300 C 264 292 292 297 302 310 L 300 344 C 296 360 292 372 288 380 C 280 392 274 380 268 386 C 262 392 256 380 250 386 C 244 392 240 376 240 366 L 242 320 C 242 310 243 304 244 300 Z" fill="#C9483A" stroke="#26313D" stroke-width="10" stroke-linejoin="round"/>
+  <path d="M 250 316 C 266 310 284 312 296 318" fill="none" stroke="#26313D" stroke-width="5" stroke-linecap="round" opacity="0.6"/>
+  <circle cx="118" cy="308" r="13" fill="#FFFFFF" stroke="#26313D" stroke-width="6"/>
+  <circle cx="146" cy="320" r="9" fill="#FFFFFF" stroke="#26313D" stroke-width="5"/>
+  <circle cx="242" cy="314" r="11" fill="#FFFFFF" stroke="#26313D" stroke-width="5"/>
+  <rect x="206" y="468" width="100" height="8" rx="4" fill="#3E6FA6" stroke="none" stroke-width="0" opacity="0.85"/>
 </svg>

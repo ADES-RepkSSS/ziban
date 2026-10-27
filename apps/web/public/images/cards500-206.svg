@@ -1,5 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="灶台上摆着一口锅，冒着热气">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="厨房一角：墙上有窗户和抽油烟机，左边灶台上放着一口冒热气的锅，右边台面上放着案板和一只碗，地面铺着地砖">
   <rect width="512" height="512" rx="40" fill="#F4EBD9"/>
   <circle cx="256" cy="248" r="196" fill="#FCF8EF"/>
-  <ellipse cx="256" cy="421" rx="132" ry="17" fill="#DDCEB7" stroke="none" stroke-width="0" opacity="0.75"/><rect x="120" y="220" width="272" height="152" rx="30" fill="#FFFFFF" stroke="#26313D" stroke-width="14" /><rect x="104" y="246" width="36" height="30" rx="12" fill="#1D7A72" stroke="#26313D" stroke-width="10" /><rect x="372" y="246" width="36" height="30" rx="12" fill="#1D7A72" stroke="#26313D" stroke-width="10" /><ellipse cx="256" cy="220" rx="136" ry="34" fill="#8FC7C1" stroke="#26313D" stroke-width="12" /><circle cx="256" cy="190" r="18" fill="#1D7A72" stroke="#26313D" stroke-width="10" /><path d="M 196 152 q -18 -26 0 -48 q 18 -20 0 -42" fill="none" stroke="#9AA4AE" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" /><path d="M 256 152 q -18 -26 0 -48 q 18 -20 0 -42" fill="none" stroke="#9AA4AE" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" /><path d="M 316 152 q -18 -26 0 -48 q 18 -20 0 -42" fill="none" stroke="#9AA4AE" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" /><rect x="150" y="262" width="212" height="18" rx="9" fill="#E9A59C" stroke="#26313D" stroke-width="0" /><g transform="translate(412 112) scale(0.72) translate(-50 -50)"><path d="M 30 82 q -16 -18 0 -34 q 16 -14 0 -30" fill="none" stroke="#9AA4AE" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" /><path d="M 58 86 q -16 -20 0 -38 q 16 -16 0 -34" fill="none" stroke="#9AA4AE" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" /></g><rect x="206" y="468" width="100" height="8" rx="4" fill="#E8A63C" stroke="none" stroke-width="0" opacity="0.85"/>
+  <rect x="88" y="80" width="336" height="274" rx="12" fill="#F6D08E" stroke="#26313D" stroke-width="12"/>
+  <rect x="88" y="354" width="336" height="66" rx="12" fill="#D9DEE3" stroke="#26313D" stroke-width="12"/>
+  <rect x="300" y="104" width="104" height="84" rx="8" fill="#A8C4DF" stroke="#26313D" stroke-width="10"/>
+  <path d="M 352 108 V 184 M 304 146 H 400" fill="none" stroke="#FCF8EF" stroke-width="8" stroke-linecap="round"/>
+  <path d="M 150 100 H 254 L 284 146 H 120 Z" fill="#D9DEE3" stroke="#26313D" stroke-width="10" stroke-linejoin="round"/>
+  <rect x="112" y="146" width="180" height="22" rx="8" fill="#9AA4AE" stroke="#26313D" stroke-width="10"/>
+  <rect x="140" y="232" width="112" height="48" rx="10" fill="#E9A59C" stroke="#26313D" stroke-width="12"/>
+  <rect x="132" y="222" width="128" height="14" rx="7" fill="#C9483A" stroke="#26313D" stroke-width="10"/>
+  <path d="M 124 244 h 16 v 16 h -16 z M 252 244 h 16 v 16 h -16 z" fill="#C9483A" stroke="#26313D" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M 168 214 q -13 -10 1 -19 q 13 -10 1 -19 M 208 214 q -13 -10 1 -19 q 13 -10 1 -19" fill="none" stroke="#9AA4AE" stroke-width="9" stroke-linecap="round"/>
+  <rect x="104" y="280" width="184" height="24" rx="10" fill="#9AA4AE" stroke="#26313D" stroke-width="10"/>
+  <rect x="112" y="304" width="168" height="62" rx="10" fill="#FFFFFF" stroke="#26313D" stroke-width="12"/>
+  <path d="M 143 330 a 9 9 0 1 0 18 0 a 9 9 0 1 0 -18 0 M 191 330 a 9 9 0 1 0 18 0 a 9 9 0 1 0 -18 0" fill="#E8A63C" stroke="#26313D" stroke-width="6"/>
+  <rect x="296" y="278" width="120" height="20" rx="10" fill="#9A6B4A" stroke="#26313D" stroke-width="10"/>
+  <rect x="304" y="298" width="104" height="68" rx="10" fill="#FFFFFF" stroke="#26313D" stroke-width="12"/>
+  <rect x="298" y="262" width="58" height="16" rx="8" fill="#F6D08E" stroke="#26313D" stroke-width="10"/>
+  <path d="M 360 256 a 22 22 0 0 0 44 0 z" fill="#3E6FA6" stroke="#26313D" stroke-width="10" stroke-linejoin="round"/>
 </svg>

@@ -1,5 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="一个服务柜台，旁边冒出一个对话气泡">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="一部正在响的蓝色座机电话，旁边冒出一个对话气泡">
   <rect width="512" height="512" rx="40" fill="#F4EBD9"/>
   <circle cx="256" cy="248" r="196" fill="#FCF8EF"/>
-  <ellipse cx="256" cy="421" rx="132" ry="17" fill="#DDCEB7" stroke="none" stroke-width="0" opacity="0.75"/><rect x="64" y="152" width="384" height="196" rx="24" fill="#FFFFFF" stroke="#26313D" stroke-width="14" /><rect x="64" y="320" width="384" height="92" rx="18" fill="#DDE6E4" stroke="#26313D" stroke-width="14" /><rect x="88" y="340" width="336" height="20" rx="10" fill="#8FC7C1" stroke="#26313D" stroke-width="0" /><circle cx="300" cy="210" r="36" fill="#E9B98F" stroke="#26313D" stroke-width="14" /><path d="M 246 320 q 0 -62 54 -62 q 54 0 54 62" fill="#1D7A72" stroke="#26313D" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" /><circle cx="180" cy="244" r="34" fill="#B9B2AA" stroke="#26313D" stroke-width="14" /><path d="M 120 372 q 0 -74 60 -74 q 60 0 60 74" fill="#3E6FA6" stroke="#26313D" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" /><rect x="220" y="274" width="92" height="58" rx="8" fill="#FFFFFF" stroke="#26313D" stroke-width="8" /><line x1="238" y1="292" x2="294" y2="292" stroke="#D9DEE3" stroke-width="6" stroke-linecap="round" /><line x1="238" y1="310" x2="280" y2="310" stroke="#D9DEE3" stroke-width="6" stroke-linecap="round" /><g transform="translate(412 112) scale(0.72) translate(-50 -50)"><path d="M 16 24 h 68 q 10 0 10 10 v 34 q 0 10 -10 10 H 46 l -18 18 v -18 H 16 q -10 0 -10 -10 V 34 q 0 -10 10 -10 Z" fill="#A8C4DF" stroke="#26313D" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" /></g><rect x="206" y="468" width="100" height="8" rx="4" fill="#1D7A72" stroke="none" stroke-width="0" opacity="0.85"/>
+  <ellipse cx="256" cy="410" rx="134" ry="16" fill="#DDCEB7" opacity="0.75"/>
+  <path d="M 148 306 H 364 L 390 384 Q 393 396 380 396 H 132 Q 119 396 122 384 Z" fill="#A8C4DF" stroke="#26313D" stroke-width="13" stroke-linejoin="round"/>
+  <rect x="186" y="326" width="140" height="50" rx="12" fill="#FFFFFF" stroke="#26313D" stroke-width="9"/>
+  <rect x="200" y="334" width="20" height="12" rx="4" fill="#0B5A53"/>
+  <rect x="246" y="334" width="20" height="12" rx="4" fill="#0B5A53"/>
+  <rect x="292" y="334" width="20" height="12" rx="4" fill="#0B5A53"/>
+  <rect x="200" y="356" width="20" height="12" rx="4" fill="#0B5A53"/>
+  <rect x="246" y="356" width="20" height="12" rx="4" fill="#0B5A53"/>
+  <rect x="292" y="356" width="20" height="12" rx="4" fill="#0B5A53"/>
+  <path d="M 132 258 Q 132 226 158 220 Q 202 208 256 208 Q 310 208 354 220 Q 380 226 380 258 V 278 Q 380 296 362 296 H 342 Q 326 296 326 278 V 266 Q 300 252 256 252 Q 212 252 186 266 V 278 Q 186 296 170 296 H 150 Q 132 296 132 278 Z" fill="#0B5A53" stroke="#26313D" stroke-width="12" stroke-linejoin="round"/>
+  <path d="M 118 236 q -24 32 0 64" fill="none" stroke="#E8A63C" stroke-width="12" stroke-linecap="round"/>
+  <path d="M 96 218 q -34 46 0 92" fill="none" stroke="#E8A63C" stroke-width="12" stroke-linecap="round"/>
+  <path d="M 288 112 H 376 Q 392 112 392 128 V 174 Q 392 190 376 190 H 344 L 302 212 L 322 190 H 288 Q 272 190 272 174 V 128 Q 272 112 288 112 Z" fill="#FFFFFF" stroke="#26313D" stroke-width="12" stroke-linejoin="round"/>
+  <circle cx="300" cy="150" r="9" fill="#3E6FA6"/>
+  <circle cx="332" cy="150" r="9" fill="#3E6FA6"/>
+  <circle cx="364" cy="150" r="9" fill="#3E6FA6"/>
 </svg>

@@ -1,5 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="一个打折的小吊牌，旁边飘着小星">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="一块立在路边的广告牌，蓝色的牌面上画着一个瓶子、一圈光芒，右边有一个小喇叭，地上有一丛小草">
   <rect width="512" height="512" rx="40" fill="#F4EBD9"/>
   <circle cx="256" cy="248" r="196" fill="#FCF8EF"/>
-  <ellipse cx="256" cy="421" rx="132" ry="17" fill="#DDCEB7" stroke="none" stroke-width="0" opacity="0.75"/><g transform="rotate(-8 256 280)"><path d="M 110 158 h 220 l 82 122 l -82 122 H 110 Z" fill="#C9483A" stroke="#26313D" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" /><circle cx="154" cy="210" r="14" fill="#FCF8EF" stroke="#26313D" stroke-width="9" /><circle cx="302" cy="282" r="58" fill="#FFFFFF" stroke="#26313D" stroke-width="10" /><line x1="270" y1="316" x2="334" y2="248" stroke="#C9483A" stroke-width="16" stroke-linecap="round" /><circle cx="278" cy="256" r="10" fill="#C9483A" stroke="none" stroke-width="0" /><circle cx="324" cy="306" r="10" fill="#C9483A" stroke="none" stroke-width="0" /></g><path d="M 386 130 l 16 30 l 30 16 l -30 16 l -16 30 l -16 -30 l -30 -16 l 30 -16 Z" fill="#E8A63C" stroke="#26313D" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" /><g transform="translate(412 112) scale(0.72) translate(-50 -50)"><polygon points="50 8 60 38 90 50 60 62 50 92 40 62 10 50 40 38" fill="#E8A63C" stroke="#26313D" stroke-width="4" stroke-linejoin="round" /></g><rect x="206" y="468" width="100" height="8" rx="4" fill="#C9483A" stroke="none" stroke-width="0" opacity="0.85"/>
+  <g stroke="#26313D" stroke-width="12" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="56" y1="440" x2="456" y2="440"/>
+    <line x1="132" y1="300" x2="132" y2="440" stroke="#9A6B4A" stroke-width="16"/>
+    <line x1="332" y1="300" x2="332" y2="440" stroke="#9A6B4A" stroke-width="16"/>
+    <rect x="88" y="100" width="288" height="200" rx="16" fill="#A8C4DF" stroke-width="14"/>
+    <path d="M 226 116 L 243.6 149.5 L 279.7 138.3 L 268.5 174.4 L 302 192 L 268.5 209.6 L 279.7 245.7 L 243.6 234.5 L 226 268 L 208.4 234.5 L 172.3 245.7 L 183.5 209.6 L 150 192 L 183.5 174.4 L 172.3 138.3 L 208.4 149.5 Z" fill="#F6D08E" stroke-width="8"/>
+    <rect x="196" y="172" width="60" height="98" rx="18" fill="#4F8A5B" stroke-width="10"/>
+    <rect x="214" y="148" width="24" height="28" rx="6" fill="#4F8A5B" stroke-width="10"/>
+    <rect x="210" y="136" width="32" height="14" rx="7" fill="#E8A63C" stroke-width="10"/>
+    <line x1="357.3" y1="404.3" x2="367.2" y2="434.7" stroke="#9A6B4A" stroke-width="18"/>
+    <path d="M 328.1 369.6 L 373.3 333.9 L 399.3 413.8 L 341.7 411.5 Z" fill="#C9483A" stroke-width="11"/>
+    <ellipse cx="386.3" cy="373.9" rx="10" ry="42" fill="#F6D08E" stroke-width="9" transform="rotate(-18 386.3 373.9)"/>
+    <path d="M 398.6 340.4 Q 426.2 360.9 434.9 387.5 M 413.3 320.9 Q 454.8 351.6 467.7 391.5" fill="none" stroke="#E8A63C" stroke-width="8"/>
+    <path d="M 86 438 q -4 -16 -10 -22 M 86 438 q 0 -20 4 -26 M 86 438 q 8 -14 16 -18" fill="none" stroke="#4F8A5B" stroke-width="7"/>
+  </g>
 </svg>

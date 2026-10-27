@@ -1,5 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="一个空碗旁边放着一个小钟">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="一只空碗，碗里空空的，左边横着一双筷子，右上方有一个小钟">
   <rect width="512" height="512" rx="40" fill="#F4EBD9"/>
   <circle cx="256" cy="248" r="196" fill="#FCF8EF"/>
-  <ellipse cx="256" cy="421" rx="132" ry="17" fill="#DDCEB7" stroke="none" stroke-width="0" opacity="0.75"/><path d="M 112 238 H 400 Q 382 382 256 382 Q 130 382 112 238 Z" fill="#FFFFFF" stroke="#26313D" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" /><path d="M 142 238 Q 168 196 256 196 Q 344 196 370 238 Z" fill="#F6D08E" stroke="#26313D" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" /><path d="M 200 206 q 16 -24 38 -14" fill="none" stroke="#E8A63C" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" /><line x1="320" y1="120" x2="420" y2="230" stroke="#9A6B4A" stroke-width="10" stroke-linecap="round" /><line x1="348" y1="110" x2="440" y2="220" stroke="#9A6B4A" stroke-width="10" stroke-linecap="round" /><circle cx="210" cy="290" r="8" fill="#C9483A" stroke="none" stroke-width="0" /><circle cx="300" cy="306" r="8" fill="#4F8A5B" stroke="none" stroke-width="0" /><g transform="translate(412 112) scale(0.72) translate(-50 -50)"><circle cx="50" cy="50" r="32" fill="#FFFFFF" stroke="#26313D" stroke-width="7" /><line x1="50" y1="50" x2="50" y2="26" stroke="#1D7A72" stroke-width="6" stroke-linecap="round" /><line x1="50" y1="50" x2="70" y2="58" stroke="#1D7A72" stroke-width="6" stroke-linecap="round" /></g><rect x="206" y="468" width="100" height="8" rx="4" fill="#E8A63C" stroke="none" stroke-width="0" opacity="0.85"/>
+  <ellipse cx="246" cy="418" rx="142" ry="16" fill="#DDCEB7" stroke="none" stroke-width="0" opacity="0.75"/>
+  <path d="M142 292 C 144 364 184 402 246 402 C 308 402 348 364 352 292 Z" fill="#FFFFFF" stroke="#26313D" stroke-width="12" stroke-linejoin="round"/>
+  <ellipse cx="247" cy="292" rx="105" ry="27" fill="#FFFFFF" stroke="#26313D" stroke-width="12"/>
+  <ellipse cx="247" cy="296" rx="82" ry="16" fill="#F3EADA" stroke="none" stroke-width="0"/>
+  <g transform="rotate(-3 119 423)">
+    <rect x="46" y="404" width="146" height="14" rx="7" fill="#F6D08E" stroke="#26313D" stroke-width="6"/>
+    <rect x="46" y="428" width="146" height="14" rx="7" fill="#F6D08E" stroke="#26313D" stroke-width="6"/>
+  </g>
+  <g stroke="#26313D" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <circle cx="402" cy="132" r="44" fill="#FFFFFF"/>
+    <path d="M402 96 v10 M402 168 v-10 M366 132 h10 M438 132 h-10" stroke-width="7"/>
+    <path d="M402 132 V 102"/>
+    <path d="M402 132 L378 148"/>
+  </g>
+  <rect x="206" y="468" width="100" height="8" rx="4" fill="#3E6FA6" stroke="none" stroke-width="0" opacity="0.85"/>
 </svg>

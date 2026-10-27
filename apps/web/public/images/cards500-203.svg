@@ -1,5 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="站牌旁有个小钟，几个人坐着等车">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="候车室里有一排木连椅，三个人并排坐着等车，墙上挂着一个钟">
   <rect width="512" height="512" rx="40" fill="#F4EBD9"/>
   <circle cx="256" cy="248" r="196" fill="#FCF8EF"/>
-  <ellipse cx="256" cy="421" rx="132" ry="17" fill="#DDCEB7" stroke="none" stroke-width="0" opacity="0.75"/><rect x="166" y="116" width="22" height="300" rx="10" fill="#9AA4AE" stroke="#26313D" stroke-width="14" /><rect x="96" y="92" width="202" height="148" rx="24" fill="#1D7A72" stroke="#26313D" stroke-width="14" /><rect x="120" y="116" width="154" height="100" rx="14" fill="#FCF8EF" stroke="#26313D" stroke-width="10" /><rect x="146" y="140" width="94" height="52" rx="10" fill="#4F8A5B" stroke="#26313D" stroke-width="8" /><rect x="158" y="152" width="24" height="20" rx="4" fill="#FCF8EF" stroke="#26313D" stroke-width="0" /><rect x="192" y="152" width="24" height="20" rx="4" fill="#FCF8EF" stroke="#26313D" stroke-width="0" /><circle cx="170" cy="196" r="10" fill="#26313D" stroke="none" stroke-width="0" /><circle cx="214" cy="196" r="10" fill="#26313D" stroke="none" stroke-width="0" /><g transform="translate(310 262) scale(0.52)"><rect x="0" y="0" width="344" height="220" rx="26" fill="#A9C9A4" stroke="#26313D" stroke-width="14" /><rect x="28" y="28" width="288" height="92" rx="12" fill="#FCF8EF" stroke="#26313D" stroke-width="8" /><line x1="76" y1="28" x2="76" y2="120" stroke="#26313D" stroke-width="8" stroke-linecap="round" /><line x1="140" y1="28" x2="140" y2="120" stroke="#26313D" stroke-width="8" stroke-linecap="round" /><line x1="204" y1="28" x2="204" y2="120" stroke="#26313D" stroke-width="8" stroke-linecap="round" /><line x1="268" y1="28" x2="268" y2="120" stroke="#26313D" stroke-width="8" stroke-linecap="round" /><circle cx="76" cy="236" r="42" fill="#26313D" stroke="none" stroke-width="0" /><circle cx="268" cy="236" r="42" fill="#26313D" stroke="none" stroke-width="0" /></g><rect x="120" y="390" width="180" height="20" rx="10" fill="#8FC7C1" stroke="#26313D" stroke-width="8" /><rect x="134" y="410" width="16" height="26" rx="6" fill="#9AA4AE" stroke="#26313D" stroke-width="0" /><rect x="270" y="410" width="16" height="26" rx="6" fill="#9AA4AE" stroke="#26313D" stroke-width="0" /><g transform="translate(412 112) scale(0.72) translate(-50 -50)"><circle cx="50" cy="50" r="32" fill="#FFFFFF" stroke="#26313D" stroke-width="7" /><line x1="50" y1="50" x2="50" y2="26" stroke="#1D7A72" stroke-width="6" stroke-linecap="round" /><line x1="50" y1="50" x2="70" y2="58" stroke="#1D7A72" stroke-width="6" stroke-linecap="round" /></g><rect x="206" y="468" width="100" height="8" rx="4" fill="#1D7A72" stroke="none" stroke-width="0" opacity="0.85"/>
+  <g stroke="#26313D" stroke-width="12" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="40" y="364" width="432" height="76" fill="#D9DEE3" stroke="none"/>
+    <path d="M 40 364 H 472" fill="none"/>
+    <circle cx="256" cy="102" r="38" fill="#FFFFFF"/>
+    <path d="M 256 102 V 80 M 256 102 L 272 112" fill="none" stroke-width="8"/>
+    <rect x="66" y="226" width="380" height="66" rx="10" fill="#9A6B4A"/>
+    <rect x="58" y="292" width="396" height="32" rx="8" fill="#9A6B4A"/>
+    <path d="M 82 324 V 364 M 430 324 V 364 M 202 226 V 324 M 310 226 V 324" fill="none"/>
+    <circle cx="150" cy="184" r="18" fill="#E9B98F"/>
+    <circle cx="256" cy="184" r="18" fill="#E9B98F"/>
+    <circle cx="362" cy="184" r="18" fill="#E9B98F"/>
+    <path d="M 131 183 q 0 -21 19 -21 q 19 0 19 21 q -8 -9 -19 -9 q -11 0 -19 9 Z M 237 183 q 0 -21 19 -21 q 19 0 19 21 q -8 -9 -19 -9 q -11 0 -19 9 Z M 343 183 q 0 -21 19 -21 q 19 0 19 21 q -8 -9 -19 -9 q -11 0 -19 9 Z" fill="#26313D"/>
+    <path d="M 124 292 V 228 q 0 -26 26 -26 q 26 0 26 26 V 292 Z" fill="#3E6FA6"/>
+    <path d="M 230 292 V 228 q 0 -26 26 -26 q 26 0 26 26 V 292 Z" fill="#4F8A5B"/>
+    <path d="M 336 292 V 228 q 0 -26 26 -26 q 26 0 26 26 V 292 Z" fill="#C9483A"/>
+    <path d="M 139 296 V 358 M 161 296 V 358 M 245 296 V 358 M 267 296 V 358 M 351 296 V 358 M 373 296 V 358" fill="none" stroke="#9AA4AE" stroke-width="16"/>
+    <path d="M 130 358 h 18 M 152 358 h 18 M 236 358 h 18 M 258 358 h 18 M 342 358 h 18 M 364 358 h 18" fill="none"/>
+  </g>
 </svg>

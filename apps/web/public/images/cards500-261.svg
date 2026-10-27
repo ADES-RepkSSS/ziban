@@ -1,5 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="一小段细细的金属丝，装在小盒里">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="一个开着盖子的保险丝盒，盒里装着一小段玻璃保险丝，两端是金属帽，管里的金属丝断了一处">
   <rect width="512" height="512" rx="40" fill="#F4EBD9"/>
   <circle cx="256" cy="248" r="196" fill="#FCF8EF"/>
-  <ellipse cx="256" cy="421" rx="132" ry="17" fill="#DDCEB7" stroke="none" stroke-width="0" opacity="0.75"/><rect x="146" y="116" width="188" height="240" rx="26" fill="#FFFFFF" stroke="#26313D" stroke-width="14" /><circle cx="198" cy="196" r="16" fill="#26313D" stroke="none" stroke-width="0" /><circle cx="282" cy="196" r="16" fill="#26313D" stroke="none" stroke-width="0" /><rect x="232" y="254" width="48" height="26" rx="6" fill="#26313D" stroke="#26313D" stroke-width="0" /><rect x="326" y="214" width="94" height="72" rx="18" fill="#1D7A72" stroke="#26313D" stroke-width="12" /><line x1="344" y1="250" x2="300" y2="250" stroke="#26313D" stroke-width="10" stroke-linecap="round" /><line x1="344" y1="274" x2="300" y2="274" stroke="#26313D" stroke-width="10" stroke-linecap="round" /><path d="M 420 250 q 30 20 0 40" fill="none" stroke="#9AA4AE" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" /><path d="M 372 214 q 20 -30 40 0" fill="none" stroke="#9AA4AE" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" /><g transform="translate(412 112) scale(0.72) translate(-50 -50)"><rect x="43" y="14" width="14" height="46" rx="7" fill="#C9483A" stroke="#26313D" stroke-width="0" /><circle cx="50" cy="78" r="9" fill="#C9483A" stroke="none" stroke-width="0" /></g><rect x="206" y="468" width="100" height="8" rx="4" fill="#E8A63C" stroke="none" stroke-width="0" opacity="0.85"/>
+  <rect x="122" y="166" width="268" height="56" rx="12" fill="#D9DEE3" stroke="#26313D" stroke-width="12" transform="rotate(-6 256 222)"/>
+  <rect x="112" y="220" width="288" height="118" rx="16" fill="#FFFFFF" stroke="#26313D" stroke-width="14"/>
+  <rect x="130" y="234" width="252" height="82" rx="8" fill="#26313D" stroke="none" stroke-width="0"/>
+  <rect x="150" y="240" width="44" height="70" rx="12" fill="#9AA4AE" stroke="#26313D" stroke-width="10"/>
+  <rect x="318" y="240" width="44" height="70" rx="12" fill="#9AA4AE" stroke="#26313D" stroke-width="10"/>
+  <rect x="182" y="248" width="148" height="54" rx="27" fill="#DCEEE9" stroke="#26313D" stroke-width="10"/>
+  <path d="M 192 272 H 242 M 264 272 H 318" fill="none" stroke="#26313D" stroke-width="7" stroke-linecap="round"/>
+  <rect x="112" y="312" width="288" height="26" rx="10" fill="#FFFFFF" stroke="#26313D" stroke-width="14"/>
 </svg>

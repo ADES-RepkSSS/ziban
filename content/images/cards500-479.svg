@@ -1,5 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="社区活动中心门口，两个人坐着说话">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="小区门口的矮墙前，两个老人面对面站着说话，左边的人抬手打招呼">
   <rect width="512" height="512" rx="40" fill="#F4EBD9"/>
   <circle cx="256" cy="248" r="196" fill="#FCF8EF"/>
-  <ellipse cx="256" cy="421" rx="132" ry="17" fill="#DDCEB7" stroke="none" stroke-width="0" opacity="0.75"/><rect x="96" y="188" width="320" height="210" rx="22" fill="#FFFFFF" stroke="#26313D" stroke-width="14" /><polygon points="256 92 432 188 80 188" fill="#8FC7C1" stroke="#26313D" stroke-width="14" stroke-linejoin="round" /><rect x="140" y="224" width="76" height="76" rx="12" fill="#A8C4DF" stroke="#26313D" stroke-width="8" /><rect x="296" y="224" width="76" height="76" rx="12" fill="#A8C4DF" stroke="#26313D" stroke-width="8" /><circle cx="256" cy="284" r="34" fill="#E9B98F" stroke="#26313D" stroke-width="8" /><path d="M 206 360 q 0 -54 50 -54 q 50 0 50 54" fill="#C9483A" stroke="#26313D" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" /><path d="M 256 268 q -34 -26 -52 -4 q -20 24 52 66 q 72 -42 52 -66 q -18 -22 -52 4 Z" fill="#E9A59C" stroke="#26313D" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" /><rect x="220" y="398" width="72" height="14" rx="7" fill="#8FC7C1" stroke="#26313D" stroke-width="0" /><g transform="translate(412 112) scale(0.72) translate(-50 -50)"><path d="M 16 24 h 68 q 10 0 10 10 v 34 q 0 10 -10 10 H 46 l -18 18 v -18 H 16 q -10 0 -10 -10 V 34 q 0 -10 10 -10 Z" fill="#A8C4DF" stroke="#26313D" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" /></g><rect x="206" y="468" width="100" height="8" rx="4" fill="#1D7A72" stroke="none" stroke-width="0" opacity="0.85"/>
+  <path d="M 68 432 V 286 H 444 V 432 Z M 222 432 V 348 A 34 34 0 0 1 290 348 V 432 Z" fill="#E8DCC6" fill-rule="evenodd" stroke="#26313D" stroke-width="12" stroke-linejoin="round"/>
+  <path d="M 214 150 h 76 q 14 0 14 14 v 34 q 0 14 -14 14 h -44 l -20 18 v -18 h -12 q -14 0 -14 -14 v -34 q 0 -14 14 -14 z" fill="#FFFFFF" stroke="#26313D" stroke-width="12" stroke-linejoin="round"/>
+  <path d="M 152 384 h 22 v 44 h -22 z M 182 384 h 22 v 44 h -22 z" fill="#7A8794" stroke="#26313D" stroke-width="12" stroke-linejoin="round"/>
+  <path d="M 144 424 h 34 a 8 8 0 0 1 0 16 h -34 a 8 8 0 0 1 0 -16 z M 176 424 h 34 a 8 8 0 0 1 0 16 h -34 a 8 8 0 0 1 0 -16 z" fill="#9A6B4A" stroke="#26313D" stroke-width="10" stroke-linejoin="round"/>
+  <path d="M 146 308 q 0 -20 30 -20 q 30 0 30 20 l 10 72 q 1 12 -11 12 h -58 q -12 0 -11 -12 z" fill="#C9483A" stroke="#26313D" stroke-width="12" stroke-linejoin="round"/>
+  <rect x="196" y="282" width="36" height="86" rx="18" fill="#C9483A" stroke="#26313D" stroke-width="12" transform="rotate(50 214 325)"/>
+  <circle cx="254" cy="290" r="15" fill="#E9B98F" stroke="#26313D" stroke-width="10"/>
+  <circle cx="176" cy="248" r="34" fill="#E9B98F" stroke="#26313D" stroke-width="12"/>
+  <path d="M 145 234 a 34 34 0 0 1 62 0 z" fill="#D9DEE3" stroke="#26313D" stroke-width="12" stroke-linejoin="round"/>
+  <path d="M 164 250 h 0.1 M 188 250 h 0.1 M 166 264 q 10 8 20 0" fill="none" stroke="#26313D" stroke-width="8" stroke-linecap="round"/>
+  <path d="M 320 384 h 22 v 44 h -22 z M 350 384 h 22 v 44 h -22 z" fill="#7A8794" stroke="#26313D" stroke-width="12" stroke-linejoin="round"/>
+  <path d="M 312 424 h 34 a 8 8 0 0 1 0 16 h -34 a 8 8 0 0 1 0 -16 z M 344 424 h 34 a 8 8 0 0 1 0 16 h -34 a 8 8 0 0 1 0 -16 z" fill="#9A6B4A" stroke="#26313D" stroke-width="10" stroke-linejoin="round"/>
+  <path d="M 314 308 q 0 -20 30 -20 q 30 0 30 20 l 10 72 q 1 12 -11 12 h -58 q -12 0 -11 -12 z" fill="#4F8A5B" stroke="#26313D" stroke-width="12" stroke-linejoin="round"/>
+  <rect x="326" y="326" width="36" height="26" rx="13" fill="#E9B98F" stroke="#26313D" stroke-width="10"/>
+  <circle cx="344" cy="248" r="34" fill="#E9B98F" stroke="#26313D" stroke-width="12"/>
+  <path d="M 313 234 a 34 34 0 0 1 62 0 z" fill="#9AA4AE" stroke="#26313D" stroke-width="12" stroke-linejoin="round"/>
+  <path d="M 332 250 h 0.1 M 356 250 h 0.1 M 334 264 q 10 8 20 0" fill="none" stroke="#26313D" stroke-width="8" stroke-linecap="round"/>
 </svg>

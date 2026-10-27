@@ -1,5 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="一张病床，旁边有一颗心">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="一位病人躺在病床上，头枕白色枕头，身上盖着蓝色被子，床边立着输液架，吊瓶的管子连到被子上的一只手">
   <rect width="512" height="512" rx="40" fill="#F4EBD9"/>
   <circle cx="256" cy="248" r="196" fill="#FCF8EF"/>
-  <ellipse cx="256" cy="421" rx="132" ry="17" fill="#DDCEB7" stroke="none" stroke-width="0" opacity="0.75"/><rect x="88" y="170" width="54" height="220" rx="16" fill="#1D7A72" stroke="#26313D" stroke-width="14" /><rect x="130" y="284" width="292" height="80" rx="18" fill="#FFFFFF" stroke="#26313D" stroke-width="14" /><rect x="152" y="224" width="106" height="54" rx="16" fill="#FFFFFF" stroke="#26313D" stroke-width="14" /><rect x="252" y="246" width="172" height="56" rx="16" fill="#E9A59C" stroke="#26313D" stroke-width="14" /><rect x="130" y="364" width="22" height="40" rx="6" fill="#26313D" stroke="#26313D" stroke-width="0" /><rect x="414" y="364" width="22" height="40" rx="6" fill="#26313D" stroke="#26313D" stroke-width="0" /><path d="M 270 258 q 34 22 0 44" fill="none" stroke="#C9483A" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" /><g transform="translate(412 112) scale(0.72) translate(-50 -50)"><path d="M 50 84 q -40 -26 -40 -50 q 0 -22 22 -22 q 14 0 18 14 q 4 -14 18 -14 q 22 0 22 22 q 0 24 -40 50 Z" fill="#E9A59C" stroke="#26313D" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" /></g><rect x="206" y="468" width="100" height="8" rx="4" fill="#3E6FA6" stroke="none" stroke-width="0" opacity="0.85"/>
+  <line x1="56" y1="408" x2="456" y2="408" stroke="#9AA4AE" stroke-width="10" stroke-linecap="round"/>
+  <path d="M 120 368 v 40 M 388 368 v 40" fill="none" stroke="#26313D" stroke-width="12" stroke-linecap="round"/>
+  <rect x="88" y="316" width="332" height="52" rx="16" fill="#DCEEE9" stroke="#26313D" stroke-width="12"/>
+  <rect x="286" y="252" width="126" height="64" rx="18" fill="#FFFFFF" stroke="#26313D" stroke-width="12"/>
+  <rect x="120" y="258" width="214" height="82" rx="26" fill="#A8C4DF" stroke="#26313D" stroke-width="12"/>
+  <circle cx="344" cy="228" r="36" fill="#E9B98F" stroke="#26313D" stroke-width="12"/>
+  <path d="M 308 228 a 36 36 0 0 1 72 0 q -18 -26 -36 -26 q -18 0 -36 26 Z" fill="#9AA4AE" stroke="#26313D" stroke-width="10" stroke-linejoin="round"/>
+  <path d="M 316 236 q 9 9 18 0 M 354 236 q 9 9 18 0" fill="none" stroke="#26313D" stroke-width="7" stroke-linecap="round"/>
+  <path d="M 334 252 q 10 8 20 0" fill="none" stroke="#26313D" stroke-width="7" stroke-linecap="round"/>
+  <rect x="282" y="272" width="50" height="28" rx="14" fill="#E9B98F" stroke="#26313D" stroke-width="10"/>
+  <line x1="428" y1="100" x2="428" y2="404" stroke="#26313D" stroke-width="12" stroke-linecap="round"/>
+  <path d="M 400 408 H 456" fill="none" stroke="#26313D" stroke-width="12" stroke-linecap="round"/>
+  <path d="M 428 100 H 387" fill="none" stroke="#26313D" stroke-width="12" stroke-linecap="round"/>
+  <rect x="356" y="100" width="62" height="86" rx="12" fill="#DCEEE9" stroke="#26313D" stroke-width="10"/>
+  <rect x="364" y="142" width="46" height="36" rx="8" fill="#A8C4DF" stroke="none"/>
+  <path d="M 387 186 C 406 222 400 262 324 288" fill="none" stroke="#26313D" stroke-width="8" stroke-linecap="round"/>
 </svg>
