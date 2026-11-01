@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="一只手按下墙上的开关，灯灭了">
+  <rect width="512" height="512" rx="40" fill="#F4EBD9"/>
+  <circle cx="256" cy="248" r="196" fill="#FCF8EF"/>
+  <ellipse cx="256" cy="421" rx="132" ry="17" fill="#DDCEB7" stroke="none" stroke-width="0" opacity="0.75"/><rect x="124" y="116" width="264" height="292" rx="34" fill="#FFFFFF" stroke="#26313D" stroke-width="14" /><rect x="152" y="196" width="208" height="96" rx="48" fill="#D9DEE3" stroke="#26313D" stroke-width="14" /><circle cx="198" cy="244" r="36" fill="#FFFFFF" stroke="#26313D" stroke-width="10" /><circle cx="256" cy="340" r="16" fill="#9AA4AE" stroke="none" stroke-width="0" /><line x1="214" y1="340" x2="298" y2="340" stroke="#D9DEE3" stroke-width="8" stroke-linecap="round" /><rect x="206" y="468" width="100" height="8" rx="4" fill="#C9483A" stroke="none" stroke-width="0" opacity="0.85"/>
+</svg>

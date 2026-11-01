@@ -6,6 +6,7 @@
 
 ### Added
 
+- **词卡单字频率工具**：新增 `pnpm cards:chars` 与 [docs/14](docs/14-card-char-frequency.md)，统计 `content/cards` 550 张卡目标词的汉字出现次数，按次数降序输出 text/tsv/csv/json/markdown；支持 YAML/JSON、批次 `.out.json`、目录去重和字段选择，供生词 AI 选题时避免同一字反复出现。示例报告写入 `work/char-stats/`。
 - **可选云端文本转语音（TTS）**：设置里可选 OpenAI 兼容 `/audio/speech` 或阿里云百炼 Qwen-TTS，填网址、模型、音色和 API Key；
   默认关闭，打开后字卡/例句/屏幕讲解的朗读改走云端；桌面版密钥只在主进程加密保存，网页版密钥存当前浏览器 localStorage（需服务支持 CORS）；音频不落盘。
   新增 `docs/12-cloud-tts.md`、3 个端点校验测试；本地 mock 端到端通过，真实服务商 Key 需用户自己试听。
@@ -25,6 +26,7 @@
 
 ### Changed
 
+- **550 词卡单字频率与相似词重排（2026-11-01）**：删 28 张重复/低价值卡（网银、身份证号、检票、客服电话、信用卡/储蓄卡/工资卡、年费/手续费、动车/列车、流水/回单、假冒等），替换 3 张防止丢字（心电图→心脏、省电→省钱、候车室→卧室），新增 28 张零新字或低字频的日常/慢病词（高血压、体温、护工、退烧、中医、牙刷、吃饭、散步、买菜、路牌、打字、护照等）。总数保持 550；最高频字 17→10，1 次字 282→265，2–4 次带 186→194。删除的 28 张孤儿图已移除，content/images 仍为 552 张；`pnpm content:validate`、550 图 XML 检查、`pnpm check` 全绿。详见 `work/char-audit/REBALANCE_REPORT.md`。
 - **500 词卡 SVG 重校验**：10 个复核子代理记 175 条（A63/B91/C21）；A 类 63 条全部处理（58 张重画 + 5 张由 `smartphone` 图标修复），另重画 25 条高影响 B，共 83 张。新增 `work/cards500/SVG_REVIEW_REPORT.md`、`review/`、`redraws/`、`custom-svgs/`；`generate_svgs.py` 优先读 `custom-svgs/`。付款码/收款码改为不可扫的色块码区；医疗词红叉改加号。550 卡 / 552 图的 App 内容已重建，`pnpm check` 全绿。
 - `CorpusStore` 不再把超过 8 字的词静默截断成另一个词，而是整条丢弃（lint 仍会提前拒绝）。
 - `auto-` 前缀的语料条目标记为 `generated=true`、`confidence=medium`，不再冒充人工 `high`。

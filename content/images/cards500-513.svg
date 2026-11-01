@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="一个人正把外套穿到身上，旁边有衣架">
+  <rect width="512" height="512" rx="40" fill="#F4EBD9"/>
+  <circle cx="256" cy="248" r="196" fill="#FCF8EF"/>
+  <ellipse cx="256" cy="421" rx="132" ry="17" fill="#DDCEB7" stroke="none" stroke-width="0" opacity="0.75"/><path d="M 256 108 q 0 -32 28 -32 q 28 0 28 28 q 0 22 -28 34" fill="none" stroke="#26313D" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" /><path d="M 256 138 L 118 250 q -16 14 4 22 H 390 q 20 -8 4 -22 Z" fill="#F6D08E" stroke="#26313D" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" /><path d="M 168 252 q 0 90 88 90 q 88 0 88 -90" fill="#8FC7C1" stroke="#26313D" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" /><line x1="168" y1="252" x2="344" y2="252" stroke="#1D7A72" stroke-width="8" stroke-linecap="round" /><circle cx="256" cy="196" r="8" fill="#E8A63C" stroke="#26313D" stroke-width="4" /><rect x="206" y="468" width="100" height="8" rx="4" fill="#D98C8C" stroke="none" stroke-width="0" opacity="0.85"/>
+</svg>

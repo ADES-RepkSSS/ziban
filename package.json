@@ -24,6 +24,7 @@
     "preview": "pnpm --filter @ziban/web preview",
     "content:build": "node scripts/build-content.mjs",
     "content:validate": "node scripts/validate-content.mjs",
+    "cards:chars": "node scripts/card-char-frequency.mjs",
     "corpus:validate": "node scripts/validate-corpus.mjs",
     "corpus:install": "node scripts/corpus-install.mjs",
     "typecheck": "pnpm -r exec tsc --noEmit",

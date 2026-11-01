@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="两张叠在一起的长条纸上印着一起一伏的心跳折线，右上方有一颗心">
+  <rect width="512" height="512" rx="40" fill="#F4EBD9"/>
+  <circle cx="256" cy="248" r="196" fill="#FCF8EF"/>
+  <ellipse cx="252" cy="344" rx="172" ry="14" fill="#DDCEB7" stroke="none" stroke-width="0" opacity="0.75"/>
+  <rect x="92" y="184" width="340" height="120" rx="8" fill="#F7EFDF" stroke="#26313D" stroke-width="12"/>
+  <rect x="76" y="200" width="352" height="128" rx="8" fill="#FFFFFF" stroke="#26313D" stroke-width="12"/>
+  <path d="M88 212 V316 M115 212 V316 M142 212 V316 M169 212 V316 M196 212 V316 M223 212 V316 M250 212 V316 M277 212 V316 M304 212 V316 M331 212 V316 M358 212 V316 M385 212 V316 M412 212 V316 M88 212 H412 M88 238 H412 M88 264 H412 M88 290 H412 M88 316 H412" fill="none" stroke="#F7E4DE" stroke-width="2"/>
+  <path d="M92 262 V238 H112 V262 H118 h6 l6 -12 l6 12 h8 l5 10 l7 -56 l7 62 l5 -16 h8 l11 -16 l13 16 h10 h6 l6 -12 l6 12 h8 l5 10 l7 -56 l7 62 l5 -16 h8 l11 -16 l13 16 h10 h6 l6 -12 l6 12 h8 l5 10 l7 -56 l7 62 l5 -16 h8 l11 -16 l13 16 h10 h20" fill="none" stroke="#C9483A" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M404 328 L428 306 L428 328 Z" fill="#EFE4CE" stroke="none" stroke-width="0"/>
+  <path d="M420 158 C 392 136 382 116 392 104 C 400 94 412 96 420 108 C 428 96 440 94 448 104 C 458 116 448 136 420 158 Z" fill="#E9A59C" stroke="#26313D" stroke-width="10" stroke-linejoin="round"/>
+  <rect x="206" y="468" width="100" height="8" rx="4" fill="#3E6FA6" stroke="none" stroke-width="0" opacity="0.85"/>
+</svg>

@@ -1,0 +1,356 @@
+[
+  {
+    "id": "w_046",
+    "from": "心电图",
+    "to": "心脏",
+    "kind": "replace"
+  },
+  {
+    "id": "w_321",
+    "from": "省电",
+    "to": "省钱",
+    "kind": "replace"
+  },
+  {
+    "id": "w_203",
+    "from": "候车室",
+    "to": "卧室",
+    "kind": "replace"
+  },
+  {
+    "id": "w_498",
+    "from": "身份证号",
+    "to": null,
+    "kind": "remove"
+  },
+  {
+    "id": "w_144",
+    "from": "取号机",
+    "to": null,
+    "kind": "remove"
+  },
+  {
+    "id": "w_178",
+    "from": "检票",
+    "to": null,
+    "kind": "remove"
+  },
+  {
+    "id": "w_489",
+    "from": "来电显示",
+    "to": null,
+    "kind": "remove"
+  },
+  {
+    "id": "w_293",
+    "from": "来电",
+    "to": null,
+    "kind": "remove"
+  },
+  {
+    "id": "w_491",
+    "from": "客服电话",
+    "to": null,
+    "kind": "remove"
+  },
+  {
+    "id": "w_137",
+    "from": "网上银行",
+    "to": null,
+    "kind": "remove"
+  },
+  {
+    "id": "w_120",
+    "from": "网银",
+    "to": null,
+    "kind": "remove"
+  },
+  {
+    "id": "w_262",
+    "from": "断电",
+    "to": null,
+    "kind": "remove"
+  },
+  {
+    "id": "w_190",
+    "from": "网约车",
+    "to": null,
+    "kind": "remove"
+  },
+  {
+    "id": "w_186",
+    "from": "动车",
+    "to": null,
+    "kind": "remove"
+  },
+  {
+    "id": "w_188",
+    "from": "列车",
+    "to": null,
+    "kind": "remove"
+  },
+  {
+    "id": "w_360",
+    "from": "证明",
+    "to": null,
+    "kind": "remove"
+  },
+  {
+    "id": "w_380",
+    "from": "换证",
+    "to": null,
+    "kind": "remove"
+  },
+  {
+    "id": "w_389",
+    "from": "证件",
+    "to": null,
+    "kind": "remove"
+  },
+  {
+    "id": "w_369",
+    "from": "优待证",
+    "to": null,
+    "kind": "remove"
+  },
+  {
+    "id": "w_331",
+    "from": "充电宝",
+    "to": null,
+    "kind": "remove"
+  },
+  {
+    "id": "w_097",
+    "from": "信用卡",
+    "to": null,
+    "kind": "remove"
+  },
+  {
+    "id": "w_098",
+    "from": "储蓄卡",
+    "to": null,
+    "kind": "remove"
+  },
+  {
+    "id": "w_122",
+    "from": "工资卡",
+    "to": null,
+    "kind": "remove"
+  },
+  {
+    "id": "w_101",
+    "from": "年费",
+    "to": null,
+    "kind": "remove"
+  },
+  {
+    "id": "w_139",
+    "from": "手续费",
+    "to": null,
+    "kind": "remove"
+  },
+  {
+    "id": "w_057",
+    "from": "药水",
+    "to": null,
+    "kind": "remove"
+  },
+  {
+    "id": "w_147",
+    "from": "站点",
+    "to": null,
+    "kind": "remove"
+  },
+  {
+    "id": "w_454",
+    "from": "假冒",
+    "to": null,
+    "kind": "remove"
+  },
+  {
+    "id": "w_431",
+    "from": "收银",
+    "to": null,
+    "kind": "remove"
+  },
+  {
+    "id": "w_124",
+    "from": "回单",
+    "to": null,
+    "kind": "remove"
+  },
+  {
+    "id": "w_088",
+    "from": "流水",
+    "to": null,
+    "kind": "remove"
+  },
+  {
+    "id": "w_501",
+    "from": null,
+    "to": "高血压",
+    "kind": "add"
+  },
+  {
+    "id": "w_502",
+    "from": null,
+    "to": "体温",
+    "kind": "add"
+  },
+  {
+    "id": "w_503",
+    "from": null,
+    "to": "牙刷",
+    "kind": "add"
+  },
+  {
+    "id": "w_504",
+    "from": null,
+    "to": "护工",
+    "kind": "add"
+  },
+  {
+    "id": "w_505",
+    "from": null,
+    "to": "退烧",
+    "kind": "add"
+  },
+  {
+    "id": "w_506",
+    "from": null,
+    "to": "中医",
+    "kind": "add"
+  },
+  {
+    "id": "w_507",
+    "from": null,
+    "to": "血压计",
+    "kind": "add"
+  },
+  {
+    "id": "w_508",
+    "from": null,
+    "to": "假牙",
+    "kind": "add"
+  },
+  {
+    "id": "w_509",
+    "from": null,
+    "to": "养老院",
+    "kind": "add"
+  },
+  {
+    "id": "w_510",
+    "from": null,
+    "to": "手脚",
+    "kind": "add"
+  },
+  {
+    "id": "w_511",
+    "from": null,
+    "to": "吃饭",
+    "kind": "add"
+  },
+  {
+    "id": "w_512",
+    "from": null,
+    "to": "散步",
+    "kind": "add"
+  },
+  {
+    "id": "w_513",
+    "from": null,
+    "to": "穿衣",
+    "kind": "add"
+  },
+  {
+    "id": "w_514",
+    "from": null,
+    "to": "起床",
+    "kind": "add"
+  },
+  {
+    "id": "w_515",
+    "from": null,
+    "to": "关灯",
+    "kind": "add"
+  },
+  {
+    "id": "w_516",
+    "from": null,
+    "to": "开窗",
+    "kind": "add"
+  },
+  {
+    "id": "w_517",
+    "from": null,
+    "to": "锁门",
+    "kind": "add"
+  },
+  {
+    "id": "w_518",
+    "from": null,
+    "to": "烧饭",
+    "kind": "add"
+  },
+  {
+    "id": "w_519",
+    "from": null,
+    "to": "买菜",
+    "kind": "add"
+  },
+  {
+    "id": "w_520",
+    "from": null,
+    "to": "路牌",
+    "kind": "add"
+  },
+  {
+    "id": "w_521",
+    "from": null,
+    "to": "拖地",
+    "kind": "add"
+  },
+  {
+    "id": "w_522",
+    "from": null,
+    "to": "擦窗",
+    "kind": "add"
+  },
+  {
+    "id": "w_523",
+    "from": null,
+    "to": "打字",
+    "kind": "add"
+  },
+  {
+    "id": "w_524",
+    "from": null,
+    "to": "护照",
+    "kind": "add"
+  },
+  {
+    "id": "w_525",
+    "from": null,
+    "to": "声明",
+    "kind": "add"
+  },
+  {
+    "id": "w_526",
+    "from": null,
+    "to": "牙科",
+    "kind": "add"
+  },
+  {
+    "id": "w_527",
+    "from": null,
+    "to": "眼科",
+    "kind": "add"
+  },
+  {
+    "id": "w_528",
+    "from": null,
+    "to": "还钱",
+    "kind": "add"
+  }
+]

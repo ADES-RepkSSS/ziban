@@ -1,6 +1,6 @@
 # AGENTS.md — 给下一位 AI / 维护者
 
-> 最后更新：2026-10-27。项目当前 **v0.2.1 桌面取词完整版（Windows 实测 / macOS CI 编译识别通过、真机待验收）**，
+> 最后更新：2026-11-01。项目当前 **v0.2.1 桌面取词完整版（Windows 实测 / macOS CI 编译识别通过、真机待验收）**，
 > 已开源到 GitHub，Pages 演示站已上线。
 > 先读完这份，再按需要读 [docs/07-handoff.md](docs/07-handoff.md)（详细交接）。
 
@@ -14,6 +14,7 @@
 6. [docs/11-corpus-batch1-handoff.md](docs/11-corpus-batch1-handoff.md)：第一批 293 条语料的复盘、坑与下一批顺序。
 7. [docs/12-cloud-tts.md](docs/12-cloud-tts.md)：可选云端 TTS（文字转语音）的 API Key、接口、隐私与验收。
 8. [docs/13-maintainer-policy.md](docs/13-maintainer-policy.md)：个人开发者内容边界；人工审校/老人测试不再是发布前置条件。
+9. [docs/14-card-char-frequency.md](docs/14-card-char-frequency.md)：词卡单字频率统计（生词 AI 选题辅助）。
 
 ## 1. 项目一句话
 
@@ -28,6 +29,7 @@
 - 演示站：<https://ades-repksss.github.io/ziban/>（GitHub Pages，已部署成功）
 - 分支：`main`；远程：`origin` 已配置；Git Credential Manager 已能 push
 - 550 张卡 / 8 场景 / 552 张手绘 SVG（50 张基线 + 500 张扩量）
+- 2026-11-01 做过单字频率重排：删 28 张重复/低价值卡、换 3 张、补 28 张，**总数仍 550**；最高频字 17→10，1 次字 282→265。记录见 [work/char-audit/REBALANCE_REPORT.md](work/char-audit/REBALANCE_REPORT.md)。
 - 67 个单元测试；`pnpm check` 全绿（含语料硬 lint）
 - 实验语料库第一批 293 条（7 个文件，全部 `source=auto-*`，**机器审校草稿，未人工审校**）；见 [corpus/RELEASE.md](corpus/RELEASE.md)
 - 可选**云端文本转语音**：设置里填 OpenAI 兼容 `/audio/speech` 或阿里云百炼 Qwen-TTS 的 API Key；默认关，打开后文字才发到用户选的服务，音频不落盘；见 [docs/12](docs/12-cloud-tts.md)
@@ -45,6 +47,7 @@ cd D:\haness_agent\help_old
 pnpm dev                 # http://127.0.0.1:4173
 pnpm check               # 内容门禁 + 语料 lint + tsc + 67 tests + build + GitHub 文件检查
 pnpm content:validate
+pnpm cards:chars         # 词卡目标词单字频率（默认 550 张，按次数降序）
 pnpm corpus:validate path/to/corpus.json  # 外部语料库格式检查
 pnpm corpus:lint         # 语料硬 lint（corpus/release/*.json）
 pnpm corpus:review       # 合并评审记录 → corpus/workbench/<batch>/review.jsonl
@@ -105,10 +108,10 @@ apps/desktop/
   fixtures/ocr-sample.png 跨平台 OCR 测试图
 packages/core/           纯函数：types、schedule、text、plainLanguage、screen、desktop（+ tests）
 content/                 level1.yaml、level2.yaml（500 张扩量）、552 SVG、charset、README
-scripts/                 content build/validate、screenshot、corpus lint/review/build/metrics
+scripts/                 content build/validate、card-char-frequency、screenshot、corpus lint/review/build/metrics
 corpus/                  实验语料（release/ 运行时 JSON、workbench/ 审计、chars/ 用字表）
 tools/                   图片生成、GitHub 素材、检查脚本
-docs/                    00–13 设计/交接文档（08 = 屏幕取词，09 = 部署与使用，10 = 语料库格式，11 = 第一批语料复盘，12 = 云端 TTS，13 = 个人开发者内容边界）
+docs/                    00–14 设计/交接文档（08 = 屏幕取词，09 = 部署与使用，10 = 语料库格式，11 = 第一批语料复盘，12 = 云端 TTS，13 = 个人开发者内容边界，14 = 词卡单字频率）
 .github/                 CI、Pages、Dependabot、issue/PR 模板
 ```
 

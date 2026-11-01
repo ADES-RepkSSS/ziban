@@ -1,0 +1,3179 @@
+{
+  "schemaVersion": 1,
+  "fields": [
+    "text"
+  ],
+  "includeNonHan": false,
+  "inputs": [
+    "content/cards/level1.yaml",
+    "content/cards/level2.yaml"
+  ],
+  "cards": 550,
+  "uniqueChars": 526,
+  "totalOccurrences": 1209,
+  "skippedNonHan": 0,
+  "duplicateCards": 0,
+  "shown": 526,
+  "filters": {
+    "min": 1,
+    "top": 0
+  },
+  "counts": [
+    {
+      "char": "药",
+      "count": 10,
+      "cardCount": 10,
+      "firstCard": "药"
+    },
+    {
+      "char": "费",
+      "count": 10,
+      "cardCount": 10,
+      "firstCard": "缴费"
+    },
+    {
+      "char": "卡",
+      "count": 10,
+      "cardCount": 10,
+      "firstCard": "卡"
+    },
+    {
+      "char": "站",
+      "count": 10,
+      "cardCount": 10,
+      "firstCard": "站"
+    },
+    {
+      "char": "车",
+      "count": 10,
+      "cardCount": 10,
+      "firstCard": "上车"
+    },
+    {
+      "char": "电",
+      "count": 10,
+      "cardCount": 10,
+      "firstCard": "电话"
+    },
+    {
+      "char": "证",
+      "count": 10,
+      "cardCount": 10,
+      "firstCard": "身份证"
+    },
+    {
+      "char": "机",
+      "count": 10,
+      "cardCount": 10,
+      "firstCard": "手机银行"
+    },
+    {
+      "char": "票",
+      "count": 10,
+      "cardCount": 10,
+      "firstCard": "支票"
+    },
+    {
+      "char": "号",
+      "count": 9,
+      "cardCount": 9,
+      "firstCard": "挂号"
+    },
+    {
+      "char": "保",
+      "count": 9,
+      "cardCount": 9,
+      "firstCard": "医保"
+    },
+    {
+      "char": "口",
+      "count": 9,
+      "cardCount": 9,
+      "firstCard": "窗口"
+    },
+    {
+      "char": "款",
+      "count": 9,
+      "cardCount": 9,
+      "firstCard": "付款"
+    },
+    {
+      "char": "诊",
+      "count": 9,
+      "cardCount": 9,
+      "firstCard": "复诊"
+    },
+    {
+      "char": "钱",
+      "count": 8,
+      "cardCount": 8,
+      "firstCard": "取钱"
+    },
+    {
+      "char": "收",
+      "count": 8,
+      "cardCount": 8,
+      "firstCard": "收费处"
+    },
+    {
+      "char": "金",
+      "count": 8,
+      "cardCount": 8,
+      "firstCard": "押金"
+    },
+    {
+      "char": "洗",
+      "count": 8,
+      "cardCount": 8,
+      "firstCard": "洗菜"
+    },
+    {
+      "char": "存",
+      "count": 7,
+      "cardCount": 7,
+      "firstCard": "存钱"
+    },
+    {
+      "char": "码",
+      "count": 7,
+      "cardCount": 7,
+      "firstCard": "密码"
+    },
+    {
+      "char": "开",
+      "count": 7,
+      "cardCount": 7,
+      "firstCard": "开"
+    },
+    {
+      "char": "人",
+      "count": 7,
+      "cardCount": 7,
+      "firstCard": "病人"
+    },
+    {
+      "char": "报",
+      "count": 7,
+      "cardCount": 7,
+      "firstCard": "报销"
+    },
+    {
+      "char": "单",
+      "count": 7,
+      "cardCount": 7,
+      "firstCard": "报告单"
+    },
+    {
+      "char": "水",
+      "count": 7,
+      "cardCount": 7,
+      "firstCard": "水费"
+    },
+    {
+      "char": "期",
+      "count": 7,
+      "cardCount": 7,
+      "firstCard": "定期"
+    },
+    {
+      "char": "户",
+      "count": 7,
+      "cardCount": 7,
+      "firstCard": "户名"
+    },
+    {
+      "char": "衣",
+      "count": 7,
+      "cardCount": 7,
+      "firstCard": "衣柜"
+    },
+    {
+      "char": "货",
+      "count": 7,
+      "cardCount": 7,
+      "firstCard": "货架"
+    },
+    {
+      "char": "医",
+      "count": 6,
+      "cardCount": 6,
+      "firstCard": "医院"
+    },
+    {
+      "char": "取",
+      "count": 6,
+      "cardCount": 6,
+      "firstCard": "取钱"
+    },
+    {
+      "char": "信",
+      "count": 6,
+      "cardCount": 6,
+      "firstCard": "微信"
+    },
+    {
+      "char": "发",
+      "count": 6,
+      "cardCount": 6,
+      "firstCard": "发"
+    },
+    {
+      "char": "付",
+      "count": 6,
+      "cardCount": 6,
+      "firstCard": "付款"
+    },
+    {
+      "char": "打",
+      "count": 6,
+      "cardCount": 6,
+      "firstCard": "打折"
+    },
+    {
+      "char": "血",
+      "count": 6,
+      "cardCount": 6,
+      "firstCard": "抽血"
+    },
+    {
+      "char": "护",
+      "count": 6,
+      "cardCount": 6,
+      "firstCard": "护士"
+    },
+    {
+      "char": "手",
+      "count": 6,
+      "cardCount": 6,
+      "firstCard": "手术"
+    },
+    {
+      "char": "门",
+      "count": 6,
+      "cardCount": 6,
+      "firstCard": "门诊"
+    },
+    {
+      "char": "台",
+      "count": 6,
+      "cardCount": 6,
+      "firstCard": "柜台"
+    },
+    {
+      "char": "假",
+      "count": 6,
+      "cardCount": 6,
+      "firstCard": "假币"
+    },
+    {
+      "char": "退",
+      "count": 6,
+      "cardCount": 6,
+      "firstCard": "退休金"
+    },
+    {
+      "char": "签",
+      "count": 6,
+      "cardCount": 6,
+      "firstCard": "改签"
+    },
+    {
+      "char": "品",
+      "count": 6,
+      "cardCount": 6,
+      "firstCard": "食品"
+    },
+    {
+      "char": "院",
+      "count": 5,
+      "cardCount": 5,
+      "firstCard": "医院"
+    },
+    {
+      "char": "公",
+      "count": 5,
+      "cardCount": 5,
+      "firstCard": "公交"
+    },
+    {
+      "char": "地",
+      "count": 5,
+      "cardCount": 5,
+      "firstCard": "地铁"
+    },
+    {
+      "char": "大",
+      "count": 5,
+      "cardCount": 5,
+      "firstCard": "大"
+    },
+    {
+      "char": "窗",
+      "count": 5,
+      "cardCount": 5,
+      "firstCard": "窗口"
+    },
+    {
+      "char": "行",
+      "count": 5,
+      "cardCount": 5,
+      "firstCard": "银行"
+    },
+    {
+      "char": "病",
+      "count": 5,
+      "cardCount": 5,
+      "firstCard": "病房"
+    },
+    {
+      "char": "房",
+      "count": 5,
+      "cardCount": 5,
+      "firstCard": "病房"
+    },
+    {
+      "char": "出",
+      "count": 5,
+      "cardCount": 5,
+      "firstCard": "出院"
+    },
+    {
+      "char": "检",
+      "count": 5,
+      "cardCount": 5,
+      "firstCard": "体检"
+    },
+    {
+      "char": "复",
+      "count": 5,
+      "cardCount": 5,
+      "firstCard": "复查"
+    },
+    {
+      "char": "补",
+      "count": 5,
+      "cardCount": 5,
+      "firstCard": "补卡"
+    },
+    {
+      "char": "刷",
+      "count": 5,
+      "cardCount": 5,
+      "firstCard": "刷脸"
+    },
+    {
+      "char": "网",
+      "count": 5,
+      "cardCount": 5,
+      "firstCard": "网点"
+    },
+    {
+      "char": "支",
+      "count": 5,
+      "cardCount": 5,
+      "firstCard": "支付"
+    },
+    {
+      "char": "通",
+      "count": 5,
+      "cardCount": 5,
+      "firstCard": "交通卡"
+    },
+    {
+      "char": "价",
+      "count": 5,
+      "cardCount": 5,
+      "firstCard": "票价"
+    },
+    {
+      "char": "表",
+      "count": 5,
+      "cardCount": 5,
+      "firstCard": "时刻表"
+    },
+    {
+      "char": "子",
+      "count": 5,
+      "cardCount": 5,
+      "firstCard": "被子"
+    },
+    {
+      "char": "菜",
+      "count": 5,
+      "cardCount": 5,
+      "firstCard": "菜刀"
+    },
+    {
+      "char": "锅",
+      "count": 5,
+      "cardCount": 5,
+      "firstCard": "锅盖"
+    },
+    {
+      "char": "牙",
+      "count": 5,
+      "cardCount": 5,
+      "firstCard": "刷牙"
+    },
+    {
+      "char": "饭",
+      "count": 5,
+      "cardCount": 5,
+      "firstCard": "做饭"
+    },
+    {
+      "char": "生",
+      "count": 4,
+      "cardCount": 4,
+      "firstCard": "医生"
+    },
+    {
+      "char": "额",
+      "count": 4,
+      "cardCount": 4,
+      "firstCard": "余额"
+    },
+    {
+      "char": "交",
+      "count": 4,
+      "cardCount": 4,
+      "firstCard": "公交"
+    },
+    {
+      "char": "上",
+      "count": 4,
+      "cardCount": 4,
+      "firstCard": "上车"
+    },
+    {
+      "char": "关",
+      "count": 4,
+      "cardCount": 4,
+      "firstCard": "关"
+    },
+    {
+      "char": "小",
+      "count": 4,
+      "cardCount": 4,
+      "firstCard": "小"
+    },
+    {
+      "char": "声",
+      "count": 4,
+      "cardCount": 4,
+      "firstCard": "声音"
+    },
+    {
+      "char": "包",
+      "count": 4,
+      "cardCount": 4,
+      "firstCard": "红包"
+    },
+    {
+      "char": "息",
+      "count": 4,
+      "cardCount": 4,
+      "firstCard": "消息"
+    },
+    {
+      "char": "理",
+      "count": 4,
+      "cardCount": 4,
+      "firstCard": "办理"
+    },
+    {
+      "char": "提",
+      "count": 4,
+      "cardCount": 4,
+      "firstCard": "提交"
+    },
+    {
+      "char": "买",
+      "count": 4,
+      "cardCount": 4,
+      "firstCard": "买"
+    },
+    {
+      "char": "免",
+      "count": 4,
+      "cardCount": 4,
+      "firstCard": "免费"
+    },
+    {
+      "char": "银",
+      "count": 4,
+      "cardCount": 4,
+      "firstCard": "银行"
+    },
+    {
+      "char": "片",
+      "count": 4,
+      "cardCount": 4,
+      "firstCard": "拍片"
+    },
+    {
+      "char": "体",
+      "count": 4,
+      "cardCount": 4,
+      "firstCard": "体检"
+    },
+    {
+      "char": "停",
+      "count": 4,
+      "cardCount": 4,
+      "firstCard": "停药"
+    },
+    {
+      "char": "压",
+      "count": 4,
+      "cardCount": 4,
+      "firstCard": "血压"
+    },
+    {
+      "char": "柜",
+      "count": 4,
+      "cardCount": 4,
+      "firstCard": "柜台"
+    },
+    {
+      "char": "币",
+      "count": 4,
+      "cardCount": 4,
+      "firstCard": "硬币"
+    },
+    {
+      "char": "名",
+      "count": 4,
+      "cardCount": 4,
+      "firstCard": "户名"
+    },
+    {
+      "char": "利",
+      "count": 4,
+      "cardCount": 4,
+      "firstCard": "利息"
+    },
+    {
+      "char": "点",
+      "count": 4,
+      "cardCount": 4,
+      "firstCard": "网点"
+    },
+    {
+      "char": "老",
+      "count": 4,
+      "cardCount": 4,
+      "firstCard": "养老金"
+    },
+    {
+      "char": "路",
+      "count": 4,
+      "cardCount": 4,
+      "firstCard": "路口"
+    },
+    {
+      "char": "班",
+      "count": 4,
+      "cardCount": 4,
+      "firstCard": "班车"
+    },
+    {
+      "char": "高",
+      "count": 4,
+      "cardCount": 4,
+      "firstCard": "高铁"
+    },
+    {
+      "char": "字",
+      "count": 4,
+      "cardCount": 4,
+      "firstCard": "十字路口"
+    },
+    {
+      "char": "头",
+      "count": 4,
+      "cardCount": 4,
+      "firstCard": "插头"
+    },
+    {
+      "char": "泡",
+      "count": 4,
+      "cardCount": 4,
+      "firstCard": "灯泡"
+    },
+    {
+      "char": "切",
+      "count": 4,
+      "cardCount": 4,
+      "firstCard": "切菜"
+    },
+    {
+      "char": "服",
+      "count": 4,
+      "cardCount": 4,
+      "firstCard": "洗衣服"
+    },
+    {
+      "char": "挂",
+      "count": 3,
+      "cardCount": 3,
+      "firstCard": "挂号"
+    },
+    {
+      "char": "密",
+      "count": 3,
+      "cardCount": 3,
+      "firstCard": "密码"
+    },
+    {
+      "char": "转",
+      "count": 3,
+      "cardCount": 3,
+      "firstCard": "转账"
+    },
+    {
+      "char": "铁",
+      "count": 3,
+      "cardCount": 3,
+      "firstCard": "地铁"
+    },
+    {
+      "char": "下",
+      "count": 3,
+      "cardCount": 3,
+      "firstCard": "下车"
+    },
+    {
+      "char": "扫",
+      "count": 3,
+      "cardCount": 3,
+      "firstCard": "扫码"
+    },
+    {
+      "char": "温",
+      "count": 3,
+      "cardCount": 3,
+      "firstCard": "温度"
+    },
+    {
+      "char": "音",
+      "count": 3,
+      "cardCount": 3,
+      "firstCard": "声音"
+    },
+    {
+      "char": "话",
+      "count": 3,
+      "cardCount": 3,
+      "firstCard": "电话"
+    },
+    {
+      "char": "视",
+      "count": 3,
+      "cardCount": 3,
+      "firstCard": "视频"
+    },
+    {
+      "char": "办",
+      "count": 3,
+      "cardCount": 3,
+      "firstCard": "办理"
+    },
+    {
+      "char": "奖",
+      "count": 3,
+      "cardCount": 3,
+      "firstCard": "中奖"
+    },
+    {
+      "char": "警",
+      "count": 3,
+      "cardCount": 3,
+      "firstCard": "警察"
+    },
+    {
+      "char": "抽",
+      "count": 3,
+      "cardCount": 3,
+      "firstCard": "抽血"
+    },
+    {
+      "char": "烧",
+      "count": 3,
+      "cardCount": 3,
+      "firstCard": "发烧"
+    },
+    {
+      "char": "换",
+      "count": 3,
+      "cardCount": 3,
+      "firstCard": "换药"
+    },
+    {
+      "char": "住",
+      "count": 3,
+      "cardCount": 3,
+      "firstCard": "住院"
+    },
+    {
+      "char": "处",
+      "count": 3,
+      "cardCount": 3,
+      "firstCard": "收费处"
+    },
+    {
+      "char": "明",
+      "count": 3,
+      "cardCount": 3,
+      "firstCard": "说明书"
+    },
+    {
+      "char": "查",
+      "count": 3,
+      "cardCount": 3,
+      "firstCard": "查房"
+    },
+    {
+      "char": "床",
+      "count": 3,
+      "cardCount": 3,
+      "firstCard": "床位"
+    },
+    {
+      "char": "位",
+      "count": 3,
+      "cardCount": 3,
+      "firstCard": "床位"
+    },
+    {
+      "char": "科",
+      "count": 3,
+      "cardCount": 3,
+      "firstCard": "内科"
+    },
+    {
+      "char": "用",
+      "count": 3,
+      "cardCount": 3,
+      "firstCard": "用药"
+    },
+    {
+      "char": "告",
+      "count": 3,
+      "cardCount": 3,
+      "firstCard": "报告单"
+    },
+    {
+      "char": "导",
+      "count": 3,
+      "cardCount": 3,
+      "firstCard": "导诊"
+    },
+    {
+      "char": "资",
+      "count": 3,
+      "cardCount": 3,
+      "firstCard": "工资"
+    },
+    {
+      "char": "定",
+      "count": 3,
+      "cardCount": 3,
+      "firstCard": "定期"
+    },
+    {
+      "char": "分",
+      "count": 3,
+      "cardCount": 3,
+      "firstCard": "分期"
+    },
+    {
+      "char": "脸",
+      "count": 3,
+      "cardCount": 3,
+      "firstCard": "刷脸"
+    },
+    {
+      "char": "牌",
+      "count": 3,
+      "cardCount": 3,
+      "firstCard": "站牌"
+    },
+    {
+      "char": "座",
+      "count": 3,
+      "cardCount": 3,
+      "firstCard": "座位"
+    },
+    {
+      "char": "灯",
+      "count": 3,
+      "cardCount": 3,
+      "firstCard": "红绿灯"
+    },
+    {
+      "char": "道",
+      "count": 3,
+      "cardCount": 3,
+      "firstCard": "人行道"
+    },
+    {
+      "char": "梯",
+      "count": 3,
+      "cardCount": 3,
+      "firstCard": "扶梯"
+    },
+    {
+      "char": "架",
+      "count": 3,
+      "cardCount": 3,
+      "firstCard": "衣架"
+    },
+    {
+      "char": "器",
+      "count": 3,
+      "cardCount": 3,
+      "firstCard": "遥控器"
+    },
+    {
+      "char": "物",
+      "count": 3,
+      "cardCount": 3,
+      "firstCard": "物业"
+    },
+    {
+      "char": "袋",
+      "count": 3,
+      "cardCount": 3,
+      "firstCard": "纸袋"
+    },
+    {
+      "char": "装",
+      "count": 3,
+      "cardCount": 3,
+      "firstCard": "安装"
+    },
+    {
+      "char": "件",
+      "count": 3,
+      "cardCount": 3,
+      "firstCard": "软件"
+    },
+    {
+      "char": "年",
+      "count": 3,
+      "cardCount": 3,
+      "firstCard": "老年卡"
+    },
+    {
+      "char": "审",
+      "count": 3,
+      "cardCount": 3,
+      "firstCard": "审核"
+    },
+    {
+      "char": "预",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "预约"
+    },
+    {
+      "char": "认",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "确认"
+    },
+    {
+      "char": "消",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "取消"
+    },
+    {
+      "char": "微",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "微信"
+    },
+    {
+      "char": "红",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "红包"
+    },
+    {
+      "char": "份",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "身份证"
+    },
+    {
+      "char": "社",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "社保"
+    },
+    {
+      "char": "折",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "打折"
+    },
+    {
+      "char": "验",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "验证码"
+    },
+    {
+      "char": "中",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "中奖"
+    },
+    {
+      "char": "察",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "警察"
+    },
+    {
+      "char": "断",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "挂断"
+    },
+    {
+      "char": "吃",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "吃药"
+    },
+    {
+      "char": "冒",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "感冒"
+    },
+    {
+      "char": "士",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "护士"
+    },
+    {
+      "char": "流",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "流血"
+    },
+    {
+      "char": "拍",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "拍片"
+    },
+    {
+      "char": "计",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "体温计"
+    },
+    {
+      "char": "销",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "报销"
+    },
+    {
+      "char": "超",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "彩超"
+    },
+    {
+      "char": "方",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "处方"
+    },
+    {
+      "char": "候",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "候诊"
+    },
+    {
+      "char": "空",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "空腹"
+    },
+    {
+      "char": "内",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "内科"
+    },
+    {
+      "char": "陪",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "陪护"
+    },
+    {
+      "char": "输",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "输液"
+    },
+    {
+      "char": "液",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "输液"
+    },
+    {
+      "char": "止",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "止血"
+    },
+    {
+      "char": "自",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "自费"
+    },
+    {
+      "char": "部",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "住院部"
+    },
+    {
+      "char": "过",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "过号"
+    },
+    {
+      "char": "问",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "问诊"
+    },
+    {
+      "char": "工",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "工资"
+    },
+    {
+      "char": "现",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "现金"
+    },
+    {
+      "char": "纸",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "纸币"
+    },
+    {
+      "char": "气",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "燃气费"
+    },
+    {
+      "char": "还",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "还款"
+    },
+    {
+      "char": "汇",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "汇款"
+    },
+    {
+      "char": "率",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "汇率"
+    },
+    {
+      "char": "外",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "外币"
+    },
+    {
+      "char": "休",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "退休金"
+    },
+    {
+      "char": "养",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "养老金"
+    },
+    {
+      "char": "短",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "短信提醒"
+    },
+    {
+      "char": "扣",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "代扣"
+    },
+    {
+      "char": "到",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "到站"
+    },
+    {
+      "char": "图",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "地图"
+    },
+    {
+      "char": "入",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "入口"
+    },
+    {
+      "char": "安",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "安检"
+    },
+    {
+      "char": "起",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "起点"
+    },
+    {
+      "char": "售",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "售票处"
+    },
+    {
+      "char": "制",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "实名制"
+    },
+    {
+      "char": "案",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "案板"
+    },
+    {
+      "char": "被",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "被子"
+    },
+    {
+      "char": "插",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "插头"
+    },
+    {
+      "char": "盖",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "锅盖"
+    },
+    {
+      "char": "楼",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "楼梯"
+    },
+    {
+      "char": "铃",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "门铃"
+    },
+    {
+      "char": "锁",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "门锁"
+    },
+    {
+      "char": "盘",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "盘子"
+    },
+    {
+      "char": "脚",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "泡脚"
+    },
+    {
+      "char": "拖",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "拖把"
+    },
+    {
+      "char": "控",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "遥控器"
+    },
+    {
+      "char": "修",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "报修"
+    },
+    {
+      "char": "套",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "被套"
+    },
+    {
+      "char": "炉",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "炉子"
+    },
+    {
+      "char": "眼",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "猫眼"
+    },
+    {
+      "char": "暖",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "暖瓶"
+    },
+    {
+      "char": "碗",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "汤碗"
+    },
+    {
+      "char": "油",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "油烟"
+    },
+    {
+      "char": "烟",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "油烟"
+    },
+    {
+      "char": "擦",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "擦桌子"
+    },
+    {
+      "char": "风",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "电风扇"
+    },
+    {
+      "char": "热",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "热水器"
+    },
+    {
+      "char": "料",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "塑料袋"
+    },
+    {
+      "char": "面",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "发面"
+    },
+    {
+      "char": "丝",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "切丝"
+    },
+    {
+      "char": "鲜",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "保鲜膜"
+    },
+    {
+      "char": "像",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "头像"
+    },
+    {
+      "char": "相",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "相册"
+    },
+    {
+      "char": "照",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "照片"
+    },
+    {
+      "char": "线",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "数据线"
+    },
+    {
+      "char": "备",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "备份"
+    },
+    {
+      "char": "充",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "充值"
+    },
+    {
+      "char": "联",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "联网"
+    },
+    {
+      "char": "示",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "提示"
+    },
+    {
+      "char": "标",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "图标"
+    },
+    {
+      "char": "动",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "震动"
+    },
+    {
+      "char": "程",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "小程序"
+    },
+    {
+      "char": "本",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "版本"
+    },
+    {
+      "char": "摄",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "拍摄"
+    },
+    {
+      "char": "步",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "同步"
+    },
+    {
+      "char": "法",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "输入法"
+    },
+    {
+      "char": "录",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "通讯录"
+    },
+    {
+      "char": "格",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "表格"
+    },
+    {
+      "char": "印",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "复印"
+    },
+    {
+      "char": "委",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "村委会"
+    },
+    {
+      "char": "会",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "村委会"
+    },
+    {
+      "char": "务",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "服务台"
+    },
+    {
+      "char": "结",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "结婚证"
+    },
+    {
+      "char": "居",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "居委会"
+    },
+    {
+      "char": "登",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "登记"
+    },
+    {
+      "char": "记",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "登记"
+    },
+    {
+      "char": "投",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "投诉"
+    },
+    {
+      "char": "原",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "原件"
+    },
+    {
+      "char": "申",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "申请表"
+    },
+    {
+      "char": "领",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "申领"
+    },
+    {
+      "char": "积",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "公积金"
+    },
+    {
+      "char": "日",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "日期"
+    },
+    {
+      "char": "商",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "商场"
+    },
+    {
+      "char": "穿",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "试穿"
+    },
+    {
+      "char": "购",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "购物车"
+    },
+    {
+      "char": "散",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "散装"
+    },
+    {
+      "char": "优",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "优惠"
+    },
+    {
+      "char": "惠",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "优惠"
+    },
+    {
+      "char": "店",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "便利店"
+    },
+    {
+      "char": "客",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "客服"
+    },
+    {
+      "char": "骗",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "骗子"
+    },
+    {
+      "char": "来",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "未接来电"
+    },
+    {
+      "char": "返",
+      "count": 2,
+      "cardCount": 2,
+      "firstCard": "返现"
+    },
+    {
+      "char": "缴",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "缴费"
+    },
+    {
+      "char": "约",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "预约"
+    },
+    {
+      "char": "余",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "余额"
+    },
+    {
+      "char": "账",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "转账"
+    },
+    {
+      "char": "确",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "确认"
+    },
+    {
+      "char": "度",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "温度"
+    },
+    {
+      "char": "语",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "语音"
+    },
+    {
+      "char": "频",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "视频"
+    },
+    {
+      "char": "身",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "身份证"
+    },
+    {
+      "char": "多",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "多少钱"
+    },
+    {
+      "char": "少",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "多少钱"
+    },
+    {
+      "char": "不",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "不要"
+    },
+    {
+      "char": "要",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "不要"
+    },
+    {
+      "char": "针",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "打针"
+    },
+    {
+      "char": "夫",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "大夫"
+    },
+    {
+      "char": "感",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "感冒"
+    },
+    {
+      "char": "叫",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "叫号"
+    },
+    {
+      "char": "看",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "看病"
+    },
+    {
+      "char": "排",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "排队"
+    },
+    {
+      "char": "队",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "排队"
+    },
+    {
+      "char": "伤",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "伤口"
+    },
+    {
+      "char": "术",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "手术"
+    },
+    {
+      "char": "疫",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "疫苗"
+    },
+    {
+      "char": "苗",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "疫苗"
+    },
+    {
+      "char": "说",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "说明书"
+    },
+    {
+      "char": "书",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "说明书"
+    },
+    {
+      "char": "历",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "病历"
+    },
+    {
+      "char": "彩",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "彩超"
+    },
+    {
+      "char": "节",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "关节"
+    },
+    {
+      "char": "化",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "化验"
+    },
+    {
+      "char": "急",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "急诊"
+    },
+    {
+      "char": "加",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "加号"
+    },
+    {
+      "char": "康",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "康复"
+    },
+    {
+      "char": "腹",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "空腹"
+    },
+    {
+      "char": "探",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "探视"
+    },
+    {
+      "char": "吸",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "吸氧"
+    },
+    {
+      "char": "氧",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "吸氧"
+    },
+    {
+      "char": "症",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "症状"
+    },
+    {
+      "char": "状",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "症状"
+    },
+    {
+      "char": "心",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "心脏"
+    },
+    {
+      "char": "脏",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "心脏"
+    },
+    {
+      "char": "忌",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "忌口"
+    },
+    {
+      "char": "监",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "监护"
+    },
+    {
+      "char": "就",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "就诊"
+    },
+    {
+      "char": "抢",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "抢救"
+    },
+    {
+      "char": "救",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "抢救"
+    },
+    {
+      "char": "押",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "押金"
+    },
+    {
+      "char": "副",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "副作用"
+    },
+    {
+      "char": "作",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "副作用"
+    },
+    {
+      "char": "零",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "零钱"
+    },
+    {
+      "char": "硬",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "硬币"
+    },
+    {
+      "char": "燃",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "燃气费"
+    },
+    {
+      "char": "失",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "挂失"
+    },
+    {
+      "char": "员",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "柜员"
+    },
+    {
+      "char": "活",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "活期"
+    },
+    {
+      "char": "易",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "交易"
+    },
+    {
+      "char": "限",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "限额"
+    },
+    {
+      "char": "醒",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "短信提醒"
+    },
+    {
+      "char": "代",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "代扣"
+    },
+    {
+      "char": "解",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "解冻"
+    },
+    {
+      "char": "冻",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "解冻"
+    },
+    {
+      "char": "细",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "明细"
+    },
+    {
+      "char": "凭",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "凭条"
+    },
+    {
+      "char": "条",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "凭条"
+    },
+    {
+      "char": "透",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "透支"
+    },
+    {
+      "char": "留",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "预留"
+    },
+    {
+      "char": "巴",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "大巴"
+    },
+    {
+      "char": "向",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "方向"
+    },
+    {
+      "char": "火",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "火车"
+    },
+    {
+      "char": "司",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "司机"
+    },
+    {
+      "char": "阶",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "台阶"
+    },
+    {
+      "char": "天",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "天桥"
+    },
+    {
+      "char": "桥",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "天桥"
+    },
+    {
+      "char": "终",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "终点"
+    },
+    {
+      "char": "绿",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "红绿灯"
+    },
+    {
+      "char": "航",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "导航"
+    },
+    {
+      "char": "乘",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "换乘"
+    },
+    {
+      "char": "进",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "进站"
+    },
+    {
+      "char": "末",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "末班"
+    },
+    {
+      "char": "让",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "让座"
+    },
+    {
+      "char": "首",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "首班"
+    },
+    {
+      "char": "长",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "长途"
+    },
+    {
+      "char": "途",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "长途"
+    },
+    {
+      "char": "卧",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "卧室"
+    },
+    {
+      "char": "室",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "卧室"
+    },
+    {
+      "char": "十",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "十字路口"
+    },
+    {
+      "char": "次",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "班次"
+    },
+    {
+      "char": "扶",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "扶梯"
+    },
+    {
+      "char": "改",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "改签"
+    },
+    {
+      "char": "目",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "目的地"
+    },
+    {
+      "char": "的",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "目的地"
+    },
+    {
+      "char": "时",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "时刻表"
+    },
+    {
+      "char": "刻",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "时刻表"
+    },
+    {
+      "char": "实",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "实名制"
+    },
+    {
+      "char": "板",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "案板"
+    },
+    {
+      "char": "冰",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "冰箱"
+    },
+    {
+      "char": "箱",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "冰箱"
+    },
+    {
+      "char": "刀",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "菜刀"
+    },
+    {
+      "char": "厨",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "厨房"
+    },
+    {
+      "char": "调",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "空调"
+    },
+    {
+      "char": "抹",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "抹布"
+    },
+    {
+      "char": "布",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "抹布"
+    },
+    {
+      "char": "拾",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "收拾"
+    },
+    {
+      "char": "把",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "拖把"
+    },
+    {
+      "char": "阳",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "阳台"
+    },
+    {
+      "char": "做",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "做饭"
+    },
+    {
+      "char": "龙",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "水龙头"
+    },
+    {
+      "char": "遥",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "遥控器"
+    },
+    {
+      "char": "盒",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "饭盒"
+    },
+    {
+      "char": "漏",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "漏水"
+    },
+    {
+      "char": "猫",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "猫眼"
+    },
+    {
+      "char": "瓶",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "暖瓶"
+    },
+    {
+      "char": "汤",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "汤碗"
+    },
+    {
+      "char": "维",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "维修"
+    },
+    {
+      "char": "业",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "物业"
+    },
+    {
+      "char": "削",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "削皮"
+    },
+    {
+      "char": "皮",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "削皮"
+    },
+    {
+      "char": "择",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "择菜"
+    },
+    {
+      "char": "整",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "整理"
+    },
+    {
+      "char": "桌",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "擦桌子"
+    },
+    {
+      "char": "扇",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "电风扇"
+    },
+    {
+      "char": "平",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "平底锅"
+    },
+    {
+      "char": "底",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "平底锅"
+    },
+    {
+      "char": "塑",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "塑料袋"
+    },
+    {
+      "char": "波",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "微波炉"
+    },
+    {
+      "char": "洁",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "洗洁精"
+    },
+    {
+      "char": "精",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "洗洁精"
+    },
+    {
+      "char": "粉",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "洗衣粉"
+    },
+    {
+      "char": "和",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "和面"
+    },
+    {
+      "char": "块",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "切块"
+    },
+    {
+      "char": "膜",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "保鲜膜"
+    },
+    {
+      "char": "险",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "保险丝"
+    },
+    {
+      "char": "池",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "电池"
+    },
+    {
+      "char": "耳",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "耳机"
+    },
+    {
+      "char": "广",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "广告"
+    },
+    {
+      "char": "群",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "群主"
+    },
+    {
+      "char": "主",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "群主"
+    },
+    {
+      "char": "册",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "相册"
+    },
+    {
+      "char": "数",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "数据线"
+    },
+    {
+      "char": "据",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "数据线"
+    },
+    {
+      "char": "注",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "备注"
+    },
+    {
+      "char": "值",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "充值"
+    },
+    {
+      "char": "享",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "分享"
+    },
+    {
+      "char": "键",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "键盘"
+    },
+    {
+      "char": "量",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "流量"
+    },
+    {
+      "char": "软",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "软件"
+    },
+    {
+      "char": "设",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "设置"
+    },
+    {
+      "char": "置",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "设置"
+    },
+    {
+      "char": "省",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "省钱"
+    },
+    {
+      "char": "藏",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "收藏"
+    },
+    {
+      "char": "写",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "手写"
+    },
+    {
+      "char": "页",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "网页"
+    },
+    {
+      "char": "载",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "下载"
+    },
+    {
+      "char": "震",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "震动"
+    },
+    {
+      "char": "众",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "公众号"
+    },
+    {
+      "char": "系",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "联系人"
+    },
+    {
+      "char": "麦",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "麦克风"
+    },
+    {
+      "char": "克",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "麦克风"
+    },
+    {
+      "char": "序",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "小程序"
+    },
+    {
+      "char": "版",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "版本"
+    },
+    {
+      "char": "储",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "存储"
+    },
+    {
+      "char": "蓝",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "蓝牙"
+    },
+    {
+      "char": "欠",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "欠费"
+    },
+    {
+      "char": "搜",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "搜索"
+    },
+    {
+      "char": "索",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "搜索"
+    },
+    {
+      "char": "餐",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "套餐"
+    },
+    {
+      "char": "同",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "同步"
+    },
+    {
+      "char": "云",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "云端"
+    },
+    {
+      "char": "端",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "云端"
+    },
+    {
+      "char": "扰",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "免打扰"
+    },
+    {
+      "char": "讯",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "通讯录"
+    },
+    {
+      "char": "扬",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "扬声器"
+    },
+    {
+      "char": "材",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "材料"
+    },
+    {
+      "char": "厅",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "大厅"
+    },
+    {
+      "char": "村",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "村委会"
+    },
+    {
+      "char": "婚",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "结婚证"
+    },
+    {
+      "char": "禁",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "门禁卡"
+    },
+    {
+      "char": "派",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "派出所"
+    },
+    {
+      "char": "所",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "派出所"
+    },
+    {
+      "char": "志",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "志愿者"
+    },
+    {
+      "char": "愿",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "志愿者"
+    },
+    {
+      "char": "者",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "志愿者"
+    },
+    {
+      "char": "低",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "低保"
+    },
+    {
+      "char": "章",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "盖章"
+    },
+    {
+      "char": "核",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "审核"
+    },
+    {
+      "char": "填",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "填表"
+    },
+    {
+      "char": "诉",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "投诉"
+    },
+    {
+      "char": "指",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "指南"
+    },
+    {
+      "char": "南",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "指南"
+    },
+    {
+      "char": "残",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "残疾证"
+    },
+    {
+      "char": "疾",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "残疾证"
+    },
+    {
+      "char": "产",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "房产证"
+    },
+    {
+      "char": "请",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "申请表"
+    },
+    {
+      "char": "有",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "有效期"
+    },
+    {
+      "char": "效",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "有效期"
+    },
+    {
+      "char": "助",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "自助机"
+    },
+    {
+      "char": "识",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "人脸识别"
+    },
+    {
+      "char": "别",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "人脸识别"
+    },
+    {
+      "char": "贴",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "补贴"
+    },
+    {
+      "char": "籍",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "户籍"
+    },
+    {
+      "char": "批",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "审批"
+    },
+    {
+      "char": "受",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "受理"
+    },
+    {
+      "char": "政",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "政务"
+    },
+    {
+      "char": "市",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "超市"
+    },
+    {
+      "char": "场",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "商场"
+    },
+    {
+      "char": "食",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "食品"
+    },
+    {
+      "char": "试",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "试穿"
+    },
+    {
+      "char": "果",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "水果"
+    },
+    {
+      "char": "挑",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "挑选"
+    },
+    {
+      "char": "选",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "挑选"
+    },
+    {
+      "char": "卖",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "小卖部"
+    },
+    {
+      "char": "邮",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "包邮"
+    },
+    {
+      "char": "尺",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "尺寸"
+    },
+    {
+      "char": "寸",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "尺寸"
+    },
+    {
+      "char": "降",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "降价"
+    },
+    {
+      "char": "快",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "快递"
+    },
+    {
+      "char": "递",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "快递"
+    },
+    {
+      "char": "评",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "评价"
+    },
+    {
+      "char": "缺",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "缺货"
+    },
+    {
+      "char": "运",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "运费"
+    },
+    {
+      "char": "正",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "正品"
+    },
+    {
+      "char": "便",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "便利店"
+    },
+    {
+      "char": "券",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "优惠券"
+    },
+    {
+      "char": "铺",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "店铺"
+    },
+    {
+      "char": "规",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "规格"
+    },
+    {
+      "char": "库",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "库存"
+    },
+    {
+      "char": "临",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "临期"
+    },
+    {
+      "char": "满",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "满减"
+    },
+    {
+      "char": "减",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "满减"
+    },
+    {
+      "char": "后",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "售后"
+    },
+    {
+      "char": "详",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "详情"
+    },
+    {
+      "char": "情",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "详情"
+    },
+    {
+      "char": "型",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "型号"
+    },
+    {
+      "char": "当",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "上当"
+    },
+    {
+      "char": "熟",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "熟人"
+    },
+    {
+      "char": "健",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "保健品"
+    },
+    {
+      "char": "黑",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "黑名单"
+    },
+    {
+      "char": "未",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "未接来电"
+    },
+    {
+      "char": "接",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "未接来电"
+    },
+    {
+      "char": "传",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "传票"
+    },
+    {
+      "char": "弹",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "弹窗"
+    },
+    {
+      "char": "回",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "回拨"
+    },
+    {
+      "char": "拨",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "回拨"
+    },
+    {
+      "char": "兼",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "兼职"
+    },
+    {
+      "char": "职",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "兼职"
+    },
+    {
+      "char": "举",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "举报"
+    },
+    {
+      "char": "拦",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "拦截"
+    },
+    {
+      "char": "截",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "拦截"
+    },
+    {
+      "char": "木",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "木马"
+    },
+    {
+      "char": "马",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "木马"
+    },
+    {
+      "char": "局",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "骗局"
+    },
+    {
+      "char": "税",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "退税"
+    },
+    {
+      "char": "虚",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "虚假"
+    },
+    {
+      "char": "知",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "短信通知"
+    },
+    {
+      "char": "个",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "个人信息"
+    },
+    {
+      "char": "境",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "境外来电"
+    },
+    {
+      "char": "赔",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "理赔"
+    },
+    {
+      "char": "威",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "威胁"
+    },
+    {
+      "char": "胁",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "威胁"
+    },
+    {
+      "char": "泄",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "泄露"
+    },
+    {
+      "char": "露",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "泄露"
+    },
+    {
+      "char": "诱",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "诱导"
+    },
+    {
+      "char": "征",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "征信"
+    },
+    {
+      "char": "态",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "动态码"
+    },
+    {
+      "char": "远",
+      "count": 1,
+      "cardCount": 1,
+      "firstCard": "远程控制"
+    }
+  ]
+}

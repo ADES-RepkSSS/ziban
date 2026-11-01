@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "builtAt": "2026-10-27T16:10:38.072Z",
+  "builtAt": "2026-11-01T03:13:51.850Z",
   "cards": [
     {
       "id": "c_yao",
@@ -3098,45 +3098,6 @@
       "imageUrl": "./images/cards500-056.svg"
     },
     {
-      "id": "w_057",
-      "text": "药水",
-      "chars": [
-        "药",
-        "水"
-      ],
-      "pinyin": [
-        "yào",
-        "shuǐ"
-      ],
-      "level": 1,
-      "scene": "health",
-      "meaning": "小瓶子里装的药",
-      "meaning_source": {
-        "dict": "self",
-        "entry": "药水",
-        "rev": "cards500-2026-10"
-      },
-      "sentence": "药水用前摇一摇，先看看说明。",
-      "sentence_source": {
-        "corpus": "self",
-        "doc": "cards500-2026-10"
-      },
-      "image": {
-        "file": "cards500-057.svg",
-        "lib": "self",
-        "license": "CC-BY-SA-4.0",
-        "alt": "一个小药瓶，瓶口滴下一滴水"
-      },
-      "status": "draft",
-      "gen": {
-        "model": "deepseek-flash",
-        "prompt_ver": "cards500@1.0",
-        "hash": "b6ae93f8173121fe"
-      },
-      "order": 74,
-      "imageUrl": "./images/cards500-057.svg"
-    },
-    {
       "id": "w_049",
       "text": "疫苗",
       "chars": [
@@ -3175,7 +3136,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "ac75f2de5b1e3477"
       },
-      "order": 75,
+      "order": 74,
       "imageUrl": "./images/cards500-049.svg"
     },
     {
@@ -3217,7 +3178,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "b12f1d38969bed01"
       },
-      "order": 76,
+      "order": 75,
       "imageUrl": "./images/cards500-006.svg"
     },
     {
@@ -3258,7 +3219,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "22e30d4abb9f6677"
       },
-      "order": 77,
+      "order": 76,
       "imageUrl": "./images/cards500-020.svg"
     },
     {
@@ -3299,7 +3260,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "be47e7adb655c265"
       },
-      "order": 78,
+      "order": 77,
       "imageUrl": "./images/cards500-018.svg"
     },
     {
@@ -3340,7 +3301,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "c1f6c79dc4039ef9"
       },
-      "order": 79,
+      "order": 78,
       "imageUrl": "./images/cards500-068.svg"
     },
     {
@@ -3384,7 +3345,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "62a2446f0d625949"
       },
-      "order": 80,
+      "order": 79,
       "imageUrl": "./images/cards500-054.svg"
     },
     {
@@ -3425,7 +3386,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "067c422a658923c4"
       },
-      "order": 81,
+      "order": 80,
       "imageUrl": "./images/cards500-022.svg"
     },
     {
@@ -3467,7 +3428,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "23f5cd626dad88a0"
       },
-      "order": 82,
+      "order": 81,
       "imageUrl": "./images/cards500-023.svg"
     },
     {
@@ -3506,7 +3467,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "28388589f544ee5b"
       },
-      "order": 83,
+      "order": 82,
       "imageUrl": "./images/cards500-011.svg"
     },
     {
@@ -3548,7 +3509,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "403eba9ad6bfd733"
       },
-      "order": 84,
+      "order": 83,
       "imageUrl": "./images/cards500-047.svg"
     },
     {
@@ -3587,7 +3548,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "d0274097e56a849d"
       },
-      "order": 85,
+      "order": 84,
       "imageUrl": "./images/cards500-009.svg"
     },
     {
@@ -3626,7 +3587,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "2f85d8e28ffd7eaa"
       },
-      "order": 86,
+      "order": 85,
       "imageUrl": "./images/cards500-012.svg"
     },
     {
@@ -3665,7 +3626,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "054d21be92bcd6e8"
       },
-      "order": 87,
+      "order": 86,
       "imageUrl": "./images/cards500-026.svg"
     },
     {
@@ -3707,7 +3668,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "bc7e4a2f6ec1ce80"
       },
-      "order": 88,
+      "order": 87,
       "imageUrl": "./images/cards500-067.svg"
     },
     {
@@ -3749,7 +3710,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "dac476277449e242"
       },
-      "order": 89,
+      "order": 88,
       "imageUrl": "./images/cards500-004.svg"
     },
     {
@@ -3788,7 +3749,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "9cc8d05547d174df"
       },
-      "order": 90,
+      "order": 89,
       "imageUrl": "./images/cards500-073.svg"
     },
     {
@@ -3827,7 +3788,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "27b8143442812987"
       },
-      "order": 91,
+      "order": 90,
       "imageUrl": "./images/cards500-001.svg"
     },
     {
@@ -3866,7 +3827,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "e36a951dffb4bbd2"
       },
-      "order": 92,
+      "order": 91,
       "imageUrl": "./images/cards500-016.svg"
     },
     {
@@ -3908,7 +3869,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "6acfa44245c3025d"
       },
-      "order": 93,
+      "order": 92,
       "imageUrl": "./images/cards500-075.svg"
     },
     {
@@ -3947,7 +3908,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "22b92e35ad969698"
       },
-      "order": 94,
+      "order": 93,
       "imageUrl": "./images/cards500-039.svg"
     },
     {
@@ -3986,7 +3947,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "9693bf304d70117d"
       },
-      "order": 95,
+      "order": 94,
       "imageUrl": "./images/cards500-060.svg"
     },
     {
@@ -4025,7 +3986,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "81c979941151a3fb"
       },
-      "order": 96,
+      "order": 95,
       "imageUrl": "./images/cards500-050.svg"
     },
     {
@@ -4064,7 +4025,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "156cd7e3bf7341da"
       },
-      "order": 97,
+      "order": 96,
       "imageUrl": "./images/cards500-037.svg"
     },
     {
@@ -4103,7 +4064,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "ec0df01aef96e587"
       },
-      "order": 98,
+      "order": 97,
       "imageUrl": "./images/cards500-051.svg"
     },
     {
@@ -4145,7 +4106,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "c1f5ad06acb66cdd"
       },
-      "order": 99,
+      "order": 98,
       "imageUrl": "./images/cards500-010.svg"
     },
     {
@@ -4187,7 +4148,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "3fe2a3fc9b58a258"
       },
-      "order": 100,
+      "order": 99,
       "imageUrl": "./images/cards500-013.svg"
     },
     {
@@ -4229,7 +4190,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "3f8dde2262bba04f"
       },
-      "order": 101,
+      "order": 100,
       "imageUrl": "./images/cards500-048.svg"
     },
     {
@@ -4271,7 +4232,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "cdb91ebac198f353"
       },
-      "order": 102,
+      "order": 101,
       "imageUrl": "./images/cards500-036.svg"
     },
     {
@@ -4313,7 +4274,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "cb1c0fe8548dabda"
       },
-      "order": 103,
+      "order": 102,
       "imageUrl": "./images/cards500-032.svg"
     },
     {
@@ -4355,7 +4316,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "d84e45b2f92f54ea"
       },
-      "order": 104,
+      "order": 103,
       "imageUrl": "./images/cards500-055.svg"
     },
     {
@@ -4397,7 +4358,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "64c1af1c8c7e3e3d"
       },
-      "order": 105,
+      "order": 104,
       "imageUrl": "./images/cards500-035.svg"
     },
     {
@@ -4439,7 +4400,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "cbd0d1535980f6c3"
       },
-      "order": 106,
+      "order": 105,
       "imageUrl": "./images/cards500-034.svg"
     },
     {
@@ -4478,7 +4439,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "6be2c598ab767fc1"
       },
-      "order": 107,
+      "order": 106,
       "imageUrl": "./images/cards500-072.svg"
     },
     {
@@ -4517,7 +4478,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "5a4420a17bc5f717"
       },
-      "order": 108,
+      "order": 107,
       "imageUrl": "./images/cards500-024.svg"
     },
     {
@@ -4558,7 +4519,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "55c14be36d845123"
       },
-      "order": 109,
+      "order": 108,
       "imageUrl": "./images/cards500-002.svg"
     },
     {
@@ -4599,48 +4560,46 @@
         "prompt_ver": "cards500@1.0",
         "hash": "1401fbf4fb11a0e9"
       },
-      "order": 110,
+      "order": 109,
       "imageUrl": "./images/cards500-017.svg"
     },
     {
       "id": "w_046",
-      "text": "心电图",
+      "text": "心脏",
       "chars": [
         "心",
-        "电",
-        "图"
+        "脏"
       ],
       "pinyin": [
         "xīn",
-        "diàn",
-        "tú"
+        "zàng"
       ],
       "level": 2,
       "scene": "health",
-      "meaning": "在胸口贴几个片记下心跳",
+      "meaning": "身上一直在跳的东西",
       "meaning_source": {
         "dict": "self",
-        "entry": "心电图",
-        "rev": "cards500-2026-10"
+        "entry": "心脏",
+        "rev": "rebalance-2026-11"
       },
-      "sentence": "做心电图不疼，躺一会儿就好。",
+      "sentence": "走快一点，心脏就跳得厉害。",
       "sentence_source": {
         "corpus": "self",
-        "doc": "cards500-2026-10"
+        "doc": "rebalance-2026-11"
       },
       "image": {
         "file": "cards500-046.svg",
         "lib": "self",
         "license": "CC-BY-SA-4.0",
-        "alt": "两张叠在一起的长条纸上印着一起一伏的心跳折线，右上方有一颗心"
+        "alt": "一颗红色的心脏，旁边有一条跳动的线"
       },
       "status": "draft",
       "gen": {
         "model": "deepseek-flash",
-        "prompt_ver": "cards500@1.0",
-        "hash": "77f25ae201b3b421"
+        "prompt_ver": "rebalance@1",
+        "hash": "rebalance-w_046"
       },
-      "order": 111,
+      "order": 110,
       "imageUrl": "./images/cards500-046.svg"
     },
     {
@@ -4681,7 +4640,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "03785b388477b004"
       },
-      "order": 112,
+      "order": 111,
       "imageUrl": "./images/cards500-019.svg"
     },
     {
@@ -4720,7 +4679,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "e3aaa2958e0ff314"
       },
-      "order": 113,
+      "order": 112,
       "imageUrl": "./images/cards500-021.svg"
     },
     {
@@ -4759,7 +4718,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "607b03d78f4fd498"
       },
-      "order": 114,
+      "order": 113,
       "imageUrl": "./images/cards500-041.svg"
     },
     {
@@ -4801,7 +4760,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "1226eedad3273c15"
       },
-      "order": 115,
+      "order": 114,
       "imageUrl": "./images/cards500-038.svg"
     },
     {
@@ -4840,7 +4799,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "05cd8117c77b5829"
       },
-      "order": 116,
+      "order": 115,
       "imageUrl": "./images/cards500-031.svg"
     },
     {
@@ -4879,7 +4838,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "e52b18cc7fc4553d"
       },
-      "order": 117,
+      "order": 116,
       "imageUrl": "./images/cards500-043.svg"
     },
     {
@@ -4918,7 +4877,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "8302676fdba0d166"
       },
-      "order": 118,
+      "order": 117,
       "imageUrl": "./images/cards500-005.svg"
     },
     {
@@ -4957,7 +4916,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "4cb42d92f30b64d9"
       },
-      "order": 119,
+      "order": 118,
       "imageUrl": "./images/cards500-042.svg"
     },
     {
@@ -4996,7 +4955,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "1bc67c8ca336e148"
       },
-      "order": 120,
+      "order": 119,
       "imageUrl": "./images/cards500-030.svg"
     },
     {
@@ -5035,7 +4994,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "6d73e93bdd21296d"
       },
-      "order": 121,
+      "order": 120,
       "imageUrl": "./images/cards500-033.svg"
     },
     {
@@ -5077,7 +5036,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "5b8f1b81f615b8db"
       },
-      "order": 122,
+      "order": 121,
       "imageUrl": "./images/cards500-025.svg"
     },
     {
@@ -5116,7 +5075,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "5eda44dbfe99486b"
       },
-      "order": 123,
+      "order": 122,
       "imageUrl": "./images/cards500-029.svg"
     },
     {
@@ -5160,7 +5119,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "fb9c8142c21abe28"
       },
-      "order": 124,
+      "order": 123,
       "imageUrl": "./images/cards500-069.svg"
     },
     {
@@ -5199,7 +5158,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "2f7a79d60d095f85"
       },
-      "order": 125,
+      "order": 124,
       "imageUrl": "./images/cards500-141.svg"
     },
     {
@@ -5241,7 +5200,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "203f838269a1e3e8"
       },
-      "order": 126,
+      "order": 125,
       "imageUrl": "./images/cards500-125.svg"
     },
     {
@@ -5280,7 +5239,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "167fc707816e49c5"
       },
-      "order": 127,
+      "order": 126,
       "imageUrl": "./images/cards500-143.svg"
     },
     {
@@ -5322,7 +5281,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "73a561e8f6ad942b"
       },
-      "order": 128,
+      "order": 127,
       "imageUrl": "./images/cards500-128.svg"
     },
     {
@@ -5364,7 +5323,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "bd033d5b4924b2dd"
       },
-      "order": 129,
+      "order": 128,
       "imageUrl": "./images/cards500-132.svg"
     },
     {
@@ -5403,7 +5362,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "ff65a2ab826bcb06"
       },
-      "order": 130,
+      "order": 129,
       "imageUrl": "./images/cards500-140.svg"
     },
     {
@@ -5442,7 +5401,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "3246a9cf45fb4ef4"
       },
-      "order": 131,
+      "order": 130,
       "imageUrl": "./images/cards500-115.svg"
     },
     {
@@ -5484,7 +5443,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "5608d74775400e23"
       },
-      "order": 132,
+      "order": 131,
       "imageUrl": "./images/cards500-129.svg"
     },
     {
@@ -5523,52 +5482,8 @@
         "prompt_ver": "cards500@1.0",
         "hash": "389c6ec20cf48e84"
       },
-      "order": 133,
+      "order": 132,
       "imageUrl": "./images/cards500-130.svg"
-    },
-    {
-      "id": "w_144",
-      "text": "取号机",
-      "chars": [
-        "取",
-        "号",
-        "机"
-      ],
-      "pinyin": [
-        "qǔ",
-        "hào",
-        "jī"
-      ],
-      "level": 1,
-      "scene": "money",
-      "meaning": "按一下吐出号码纸的机器",
-      "meaning_source": {
-        "dict": "self",
-        "entry": "取号机",
-        "rev": "cards500-2026-10"
-      },
-      "sentence": "他在取号机上按了一下。",
-      "sentence_source": {
-        "corpus": "self",
-        "doc": "cards500-2026-10"
-      },
-      "image": {
-        "file": "cards500-144.svg",
-        "lib": "self",
-        "license": "CC-BY-SA-4.0",
-        "alt": "一台立式取号机，屏幕亮着，出纸口吐出一张小白纸条"
-      },
-      "confusables": [
-        "几"
-      ],
-      "status": "draft",
-      "gen": {
-        "model": "deepseek-flash",
-        "prompt_ver": "cards500@1.0",
-        "hash": "bc32ea0d591998de"
-      },
-      "order": 134,
-      "imageUrl": "./images/cards500-144.svg"
     },
     {
       "id": "w_142",
@@ -5608,7 +5523,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "099785c4f9808c2d"
       },
-      "order": 135,
+      "order": 133,
       "imageUrl": "./images/cards500-142.svg"
     },
     {
@@ -5652,7 +5567,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "519f24a2d80d8e8f"
       },
-      "order": 136,
+      "order": 134,
       "imageUrl": "./images/cards500-112.svg"
     },
     {
@@ -5693,7 +5608,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "2f65a8414086ac1f"
       },
-      "order": 137,
+      "order": 135,
       "imageUrl": "./images/cards500-138.svg"
     },
     {
@@ -5732,7 +5647,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "142565999c8a2d28"
       },
-      "order": 138,
+      "order": 136,
       "imageUrl": "./images/cards500-091.svg"
     },
     {
@@ -5771,7 +5686,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "4c32d320aebbc78c"
       },
-      "order": 139,
+      "order": 137,
       "imageUrl": "./images/cards500-114.svg"
     },
     {
@@ -5810,7 +5725,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "a3fc0b05938b93cb"
       },
-      "order": 140,
+      "order": 138,
       "imageUrl": "./images/cards500-078.svg"
     },
     {
@@ -5849,7 +5764,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "4c4cf9cd467e40ef"
       },
-      "order": 141,
+      "order": 139,
       "imageUrl": "./images/cards500-082.svg"
     },
     {
@@ -5888,7 +5803,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "244664950ba6247c"
       },
-      "order": 142,
+      "order": 140,
       "imageUrl": "./images/cards500-123.svg"
     },
     {
@@ -5927,7 +5842,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "d3f6871688bb32fa"
       },
-      "order": 143,
+      "order": 141,
       "imageUrl": "./images/cards500-084.svg"
     },
     {
@@ -5966,7 +5881,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "838d197202c2dc44"
       },
-      "order": 144,
+      "order": 142,
       "imageUrl": "./images/cards500-100.svg"
     },
     {
@@ -6005,7 +5920,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "b5244ef9bfa4ef31"
       },
-      "order": 145,
+      "order": 143,
       "imageUrl": "./images/cards500-090.svg"
     },
     {
@@ -6047,7 +5962,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "2a335ee6cbedd1f3"
       },
-      "order": 146,
+      "order": 144,
       "imageUrl": "./images/cards500-121.svg"
     },
     {
@@ -6086,7 +6001,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "bf8af076dd678972"
       },
-      "order": 147,
+      "order": 145,
       "imageUrl": "./images/cards500-099.svg"
     },
     {
@@ -6125,7 +6040,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "86b48edd74a4360b"
       },
-      "order": 148,
+      "order": 146,
       "imageUrl": "./images/cards500-106.svg"
     },
     {
@@ -6167,7 +6082,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "726f8d1c41b8654f"
       },
-      "order": 149,
+      "order": 147,
       "imageUrl": "./images/cards500-086.svg"
     },
     {
@@ -6210,7 +6125,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "8a68de8969686191"
       },
-      "order": 150,
+      "order": 148,
       "imageUrl": "./images/cards500-102.svg"
     },
     {
@@ -6249,7 +6164,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "9893c4ca58fb053f"
       },
-      "order": 151,
+      "order": 149,
       "imageUrl": "./images/cards500-085.svg"
     },
     {
@@ -6288,7 +6203,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "2260de3252064bdc"
       },
-      "order": 152,
+      "order": 150,
       "imageUrl": "./images/cards500-131.svg"
     },
     {
@@ -6330,7 +6245,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "4873740c20d05fce"
       },
-      "order": 153,
+      "order": 151,
       "imageUrl": "./images/cards500-118.svg"
     },
     {
@@ -6369,7 +6284,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "da393b9f0a8e2fe2"
       },
-      "order": 154,
+      "order": 152,
       "imageUrl": "./images/cards500-107.svg"
     },
     {
@@ -6408,7 +6323,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "0b48d395bbf0adbe"
       },
-      "order": 155,
+      "order": 153,
       "imageUrl": "./images/cards500-080.svg"
     },
     {
@@ -6447,7 +6362,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "6dc3a09346df1ac1"
       },
-      "order": 156,
+      "order": 154,
       "imageUrl": "./images/cards500-083.svg"
     },
     {
@@ -6486,50 +6401,8 @@
         "prompt_ver": "cards500@1.0",
         "hash": "4558c1de5a4738bb"
       },
-      "order": 157,
+      "order": 155,
       "imageUrl": "./images/cards500-110.svg"
-    },
-    {
-      "id": "w_101",
-      "text": "年费",
-      "chars": [
-        "年",
-        "费"
-      ],
-      "pinyin": [
-        "nián",
-        "fèi"
-      ],
-      "level": 2,
-      "scene": "money",
-      "meaning": "卡每年要交的一点钱",
-      "meaning_source": {
-        "dict": "self",
-        "entry": "年费",
-        "rev": "cards500-2026-10"
-      },
-      "sentence": "这张卡每年不收年费。",
-      "sentence_source": {
-        "corpus": "self",
-        "doc": "cards500-2026-10"
-      },
-      "image": {
-        "file": "cards500-101.svg",
-        "lib": "self",
-        "license": "CC-BY-SA-4.0",
-        "alt": "一张银行卡，旁边放着几枚硬币"
-      },
-      "confusables": [
-        "废"
-      ],
-      "status": "draft",
-      "gen": {
-        "model": "deepseek-flash",
-        "prompt_ver": "cards500@1.0",
-        "hash": "e02f8b9fd7c26935"
-      },
-      "order": 158,
-      "imageUrl": "./images/cards500-101.svg"
     },
     {
       "id": "w_079",
@@ -6567,7 +6440,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "e428b510e9c136c1"
       },
-      "order": 159,
+      "order": 156,
       "imageUrl": "./images/cards500-079.svg"
     },
     {
@@ -6606,7 +6479,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "d5d571fe9a1714e6"
       },
-      "order": 160,
+      "order": 157,
       "imageUrl": "./images/cards500-111.svg"
     },
     {
@@ -6645,7 +6518,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "0ecd65b609286687"
       },
-      "order": 161,
+      "order": 158,
       "imageUrl": "./images/cards500-103.svg"
     },
     {
@@ -6684,7 +6557,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "59562795c5b4ccb2"
       },
-      "order": 162,
+      "order": 159,
       "imageUrl": "./images/cards500-089.svg"
     },
     {
@@ -6723,7 +6596,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "f6d75b2b170fa4d1"
       },
-      "order": 163,
+      "order": 160,
       "imageUrl": "./images/cards500-077.svg"
     },
     {
@@ -6762,7 +6635,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "3300352a6c6bfbe5"
       },
-      "order": 164,
+      "order": 161,
       "imageUrl": "./images/cards500-109.svg"
     },
     {
@@ -6805,7 +6678,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "edb1f3b8e03ddd2d"
       },
-      "order": 165,
+      "order": 162,
       "imageUrl": "./images/cards500-135.svg"
     },
     {
@@ -6849,52 +6722,8 @@
         "prompt_ver": "cards500@1.0",
         "hash": "92382386f01f06ef"
       },
-      "order": 166,
+      "order": 163,
       "imageUrl": "./images/cards500-133.svg"
-    },
-    {
-      "id": "w_122",
-      "text": "工资卡",
-      "chars": [
-        "工",
-        "资",
-        "卡"
-      ],
-      "pinyin": [
-        "gōng",
-        "zī",
-        "kǎ"
-      ],
-      "level": 2,
-      "scene": "money",
-      "meaning": "单位打钱进来的那张卡",
-      "meaning_source": {
-        "dict": "self",
-        "entry": "工资卡",
-        "rev": "cards500-2026-10"
-      },
-      "sentence": "工资卡换了，孩子陪我去改。",
-      "sentence_source": {
-        "corpus": "self",
-        "doc": "cards500-2026-10"
-      },
-      "image": {
-        "file": "cards500-122.svg",
-        "lib": "self",
-        "license": "CC-BY-SA-4.0",
-        "alt": "一张银行卡，旁边有一个对勾"
-      },
-      "confusables": [
-        "姿"
-      ],
-      "status": "draft",
-      "gen": {
-        "model": "deepseek-flash",
-        "prompt_ver": "cards500@1.0",
-        "hash": "4193fbfb146bc3b6"
-      },
-      "order": 167,
-      "imageUrl": "./images/cards500-122.svg"
     },
     {
       "id": "w_134",
@@ -6934,52 +6763,8 @@
         "prompt_ver": "cards500@1.0",
         "hash": "3b453a3aacfd1640"
       },
-      "order": 168,
+      "order": 164,
       "imageUrl": "./images/cards500-134.svg"
-    },
-    {
-      "id": "w_139",
-      "text": "手续费",
-      "chars": [
-        "手",
-        "续",
-        "费"
-      ],
-      "pinyin": [
-        "shǒu",
-        "xù",
-        "fèi"
-      ],
-      "level": 2,
-      "scene": "money",
-      "meaning": "办业务时另外收的钱",
-      "meaning_source": {
-        "dict": "self",
-        "entry": "手续费",
-        "rev": "cards500-2026-10"
-      },
-      "sentence": "跨行取钱会收一点手续费。",
-      "sentence_source": {
-        "corpus": "self",
-        "doc": "cards500-2026-10"
-      },
-      "image": {
-        "file": "cards500-139.svg",
-        "lib": "self",
-        "license": "CC-BY-SA-4.0",
-        "alt": "一张缴费单，旁边有一叠硬币"
-      },
-      "confusables": [
-        "废"
-      ],
-      "status": "draft",
-      "gen": {
-        "model": "deepseek-flash",
-        "prompt_ver": "cards500@1.0",
-        "hash": "ab1bcdcf8b4354cc"
-      },
-      "order": 169,
-      "imageUrl": "./images/cards500-139.svg"
     },
     {
       "id": "w_127",
@@ -7019,49 +6804,8 @@
         "prompt_ver": "cards500@1.0",
         "hash": "2b6f9888d92f8b23"
       },
-      "order": 170,
+      "order": 165,
       "imageUrl": "./images/cards500-127.svg"
-    },
-    {
-      "id": "w_097",
-      "text": "信用卡",
-      "chars": [
-        "信",
-        "用",
-        "卡"
-      ],
-      "pinyin": [
-        "xìn",
-        "yòng",
-        "kǎ"
-      ],
-      "level": 2,
-      "scene": "money",
-      "meaning": "可以先花钱过些天再还的卡",
-      "meaning_source": {
-        "dict": "self",
-        "entry": "信用卡",
-        "rev": "cards500-2026-10"
-      },
-      "sentence": "信用卡这个月花了多少要还。",
-      "sentence_source": {
-        "corpus": "self",
-        "doc": "cards500-2026-10"
-      },
-      "image": {
-        "file": "cards500-097.svg",
-        "lib": "self",
-        "license": "CC-BY-SA-4.0",
-        "alt": "一张银行卡旁边放着一个小钟"
-      },
-      "status": "draft",
-      "gen": {
-        "model": "deepseek-flash",
-        "prompt_ver": "cards500@1.0",
-        "hash": "0d14a94a2e3e8477"
-      },
-      "order": 171,
-      "imageUrl": "./images/cards500-097.svg"
     },
     {
       "id": "w_126",
@@ -7101,7 +6845,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "0c4cb0295e72a475"
       },
-      "order": 172,
+      "order": 166,
       "imageUrl": "./images/cards500-126.svg"
     },
     {
@@ -7144,7 +6888,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "5cc3c38f11de2081"
       },
-      "order": 173,
+      "order": 167,
       "imageUrl": "./images/cards500-094.svg"
     },
     {
@@ -7187,7 +6931,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "0a51c8ea9fb89a3d"
       },
-      "order": 174,
+      "order": 168,
       "imageUrl": "./images/cards500-093.svg"
     },
     {
@@ -7233,51 +6977,8 @@
         "prompt_ver": "cards500@1.0",
         "hash": "85493643f443a6b4"
       },
-      "order": 175,
+      "order": 169,
       "imageUrl": "./images/cards500-136.svg"
-    },
-    {
-      "id": "w_137",
-      "text": "网上银行",
-      "chars": [
-        "网",
-        "上",
-        "银",
-        "行"
-      ],
-      "pinyin": [
-        "wǎng",
-        "shàng",
-        "yín",
-        "háng"
-      ],
-      "level": 2,
-      "scene": "money",
-      "meaning": "用电脑上网办存钱取钱的事",
-      "meaning_source": {
-        "dict": "self",
-        "entry": "网上银行",
-        "rev": "cards500-2026-10"
-      },
-      "sentence": "网上银行能查余额，也能交费。",
-      "sentence_source": {
-        "corpus": "self",
-        "doc": "cards500-2026-10"
-      },
-      "image": {
-        "file": "cards500-137.svg",
-        "lib": "self",
-        "license": "CC-BY-SA-4.0",
-        "alt": "一栋银行大楼，旁边有几道波纹"
-      },
-      "status": "draft",
-      "gen": {
-        "model": "deepseek-flash",
-        "prompt_ver": "cards500@1.0",
-        "hash": "0a355d50c04d3161"
-      },
-      "order": 176,
-      "imageUrl": "./images/cards500-137.svg"
     },
     {
       "id": "w_096",
@@ -7315,47 +7016,8 @@
         "prompt_ver": "cards500@1.0",
         "hash": "a25a0110b193f3c8"
       },
-      "order": 177,
+      "order": 170,
       "imageUrl": "./images/cards500-096.svg"
-    },
-    {
-      "id": "w_124",
-      "text": "回单",
-      "chars": [
-        "回",
-        "单"
-      ],
-      "pinyin": [
-        "huí",
-        "dān"
-      ],
-      "level": 3,
-      "scene": "money",
-      "meaning": "办完事给你的一张纸条",
-      "meaning_source": {
-        "dict": "self",
-        "entry": "回单",
-        "rev": "cards500-2026-10"
-      },
-      "sentence": "柜员把回单递给我，我夹在本子里。",
-      "sentence_source": {
-        "corpus": "self",
-        "doc": "cards500-2026-10"
-      },
-      "image": {
-        "file": "cards500-124.svg",
-        "lib": "self",
-        "license": "CC-BY-SA-4.0",
-        "alt": "柜台递出来的一张小纸条"
-      },
-      "status": "draft",
-      "gen": {
-        "model": "deepseek-flash",
-        "prompt_ver": "cards500@1.0",
-        "hash": "0fa84cd3c0ec101f"
-      },
-      "order": 178,
-      "imageUrl": "./images/cards500-124.svg"
     },
     {
       "id": "w_076",
@@ -7396,7 +7058,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "98db3d424c31bd97"
       },
-      "order": 179,
+      "order": 171,
       "imageUrl": "./images/cards500-076.svg"
     },
     {
@@ -7435,7 +7097,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "5891d3880b427746"
       },
-      "order": 180,
+      "order": 172,
       "imageUrl": "./images/cards500-095.svg"
     },
     {
@@ -7474,50 +7136,8 @@
         "prompt_ver": "cards500@1.0",
         "hash": "99459c8090010655"
       },
-      "order": 181,
+      "order": 173,
       "imageUrl": "./images/cards500-116.svg"
-    },
-    {
-      "id": "w_088",
-      "text": "流水",
-      "chars": [
-        "流",
-        "水"
-      ],
-      "pinyin": [
-        "liú",
-        "shuǐ"
-      ],
-      "level": 3,
-      "scene": "money",
-      "meaning": "卡里一笔一笔进出钱的记录",
-      "meaning_source": {
-        "dict": "self",
-        "entry": "流水",
-        "rev": "cards500-2026-10"
-      },
-      "sentence": "打一份流水，能看清每笔钱。",
-      "sentence_source": {
-        "corpus": "self",
-        "doc": "cards500-2026-10"
-      },
-      "image": {
-        "file": "cards500-088.svg",
-        "lib": "self",
-        "license": "CC-BY-SA-4.0",
-        "alt": "一张长长的凭条，旁边有一个箭头"
-      },
-      "confusables": [
-        "留"
-      ],
-      "status": "draft",
-      "gen": {
-        "model": "deepseek-flash",
-        "prompt_ver": "cards500@1.0",
-        "hash": "163c0b9b3abf7a3d"
-      },
-      "order": 182,
-      "imageUrl": "./images/cards500-088.svg"
     },
     {
       "id": "w_117",
@@ -7558,7 +7178,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "075b8ae0d3e49b32"
       },
-      "order": 183,
+      "order": 174,
       "imageUrl": "./images/cards500-117.svg"
     },
     {
@@ -7600,7 +7220,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "b888881615857c10"
       },
-      "order": 184,
+      "order": 175,
       "imageUrl": "./images/cards500-145.svg"
     },
     {
@@ -7642,47 +7262,8 @@
         "prompt_ver": "cards500@1.0",
         "hash": "050e64032abc8370"
       },
-      "order": 185,
+      "order": 176,
       "imageUrl": "./images/cards500-119.svg"
-    },
-    {
-      "id": "w_120",
-      "text": "网银",
-      "chars": [
-        "网",
-        "银"
-      ],
-      "pinyin": [
-        "wǎng",
-        "yín"
-      ],
-      "level": 3,
-      "scene": "money",
-      "meaning": "在电脑上办银行的事",
-      "meaning_source": {
-        "dict": "self",
-        "entry": "网银",
-        "rev": "cards500-2026-10"
-      },
-      "sentence": "网银能看钱到没到，我不敢用。",
-      "sentence_source": {
-        "corpus": "self",
-        "doc": "cards500-2026-10"
-      },
-      "image": {
-        "file": "cards500-120.svg",
-        "lib": "self",
-        "license": "CC-BY-SA-4.0",
-        "alt": "一个无线网络的标志，旁边有对勾"
-      },
-      "status": "draft",
-      "gen": {
-        "model": "deepseek-flash",
-        "prompt_ver": "cards500@1.0",
-        "hash": "d362e22a0e75a8f6"
-      },
-      "order": 186,
-      "imageUrl": "./images/cards500-120.svg"
     },
     {
       "id": "w_081",
@@ -7723,7 +7304,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "75546c62660c3c6a"
       },
-      "order": 187,
+      "order": 177,
       "imageUrl": "./images/cards500-081.svg"
     },
     {
@@ -7765,7 +7346,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "85818c6b167ea1fe"
       },
-      "order": 188,
+      "order": 178,
       "imageUrl": "./images/cards500-092.svg"
     },
     {
@@ -7808,7 +7389,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "9543cdfefb1f353b"
       },
-      "order": 189,
+      "order": 179,
       "imageUrl": "./images/cards500-104.svg"
     },
     {
@@ -7850,7 +7431,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "5cb833c9c55b8101"
       },
-      "order": 190,
+      "order": 180,
       "imageUrl": "./images/cards500-113.svg"
     },
     {
@@ -7892,49 +7473,8 @@
         "prompt_ver": "cards500@1.0",
         "hash": "68104c6ddbfd50b6"
       },
-      "order": 191,
+      "order": 181,
       "imageUrl": "./images/cards500-105.svg"
-    },
-    {
-      "id": "w_098",
-      "text": "储蓄卡",
-      "chars": [
-        "储",
-        "蓄",
-        "卡"
-      ],
-      "pinyin": [
-        "chǔ",
-        "xù",
-        "kǎ"
-      ],
-      "level": 3,
-      "scene": "money",
-      "meaning": "里面有钱才能花的那种卡",
-      "meaning_source": {
-        "dict": "self",
-        "entry": "储蓄卡",
-        "rev": "cards500-2026-10"
-      },
-      "sentence": "每月的工资打在储蓄卡里。",
-      "sentence_source": {
-        "corpus": "self",
-        "doc": "cards500-2026-10"
-      },
-      "image": {
-        "file": "cards500-098.svg",
-        "lib": "self",
-        "license": "CC-BY-SA-4.0",
-        "alt": "一张银行卡，旁边有几枚硬币"
-      },
-      "status": "draft",
-      "gen": {
-        "model": "deepseek-flash",
-        "prompt_ver": "cards500@1.0",
-        "hash": "d70baf66e990bfe8"
-      },
-      "order": 192,
-      "imageUrl": "./images/cards500-098.svg"
     },
     {
       "id": "w_108",
@@ -7974,7 +7514,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "a126339b427585a5"
       },
-      "order": 193,
+      "order": 182,
       "imageUrl": "./images/cards500-108.svg"
     },
     {
@@ -8015,7 +7555,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "07467801960a2180"
       },
-      "order": 194,
+      "order": 183,
       "imageUrl": "./images/cards500-087.svg"
     },
     {
@@ -8054,7 +7594,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "51f1fb96840e23fd"
       },
-      "order": 195,
+      "order": 184,
       "imageUrl": "./images/cards500-157.svg"
     },
     {
@@ -8096,7 +7636,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "74b82d147539cadf"
       },
-      "order": 196,
+      "order": 185,
       "imageUrl": "./images/cards500-163.svg"
     },
     {
@@ -8138,7 +7678,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "a9bbd7eca0ee2ac2"
       },
-      "order": 197,
+      "order": 186,
       "imageUrl": "./images/cards500-180.svg"
     },
     {
@@ -8177,7 +7717,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "127d9af79cfcdd3d"
       },
-      "order": 198,
+      "order": 187,
       "imageUrl": "./images/cards500-160.svg"
     },
     {
@@ -8219,7 +7759,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "1c39ac868f9278fe"
       },
-      "order": 199,
+      "order": 188,
       "imageUrl": "./images/cards500-189.svg"
     },
     {
@@ -8261,7 +7801,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "8f2dfb779e6e4ff4"
       },
-      "order": 200,
+      "order": 189,
       "imageUrl": "./images/cards500-184.svg"
     },
     {
@@ -8303,7 +7843,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "8d7fcc1bd8f2bc5d"
       },
-      "order": 201,
+      "order": 190,
       "imageUrl": "./images/cards500-152.svg"
     },
     {
@@ -8345,7 +7885,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "5afba2ba11f5c82d"
       },
-      "order": 202,
+      "order": 191,
       "imageUrl": "./images/cards500-192.svg"
     },
     {
@@ -8387,7 +7927,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "a2fc1c9f024a6915"
       },
-      "order": 203,
+      "order": 192,
       "imageUrl": "./images/cards500-149.svg"
     },
     {
@@ -8429,7 +7969,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "e3ee83186765416d"
       },
-      "order": 204,
+      "order": 193,
       "imageUrl": "./images/cards500-187.svg"
     },
     {
@@ -8471,7 +8011,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "c8149c6a637d812f"
       },
-      "order": 205,
+      "order": 194,
       "imageUrl": "./images/cards500-194.svg"
     },
     {
@@ -8513,7 +8053,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "e3e020a3f057bd8c"
       },
-      "order": 206,
+      "order": 195,
       "imageUrl": "./images/cards500-199.svg"
     },
     {
@@ -8552,7 +8092,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "55f9559911e91f91"
       },
-      "order": 207,
+      "order": 196,
       "imageUrl": "./images/cards500-161.svg"
     },
     {
@@ -8594,7 +8134,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "8fae6e4544b18621"
       },
-      "order": 208,
+      "order": 197,
       "imageUrl": "./images/cards500-191.svg"
     },
     {
@@ -8636,7 +8176,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "39607c17233b19df"
       },
-      "order": 209,
+      "order": 198,
       "imageUrl": "./images/cards500-197.svg"
     },
     {
@@ -8678,50 +8218,8 @@
         "prompt_ver": "cards500@1.0",
         "hash": "a5b911ad70adf154"
       },
-      "order": 210,
+      "order": 199,
       "imageUrl": "./images/cards500-169.svg"
-    },
-    {
-      "id": "w_147",
-      "text": "站点",
-      "chars": [
-        "站",
-        "点"
-      ],
-      "pinyin": [
-        "zhàn",
-        "diǎn"
-      ],
-      "level": 1,
-      "scene": "travel",
-      "meaning": "公交车停靠让人上下的地方",
-      "meaning_source": {
-        "dict": "self",
-        "entry": "站点",
-        "rev": "cards500-2026-10"
-      },
-      "sentence": "这个站点能坐三路公交车。",
-      "sentence_source": {
-        "corpus": "self",
-        "doc": "cards500-2026-10"
-      },
-      "image": {
-        "file": "cards500-147.svg",
-        "lib": "self",
-        "license": "CC-BY-SA-4.0",
-        "alt": "一辆公交车，旁边有一个定位针"
-      },
-      "confusables": [
-        "占"
-      ],
-      "status": "draft",
-      "gen": {
-        "model": "deepseek-flash",
-        "prompt_ver": "cards500@1.0",
-        "hash": "f3b8192e80c9c0a9"
-      },
-      "order": 211,
-      "imageUrl": "./images/cards500-147.svg"
     },
     {
       "id": "w_146",
@@ -8762,7 +8260,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "3d420e63678e9778"
       },
-      "order": 212,
+      "order": 200,
       "imageUrl": "./images/cards500-146.svg"
     },
     {
@@ -8804,7 +8302,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "3e0504f7be3ab18f"
       },
-      "order": 213,
+      "order": 201,
       "imageUrl": "./images/cards500-181.svg"
     },
     {
@@ -8846,7 +8344,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "ee8a4c565f3567bd"
       },
-      "order": 214,
+      "order": 202,
       "imageUrl": "./images/cards500-150.svg"
     },
     {
@@ -8888,7 +8386,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "ca3dbcc8e5b00725"
       },
-      "order": 215,
+      "order": 203,
       "imageUrl": "./images/cards500-198.svg"
     },
     {
@@ -8932,7 +8430,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "f518c342e297f27c"
       },
-      "order": 216,
+      "order": 204,
       "imageUrl": "./images/cards500-196.svg"
     },
     {
@@ -8973,7 +8471,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "b3e4176e4674c007"
       },
-      "order": 217,
+      "order": 205,
       "imageUrl": "./images/cards500-165.svg"
     },
     {
@@ -9017,7 +8515,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "2814c425fe672898"
       },
-      "order": 218,
+      "order": 206,
       "imageUrl": "./images/cards500-168.svg"
     },
     {
@@ -9059,7 +8557,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "e5af58ac9608e360"
       },
-      "order": 219,
+      "order": 207,
       "imageUrl": "./images/cards500-170.svg"
     },
     {
@@ -9101,7 +8599,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "0925aa7da5b9bb97"
       },
-      "order": 220,
+      "order": 208,
       "imageUrl": "./images/cards500-204.svg"
     },
     {
@@ -9143,7 +8641,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "7ebaafc0128bd96d"
       },
-      "order": 221,
+      "order": 209,
       "imageUrl": "./images/cards500-153.svg"
     },
     {
@@ -9185,7 +8683,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "57a0d7f6c82afa2b"
       },
-      "order": 222,
+      "order": 210,
       "imageUrl": "./images/cards500-183.svg"
     },
     {
@@ -9227,50 +8725,8 @@
         "prompt_ver": "cards500@1.0",
         "hash": "2162f09415411950"
       },
-      "order": 223,
+      "order": 211,
       "imageUrl": "./images/cards500-175.svg"
-    },
-    {
-      "id": "w_186",
-      "text": "动车",
-      "chars": [
-        "动",
-        "车"
-      ],
-      "pinyin": [
-        "dòng",
-        "chē"
-      ],
-      "level": 2,
-      "scene": "travel",
-      "meaning": "停站少跑得快的火车",
-      "meaning_source": {
-        "dict": "self",
-        "entry": "动车",
-        "rev": "cards500-2026-10"
-      },
-      "sentence": "动车到站，他提着包慢慢下车。",
-      "sentence_source": {
-        "corpus": "self",
-        "doc": "cards500-2026-10"
-      },
-      "image": {
-        "file": "cards500-186.svg",
-        "lib": "self",
-        "license": "CC-BY-SA-4.0",
-        "alt": "一列火车停在铁轨上，旁边有个箭头"
-      },
-      "confusables": [
-        "冻"
-      ],
-      "status": "draft",
-      "gen": {
-        "model": "deepseek-flash",
-        "prompt_ver": "cards500@1.0",
-        "hash": "47e972781d3ca8d6"
-      },
-      "order": 224,
-      "imageUrl": "./images/cards500-186.svg"
     },
     {
       "id": "w_185",
@@ -9311,7 +8767,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "27a7ed4cf12e8da5"
       },
-      "order": 225,
+      "order": 212,
       "imageUrl": "./images/cards500-185.svg"
     },
     {
@@ -9353,7 +8809,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "0a3eff98760e714d"
       },
-      "order": 226,
+      "order": 213,
       "imageUrl": "./images/cards500-179.svg"
     },
     {
@@ -9395,7 +8851,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "87bfff0fa11c2953"
       },
-      "order": 227,
+      "order": 214,
       "imageUrl": "./images/cards500-166.svg"
     },
     {
@@ -9437,7 +8893,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "7ca12584aaf56093"
       },
-      "order": 228,
+      "order": 215,
       "imageUrl": "./images/cards500-148.svg"
     },
     {
@@ -9479,47 +8935,8 @@
         "prompt_ver": "cards500@1.0",
         "hash": "9030f1d6f7bcd3cc"
       },
-      "order": 229,
+      "order": 216,
       "imageUrl": "./images/cards500-182.svg"
-    },
-    {
-      "id": "w_188",
-      "text": "列车",
-      "chars": [
-        "列",
-        "车"
-      ],
-      "pinyin": [
-        "liè",
-        "chē"
-      ],
-      "level": 2,
-      "scene": "travel",
-      "meaning": "一长串连在一起的车",
-      "meaning_source": {
-        "dict": "self",
-        "entry": "列车",
-        "rev": "cards500-2026-10"
-      },
-      "sentence": "列车开得很稳，他靠在窗边。",
-      "sentence_source": {
-        "corpus": "self",
-        "doc": "cards500-2026-10"
-      },
-      "image": {
-        "file": "cards500-188.svg",
-        "lib": "self",
-        "license": "CC-BY-SA-4.0",
-        "alt": "一列长长的车从隧道里开出来"
-      },
-      "status": "draft",
-      "gen": {
-        "model": "deepseek-flash",
-        "prompt_ver": "cards500@1.0",
-        "hash": "92d79fec6bb7b5c9"
-      },
-      "order": 230,
-      "imageUrl": "./images/cards500-188.svg"
     },
     {
       "id": "w_155",
@@ -9557,7 +8974,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "1797c0344e89c4b7"
       },
-      "order": 231,
+      "order": 217,
       "imageUrl": "./images/cards500-155.svg"
     },
     {
@@ -9599,7 +9016,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "67a83fd85b303c19"
       },
-      "order": 232,
+      "order": 218,
       "imageUrl": "./images/cards500-162.svg"
     },
     {
@@ -9641,7 +9058,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "f2aaf5e6e62bb2a6"
       },
-      "order": 233,
+      "order": 219,
       "imageUrl": "./images/cards500-151.svg"
     },
     {
@@ -9683,7 +9100,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "6b1d3cb5897ff3b7"
       },
-      "order": 234,
+      "order": 220,
       "imageUrl": "./images/cards500-200.svg"
     },
     {
@@ -9725,7 +9142,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "4048200c3bafd39d"
       },
-      "order": 235,
+      "order": 221,
       "imageUrl": "./images/cards500-167.svg"
     },
     {
@@ -9767,7 +9184,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "090eda4a9d1a89dc"
       },
-      "order": 236,
+      "order": 222,
       "imageUrl": "./images/cards500-154.svg"
     },
     {
@@ -9806,7 +9223,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "983d8ee83ba46378"
       },
-      "order": 237,
+      "order": 223,
       "imageUrl": "./images/cards500-164.svg"
     },
     {
@@ -9848,7 +9265,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "8a0575bdf859d907"
       },
-      "order": 238,
+      "order": 224,
       "imageUrl": "./images/cards500-159.svg"
     },
     {
@@ -9890,7 +9307,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "cc9fff07e7d5fe14"
       },
-      "order": 239,
+      "order": 225,
       "imageUrl": "./images/cards500-173.svg"
     },
     {
@@ -9932,7 +9349,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "0d88dba1ac79b1d6"
       },
-      "order": 240,
+      "order": 226,
       "imageUrl": "./images/cards500-193.svg"
     },
     {
@@ -9974,48 +9391,46 @@
         "prompt_ver": "cards500@1.0",
         "hash": "d691a4b01d1d0139"
       },
-      "order": 241,
+      "order": 227,
       "imageUrl": "./images/cards500-205.svg"
     },
     {
       "id": "w_203",
-      "text": "候车室",
+      "text": "卧室",
       "chars": [
-        "候",
-        "车",
+        "卧",
         "室"
       ],
       "pinyin": [
-        "hòu",
-        "chē",
+        "wò",
         "shì"
       ],
-      "level": 2,
-      "scene": "travel",
-      "meaning": "车站里坐着等车的大屋子",
+      "level": 1,
+      "scene": "home",
+      "meaning": "睡觉的那间屋子",
       "meaning_source": {
         "dict": "self",
-        "entry": "候车室",
-        "rev": "cards500-2026-10"
+        "entry": "卧室",
+        "rev": "rebalance-2026-11"
       },
-      "sentence": "天冷，大家都在候车室里等。",
+      "sentence": "卧室的灯坏了，晚上很黑。",
       "sentence_source": {
         "corpus": "self",
-        "doc": "cards500-2026-10"
+        "doc": "rebalance-2026-11"
       },
       "image": {
         "file": "cards500-203.svg",
         "lib": "self",
         "license": "CC-BY-SA-4.0",
-        "alt": "候车室里有一排木连椅，三个人并排坐着等车，墙上挂着一个钟"
+        "alt": "一间卧室，里面有一张床和一盏床头灯"
       },
       "status": "draft",
       "gen": {
         "model": "deepseek-flash",
-        "prompt_ver": "cards500@1.0",
-        "hash": "36678c66a245c7bd"
+        "prompt_ver": "rebalance@1",
+        "hash": "rebalance-w_203"
       },
-      "order": 242,
+      "order": 228,
       "imageUrl": "./images/cards500-203.svg"
     },
     {
@@ -10056,7 +9471,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "42681ccf000d3941"
       },
-      "order": 243,
+      "order": 229,
       "imageUrl": "./images/cards500-201.svg"
     },
     {
@@ -10100,49 +9515,8 @@
         "prompt_ver": "cards500@1.0",
         "hash": "fadd450642b561d3"
       },
-      "order": 244,
+      "order": 230,
       "imageUrl": "./images/cards500-202.svg"
-    },
-    {
-      "id": "w_190",
-      "text": "网约车",
-      "chars": [
-        "网",
-        "约",
-        "车"
-      ],
-      "pinyin": [
-        "wǎng",
-        "yuē",
-        "chē"
-      ],
-      "level": 2,
-      "scene": "travel",
-      "meaning": "用手机叫来接送的车",
-      "meaning_source": {
-        "dict": "self",
-        "entry": "网约车",
-        "rev": "cards500-2026-10"
-      },
-      "sentence": "他不会用手机叫网约车。",
-      "sentence_source": {
-        "corpus": "self",
-        "doc": "cards500-2026-10"
-      },
-      "image": {
-        "file": "cards500-190.svg",
-        "lib": "self",
-        "license": "CC-BY-SA-4.0",
-        "alt": "一部手机，旁边有一个定位标记"
-      },
-      "status": "draft",
-      "gen": {
-        "model": "deepseek-flash",
-        "prompt_ver": "cards500@1.0",
-        "hash": "cfcff7f12035f15c"
-      },
-      "order": 245,
-      "imageUrl": "./images/cards500-190.svg"
     },
     {
       "id": "w_195",
@@ -10187,7 +9561,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "380b435b23e8ebfc"
       },
-      "order": 246,
+      "order": 231,
       "imageUrl": "./images/cards500-195.svg"
     },
     {
@@ -10229,7 +9603,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "65ac64270177a5d8"
       },
-      "order": 247,
+      "order": 232,
       "imageUrl": "./images/cards500-156.svg"
     },
     {
@@ -10271,7 +9645,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "2745babf2e67996e"
       },
-      "order": 248,
+      "order": 233,
       "imageUrl": "./images/cards500-172.svg"
     },
     {
@@ -10313,7 +9687,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "3c5ca2369789d411"
       },
-      "order": 249,
+      "order": 234,
       "imageUrl": "./images/cards500-158.svg"
     },
     {
@@ -10355,47 +9729,8 @@
         "prompt_ver": "cards500@1.0",
         "hash": "da9af79688d4fadd"
       },
-      "order": 250,
+      "order": 235,
       "imageUrl": "./images/cards500-174.svg"
-    },
-    {
-      "id": "w_178",
-      "text": "检票",
-      "chars": [
-        "检",
-        "票"
-      ],
-      "pinyin": [
-        "jiǎn",
-        "piào"
-      ],
-      "level": 3,
-      "scene": "travel",
-      "meaning": "上车前让人看一眼你的票",
-      "meaning_source": {
-        "dict": "self",
-        "entry": "检票",
-        "rev": "cards500-2026-10"
-      },
-      "sentence": "到了检票口，把票拿在手上。",
-      "sentence_source": {
-        "corpus": "self",
-        "doc": "cards500-2026-10"
-      },
-      "image": {
-        "file": "cards500-178.svg",
-        "lib": "self",
-        "license": "CC-BY-SA-4.0",
-        "alt": "一张车票，旁边有一个对勾"
-      },
-      "status": "draft",
-      "gen": {
-        "model": "deepseek-flash",
-        "prompt_ver": "cards500@1.0",
-        "hash": "2843316377165ba4"
-      },
-      "order": 251,
-      "imageUrl": "./images/cards500-178.svg"
     },
     {
       "id": "w_176",
@@ -10438,7 +9773,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "f5ef04f0374e8b45"
       },
-      "order": 252,
+      "order": 236,
       "imageUrl": "./images/cards500-176.svg"
     },
     {
@@ -10482,7 +9817,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "f1e60e97fe6fd259"
       },
-      "order": 253,
+      "order": 237,
       "imageUrl": "./images/cards500-177.svg"
     },
     {
@@ -10526,7 +9861,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "17f1a834ffd3f2b4"
       },
-      "order": 254,
+      "order": 238,
       "imageUrl": "./images/cards500-171.svg"
     },
     {
@@ -10568,7 +9903,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "df1c7c8bf0a6d28d"
       },
-      "order": 255,
+      "order": 239,
       "imageUrl": "./images/cards500-214.svg"
     },
     {
@@ -10607,7 +9942,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "49143668fcf675bb"
       },
-      "order": 256,
+      "order": 240,
       "imageUrl": "./images/cards500-236.svg"
     },
     {
@@ -10646,7 +9981,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "649387b76b95262a"
       },
-      "order": 257,
+      "order": 241,
       "imageUrl": "./images/cards500-255.svg"
     },
     {
@@ -10688,7 +10023,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "4a1f533703a3b01b"
       },
-      "order": 258,
+      "order": 242,
       "imageUrl": "./images/cards500-213.svg"
     },
     {
@@ -10727,7 +10062,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "73acec2dc3e2e458"
       },
-      "order": 259,
+      "order": 243,
       "imageUrl": "./images/cards500-250.svg"
     },
     {
@@ -10769,7 +10104,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "c19585d8fc21f067"
       },
-      "order": 260,
+      "order": 244,
       "imageUrl": "./images/cards500-249.svg"
     },
     {
@@ -10808,7 +10143,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "57a7839064191046"
       },
-      "order": 261,
+      "order": 245,
       "imageUrl": "./images/cards500-206.svg"
     },
     {
@@ -10850,7 +10185,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "cddf6b44885afc7b"
       },
-      "order": 262,
+      "order": 246,
       "imageUrl": "./images/cards500-279.svg"
     },
     {
@@ -10892,7 +10227,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "5177947fa625a373"
       },
-      "order": 263,
+      "order": 247,
       "imageUrl": "./images/cards500-237.svg"
     },
     {
@@ -10931,7 +10266,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "4dde058c0b440c51"
       },
-      "order": 264,
+      "order": 248,
       "imageUrl": "./images/cards500-276.svg"
     },
     {
@@ -10973,7 +10308,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "1472bc587cb934ab"
       },
-      "order": 265,
+      "order": 249,
       "imageUrl": "./images/cards500-248.svg"
     },
     {
@@ -11012,7 +10347,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "64dd1084c4176fb7"
       },
-      "order": 266,
+      "order": 250,
       "imageUrl": "./images/cards500-254.svg"
     },
     {
@@ -11054,7 +10389,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "7b849c7f51eb447f"
       },
-      "order": 267,
+      "order": 251,
       "imageUrl": "./images/cards500-271.svg"
     },
     {
@@ -11093,7 +10428,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "d27fa7ddb5a2cb51"
       },
-      "order": 268,
+      "order": 252,
       "imageUrl": "./images/cards500-211.svg"
     },
     {
@@ -11132,7 +10467,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "cafc001352469d83"
       },
-      "order": 269,
+      "order": 253,
       "imageUrl": "./images/cards500-251.svg"
     },
     {
@@ -11171,7 +10506,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "578789c66e4f522d"
       },
-      "order": 270,
+      "order": 254,
       "imageUrl": "./images/cards500-253.svg"
     },
     {
@@ -11210,7 +10545,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "67aad98aecbe2054"
       },
-      "order": 271,
+      "order": 255,
       "imageUrl": "./images/cards500-272.svg"
     },
     {
@@ -11252,7 +10587,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "596596c5f98e720d"
       },
-      "order": 272,
+      "order": 256,
       "imageUrl": "./images/cards500-268.svg"
     },
     {
@@ -11294,7 +10629,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "bbc792fface4ab17"
       },
-      "order": 273,
+      "order": 257,
       "imageUrl": "./images/cards500-267.svg"
     },
     {
@@ -11333,7 +10668,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "2fd27ce55d59d3fb"
       },
-      "order": 274,
+      "order": 258,
       "imageUrl": "./images/cards500-215.svg"
     },
     {
@@ -11372,7 +10707,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "adb30862ff7ea6f1"
       },
-      "order": 275,
+      "order": 259,
       "imageUrl": "./images/cards500-219.svg"
     },
     {
@@ -11414,7 +10749,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "9e7388faa4884bb5"
       },
-      "order": 276,
+      "order": 260,
       "imageUrl": "./images/cards500-285.svg"
     },
     {
@@ -11453,7 +10788,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "5abbaded6c183b7e"
       },
-      "order": 277,
+      "order": 261,
       "imageUrl": "./images/cards500-226.svg"
     },
     {
@@ -11492,7 +10827,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "19404d56fbdafbfe"
       },
-      "order": 278,
+      "order": 262,
       "imageUrl": "./images/cards500-245.svg"
     },
     {
@@ -11531,7 +10866,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "3f2bc6d9abf95039"
       },
-      "order": 279,
+      "order": 263,
       "imageUrl": "./images/cards500-277.svg"
     },
     {
@@ -11570,7 +10905,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "1453e91d100a17de"
       },
-      "order": 280,
+      "order": 264,
       "imageUrl": "./images/cards500-284.svg"
     },
     {
@@ -11609,7 +10944,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "cc284529b239ccbd"
       },
-      "order": 281,
+      "order": 265,
       "imageUrl": "./images/cards500-265.svg"
     },
     {
@@ -11648,7 +10983,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "e5b528f117cd35fd"
       },
-      "order": 282,
+      "order": 266,
       "imageUrl": "./images/cards500-266.svg"
     },
     {
@@ -11687,7 +11022,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "fdf441796ffcb3e3"
       },
-      "order": 283,
+      "order": 267,
       "imageUrl": "./images/cards500-244.svg"
     },
     {
@@ -11726,7 +11061,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "0aa79c2207d1fc6c"
       },
-      "order": 284,
+      "order": 268,
       "imageUrl": "./images/cards500-224.svg"
     },
     {
@@ -11765,7 +11100,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "c81456a7c85915ac"
       },
-      "order": 285,
+      "order": 269,
       "imageUrl": "./images/cards500-283.svg"
     },
     {
@@ -11807,7 +11142,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "4dcc70244cb0bb93"
       },
-      "order": 286,
+      "order": 270,
       "imageUrl": "./images/cards500-280.svg"
     },
     {
@@ -11846,7 +11181,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "4555f7861c32a393"
       },
-      "order": 287,
+      "order": 271,
       "imageUrl": "./images/cards500-239.svg"
     },
     {
@@ -11888,7 +11223,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "caa3253beb0f2ed8"
       },
-      "order": 288,
+      "order": 272,
       "imageUrl": "./images/cards500-240.svg"
     },
     {
@@ -11930,7 +11265,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "ca9ff82d0211c36a"
       },
-      "order": 289,
+      "order": 273,
       "imageUrl": "./images/cards500-232.svg"
     },
     {
@@ -11971,7 +11306,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "f47a1c79b722f757"
       },
-      "order": 290,
+      "order": 274,
       "imageUrl": "./images/cards500-217.svg"
     },
     {
@@ -12015,7 +11350,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "4fe2b03893aa6938"
       },
-      "order": 291,
+      "order": 275,
       "imageUrl": "./images/cards500-278.svg"
     },
     {
@@ -12056,7 +11391,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "663f56a62af4ad17"
       },
-      "order": 292,
+      "order": 276,
       "imageUrl": "./images/cards500-243.svg"
     },
     {
@@ -12097,7 +11432,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "e22692f0efcca478"
       },
-      "order": 293,
+      "order": 277,
       "imageUrl": "./images/cards500-252.svg"
     },
     {
@@ -12139,7 +11474,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "cd1e4bb91d9f651c"
       },
-      "order": 294,
+      "order": 278,
       "imageUrl": "./images/cards500-274.svg"
     },
     {
@@ -12178,50 +11513,8 @@
         "prompt_ver": "cards500@1.0",
         "hash": "bbe97b79371756cd"
       },
-      "order": 295,
+      "order": 279,
       "imageUrl": "./images/cards500-238.svg"
-    },
-    {
-      "id": "w_262",
-      "text": "断电",
-      "chars": [
-        "断",
-        "电"
-      ],
-      "pinyin": [
-        "duàn",
-        "diàn"
-      ],
-      "level": 2,
-      "scene": "home",
-      "meaning": "电突然停了",
-      "meaning_source": {
-        "dict": "self",
-        "entry": "断电",
-        "rev": "cards500-2026-10"
-      },
-      "sentence": "打雷的时候，家里断电了。",
-      "sentence_source": {
-        "corpus": "self",
-        "doc": "cards500-2026-10"
-      },
-      "image": {
-        "file": "cards500-262.svg",
-        "lib": "self",
-        "license": "CC-BY-SA-4.0",
-        "alt": "墙上的开关被按下，屋里的灯不亮了"
-      },
-      "confusables": [
-        "段"
-      ],
-      "status": "draft",
-      "gen": {
-        "model": "deepseek-flash",
-        "prompt_ver": "cards500@1.0",
-        "hash": "65ea2ea80ea7a8d2"
-      },
-      "order": 296,
-      "imageUrl": "./images/cards500-262.svg"
     },
     {
       "id": "w_218",
@@ -12259,7 +11552,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "d1860ce6ecf41da1"
       },
-      "order": 297,
+      "order": 280,
       "imageUrl": "./images/cards500-218.svg"
     },
     {
@@ -12301,7 +11594,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "648d51aaedfc9a40"
       },
-      "order": 298,
+      "order": 281,
       "imageUrl": "./images/cards500-270.svg"
     },
     {
@@ -12340,7 +11633,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "68b2836b7a48a523"
       },
-      "order": 299,
+      "order": 282,
       "imageUrl": "./images/cards500-264.svg"
     },
     {
@@ -12379,7 +11672,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "960f81895235d8fa"
       },
-      "order": 300,
+      "order": 283,
       "imageUrl": "./images/cards500-260.svg"
     },
     {
@@ -12418,7 +11711,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "493490788ebd25fe"
       },
-      "order": 301,
+      "order": 284,
       "imageUrl": "./images/cards500-269.svg"
     },
     {
@@ -12457,7 +11750,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "22800020f47acf87"
       },
-      "order": 302,
+      "order": 285,
       "imageUrl": "./images/cards500-221.svg"
     },
     {
@@ -12496,7 +11789,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "1d8d48bcefcafa83"
       },
-      "order": 303,
+      "order": 286,
       "imageUrl": "./images/cards500-259.svg"
     },
     {
@@ -12538,7 +11831,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "f0790b93a3d0b2f7"
       },
-      "order": 304,
+      "order": 287,
       "imageUrl": "./images/cards500-235.svg"
     },
     {
@@ -12577,7 +11870,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "f5779ea086dbcaae"
       },
-      "order": 305,
+      "order": 288,
       "imageUrl": "./images/cards500-220.svg"
     },
     {
@@ -12616,7 +11909,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "35f33d2ecf1ba2bb"
       },
-      "order": 306,
+      "order": 289,
       "imageUrl": "./images/cards500-209.svg"
     },
     {
@@ -12655,7 +11948,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "3668b3b0a0c28a66"
       },
-      "order": 307,
+      "order": 290,
       "imageUrl": "./images/cards500-212.svg"
     },
     {
@@ -12694,7 +11987,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "48a3c9986afff9e2"
       },
-      "order": 308,
+      "order": 291,
       "imageUrl": "./images/cards500-275.svg"
     },
     {
@@ -12736,7 +12029,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "bc3ebf228efc7eab"
       },
-      "order": 309,
+      "order": 292,
       "imageUrl": "./images/cards500-273.svg"
     },
     {
@@ -12778,7 +12071,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "93042f1757437c69"
       },
-      "order": 310,
+      "order": 293,
       "imageUrl": "./images/cards500-230.svg"
     },
     {
@@ -12817,7 +12110,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "1a332a95252960e0"
       },
-      "order": 311,
+      "order": 294,
       "imageUrl": "./images/cards500-263.svg"
     },
     {
@@ -12859,7 +12152,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "d00c7034929b3d8d"
       },
-      "order": 312,
+      "order": 295,
       "imageUrl": "./images/cards500-225.svg"
     },
     {
@@ -12901,7 +12194,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "379d7dbc9a068d4e"
       },
-      "order": 313,
+      "order": 296,
       "imageUrl": "./images/cards500-247.svg"
     },
     {
@@ -12940,7 +12233,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "19dfd0de3c0b0bb3"
       },
-      "order": 314,
+      "order": 297,
       "imageUrl": "./images/cards500-282.svg"
     },
     {
@@ -12981,7 +12274,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "b56af5895ac62418"
       },
-      "order": 315,
+      "order": 298,
       "imageUrl": "./images/cards500-246.svg"
     },
     {
@@ -13022,7 +12315,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "0cf1891762fe6056"
       },
-      "order": 316,
+      "order": 299,
       "imageUrl": "./images/cards500-208.svg"
     },
     {
@@ -13063,7 +12356,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "53d2c31e89e7b26b"
       },
-      "order": 317,
+      "order": 300,
       "imageUrl": "./images/cards500-258.svg"
     },
     {
@@ -13107,7 +12400,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "0115dbe2a3a14119"
       },
-      "order": 318,
+      "order": 301,
       "imageUrl": "./images/cards500-207.svg"
     },
     {
@@ -13151,7 +12444,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "b997207d3e32cd6f"
       },
-      "order": 319,
+      "order": 302,
       "imageUrl": "./images/cards500-210.svg"
     },
     {
@@ -13195,7 +12488,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "bd9d82132728fc90"
       },
-      "order": 320,
+      "order": 303,
       "imageUrl": "./images/cards500-257.svg"
     },
     {
@@ -13239,7 +12532,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "1330b3302e197cfe"
       },
-      "order": 321,
+      "order": 304,
       "imageUrl": "./images/cards500-281.svg"
     },
     {
@@ -13283,7 +12576,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "5c3dd79579ba0e05"
       },
-      "order": 322,
+      "order": 305,
       "imageUrl": "./images/cards500-256.svg"
     },
     {
@@ -13327,7 +12620,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "c9626c23e3e38a87"
       },
-      "order": 323,
+      "order": 306,
       "imageUrl": "./images/cards500-216.svg"
     },
     {
@@ -13371,7 +12664,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "bed913476a927710"
       },
-      "order": 324,
+      "order": 307,
       "imageUrl": "./images/cards500-241.svg"
     },
     {
@@ -13415,7 +12708,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "d12a57dd473de7ff"
       },
-      "order": 325,
+      "order": 308,
       "imageUrl": "./images/cards500-242.svg"
     },
     {
@@ -13454,7 +12747,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "95cc32f0583729eb"
       },
-      "order": 326,
+      "order": 309,
       "imageUrl": "./images/cards500-234.svg"
     },
     {
@@ -13493,7 +12786,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "cf4e19eb79ca44b6"
       },
-      "order": 327,
+      "order": 310,
       "imageUrl": "./images/cards500-233.svg"
     },
     {
@@ -13532,7 +12825,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "bbf91f9c506754fc"
       },
-      "order": 328,
+      "order": 311,
       "imageUrl": "./images/cards500-231.svg"
     },
     {
@@ -13574,7 +12867,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "ed1f8cd72a5780ed"
       },
-      "order": 329,
+      "order": 312,
       "imageUrl": "./images/cards500-229.svg"
     },
     {
@@ -13613,7 +12906,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "66fa61ba41b5d80c"
       },
-      "order": 330,
+      "order": 313,
       "imageUrl": "./images/cards500-227.svg"
     },
     {
@@ -13655,7 +12948,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "60e8a64873ecc7f9"
       },
-      "order": 331,
+      "order": 314,
       "imageUrl": "./images/cards500-228.svg"
     },
     {
@@ -13699,7 +12992,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "653b2f0b0e1e3219"
       },
-      "order": 332,
+      "order": 315,
       "imageUrl": "./images/cards500-222.svg"
     },
     {
@@ -13743,7 +13036,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "dad5ed19f216dbb1"
       },
-      "order": 333,
+      "order": 316,
       "imageUrl": "./images/cards500-261.svg"
     },
     {
@@ -13789,7 +13082,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "465f2b3f6f6d5df9"
       },
-      "order": 334,
+      "order": 317,
       "imageUrl": "./images/cards500-223.svg"
     },
     {
@@ -13831,7 +13124,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "8a063fdb35428487"
       },
-      "order": 335,
+      "order": 318,
       "imageUrl": "./images/cards500-319.svg"
     },
     {
@@ -13873,7 +13166,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "6feeded5e65d299e"
       },
-      "order": 336,
+      "order": 319,
       "imageUrl": "./images/cards500-341.svg"
     },
     {
@@ -13915,7 +13208,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "1c6fce1969191051"
       },
-      "order": 337,
+      "order": 320,
       "imageUrl": "./images/cards500-330.svg"
     },
     {
@@ -13954,7 +13247,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "6668400910593ca6"
       },
-      "order": 338,
+      "order": 321,
       "imageUrl": "./images/cards500-322.svg"
     },
     {
@@ -13993,7 +13286,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "c4db9a693e6fb2ac"
       },
-      "order": 339,
+      "order": 322,
       "imageUrl": "./images/cards500-312.svg"
     },
     {
@@ -14035,7 +13328,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "bab297df7f05323a"
       },
-      "order": 340,
+      "order": 323,
       "imageUrl": "./images/cards500-340.svg"
     },
     {
@@ -14077,7 +13370,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "aefc8d060cddf3d9"
       },
-      "order": 341,
+      "order": 324,
       "imageUrl": "./images/cards500-327.svg"
     },
     {
@@ -14119,7 +13412,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "9e1842d3394be2ce"
       },
-      "order": 342,
+      "order": 325,
       "imageUrl": "./images/cards500-313.svg"
     },
     {
@@ -14161,7 +13454,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "8f6866b977bee390"
       },
-      "order": 343,
+      "order": 326,
       "imageUrl": "./images/cards500-316.svg"
     },
     {
@@ -14203,7 +13496,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "7a24e3b4c52045eb"
       },
-      "order": 344,
+      "order": 327,
       "imageUrl": "./images/cards500-328.svg"
     },
     {
@@ -14245,7 +13538,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "04f2392b77fd8cff"
       },
-      "order": 345,
+      "order": 328,
       "imageUrl": "./images/cards500-329.svg"
     },
     {
@@ -14287,52 +13580,8 @@
         "prompt_ver": "cards500@1.0",
         "hash": "4a16468237cb3455"
       },
-      "order": 346,
+      "order": 329,
       "imageUrl": "./images/cards500-310.svg"
-    },
-    {
-      "id": "w_331",
-      "text": "充电宝",
-      "chars": [
-        "充",
-        "电",
-        "宝"
-      ],
-      "pinyin": [
-        "chōng",
-        "diàn",
-        "bǎo"
-      ],
-      "level": 1,
-      "scene": "contact",
-      "meaning": "能带出门的备用电池",
-      "meaning_source": {
-        "dict": "self",
-        "entry": "充电宝",
-        "rev": "cards500-2026-10"
-      },
-      "sentence": "出门带个充电宝，心里踏实。",
-      "sentence_source": {
-        "corpus": "self",
-        "doc": "cards500-2026-10"
-      },
-      "image": {
-        "file": "cards500-331.svg",
-        "lib": "self",
-        "license": "CC-BY-SA-4.0",
-        "alt": "一块方方的电池，旁边一个加号"
-      },
-      "confusables": [
-        "冲"
-      ],
-      "status": "draft",
-      "gen": {
-        "model": "deepseek-flash",
-        "prompt_ver": "cards500@1.0",
-        "hash": "519b45c03eb1074c"
-      },
-      "order": 347,
-      "imageUrl": "./images/cards500-331.svg"
     },
     {
       "id": "w_332",
@@ -14375,7 +13624,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "7daa67746b46dc80"
       },
-      "order": 348,
+      "order": 330,
       "imageUrl": "./images/cards500-332.svg"
     },
     {
@@ -14417,7 +13666,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "8682058a85f4a84f"
       },
-      "order": 349,
+      "order": 331,
       "imageUrl": "./images/cards500-338.svg"
     },
     {
@@ -14459,7 +13708,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "0aaf448e89bff393"
       },
-      "order": 350,
+      "order": 332,
       "imageUrl": "./images/cards500-304.svg"
     },
     {
@@ -14501,7 +13750,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "6fd10cb9d17bbb58"
       },
-      "order": 351,
+      "order": 333,
       "imageUrl": "./images/cards500-314.svg"
     },
     {
@@ -14543,7 +13792,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "ec5b1106a489afd1"
       },
-      "order": 352,
+      "order": 334,
       "imageUrl": "./images/cards500-290.svg"
     },
     {
@@ -14585,7 +13834,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "34215aa116dd977a"
       },
-      "order": 353,
+      "order": 335,
       "imageUrl": "./images/cards500-303.svg"
     },
     {
@@ -14624,7 +13873,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "fb452fe34ed249d1"
       },
-      "order": 354,
+      "order": 336,
       "imageUrl": "./images/cards500-311.svg"
     },
     {
@@ -14666,7 +13915,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "7cae9123ea401bac"
       },
-      "order": 355,
+      "order": 337,
       "imageUrl": "./images/cards500-289.svg"
     },
     {
@@ -14708,47 +13957,8 @@
         "prompt_ver": "cards500@1.0",
         "hash": "92ae54ce5e282000"
       },
-      "order": 356,
+      "order": 338,
       "imageUrl": "./images/cards500-334.svg"
-    },
-    {
-      "id": "w_293",
-      "text": "来电",
-      "chars": [
-        "来",
-        "电"
-      ],
-      "pinyin": [
-        "lái",
-        "diàn"
-      ],
-      "level": 2,
-      "scene": "contact",
-      "meaning": "别人打电话到你手机上",
-      "meaning_source": {
-        "dict": "self",
-        "entry": "来电",
-        "rev": "cards500-2026-10"
-      },
-      "sentence": "来电显示是一个陌生号码。",
-      "sentence_source": {
-        "corpus": "self",
-        "doc": "cards500-2026-10"
-      },
-      "image": {
-        "file": "cards500-293.svg",
-        "lib": "self",
-        "license": "CC-BY-SA-4.0",
-        "alt": "手机响了，旁边有几道声音的波纹"
-      },
-      "status": "draft",
-      "gen": {
-        "model": "deepseek-flash",
-        "prompt_ver": "cards500@1.0",
-        "hash": "436ab42ed77b2b93"
-      },
-      "order": 357,
-      "imageUrl": "./images/cards500-293.svg"
     },
     {
       "id": "w_342",
@@ -14789,7 +13999,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "e9ea01058f5331cb"
       },
-      "order": 358,
+      "order": 339,
       "imageUrl": "./images/cards500-342.svg"
     },
     {
@@ -14831,7 +14041,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "ac950949c629a7f6"
       },
-      "order": 359,
+      "order": 340,
       "imageUrl": "./images/cards500-297.svg"
     },
     {
@@ -14873,7 +14083,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "81c7d5ca42552d26"
       },
-      "order": 360,
+      "order": 341,
       "imageUrl": "./images/cards500-287.svg"
     },
     {
@@ -14915,7 +14125,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "7f73cd728931ee4c"
       },
-      "order": 361,
+      "order": 342,
       "imageUrl": "./images/cards500-336.svg"
     },
     {
@@ -14957,46 +14167,46 @@
         "prompt_ver": "cards500@1.0",
         "hash": "aef6242a4fcb808f"
       },
-      "order": 362,
+      "order": 343,
       "imageUrl": "./images/cards500-337.svg"
     },
     {
       "id": "w_321",
-      "text": "省电",
+      "text": "省钱",
       "chars": [
         "省",
-        "电"
+        "钱"
       ],
       "pinyin": [
         "shěng",
-        "diàn"
+        "qián"
       ],
       "level": 2,
-      "scene": "contact",
-      "meaning": "让手机的电用得慢一点",
+      "scene": "money",
+      "meaning": "少花不该花的钱",
       "meaning_source": {
         "dict": "self",
-        "entry": "省电",
-        "rev": "cards500-2026-10"
+        "entry": "省钱",
+        "rev": "rebalance-2026-11"
       },
-      "sentence": "打开省电模式，能用得久一点。",
+      "sentence": "自己做饭，能省不少钱。",
       "sentence_source": {
         "corpus": "self",
-        "doc": "cards500-2026-10"
+        "doc": "rebalance-2026-11"
       },
       "image": {
         "file": "cards500-321.svg",
         "lib": "self",
         "license": "CC-BY-SA-4.0",
-        "alt": "一节电池，旁边放着一片叶子"
+        "alt": "一个存钱罐，旁边有一枚硬币"
       },
       "status": "draft",
       "gen": {
         "model": "deepseek-flash",
-        "prompt_ver": "cards500@1.0",
-        "hash": "b38be1aba73dbfb9"
+        "prompt_ver": "rebalance@1",
+        "hash": "rebalance-w_321"
       },
-      "order": 363,
+      "order": 344,
       "imageUrl": "./images/cards500-321.svg"
     },
     {
@@ -15035,7 +14245,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "ed7729b120965c10"
       },
-      "order": 364,
+      "order": 345,
       "imageUrl": "./images/cards500-309.svg"
     },
     {
@@ -15074,7 +14284,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "8a59da8e1fcb9e3f"
       },
-      "order": 365,
+      "order": 346,
       "imageUrl": "./images/cards500-333.svg"
     },
     {
@@ -15116,7 +14326,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "ac617bab14e8e695"
       },
-      "order": 366,
+      "order": 347,
       "imageUrl": "./images/cards500-324.svg"
     },
     {
@@ -15155,7 +14365,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "8c86c798c47068f8"
       },
-      "order": 367,
+      "order": 348,
       "imageUrl": "./images/cards500-294.svg"
     },
     {
@@ -15197,7 +14407,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "e73a88ada0613cdb"
       },
-      "order": 368,
+      "order": 349,
       "imageUrl": "./images/cards500-335.svg"
     },
     {
@@ -15239,7 +14449,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "743de62152f0ba8d"
       },
-      "order": 369,
+      "order": 350,
       "imageUrl": "./images/cards500-343.svg"
     },
     {
@@ -15281,7 +14491,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "04f57a2cc7c0a8c8"
       },
-      "order": 370,
+      "order": 351,
       "imageUrl": "./images/cards500-345.svg"
     },
     {
@@ -15320,7 +14530,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "2db9bf9dde103ac2"
       },
-      "order": 371,
+      "order": 352,
       "imageUrl": "./images/cards500-320.svg"
     },
     {
@@ -15362,7 +14572,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "539dc9be649b364a"
       },
-      "order": 372,
+      "order": 353,
       "imageUrl": "./images/cards500-298.svg"
     },
     {
@@ -15401,7 +14611,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "a1a21cc19805c5af"
       },
-      "order": 373,
+      "order": 354,
       "imageUrl": "./images/cards500-325.svg"
     },
     {
@@ -15445,7 +14655,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "0202b0eb965dcc6f"
       },
-      "order": 374,
+      "order": 355,
       "imageUrl": "./images/cards500-308.svg"
     },
     {
@@ -15489,7 +14699,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "0c145d948d196e7f"
       },
-      "order": 375,
+      "order": 356,
       "imageUrl": "./images/cards500-296.svg"
     },
     {
@@ -15533,7 +14743,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "ccf6b15b2221021f"
       },
-      "order": 376,
+      "order": 357,
       "imageUrl": "./images/cards500-301.svg"
     },
     {
@@ -15577,7 +14787,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "b33bf2655b233fe5"
       },
-      "order": 377,
+      "order": 358,
       "imageUrl": "./images/cards500-307.svg"
     },
     {
@@ -15619,7 +14829,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "33f162d81260dc93"
       },
-      "order": 378,
+      "order": 359,
       "imageUrl": "./images/cards500-323.svg"
     },
     {
@@ -15658,7 +14868,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "d70dce4f8ccc4516"
       },
-      "order": 379,
+      "order": 360,
       "imageUrl": "./images/cards500-326.svg"
     },
     {
@@ -15697,7 +14907,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "19fc118fd9336f53"
       },
-      "order": 380,
+      "order": 361,
       "imageUrl": "./images/cards500-286.svg"
     },
     {
@@ -15739,7 +14949,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "5f698275b67e7e15"
       },
-      "order": 381,
+      "order": 362,
       "imageUrl": "./images/cards500-299.svg"
     },
     {
@@ -15781,7 +14991,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "cc9a59c2e76ca6af"
       },
-      "order": 382,
+      "order": 363,
       "imageUrl": "./images/cards500-339.svg"
     },
     {
@@ -15823,7 +15033,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "437ab7046118197b"
       },
-      "order": 383,
+      "order": 364,
       "imageUrl": "./images/cards500-317.svg"
     },
     {
@@ -15862,7 +15072,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "5b7dd3d81b865b69"
       },
-      "order": 384,
+      "order": 365,
       "imageUrl": "./images/cards500-291.svg"
     },
     {
@@ -15904,7 +15114,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "2bd637d37ff200af"
       },
-      "order": 385,
+      "order": 366,
       "imageUrl": "./images/cards500-344.svg"
     },
     {
@@ -15943,7 +15153,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "08a0048d63f68a18"
       },
-      "order": 386,
+      "order": 367,
       "imageUrl": "./images/cards500-288.svg"
     },
     {
@@ -15982,7 +15192,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "ee1301702cc07fc0"
       },
-      "order": 387,
+      "order": 368,
       "imageUrl": "./images/cards500-292.svg"
     },
     {
@@ -16024,7 +15234,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "fcc957cdc22f1fc5"
       },
-      "order": 388,
+      "order": 369,
       "imageUrl": "./images/cards500-305.svg"
     },
     {
@@ -16066,7 +15276,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "fec2f3094ef32bc9"
       },
-      "order": 389,
+      "order": 370,
       "imageUrl": "./images/cards500-306.svg"
     },
     {
@@ -16110,7 +15320,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "8499316fcc535dfe"
       },
-      "order": 390,
+      "order": 371,
       "imageUrl": "./images/cards500-315.svg"
     },
     {
@@ -16154,7 +15364,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "a2d5504def26f9cd"
       },
-      "order": 391,
+      "order": 372,
       "imageUrl": "./images/cards500-302.svg"
     },
     {
@@ -16195,7 +15405,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "b3a3a43421acf483"
       },
-      "order": 392,
+      "order": 373,
       "imageUrl": "./images/cards500-318.svg"
     },
     {
@@ -16239,7 +15449,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "66458b29d7ea0126"
       },
-      "order": 393,
+      "order": 374,
       "imageUrl": "./images/cards500-295.svg"
     },
     {
@@ -16280,7 +15490,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "3e9e2329211d47fa"
       },
-      "order": 394,
+      "order": 375,
       "imageUrl": "./images/cards500-300.svg"
     },
     {
@@ -16319,7 +15529,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "3facfb1bdfc4f5c7"
       },
-      "order": 395,
+      "order": 376,
       "imageUrl": "./images/cards500-359.svg"
     },
     {
@@ -16361,7 +15571,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "8a1fc855b2ed7b64"
       },
-      "order": 396,
+      "order": 377,
       "imageUrl": "./images/cards500-353.svg"
     },
     {
@@ -16403,7 +15613,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "bddbeae20336edc9"
       },
-      "order": 397,
+      "order": 378,
       "imageUrl": "./images/cards500-347.svg"
     },
     {
@@ -16442,7 +15652,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "9c6394837fa0ae6e"
       },
-      "order": 398,
+      "order": 379,
       "imageUrl": "./images/cards500-383.svg"
     },
     {
@@ -16481,7 +15691,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "1616b407a2b3a7f8"
       },
-      "order": 399,
+      "order": 380,
       "imageUrl": "./images/cards500-398.svg"
     },
     {
@@ -16523,47 +15733,8 @@
         "prompt_ver": "cards500@1.0",
         "hash": "7e17296f44fe6826"
       },
-      "order": 400,
+      "order": 381,
       "imageUrl": "./images/cards500-348.svg"
-    },
-    {
-      "id": "w_389",
-      "text": "证件",
-      "chars": [
-        "证",
-        "件"
-      ],
-      "pinyin": [
-        "zhèng",
-        "jiàn"
-      ],
-      "level": 1,
-      "scene": "gov",
-      "meaning": "办事要带的小本子和卡片",
-      "meaning_source": {
-        "dict": "self",
-        "entry": "证件",
-        "rev": "cards500-2026-10"
-      },
-      "sentence": "出门办事记得把证件带上。",
-      "sentence_source": {
-        "corpus": "self",
-        "doc": "cards500-2026-10"
-      },
-      "image": {
-        "file": "cards500-389.svg",
-        "lib": "self",
-        "license": "CC-BY-SA-4.0",
-        "alt": "一张身份证叠在一个红棕色的小本子上，卡上有照片、几行信息和一枚小圆章"
-      },
-      "status": "draft",
-      "gen": {
-        "model": "deepseek-flash",
-        "prompt_ver": "cards500@1.0",
-        "hash": "a078da037ea72e2b"
-      },
-      "order": 401,
-      "imageUrl": "./images/cards500-389.svg"
     },
     {
       "id": "w_386",
@@ -16603,7 +15774,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "3b36846c51510f31"
       },
-      "order": 402,
+      "order": 382,
       "imageUrl": "./images/cards500-386.svg"
     },
     {
@@ -16644,7 +15815,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "8dbed2772a06626a"
       },
-      "order": 403,
+      "order": 383,
       "imageUrl": "./images/cards500-377.svg"
     },
     {
@@ -16685,7 +15856,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "3e24957cd29acd51"
       },
-      "order": 404,
+      "order": 384,
       "imageUrl": "./images/cards500-354.svg"
     },
     {
@@ -16726,7 +15897,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "fac6c4c947590409"
       },
-      "order": 405,
+      "order": 385,
       "imageUrl": "./images/cards500-362.svg"
     },
     {
@@ -16767,7 +15938,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "c682a090d6af986a"
       },
-      "order": 406,
+      "order": 386,
       "imageUrl": "./images/cards500-392.svg"
     },
     {
@@ -16808,7 +15979,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "501ed1013e05ffc5"
       },
-      "order": 407,
+      "order": 387,
       "imageUrl": "./images/cards500-399.svg"
     },
     {
@@ -16849,7 +16020,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "3db46ac35ecf8bdf"
       },
-      "order": 408,
+      "order": 388,
       "imageUrl": "./images/cards500-370.svg"
     },
     {
@@ -16890,7 +16061,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "778c0c04d414ffab"
       },
-      "order": 409,
+      "order": 389,
       "imageUrl": "./images/cards500-390.svg"
     },
     {
@@ -16931,7 +16102,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "595c0e5fbc0d9613"
       },
-      "order": 410,
+      "order": 390,
       "imageUrl": "./images/cards500-394.svg"
     },
     {
@@ -16972,7 +16143,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "565d24bcc1805eac"
       },
-      "order": 411,
+      "order": 391,
       "imageUrl": "./images/cards500-385.svg"
     },
     {
@@ -17016,7 +16187,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "9f3d7d229c4c5fff"
       },
-      "order": 412,
+      "order": 392,
       "imageUrl": "./images/cards500-364.svg"
     },
     {
@@ -17057,7 +16228,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "9d02e0289464da9d"
       },
-      "order": 413,
+      "order": 393,
       "imageUrl": "./images/cards500-400.svg"
     },
     {
@@ -17096,7 +16267,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "54bb9b2a561c6b58"
       },
-      "order": 414,
+      "order": 394,
       "imageUrl": "./images/cards500-381.svg"
     },
     {
@@ -17135,7 +16306,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "0ddfe23c89d2e96b"
       },
-      "order": 415,
+      "order": 395,
       "imageUrl": "./images/cards500-384.svg"
     },
     {
@@ -17174,7 +16345,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "942ab1ff19799fec"
       },
-      "order": 416,
+      "order": 396,
       "imageUrl": "./images/cards500-387.svg"
     },
     {
@@ -17213,7 +16384,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "69f0d2372e0722b1"
       },
-      "order": 417,
+      "order": 397,
       "imageUrl": "./images/cards500-367.svg"
     },
     {
@@ -17252,7 +16423,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "c32507e642a21f8c"
       },
-      "order": 418,
+      "order": 398,
       "imageUrl": "./images/cards500-356.svg"
     },
     {
@@ -17291,50 +16462,8 @@
         "prompt_ver": "cards500@1.0",
         "hash": "216279ab29ee598c"
       },
-      "order": 419,
+      "order": 399,
       "imageUrl": "./images/cards500-388.svg"
-    },
-    {
-      "id": "w_380",
-      "text": "换证",
-      "chars": [
-        "换",
-        "证"
-      ],
-      "pinyin": [
-        "huàn",
-        "zhèng"
-      ],
-      "level": 2,
-      "scene": "gov",
-      "meaning": "旧证到期了换一张新的",
-      "meaning_source": {
-        "dict": "self",
-        "entry": "换证",
-        "rev": "cards500-2026-10"
-      },
-      "sentence": "身份证到期要提前换证。",
-      "sentence_source": {
-        "corpus": "self",
-        "doc": "cards500-2026-10"
-      },
-      "image": {
-        "file": "cards500-380.svg",
-        "lib": "self",
-        "license": "CC-BY-SA-4.0",
-        "alt": "一张卡片旁边有一个箭头"
-      },
-      "confusables": [
-        "唤"
-      ],
-      "status": "draft",
-      "gen": {
-        "model": "deepseek-flash",
-        "prompt_ver": "cards500@1.0",
-        "hash": "4609c0df749fc05d"
-      },
-      "order": 420,
-      "imageUrl": "./images/cards500-380.svg"
     },
     {
       "id": "w_397",
@@ -17375,7 +16504,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "0beec642b22196de"
       },
-      "order": 421,
+      "order": 400,
       "imageUrl": "./images/cards500-397.svg"
     },
     {
@@ -17417,7 +16546,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "00ed523dccf6141d"
       },
-      "order": 422,
+      "order": 401,
       "imageUrl": "./images/cards500-357.svg"
     },
     {
@@ -17456,7 +16585,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "ed5dd787f1d6c6a9"
       },
-      "order": 423,
+      "order": 402,
       "imageUrl": "./images/cards500-376.svg"
     },
     {
@@ -17495,7 +16624,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "db29429e7ba27365"
       },
-      "order": 424,
+      "order": 403,
       "imageUrl": "./images/cards500-372.svg"
     },
     {
@@ -17537,7 +16666,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "e36b3270924bcd13"
       },
-      "order": 425,
+      "order": 404,
       "imageUrl": "./images/cards500-350.svg"
     },
     {
@@ -17579,7 +16708,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "c8c2cddea6354aeb"
       },
-      "order": 426,
+      "order": 405,
       "imageUrl": "./images/cards500-358.svg"
     },
     {
@@ -17618,7 +16747,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "453c6d6af6072881"
       },
-      "order": 427,
+      "order": 406,
       "imageUrl": "./images/cards500-375.svg"
     },
     {
@@ -17657,47 +16786,8 @@
         "prompt_ver": "cards500@1.0",
         "hash": "425d596b54487110"
       },
-      "order": 428,
+      "order": 407,
       "imageUrl": "./images/cards500-355.svg"
-    },
-    {
-      "id": "w_360",
-      "text": "证明",
-      "chars": [
-        "证",
-        "明"
-      ],
-      "pinyin": [
-        "zhèng",
-        "míng"
-      ],
-      "level": 2,
-      "scene": "gov",
-      "meaning": "用来说明一件事的纸",
-      "meaning_source": {
-        "dict": "self",
-        "entry": "证明",
-        "rev": "cards500-2026-10"
-      },
-      "sentence": "办这件事要单位开证明。",
-      "sentence_source": {
-        "corpus": "self",
-        "doc": "cards500-2026-10"
-      },
-      "image": {
-        "file": "cards500-360.svg",
-        "lib": "self",
-        "license": "CC-BY-SA-4.0",
-        "alt": "一张纸的右下角有一个小圆牌"
-      },
-      "status": "draft",
-      "gen": {
-        "model": "deepseek-flash",
-        "prompt_ver": "cards500@1.0",
-        "hash": "47b0bce330cbb219"
-      },
-      "order": 429,
-      "imageUrl": "./images/cards500-360.svg"
     },
     {
       "id": "w_374",
@@ -17735,7 +16825,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "67c783683814566a"
       },
-      "order": 430,
+      "order": 408,
       "imageUrl": "./images/cards500-374.svg"
     },
     {
@@ -17776,7 +16866,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "a945febe13749a6c"
       },
-      "order": 431,
+      "order": 409,
       "imageUrl": "./images/cards500-368.svg"
     },
     {
@@ -17817,7 +16907,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "b975c4ce17a93403"
       },
-      "order": 432,
+      "order": 410,
       "imageUrl": "./images/cards500-396.svg"
     },
     {
@@ -17858,7 +16948,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "99d015e0681ceb7a"
       },
-      "order": 433,
+      "order": 411,
       "imageUrl": "./images/cards500-391.svg"
     },
     {
@@ -17899,7 +16989,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "e5ce977c4aa1ee72"
       },
-      "order": 434,
+      "order": 412,
       "imageUrl": "./images/cards500-363.svg"
     },
     {
@@ -17940,7 +17030,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "5c936e166400a1f7"
       },
-      "order": 435,
+      "order": 413,
       "imageUrl": "./images/cards500-395.svg"
     },
     {
@@ -17984,7 +17074,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "97706edc80777688"
       },
-      "order": 436,
+      "order": 414,
       "imageUrl": "./images/cards500-393.svg"
     },
     {
@@ -18025,7 +17115,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "4188e4a31fb8e6ab"
       },
-      "order": 437,
+      "order": 415,
       "imageUrl": "./images/cards500-382.svg"
     },
     {
@@ -18066,7 +17156,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "3380499b812b1306"
       },
-      "order": 438,
+      "order": 416,
       "imageUrl": "./images/cards500-378.svg"
     },
     {
@@ -18109,7 +17199,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "127582ce8ecc5a70"
       },
-      "order": 439,
+      "order": 417,
       "imageUrl": "./images/cards500-373.svg"
     },
     {
@@ -18148,7 +17238,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "20d6f81dcbe35633"
       },
-      "order": 440,
+      "order": 418,
       "imageUrl": "./images/cards500-352.svg"
     },
     {
@@ -18187,7 +17277,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "0f1e59a2950867d6"
       },
-      "order": 441,
+      "order": 419,
       "imageUrl": "./images/cards500-366.svg"
     },
     {
@@ -18226,7 +17316,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "c4f466fbba2c4770"
       },
-      "order": 442,
+      "order": 420,
       "imageUrl": "./images/cards500-361.svg"
     },
     {
@@ -18265,7 +17355,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "85062d01c2e1711e"
       },
-      "order": 443,
+      "order": 421,
       "imageUrl": "./images/cards500-371.svg"
     },
     {
@@ -18304,7 +17394,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "bd5e4e79cf45def8"
       },
-      "order": 444,
+      "order": 422,
       "imageUrl": "./images/cards500-379.svg"
     },
     {
@@ -18343,7 +17433,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "c0070b2e098ebd33"
       },
-      "order": 445,
+      "order": 423,
       "imageUrl": "./images/cards500-351.svg"
     },
     {
@@ -18385,7 +17475,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "9cd812f1f10350c3"
       },
-      "order": 446,
+      "order": 424,
       "imageUrl": "./images/cards500-349.svg"
     },
     {
@@ -18427,7 +17517,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "bb2dd35dd219d91a"
       },
-      "order": 447,
+      "order": 425,
       "imageUrl": "./images/cards500-346.svg"
     },
     {
@@ -18468,49 +17558,8 @@
         "prompt_ver": "cards500@1.0",
         "hash": "c2002597d091fe59"
       },
-      "order": 448,
+      "order": 426,
       "imageUrl": "./images/cards500-365.svg"
-    },
-    {
-      "id": "w_369",
-      "text": "优待证",
-      "chars": [
-        "优",
-        "待",
-        "证"
-      ],
-      "pinyin": [
-        "yōu",
-        "dài",
-        "zhèng"
-      ],
-      "level": 3,
-      "scene": "gov",
-      "meaning": "当过兵的人用的证能受照顾",
-      "meaning_source": {
-        "dict": "self",
-        "entry": "优待证",
-        "rev": "cards500-2026-10"
-      },
-      "sentence": "拿着优待证到窗口就能办。",
-      "sentence_source": {
-        "corpus": "self",
-        "doc": "cards500-2026-10"
-      },
-      "image": {
-        "file": "cards500-369.svg",
-        "lib": "self",
-        "license": "CC-BY-SA-4.0",
-        "alt": "一张红色的小卡片，角上有一颗星"
-      },
-      "status": "draft",
-      "gen": {
-        "model": "deepseek-flash",
-        "prompt_ver": "cards500@1.0",
-        "hash": "d5651dd6b19ff44d"
-      },
-      "order": 449,
-      "imageUrl": "./images/cards500-369.svg"
     },
     {
       "id": "w_435",
@@ -18548,7 +17597,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "39819f9b4eb7f325"
       },
-      "order": 450,
+      "order": 427,
       "imageUrl": "./images/cards500-435.svg"
     },
     {
@@ -18587,7 +17636,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "dfcf8cf8a86779c1"
       },
-      "order": 451,
+      "order": 428,
       "imageUrl": "./images/cards500-426.svg"
     },
     {
@@ -18629,7 +17678,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "ea70261130dad359"
       },
-      "order": 452,
+      "order": 429,
       "imageUrl": "./images/cards500-430.svg"
     },
     {
@@ -18668,7 +17717,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "8fe080312affcfdb"
       },
-      "order": 453,
+      "order": 430,
       "imageUrl": "./images/cards500-437.svg"
     },
     {
@@ -18707,7 +17756,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "ade4cbc635fffcd4"
       },
-      "order": 454,
+      "order": 431,
       "imageUrl": "./images/cards500-439.svg"
     },
     {
@@ -18749,7 +17798,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "7b279cfe7f752f49"
       },
-      "order": 455,
+      "order": 432,
       "imageUrl": "./images/cards500-427.svg"
     },
     {
@@ -18788,7 +17837,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "828ee73eff6c5cb1"
       },
-      "order": 456,
+      "order": 433,
       "imageUrl": "./images/cards500-447.svg"
     },
     {
@@ -18830,47 +17879,8 @@
         "prompt_ver": "cards500@1.0",
         "hash": "03be80a49b6d4a1a"
       },
-      "order": 457,
+      "order": 434,
       "imageUrl": "./images/cards500-434.svg"
-    },
-    {
-      "id": "w_431",
-      "text": "收银",
-      "chars": [
-        "收",
-        "银"
-      ],
-      "pinyin": [
-        "shōu",
-        "yín"
-      ],
-      "level": 1,
-      "scene": "shopping",
-      "meaning": "收钱找钱的那个地方",
-      "meaning_source": {
-        "dict": "self",
-        "entry": "收银",
-        "rev": "cards500-2026-10"
-      },
-      "sentence": "收银在门口，过去就能交钱。",
-      "sentence_source": {
-        "corpus": "self",
-        "doc": "cards500-2026-10"
-      },
-      "image": {
-        "file": "cards500-431.svg",
-        "lib": "self",
-        "license": "CC-BY-SA-4.0",
-        "alt": "一个柜台，柜台上放着一枚硬币"
-      },
-      "status": "draft",
-      "gen": {
-        "model": "deepseek-flash",
-        "prompt_ver": "cards500@1.0",
-        "hash": "3ebc607c3736ff2f"
-      },
-      "order": 458,
-      "imageUrl": "./images/cards500-431.svg"
     },
     {
       "id": "w_448",
@@ -18908,7 +17918,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "3afcd40012787d09"
       },
-      "order": 459,
+      "order": 435,
       "imageUrl": "./images/cards500-448.svg"
     },
     {
@@ -18950,7 +17960,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "0c744ff8579f92f8"
       },
-      "order": 460,
+      "order": 436,
       "imageUrl": "./images/cards500-433.svg"
     },
     {
@@ -18994,7 +18004,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "440bc6b5894f7328"
       },
-      "order": 461,
+      "order": 437,
       "imageUrl": "./images/cards500-415.svg"
     },
     {
@@ -19039,7 +18049,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "3ec3bb4550dc5147"
       },
-      "order": 462,
+      "order": 438,
       "imageUrl": "./images/cards500-432.svg"
     },
     {
@@ -19080,7 +18090,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "77c1222d156fd5f4"
       },
-      "order": 463,
+      "order": 439,
       "imageUrl": "./images/cards500-446.svg"
     },
     {
@@ -19124,7 +18134,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "ddc90c12319649f0"
       },
-      "order": 464,
+      "order": 440,
       "imageUrl": "./images/cards500-429.svg"
     },
     {
@@ -19166,7 +18176,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "461481bc15b6479b"
       },
-      "order": 465,
+      "order": 441,
       "imageUrl": "./images/cards500-406.svg"
     },
     {
@@ -19205,7 +18215,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "f7dd81af3e279d15"
       },
-      "order": 466,
+      "order": 442,
       "imageUrl": "./images/cards500-436.svg"
     },
     {
@@ -19247,7 +18257,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "723f7e46e9863ca2"
       },
-      "order": 467,
+      "order": 443,
       "imageUrl": "./images/cards500-444.svg"
     },
     {
@@ -19286,7 +18296,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "3d5fded62ffe866c"
       },
-      "order": 468,
+      "order": 444,
       "imageUrl": "./images/cards500-442.svg"
     },
     {
@@ -19325,7 +18335,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "d997c9b5bb354674"
       },
-      "order": 469,
+      "order": 445,
       "imageUrl": "./images/cards500-408.svg"
     },
     {
@@ -19367,7 +18377,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "c174d2fa6a1cab23"
       },
-      "order": 470,
+      "order": 446,
       "imageUrl": "./images/cards500-412.svg"
     },
     {
@@ -19409,7 +18419,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "be755e777f3b319b"
       },
-      "order": 471,
+      "order": 447,
       "imageUrl": "./images/cards500-424.svg"
     },
     {
@@ -19448,7 +18458,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "5916e9d008c57f3e"
       },
-      "order": 472,
+      "order": 448,
       "imageUrl": "./images/cards500-403.svg"
     },
     {
@@ -19491,7 +18501,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "19fd9928da3d30dc"
       },
-      "order": 473,
+      "order": 449,
       "imageUrl": "./images/cards500-409.svg"
     },
     {
@@ -19533,7 +18543,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "957dbc28a167fa1a"
       },
-      "order": 474,
+      "order": 450,
       "imageUrl": "./images/cards500-438.svg"
     },
     {
@@ -19575,7 +18585,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "d0ff89c2ba100f73"
       },
-      "order": 475,
+      "order": 451,
       "imageUrl": "./images/cards500-413.svg"
     },
     {
@@ -19614,7 +18624,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "93d26dc7c1435b05"
       },
-      "order": 476,
+      "order": 452,
       "imageUrl": "./images/cards500-419.svg"
     },
     {
@@ -19653,7 +18663,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "60df4b59411e73ee"
       },
-      "order": 477,
+      "order": 453,
       "imageUrl": "./images/cards500-450.svg"
     },
     {
@@ -19692,7 +18702,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "da175c0abaf347f2"
       },
-      "order": 478,
+      "order": 454,
       "imageUrl": "./images/cards500-401.svg"
     },
     {
@@ -19734,7 +18744,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "ac6381b7ee9621bc"
       },
-      "order": 479,
+      "order": 455,
       "imageUrl": "./images/cards500-445.svg"
     },
     {
@@ -19776,7 +18786,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "9120b5c90b84050c"
       },
-      "order": 480,
+      "order": 456,
       "imageUrl": "./images/cards500-449.svg"
     },
     {
@@ -19815,7 +18825,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "b279aa957c664291"
       },
-      "order": 481,
+      "order": 457,
       "imageUrl": "./images/cards500-410.svg"
     },
     {
@@ -19857,7 +18867,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "443dcf18afb1675e"
       },
-      "order": 482,
+      "order": 458,
       "imageUrl": "./images/cards500-411.svg"
     },
     {
@@ -19896,7 +18906,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "8d0a1c560869902d"
       },
-      "order": 483,
+      "order": 459,
       "imageUrl": "./images/cards500-416.svg"
     },
     {
@@ -19939,7 +18949,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "02a2dfaf912748d3"
       },
-      "order": 484,
+      "order": 460,
       "imageUrl": "./images/cards500-404.svg"
     },
     {
@@ -19981,7 +18991,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "374e0b2594562ebf"
       },
-      "order": 485,
+      "order": 461,
       "imageUrl": "./images/cards500-417.svg"
     },
     {
@@ -20023,7 +19033,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "f2d9345691a6e41d"
       },
-      "order": 486,
+      "order": 462,
       "imageUrl": "./images/cards500-407.svg"
     },
     {
@@ -20065,7 +19075,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "500e6d57db94a04b"
       },
-      "order": 487,
+      "order": 463,
       "imageUrl": "./images/cards500-425.svg"
     },
     {
@@ -20109,7 +19119,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "37eca17d8d413648"
       },
-      "order": 488,
+      "order": 464,
       "imageUrl": "./images/cards500-428.svg"
     },
     {
@@ -20150,7 +19160,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "7f2211591392e7b8"
       },
-      "order": 489,
+      "order": 465,
       "imageUrl": "./images/cards500-405.svg"
     },
     {
@@ -20189,7 +19199,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "9ce07d1a3550c378"
       },
-      "order": 490,
+      "order": 466,
       "imageUrl": "./images/cards500-414.svg"
     },
     {
@@ -20231,7 +19241,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "3c558b8efa734e92"
       },
-      "order": 491,
+      "order": 467,
       "imageUrl": "./images/cards500-421.svg"
     },
     {
@@ -20273,7 +19283,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "b4497a7d45d77193"
       },
-      "order": 492,
+      "order": 468,
       "imageUrl": "./images/cards500-441.svg"
     },
     {
@@ -20315,7 +19325,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "19d72d7dfe143a69"
       },
-      "order": 493,
+      "order": 469,
       "imageUrl": "./images/cards500-418.svg"
     },
     {
@@ -20357,7 +19367,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "f0a91658e3ef99ba"
       },
-      "order": 494,
+      "order": 470,
       "imageUrl": "./images/cards500-440.svg"
     },
     {
@@ -20396,7 +19406,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "ee10d1fce4a202c4"
       },
-      "order": 495,
+      "order": 471,
       "imageUrl": "./images/cards500-422.svg"
     },
     {
@@ -20435,7 +19445,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "a935b7db09fd876e"
       },
-      "order": 496,
+      "order": 472,
       "imageUrl": "./images/cards500-420.svg"
     },
     {
@@ -20478,7 +19488,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "91cec506760e0287"
       },
-      "order": 497,
+      "order": 473,
       "imageUrl": "./images/cards500-423.svg"
     },
     {
@@ -20520,7 +19530,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "79a6c3f51adf0a62"
       },
-      "order": 498,
+      "order": 474,
       "imageUrl": "./images/cards500-402.svg"
     },
     {
@@ -20562,7 +19572,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "856cd516a13923a9"
       },
-      "order": 499,
+      "order": 475,
       "imageUrl": "./images/cards500-443.svg"
     },
     {
@@ -20604,7 +19614,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "7c50a1c5a808da8f"
       },
-      "order": 500,
+      "order": 476,
       "imageUrl": "./images/cards500-461.svg"
     },
     {
@@ -20646,7 +19656,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "289e82275fcc9cee"
       },
-      "order": 501,
+      "order": 477,
       "imageUrl": "./images/cards500-460.svg"
     },
     {
@@ -20688,7 +19698,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "59dd41407c39c351"
       },
-      "order": 502,
+      "order": 478,
       "imageUrl": "./images/cards500-477.svg"
     },
     {
@@ -20727,7 +19737,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "3f88056f2125a2ca"
       },
-      "order": 503,
+      "order": 479,
       "imageUrl": "./images/cards500-470.svg"
     },
     {
@@ -20766,7 +19776,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "483f4d754c38dc00"
       },
-      "order": 504,
+      "order": 480,
       "imageUrl": "./images/cards500-451.svg"
     },
     {
@@ -20805,7 +19815,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "ad6afbd62d4e3854"
       },
-      "order": 505,
+      "order": 481,
       "imageUrl": "./images/cards500-471.svg"
     },
     {
@@ -20847,7 +19857,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "f252e0c50fe574b7"
       },
-      "order": 506,
+      "order": 482,
       "imageUrl": "./images/cards500-462.svg"
     },
     {
@@ -20889,7 +19899,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "34755668d1712ce3"
       },
-      "order": 507,
+      "order": 483,
       "imageUrl": "./images/cards500-452.svg"
     },
     {
@@ -20931,7 +19941,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "e8b0fff4f89fc537"
       },
-      "order": 508,
+      "order": 484,
       "imageUrl": "./images/cards500-482.svg"
     },
     {
@@ -20970,7 +19980,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "111d1a50e218a874"
       },
-      "order": 509,
+      "order": 485,
       "imageUrl": "./images/cards500-479.svg"
     },
     {
@@ -21014,7 +20024,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "d74810b7ddd1e220"
       },
-      "order": 510,
+      "order": 486,
       "imageUrl": "./images/cards500-473.svg"
     },
     {
@@ -21055,7 +20065,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "63f5ee4569ec480f"
       },
-      "order": 511,
+      "order": 487,
       "imageUrl": "./images/cards500-458.svg"
     },
     {
@@ -21099,7 +20109,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "d01c2ee82ca8e2b7"
       },
-      "order": 512,
+      "order": 488,
       "imageUrl": "./images/cards500-494.svg"
     },
     {
@@ -21143,7 +20153,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "b3ab8cfd316c29a3"
       },
-      "order": 513,
+      "order": 489,
       "imageUrl": "./images/cards500-492.svg"
     },
     {
@@ -21187,100 +20197,8 @@
         "prompt_ver": "cards500@1.0",
         "hash": "b13cec6678d5bfe0"
       },
-      "order": 514,
+      "order": 490,
       "imageUrl": "./images/cards500-493.svg"
-    },
-    {
-      "id": "w_491",
-      "text": "客服电话",
-      "chars": [
-        "客",
-        "服",
-        "电",
-        "话"
-      ],
-      "pinyin": [
-        "kè",
-        "fú",
-        "diàn",
-        "huà"
-      ],
-      "level": 1,
-      "scene": "safety",
-      "meaning": "打给公司问事的号码",
-      "meaning_source": {
-        "dict": "self",
-        "entry": "客服电话",
-        "rev": "cards500-2026-10"
-      },
-      "sentence": "客服电话要自己查，别信来电。",
-      "sentence_source": {
-        "corpus": "self",
-        "doc": "cards500-2026-10"
-      },
-      "image": {
-        "file": "cards500-491.svg",
-        "lib": "self",
-        "license": "CC-BY-SA-4.0",
-        "alt": "一部蓝色的座机电话，深色听筒架在带按键的底座上，左边两道黄色波纹表示正在响，右上方冒出一个带三个点的白色对话气泡"
-      },
-      "confusables": [
-        "店"
-      ],
-      "status": "draft",
-      "gen": {
-        "model": "deepseek-flash",
-        "prompt_ver": "cards500@1.0",
-        "hash": "53934f8184eb965a"
-      },
-      "order": 515,
-      "imageUrl": "./images/cards500-491.svg"
-    },
-    {
-      "id": "w_489",
-      "text": "来电显示",
-      "chars": [
-        "来",
-        "电",
-        "显",
-        "示"
-      ],
-      "pinyin": [
-        "lái",
-        "diàn",
-        "xiǎn",
-        "shì"
-      ],
-      "level": 1,
-      "scene": "safety",
-      "meaning": "电话上显示的对方号码",
-      "meaning_source": {
-        "dict": "self",
-        "entry": "来电显示",
-        "rev": "cards500-2026-10"
-      },
-      "sentence": "来电显示是外地的号，当心点。",
-      "sentence_source": {
-        "corpus": "self",
-        "doc": "cards500-2026-10"
-      },
-      "image": {
-        "file": "cards500-489.svg",
-        "lib": "self",
-        "license": "CC-BY-SA-4.0",
-        "alt": "一部手机，屏幕上方有一个来电箭头，下面一列来电号码用短横线表示，最上面一条有黄色高亮底色和红点标记"
-      },
-      "confusables": [
-        "现"
-      ],
-      "status": "draft",
-      "gen": {
-        "model": "deepseek-flash",
-        "prompt_ver": "cards500@1.0",
-        "hash": "4ac89cb88784979a"
-      },
-      "order": 516,
-      "imageUrl": "./images/cards500-489.svg"
     },
     {
       "id": "w_488",
@@ -21325,7 +20243,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "d5217d68cdd93012"
       },
-      "order": 517,
+      "order": 491,
       "imageUrl": "./images/cards500-488.svg"
     },
     {
@@ -21364,7 +20282,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "aa0add976a46b69a"
       },
-      "order": 518,
+      "order": 492,
       "imageUrl": "./images/cards500-487.svg"
     },
     {
@@ -21406,7 +20324,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "ad8ee6b4380ad44f"
       },
-      "order": 519,
+      "order": 493,
       "imageUrl": "./images/cards500-480.svg"
     },
     {
@@ -21445,7 +20363,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "2bacc8159e3f5a86"
       },
-      "order": 520,
+      "order": 494,
       "imageUrl": "./images/cards500-476.svg"
     },
     {
@@ -21487,7 +20405,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "6ee1c82b20ac5abb"
       },
-      "order": 521,
+      "order": 495,
       "imageUrl": "./images/cards500-475.svg"
     },
     {
@@ -21526,50 +20444,8 @@
         "prompt_ver": "cards500@1.0",
         "hash": "e5857ff085e2366f"
       },
-      "order": 522,
+      "order": 496,
       "imageUrl": "./images/cards500-500.svg"
-    },
-    {
-      "id": "w_454",
-      "text": "假冒",
-      "chars": [
-        "假",
-        "冒"
-      ],
-      "pinyin": [
-        "jiǎ",
-        "mào"
-      ],
-      "level": 2,
-      "scene": "safety",
-      "meaning": "拿假货当真的卖",
-      "meaning_source": {
-        "dict": "self",
-        "entry": "假冒",
-        "rev": "cards500-2026-10"
-      },
-      "sentence": "假冒的保健品，千万别买。",
-      "sentence_source": {
-        "corpus": "self",
-        "doc": "cards500-2026-10"
-      },
-      "image": {
-        "file": "cards500-454.svg",
-        "lib": "self",
-        "license": "CC-BY-SA-4.0",
-        "alt": "一盒药旁边，放着一个大叉"
-      },
-      "confusables": [
-        "架"
-      ],
-      "status": "draft",
-      "gen": {
-        "model": "deepseek-flash",
-        "prompt_ver": "cards500@1.0",
-        "hash": "9fe89808f1604969"
-      },
-      "order": 523,
-      "imageUrl": "./images/cards500-454.svg"
     },
     {
       "id": "w_486",
@@ -21610,7 +20486,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "9f27753d5720f1c0"
       },
-      "order": 524,
+      "order": 497,
       "imageUrl": "./images/cards500-486.svg"
     },
     {
@@ -21652,7 +20528,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "ed12bb810d213f30"
       },
-      "order": 525,
+      "order": 498,
       "imageUrl": "./images/cards500-459.svg"
     },
     {
@@ -21695,7 +20571,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "d97949da4de57f44"
       },
-      "order": 526,
+      "order": 499,
       "imageUrl": "./images/cards500-457.svg"
     },
     {
@@ -21737,7 +20613,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "74311ea88ffd33c8"
       },
-      "order": 527,
+      "order": 500,
       "imageUrl": "./images/cards500-453.svg"
     },
     {
@@ -21779,7 +20655,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "410e16699379d670"
       },
-      "order": 528,
+      "order": 501,
       "imageUrl": "./images/cards500-464.svg"
     },
     {
@@ -21821,7 +20697,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "a5bca9b890f304a0"
       },
-      "order": 529,
+      "order": 502,
       "imageUrl": "./images/cards500-481.svg"
     },
     {
@@ -21864,7 +20740,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "bbcbbd6f8529e890"
       },
-      "order": 530,
+      "order": 503,
       "imageUrl": "./images/cards500-474.svg"
     },
     {
@@ -21906,7 +20782,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "11bb98f01a873889"
       },
-      "order": 531,
+      "order": 504,
       "imageUrl": "./images/cards500-472.svg"
     },
     {
@@ -21945,7 +20821,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "978d97cd767cbd1b"
       },
-      "order": 532,
+      "order": 505,
       "imageUrl": "./images/cards500-465.svg"
     },
     {
@@ -21989,7 +20865,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "003ea6ef6cfea893"
       },
-      "order": 533,
+      "order": 506,
       "imageUrl": "./images/cards500-478.svg"
     },
     {
@@ -22033,7 +20909,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "f89ad1bf579dabb9"
       },
-      "order": 534,
+      "order": 507,
       "imageUrl": "./images/cards500-495.svg"
     },
     {
@@ -22076,7 +20952,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "97f54c42e1af5bab"
       },
-      "order": 535,
+      "order": 508,
       "imageUrl": "./images/cards500-499.svg"
     },
     {
@@ -22122,7 +20998,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "e9b67df403ce4358"
       },
-      "order": 536,
+      "order": 509,
       "imageUrl": "./images/cards500-469.svg"
     },
     {
@@ -22168,54 +21044,8 @@
         "prompt_ver": "cards500@1.0",
         "hash": "e4a95fffc07746c7"
       },
-      "order": 537,
+      "order": 510,
       "imageUrl": "./images/cards500-490.svg"
-    },
-    {
-      "id": "w_498",
-      "text": "身份证号",
-      "chars": [
-        "身",
-        "份",
-        "证",
-        "号"
-      ],
-      "pinyin": [
-        "shēn",
-        "fèn",
-        "zhèng",
-        "hào"
-      ],
-      "level": 2,
-      "scene": "safety",
-      "meaning": "证件上那串长号码",
-      "meaning_source": {
-        "dict": "self",
-        "entry": "身份证号",
-        "rev": "cards500-2026-10"
-      },
-      "sentence": "身份证号别随口说给陌生人。",
-      "sentence_source": {
-        "corpus": "self",
-        "doc": "cards500-2026-10"
-      },
-      "image": {
-        "file": "cards500-498.svg",
-        "lib": "self",
-        "license": "CC-BY-SA-4.0",
-        "alt": "一张证件，边上有几道横线"
-      },
-      "confusables": [
-        "正"
-      ],
-      "status": "draft",
-      "gen": {
-        "model": "deepseek-flash",
-        "prompt_ver": "cards500@1.0",
-        "hash": "f95032ff6e3d4804"
-      },
-      "order": 538,
-      "imageUrl": "./images/cards500-498.svg"
     },
     {
       "id": "w_497",
@@ -22260,7 +21090,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "aa86a374a905f4c0"
       },
-      "order": 539,
+      "order": 511,
       "imageUrl": "./images/cards500-497.svg"
     },
     {
@@ -22302,7 +21132,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "0ab9a756c6a54c13"
       },
-      "order": 540,
+      "order": 512,
       "imageUrl": "./images/cards500-456.svg"
     },
     {
@@ -22344,7 +21174,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "fb2bd78d6a6661b2"
       },
-      "order": 541,
+      "order": 513,
       "imageUrl": "./images/cards500-485.svg"
     },
     {
@@ -22383,7 +21213,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "8c063d14b832c4d1"
       },
-      "order": 542,
+      "order": 514,
       "imageUrl": "./images/cards500-455.svg"
     },
     {
@@ -22426,7 +21256,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "a77bba2f6129d90a"
       },
-      "order": 543,
+      "order": 515,
       "imageUrl": "./images/cards500-467.svg"
     },
     {
@@ -22465,7 +21295,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "02fc2213407385dc"
       },
-      "order": 544,
+      "order": 516,
       "imageUrl": "./images/cards500-483.svg"
     },
     {
@@ -22507,7 +21337,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "f4b9853540b87e95"
       },
-      "order": 545,
+      "order": 517,
       "imageUrl": "./images/cards500-468.svg"
     },
     {
@@ -22549,7 +21379,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "7b2471c7df73b22b"
       },
-      "order": 546,
+      "order": 518,
       "imageUrl": "./images/cards500-466.svg"
     },
     {
@@ -22591,7 +21421,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "b6310c754f40dfd8"
       },
-      "order": 547,
+      "order": 519,
       "imageUrl": "./images/cards500-484.svg"
     },
     {
@@ -22635,7 +21465,7 @@
         "prompt_ver": "cards500@1.0",
         "hash": "c2b8ddc3ccf325e1"
       },
-      "order": 548,
+      "order": 520,
       "imageUrl": "./images/cards500-496.svg"
     },
     {
@@ -22681,8 +21511,1106 @@
         "prompt_ver": "cards500@1.0",
         "hash": "f6525ee54cf523e5"
       },
-      "order": 549,
+      "order": 521,
       "imageUrl": "./images/cards500-463.svg"
+    },
+    {
+      "id": "w_501",
+      "text": "高血压",
+      "chars": [
+        "高",
+        "血",
+        "压"
+      ],
+      "pinyin": [
+        "gāo",
+        "xuè",
+        "yā"
+      ],
+      "level": 2,
+      "scene": "health",
+      "meaning": "血压一直比平常高",
+      "meaning_source": {
+        "dict": "self",
+        "entry": "高血压",
+        "rev": "rebalance-2026-11"
+      },
+      "sentence": "奶奶有高血压，每天都要量一量。",
+      "sentence_source": {
+        "corpus": "self",
+        "doc": "rebalance-2026-11"
+      },
+      "image": {
+        "file": "cards500-501.svg",
+        "lib": "self",
+        "license": "CC-BY-SA-4.0",
+        "alt": "一只手臂上绑着血压计袖带，表上的指针偏高"
+      },
+      "status": "draft",
+      "gen": {
+        "model": "deepseek-flash",
+        "prompt_ver": "rebalance@1",
+        "hash": "rebalance-w_501"
+      },
+      "order": 522,
+      "imageUrl": "./images/cards500-501.svg"
+    },
+    {
+      "id": "w_502",
+      "text": "体温",
+      "chars": [
+        "体",
+        "温"
+      ],
+      "pinyin": [
+        "tǐ",
+        "wēn"
+      ],
+      "level": 1,
+      "scene": "health",
+      "meaning": "身上有多热",
+      "meaning_source": {
+        "dict": "self",
+        "entry": "体温",
+        "rev": "rebalance-2026-11"
+      },
+      "sentence": "先量一下体温，看发不发烧。",
+      "sentence_source": {
+        "corpus": "self",
+        "doc": "rebalance-2026-11"
+      },
+      "image": {
+        "file": "cards500-502.svg",
+        "lib": "self",
+        "license": "CC-BY-SA-4.0",
+        "alt": "一支体温计，旁边有一杯温水"
+      },
+      "status": "draft",
+      "gen": {
+        "model": "deepseek-flash",
+        "prompt_ver": "rebalance@1",
+        "hash": "rebalance-w_502"
+      },
+      "order": 523,
+      "imageUrl": "./images/cards500-502.svg"
+    },
+    {
+      "id": "w_503",
+      "text": "牙刷",
+      "chars": [
+        "牙",
+        "刷"
+      ],
+      "pinyin": [
+        "yá",
+        "shuā"
+      ],
+      "level": 1,
+      "scene": "home",
+      "meaning": "刷牙用的小刷子",
+      "meaning_source": {
+        "dict": "self",
+        "entry": "牙刷",
+        "rev": "rebalance-2026-11"
+      },
+      "sentence": "牙刷用久了要换一把新的。",
+      "sentence_source": {
+        "corpus": "self",
+        "doc": "rebalance-2026-11"
+      },
+      "image": {
+        "file": "cards500-503.svg",
+        "lib": "self",
+        "license": "CC-BY-SA-4.0",
+        "alt": "一把牙刷和一支牙膏"
+      },
+      "status": "draft",
+      "gen": {
+        "model": "deepseek-flash",
+        "prompt_ver": "rebalance@1",
+        "hash": "rebalance-w_503"
+      },
+      "order": 524,
+      "imageUrl": "./images/cards500-503.svg"
+    },
+    {
+      "id": "w_504",
+      "text": "护工",
+      "chars": [
+        "护",
+        "工"
+      ],
+      "pinyin": [
+        "hù",
+        "gōng"
+      ],
+      "level": 2,
+      "scene": "health",
+      "meaning": "在医院照顾病人的人",
+      "meaning_source": {
+        "dict": "self",
+        "entry": "护工",
+        "rev": "rebalance-2026-11"
+      },
+      "sentence": "住院时请个护工帮忙照顾。",
+      "sentence_source": {
+        "corpus": "self",
+        "doc": "rebalance-2026-11"
+      },
+      "image": {
+        "file": "cards500-504.svg",
+        "lib": "self",
+        "license": "CC-BY-SA-4.0",
+        "alt": "一位穿工作服的护工在病床边照顾老人"
+      },
+      "status": "draft",
+      "gen": {
+        "model": "deepseek-flash",
+        "prompt_ver": "rebalance@1",
+        "hash": "rebalance-w_504"
+      },
+      "order": 525,
+      "imageUrl": "./images/cards500-504.svg"
+    },
+    {
+      "id": "w_505",
+      "text": "退烧",
+      "chars": [
+        "退",
+        "烧"
+      ],
+      "pinyin": [
+        "tuì",
+        "shāo"
+      ],
+      "level": 1,
+      "scene": "health",
+      "meaning": "让身上的热退下去",
+      "meaning_source": {
+        "dict": "self",
+        "entry": "退烧",
+        "rev": "rebalance-2026-11"
+      },
+      "sentence": "吃了药，烧慢慢退了。",
+      "sentence_source": {
+        "corpus": "self",
+        "doc": "rebalance-2026-11"
+      },
+      "image": {
+        "file": "cards500-505.svg",
+        "lib": "self",
+        "license": "CC-BY-SA-4.0",
+        "alt": "一支体温计，旁边有一个箭头"
+      },
+      "status": "draft",
+      "gen": {
+        "model": "deepseek-flash",
+        "prompt_ver": "rebalance@1",
+        "hash": "rebalance-w_505"
+      },
+      "order": 526,
+      "imageUrl": "./images/cards500-505.svg"
+    },
+    {
+      "id": "w_506",
+      "text": "中医",
+      "chars": [
+        "中",
+        "医"
+      ],
+      "pinyin": [
+        "zhōng",
+        "yī"
+      ],
+      "level": 2,
+      "scene": "health",
+      "meaning": "用草药和推拿治病",
+      "meaning_source": {
+        "dict": "self",
+        "entry": "中医",
+        "rev": "rebalance-2026-11"
+      },
+      "sentence": "他去看中医，开了几副药。",
+      "sentence_source": {
+        "corpus": "self",
+        "doc": "rebalance-2026-11"
+      },
+      "image": {
+        "file": "cards500-506.svg",
+        "lib": "self",
+        "license": "CC-BY-SA-4.0",
+        "alt": "一位中医在给老人把脉，旁边放着草药"
+      },
+      "status": "draft",
+      "gen": {
+        "model": "deepseek-flash",
+        "prompt_ver": "rebalance@1",
+        "hash": "rebalance-w_506"
+      },
+      "order": 527,
+      "imageUrl": "./images/cards500-506.svg"
+    },
+    {
+      "id": "w_507",
+      "text": "血压计",
+      "chars": [
+        "血",
+        "压",
+        "计"
+      ],
+      "pinyin": [
+        "xuè",
+        "yā",
+        "jì"
+      ],
+      "level": 2,
+      "scene": "health",
+      "meaning": "量血压用的表",
+      "meaning_source": {
+        "dict": "self",
+        "entry": "血压计",
+        "rev": "rebalance-2026-11"
+      },
+      "sentence": "家里的血压计要常常校准。",
+      "sentence_source": {
+        "corpus": "self",
+        "doc": "rebalance-2026-11"
+      },
+      "image": {
+        "file": "cards500-507.svg",
+        "lib": "self",
+        "license": "CC-BY-SA-4.0",
+        "alt": "一台放在桌上的血压计，连着一根袖带"
+      },
+      "status": "draft",
+      "gen": {
+        "model": "deepseek-flash",
+        "prompt_ver": "rebalance@1",
+        "hash": "rebalance-w_507"
+      },
+      "order": 528,
+      "imageUrl": "./images/cards500-507.svg"
+    },
+    {
+      "id": "w_508",
+      "text": "假牙",
+      "chars": [
+        "假",
+        "牙"
+      ],
+      "pinyin": [
+        "jiǎ",
+        "yá"
+      ],
+      "level": 1,
+      "scene": "health",
+      "meaning": "装在嘴里代替真牙",
+      "meaning_source": {
+        "dict": "self",
+        "entry": "假牙",
+        "rev": "rebalance-2026-11"
+      },
+      "sentence": "假牙要拿下来刷干净。",
+      "sentence_source": {
+        "corpus": "self",
+        "doc": "rebalance-2026-11"
+      },
+      "image": {
+        "file": "cards500-508.svg",
+        "lib": "self",
+        "license": "CC-BY-SA-4.0",
+        "alt": "一颗白色的假牙"
+      },
+      "status": "draft",
+      "gen": {
+        "model": "deepseek-flash",
+        "prompt_ver": "rebalance@1",
+        "hash": "rebalance-w_508"
+      },
+      "order": 529,
+      "imageUrl": "./images/cards500-508.svg"
+    },
+    {
+      "id": "w_509",
+      "text": "养老院",
+      "chars": [
+        "养",
+        "老",
+        "院"
+      ],
+      "pinyin": [
+        "yǎng",
+        "lǎo",
+        "yuàn"
+      ],
+      "level": 2,
+      "scene": "gov",
+      "meaning": "老人住进去有人照顾",
+      "meaning_source": {
+        "dict": "self",
+        "entry": "养老院",
+        "rev": "rebalance-2026-11"
+      },
+      "sentence": "老人住在养老院有人照顾。",
+      "sentence_source": {
+        "corpus": "self",
+        "doc": "rebalance-2026-11"
+      },
+      "image": {
+        "file": "cards500-509.svg",
+        "lib": "self",
+        "license": "CC-BY-SA-4.0",
+        "alt": "一栋小楼，门口站着一位老人"
+      },
+      "status": "draft",
+      "gen": {
+        "model": "deepseek-flash",
+        "prompt_ver": "rebalance@1",
+        "hash": "rebalance-w_509"
+      },
+      "order": 530,
+      "imageUrl": "./images/cards500-509.svg"
+    },
+    {
+      "id": "w_510",
+      "text": "手脚",
+      "chars": [
+        "手",
+        "脚"
+      ],
+      "pinyin": [
+        "shǒu",
+        "jiǎo"
+      ],
+      "level": 1,
+      "scene": "health",
+      "meaning": "手和脚，身上能动的两头",
+      "meaning_source": {
+        "dict": "self",
+        "entry": "手脚",
+        "rev": "rebalance-2026-11"
+      },
+      "sentence": "天冷了，手脚容易发凉。",
+      "sentence_source": {
+        "corpus": "self",
+        "doc": "rebalance-2026-11"
+      },
+      "image": {
+        "file": "cards500-510.svg",
+        "lib": "self",
+        "license": "CC-BY-SA-4.0",
+        "alt": "一只手和一只脚画在一起"
+      },
+      "status": "draft",
+      "gen": {
+        "model": "deepseek-flash",
+        "prompt_ver": "rebalance@1",
+        "hash": "rebalance-w_510"
+      },
+      "order": 531,
+      "imageUrl": "./images/cards500-510.svg"
+    },
+    {
+      "id": "w_511",
+      "text": "吃饭",
+      "chars": [
+        "吃",
+        "饭"
+      ],
+      "pinyin": [
+        "chī",
+        "fàn"
+      ],
+      "level": 1,
+      "scene": "home",
+      "meaning": "把饭放进嘴里咽下去",
+      "meaning_source": {
+        "dict": "self",
+        "entry": "吃饭",
+        "rev": "rebalance-2026-11"
+      },
+      "sentence": "慢慢吃饭，别急着咽。",
+      "sentence_source": {
+        "corpus": "self",
+        "doc": "rebalance-2026-11"
+      },
+      "image": {
+        "file": "cards500-511.svg",
+        "lib": "self",
+        "license": "CC-BY-SA-4.0",
+        "alt": "一个人坐在桌边端着碗吃饭"
+      },
+      "status": "draft",
+      "gen": {
+        "model": "deepseek-flash",
+        "prompt_ver": "rebalance@1",
+        "hash": "rebalance-w_511"
+      },
+      "order": 532,
+      "imageUrl": "./images/cards500-511.svg"
+    },
+    {
+      "id": "w_512",
+      "text": "散步",
+      "chars": [
+        "散",
+        "步"
+      ],
+      "pinyin": [
+        "sàn",
+        "bù"
+      ],
+      "level": 1,
+      "scene": "health",
+      "meaning": "慢慢走一走活动身体",
+      "meaning_source": {
+        "dict": "self",
+        "entry": "散步",
+        "rev": "rebalance-2026-11"
+      },
+      "sentence": "饭后到楼下散步半小时。",
+      "sentence_source": {
+        "corpus": "self",
+        "doc": "rebalance-2026-11"
+      },
+      "image": {
+        "file": "cards500-512.svg",
+        "lib": "self",
+        "license": "CC-BY-SA-4.0",
+        "alt": "两个老人在小区里慢慢走路"
+      },
+      "status": "draft",
+      "gen": {
+        "model": "deepseek-flash",
+        "prompt_ver": "rebalance@1",
+        "hash": "rebalance-w_512"
+      },
+      "order": 533,
+      "imageUrl": "./images/cards500-512.svg"
+    },
+    {
+      "id": "w_513",
+      "text": "穿衣",
+      "chars": [
+        "穿",
+        "衣"
+      ],
+      "pinyin": [
+        "chuān",
+        "yī"
+      ],
+      "level": 1,
+      "scene": "home",
+      "meaning": "把衣服穿到身上",
+      "meaning_source": {
+        "dict": "self",
+        "entry": "穿衣",
+        "rev": "rebalance-2026-11"
+      },
+      "sentence": "天凉了，多穿一件衣服。",
+      "sentence_source": {
+        "corpus": "self",
+        "doc": "rebalance-2026-11"
+      },
+      "image": {
+        "file": "cards500-513.svg",
+        "lib": "self",
+        "license": "CC-BY-SA-4.0",
+        "alt": "一个人正把外套穿到身上，旁边有衣架"
+      },
+      "status": "draft",
+      "gen": {
+        "model": "deepseek-flash",
+        "prompt_ver": "rebalance@1",
+        "hash": "rebalance-w_513"
+      },
+      "order": 534,
+      "imageUrl": "./images/cards500-513.svg"
+    },
+    {
+      "id": "w_514",
+      "text": "起床",
+      "chars": [
+        "起",
+        "床"
+      ],
+      "pinyin": [
+        "qǐ",
+        "chuáng"
+      ],
+      "level": 1,
+      "scene": "home",
+      "meaning": "睡醒了从床上起来",
+      "meaning_source": {
+        "dict": "self",
+        "entry": "起床",
+        "rev": "rebalance-2026-11"
+      },
+      "sentence": "早上七点起床，先喝杯水。",
+      "sentence_source": {
+        "corpus": "self",
+        "doc": "rebalance-2026-11"
+      },
+      "image": {
+        "file": "cards500-514.svg",
+        "lib": "self",
+        "license": "CC-BY-SA-4.0",
+        "alt": "一个人从床上坐起来，窗外有太阳"
+      },
+      "status": "draft",
+      "gen": {
+        "model": "deepseek-flash",
+        "prompt_ver": "rebalance@1",
+        "hash": "rebalance-w_514"
+      },
+      "order": 535,
+      "imageUrl": "./images/cards500-514.svg"
+    },
+    {
+      "id": "w_515",
+      "text": "关灯",
+      "chars": [
+        "关",
+        "灯"
+      ],
+      "pinyin": [
+        "guān",
+        "dēng"
+      ],
+      "level": 1,
+      "scene": "home",
+      "meaning": "把灯关掉不亮了",
+      "meaning_source": {
+        "dict": "self",
+        "entry": "关灯",
+        "rev": "rebalance-2026-11"
+      },
+      "sentence": "出门前记得关灯。",
+      "sentence_source": {
+        "corpus": "self",
+        "doc": "rebalance-2026-11"
+      },
+      "image": {
+        "file": "cards500-515.svg",
+        "lib": "self",
+        "license": "CC-BY-SA-4.0",
+        "alt": "一只手按下墙上的开关，灯灭了"
+      },
+      "status": "draft",
+      "gen": {
+        "model": "deepseek-flash",
+        "prompt_ver": "rebalance@1",
+        "hash": "rebalance-w_515"
+      },
+      "order": 536,
+      "imageUrl": "./images/cards500-515.svg"
+    },
+    {
+      "id": "w_516",
+      "text": "开窗",
+      "chars": [
+        "开",
+        "窗"
+      ],
+      "pinyin": [
+        "kāi",
+        "chuāng"
+      ],
+      "level": 1,
+      "scene": "home",
+      "meaning": "把窗户打开透气",
+      "meaning_source": {
+        "dict": "self",
+        "entry": "开窗",
+        "rev": "rebalance-2026-11"
+      },
+      "sentence": "屋里闷，开窗透透气。",
+      "sentence_source": {
+        "corpus": "self",
+        "doc": "rebalance-2026-11"
+      },
+      "image": {
+        "file": "cards500-516.svg",
+        "lib": "self",
+        "license": "CC-BY-SA-4.0",
+        "alt": "一扇窗户向外打开，风吹进来"
+      },
+      "status": "draft",
+      "gen": {
+        "model": "deepseek-flash",
+        "prompt_ver": "rebalance@1",
+        "hash": "rebalance-w_516"
+      },
+      "order": 537,
+      "imageUrl": "./images/cards500-516.svg"
+    },
+    {
+      "id": "w_517",
+      "text": "锁门",
+      "chars": [
+        "锁",
+        "门"
+      ],
+      "pinyin": [
+        "suǒ",
+        "mén"
+      ],
+      "level": 1,
+      "scene": "home",
+      "meaning": "出门前把门锁上",
+      "meaning_source": {
+        "dict": "self",
+        "entry": "锁门",
+        "rev": "rebalance-2026-11"
+      },
+      "sentence": "睡觉前检查一下有没有锁门。",
+      "sentence_source": {
+        "corpus": "self",
+        "doc": "rebalance-2026-11"
+      },
+      "image": {
+        "file": "cards500-517.svg",
+        "lib": "self",
+        "license": "CC-BY-SA-4.0",
+        "alt": "一扇门，门边挂着一把锁"
+      },
+      "status": "draft",
+      "gen": {
+        "model": "deepseek-flash",
+        "prompt_ver": "rebalance@1",
+        "hash": "rebalance-w_517"
+      },
+      "order": 538,
+      "imageUrl": "./images/cards500-517.svg"
+    },
+    {
+      "id": "w_518",
+      "text": "烧饭",
+      "chars": [
+        "烧",
+        "饭"
+      ],
+      "pinyin": [
+        "shāo",
+        "fàn"
+      ],
+      "level": 1,
+      "scene": "home",
+      "meaning": "把生的东西做熟",
+      "meaning_source": {
+        "dict": "self",
+        "entry": "烧饭",
+        "rev": "rebalance-2026-11"
+      },
+      "sentence": "中午在家烧饭，不去外面吃。",
+      "sentence_source": {
+        "corpus": "self",
+        "doc": "rebalance-2026-11"
+      },
+      "image": {
+        "file": "cards500-518.svg",
+        "lib": "self",
+        "license": "CC-BY-SA-4.0",
+        "alt": "灶上放着锅，锅里冒着热气"
+      },
+      "status": "draft",
+      "gen": {
+        "model": "deepseek-flash",
+        "prompt_ver": "rebalance@1",
+        "hash": "rebalance-w_518"
+      },
+      "order": 539,
+      "imageUrl": "./images/cards500-518.svg"
+    },
+    {
+      "id": "w_519",
+      "text": "买菜",
+      "chars": [
+        "买",
+        "菜"
+      ],
+      "pinyin": [
+        "mǎi",
+        "cài"
+      ],
+      "level": 1,
+      "scene": "shopping",
+      "meaning": "去市场把菜买回来",
+      "meaning_source": {
+        "dict": "self",
+        "entry": "买菜",
+        "rev": "rebalance-2026-11"
+      },
+      "sentence": "早上去菜场买菜，便宜又新鲜。",
+      "sentence_source": {
+        "corpus": "self",
+        "doc": "rebalance-2026-11"
+      },
+      "image": {
+        "file": "cards500-519.svg",
+        "lib": "self",
+        "license": "CC-BY-SA-4.0",
+        "alt": "一个菜篮子，里面装着青菜和萝卜"
+      },
+      "status": "draft",
+      "gen": {
+        "model": "deepseek-flash",
+        "prompt_ver": "rebalance@1",
+        "hash": "rebalance-w_519"
+      },
+      "order": 540,
+      "imageUrl": "./images/cards500-519.svg"
+    },
+    {
+      "id": "w_520",
+      "text": "路牌",
+      "chars": [
+        "路",
+        "牌"
+      ],
+      "pinyin": [
+        "lù",
+        "pái"
+      ],
+      "level": 1,
+      "scene": "travel",
+      "meaning": "路边写着路名的牌子",
+      "meaning_source": {
+        "dict": "self",
+        "entry": "路牌",
+        "rev": "rebalance-2026-11"
+      },
+      "sentence": "看不懂路牌，就问一下路人。",
+      "sentence_source": {
+        "corpus": "self",
+        "doc": "rebalance-2026-11"
+      },
+      "image": {
+        "file": "cards500-520.svg",
+        "lib": "self",
+        "license": "CC-BY-SA-4.0",
+        "alt": "路边立着一块路牌，牌上有一个箭头"
+      },
+      "status": "draft",
+      "gen": {
+        "model": "deepseek-flash",
+        "prompt_ver": "rebalance@1",
+        "hash": "rebalance-w_520"
+      },
+      "order": 541,
+      "imageUrl": "./images/cards500-520.svg"
+    },
+    {
+      "id": "w_521",
+      "text": "拖地",
+      "chars": [
+        "拖",
+        "地"
+      ],
+      "pinyin": [
+        "tuō",
+        "dì"
+      ],
+      "level": 1,
+      "scene": "home",
+      "meaning": "用拖把把地擦干净",
+      "meaning_source": {
+        "dict": "self",
+        "entry": "拖地",
+        "rev": "rebalance-2026-11"
+      },
+      "sentence": "地上有水，拿拖把拖一拖。",
+      "sentence_source": {
+        "corpus": "self",
+        "doc": "rebalance-2026-11"
+      },
+      "image": {
+        "file": "cards500-521.svg",
+        "lib": "self",
+        "license": "CC-BY-SA-4.0",
+        "alt": "一个人拿着拖把在拖地"
+      },
+      "status": "draft",
+      "gen": {
+        "model": "deepseek-flash",
+        "prompt_ver": "rebalance@1",
+        "hash": "rebalance-w_521"
+      },
+      "order": 542,
+      "imageUrl": "./images/cards500-521.svg"
+    },
+    {
+      "id": "w_522",
+      "text": "擦窗",
+      "chars": [
+        "擦",
+        "窗"
+      ],
+      "pinyin": [
+        "cā",
+        "chuāng"
+      ],
+      "level": 2,
+      "scene": "home",
+      "meaning": "把窗户上的灰擦掉",
+      "meaning_source": {
+        "dict": "self",
+        "entry": "擦窗",
+        "rev": "rebalance-2026-11"
+      },
+      "sentence": "过年之前把窗户擦干净。",
+      "sentence_source": {
+        "corpus": "self",
+        "doc": "rebalance-2026-11"
+      },
+      "image": {
+        "file": "cards500-522.svg",
+        "lib": "self",
+        "license": "CC-BY-SA-4.0",
+        "alt": "一只手拿抹布擦窗户"
+      },
+      "status": "draft",
+      "gen": {
+        "model": "deepseek-flash",
+        "prompt_ver": "rebalance@1",
+        "hash": "rebalance-w_522"
+      },
+      "order": 543,
+      "imageUrl": "./images/cards500-522.svg"
+    },
+    {
+      "id": "w_523",
+      "text": "打字",
+      "chars": [
+        "打",
+        "字"
+      ],
+      "pinyin": [
+        "dǎ",
+        "zì"
+      ],
+      "level": 2,
+      "scene": "contact",
+      "meaning": "用手指按键盘写字",
+      "meaning_source": {
+        "dict": "self",
+        "entry": "打字",
+        "rev": "rebalance-2026-11"
+      },
+      "sentence": "字太小，打字看不清。",
+      "sentence_source": {
+        "corpus": "self",
+        "doc": "rebalance-2026-11"
+      },
+      "image": {
+        "file": "cards500-523.svg",
+        "lib": "self",
+        "license": "CC-BY-SA-4.0",
+        "alt": "两只手在键盘上打字"
+      },
+      "status": "draft",
+      "gen": {
+        "model": "deepseek-flash",
+        "prompt_ver": "rebalance@1",
+        "hash": "rebalance-w_523"
+      },
+      "order": 544,
+      "imageUrl": "./images/cards500-523.svg"
+    },
+    {
+      "id": "w_524",
+      "text": "护照",
+      "chars": [
+        "护",
+        "照"
+      ],
+      "pinyin": [
+        "hù",
+        "zhào"
+      ],
+      "level": 2,
+      "scene": "gov",
+      "meaning": "出国要用的证件",
+      "meaning_source": {
+        "dict": "self",
+        "entry": "护照",
+        "rev": "rebalance-2026-11"
+      },
+      "sentence": "出国要带护照和机票。",
+      "sentence_source": {
+        "corpus": "self",
+        "doc": "rebalance-2026-11"
+      },
+      "image": {
+        "file": "cards500-524.svg",
+        "lib": "self",
+        "license": "CC-BY-SA-4.0",
+        "alt": "一本护照，旁边有一张机票"
+      },
+      "status": "draft",
+      "gen": {
+        "model": "deepseek-flash",
+        "prompt_ver": "rebalance@1",
+        "hash": "rebalance-w_524"
+      },
+      "order": 545,
+      "imageUrl": "./images/cards500-524.svg"
+    },
+    {
+      "id": "w_525",
+      "text": "声明",
+      "chars": [
+        "声",
+        "明"
+      ],
+      "pinyin": [
+        "shēng",
+        "míng"
+      ],
+      "level": 2,
+      "scene": "gov",
+      "meaning": "公开说清楚一件事",
+      "meaning_source": {
+        "dict": "self",
+        "entry": "声明",
+        "rev": "rebalance-2026-11"
+      },
+      "sentence": "居委会贴了一张声明。",
+      "sentence_source": {
+        "corpus": "self",
+        "doc": "rebalance-2026-11"
+      },
+      "image": {
+        "file": "cards500-525.svg",
+        "lib": "self",
+        "license": "CC-BY-SA-4.0",
+        "alt": "一张写了字的纸，旁边有一个对勾"
+      },
+      "status": "draft",
+      "gen": {
+        "model": "deepseek-flash",
+        "prompt_ver": "rebalance@1",
+        "hash": "rebalance-w_525"
+      },
+      "order": 546,
+      "imageUrl": "./images/cards500-525.svg"
+    },
+    {
+      "id": "w_526",
+      "text": "牙科",
+      "chars": [
+        "牙",
+        "科"
+      ],
+      "pinyin": [
+        "yá",
+        "kē"
+      ],
+      "level": 2,
+      "scene": "health",
+      "meaning": "看牙治牙的科室",
+      "meaning_source": {
+        "dict": "self",
+        "entry": "牙科",
+        "rev": "rebalance-2026-11"
+      },
+      "sentence": "牙疼得厉害，去牙科看看。",
+      "sentence_source": {
+        "corpus": "self",
+        "doc": "rebalance-2026-11"
+      },
+      "image": {
+        "file": "cards500-526.svg",
+        "lib": "self",
+        "license": "CC-BY-SA-4.0",
+        "alt": "一张牙科治疗椅，旁边站着牙医"
+      },
+      "status": "draft",
+      "gen": {
+        "model": "deepseek-flash",
+        "prompt_ver": "rebalance@1",
+        "hash": "rebalance-w_526"
+      },
+      "order": 547,
+      "imageUrl": "./images/cards500-526.svg"
+    },
+    {
+      "id": "w_527",
+      "text": "眼科",
+      "chars": [
+        "眼",
+        "科"
+      ],
+      "pinyin": [
+        "yǎn",
+        "kē"
+      ],
+      "level": 2,
+      "scene": "health",
+      "meaning": "看眼睛的科室",
+      "meaning_source": {
+        "dict": "self",
+        "entry": "眼科",
+        "rev": "rebalance-2026-11"
+      },
+      "sentence": "眼睛看不清，先挂眼科。",
+      "sentence_source": {
+        "corpus": "self",
+        "doc": "rebalance-2026-11"
+      },
+      "image": {
+        "file": "cards500-527.svg",
+        "lib": "self",
+        "license": "CC-BY-SA-4.0",
+        "alt": "一台眼科检查仪，前面有一只眼睛"
+      },
+      "status": "draft",
+      "gen": {
+        "model": "deepseek-flash",
+        "prompt_ver": "rebalance@1",
+        "hash": "rebalance-w_527"
+      },
+      "order": 548,
+      "imageUrl": "./images/cards500-527.svg"
+    },
+    {
+      "id": "w_528",
+      "text": "还钱",
+      "chars": [
+        "还",
+        "钱"
+      ],
+      "pinyin": [
+        "huán",
+        "qián"
+      ],
+      "level": 2,
+      "scene": "money",
+      "meaning": "把借的钱还给人家",
+      "meaning_source": {
+        "dict": "self",
+        "entry": "还钱",
+        "rev": "rebalance-2026-11"
+      },
+      "sentence": "借的钱要按时还。",
+      "sentence_source": {
+        "corpus": "self",
+        "doc": "rebalance-2026-11"
+      },
+      "image": {
+        "file": "cards500-528.svg",
+        "lib": "self",
+        "license": "CC-BY-SA-4.0",
+        "alt": "一双手把纸币递给另一个人"
+      },
+      "status": "draft",
+      "gen": {
+        "model": "deepseek-flash",
+        "prompt_ver": "rebalance@1",
+        "hash": "rebalance-w_528"
+      },
+      "order": 549,
+      "imageUrl": "./images/cards500-528.svg"
     }
   ]
 }

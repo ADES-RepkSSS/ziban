@@ -256,6 +256,7 @@ pnpm corpus:install
 | [docs/11-corpus-batch1-handoff.md](docs/11-corpus-batch1-handoff.md) | **第一批 293 条语料复盘：没做到什么、下一批顺序** |
 | [docs/12-cloud-tts.md](docs/12-cloud-tts.md) | **云端文本转语音：API Key、接口、隐私与验收** |
 | [docs/13-maintainer-policy.md](docs/13-maintainer-policy.md) | **个人开发者内容边界：人工审校/老人测试不再是发布前置** |
+| [docs/14-card-char-frequency.md](docs/14-card-char-frequency.md) | **词卡单字频率统计：生词 AI 选题时避免同一字反复出现** |
 | [docs/releases/v0.2.1.md](docs/releases/v0.2.1.md) | **v0.2.1 完整版：Windows 绿色版、演示标注、验证** |
 | [docs/releases/v0.2.0.md](docs/releases/v0.2.0.md) | **v0.2.0 发布说明：能力、验证、限制** |
 | [AGENTS.md](AGENTS.md) | 给下一位 AI/维护者的操作速查与硬约束 |

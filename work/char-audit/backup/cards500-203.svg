@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="候车室里有一排木连椅，三个人并排坐着等车，墙上挂着一个钟">
+  <rect width="512" height="512" rx="40" fill="#F4EBD9"/>
+  <circle cx="256" cy="248" r="196" fill="#FCF8EF"/>
+  <g stroke="#26313D" stroke-width="12" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="40" y="364" width="432" height="76" fill="#D9DEE3" stroke="none"/>
+    <path d="M 40 364 H 472" fill="none"/>
+    <circle cx="256" cy="102" r="38" fill="#FFFFFF"/>
+    <path d="M 256 102 V 80 M 256 102 L 272 112" fill="none" stroke-width="8"/>
+    <rect x="66" y="226" width="380" height="66" rx="10" fill="#9A6B4A"/>
+    <rect x="58" y="292" width="396" height="32" rx="8" fill="#9A6B4A"/>
+    <path d="M 82 324 V 364 M 430 324 V 364 M 202 226 V 324 M 310 226 V 324" fill="none"/>
+    <circle cx="150" cy="184" r="18" fill="#E9B98F"/>
+    <circle cx="256" cy="184" r="18" fill="#E9B98F"/>
+    <circle cx="362" cy="184" r="18" fill="#E9B98F"/>
+    <path d="M 131 183 q 0 -21 19 -21 q 19 0 19 21 q -8 -9 -19 -9 q -11 0 -19 9 Z M 237 183 q 0 -21 19 -21 q 19 0 19 21 q -8 -9 -19 -9 q -11 0 -19 9 Z M 343 183 q 0 -21 19 -21 q 19 0 19 21 q -8 -9 -19 -9 q -11 0 -19 9 Z" fill="#26313D"/>
+    <path d="M 124 292 V 228 q 0 -26 26 -26 q 26 0 26 26 V 292 Z" fill="#3E6FA6"/>
+    <path d="M 230 292 V 228 q 0 -26 26 -26 q 26 0 26 26 V 292 Z" fill="#4F8A5B"/>
+    <path d="M 336 292 V 228 q 0 -26 26 -26 q 26 0 26 26 V 292 Z" fill="#C9483A"/>
+    <path d="M 139 296 V 358 M 161 296 V 358 M 245 296 V 358 M 267 296 V 358 M 351 296 V 358 M 373 296 V 358" fill="none" stroke="#9AA4AE" stroke-width="16"/>
+    <path d="M 130 358 h 18 M 152 358 h 18 M 236 358 h 18 M 258 358 h 18 M 342 358 h 18 M 364 358 h 18" fill="none"/>
+  </g>
+</svg>

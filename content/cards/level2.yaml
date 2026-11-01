@@ -6,6 +6,7 @@
 # 拼音：pinyin-pro 生成 + 多音字人工覆盖；仅作内部数据与家人参考。
 # 用字：目标词 100% 落在 corpus/chars/common2000.txt；释义优先 1000 常用字。
 
+
 - id: w_008
   text: 病房
   chars: [病, 房]
@@ -348,20 +349,6 @@
   image: { file: cards500-056.svg, lib: self, license: CC-BY-SA-4.0, alt: "一板铝塑包装的白色药片，其中一格已经空了，旁边散着三粒白色小圆药片" }
   status: draft
   gen: { model: deepseek-flash, prompt_ver: "cards500@1.0", hash: "35a4101dda480b85" }
-
-- id: w_057
-  text: 药水
-  chars: [药, 水]
-  pinyin: ["yào", "shuǐ"]
-  level: 1
-  scene: health
-  meaning: 小瓶子里装的药
-  meaning_source: { dict: self, entry: 药水, rev: "cards500-2026-10" }
-  sentence: 药水用前摇一摇，先看看说明。
-  sentence_source: { corpus: self, doc: cards500-2026-10 }
-  image: { file: cards500-057.svg, lib: self, license: CC-BY-SA-4.0, alt: "一个小药瓶，瓶口滴下一滴水" }
-  status: draft
-  gen: { model: deepseek-flash, prompt_ver: "cards500@1.0", hash: "b6ae93f8173121fe" }
 
 - id: w_049
   text: 疫苗
@@ -884,18 +871,18 @@
   gen: { model: deepseek-flash, prompt_ver: "cards500@1.0", hash: "1401fbf4fb11a0e9" }
 
 - id: w_046
-  text: 心电图
-  chars: [心, 电, 图]
-  pinyin: ["xīn", "diàn", "tú"]
+  text: 心脏
+  chars: [心, 脏]
+  pinyin: ["xīn", "zàng"]
   level: 2
   scene: health
-  meaning: 在胸口贴几个片记下心跳
-  meaning_source: { dict: self, entry: 心电图, rev: "cards500-2026-10" }
-  sentence: 做心电图不疼，躺一会儿就好。
-  sentence_source: { corpus: self, doc: cards500-2026-10 }
-  image: { file: cards500-046.svg, lib: self, license: CC-BY-SA-4.0, alt: "两张叠在一起的长条纸上印着一起一伏的心跳折线，右上方有一颗心" }
+  meaning: 身上一直在跳的东西
+  meaning_source: { dict: self, entry: 心脏, rev: "rebalance-2026-11" }
+  sentence: 走快一点，心脏就跳得厉害。
+  sentence_source: { corpus: self, doc: "rebalance-2026-11" }
+  image: { file: cards500-046.svg, lib: self, license: CC-BY-SA-4.0, alt: "一颗红色的心脏，旁边有一条跳动的线" }
   status: draft
-  gen: { model: deepseek-flash, prompt_ver: "cards500@1.0", hash: "77f25ae201b3b421" }
+  gen: { model: deepseek-flash, prompt_ver: "rebalance@1", hash: "rebalance-w_046" }
 
 - id: w_019
   text: 住院部
@@ -1211,21 +1198,6 @@
   image: { file: cards500-130.svg, lib: self, license: CC-BY-SA-4.0, alt: "一张平放的纸币，边角有点卷" }
   status: draft
   gen: { model: deepseek-flash, prompt_ver: "cards500@1.0", hash: "389c6ec20cf48e84" }
-
-- id: w_144
-  text: 取号机
-  chars: [取, 号, 机]
-  pinyin: ["qǔ", "hào", "jī"]
-  level: 1
-  scene: money
-  meaning: 按一下吐出号码纸的机器
-  meaning_source: { dict: self, entry: 取号机, rev: "cards500-2026-10" }
-  sentence: 他在取号机上按了一下。
-  sentence_source: { corpus: self, doc: cards500-2026-10 }
-  image: { file: cards500-144.svg, lib: self, license: CC-BY-SA-4.0, alt: "一台立式取号机，屏幕亮着，出纸口吐出一张小白纸条" }
-  confusables: [几]
-  status: draft
-  gen: { model: deepseek-flash, prompt_ver: "cards500@1.0", hash: "bc32ea0d591998de" }
 
 - id: w_142
   text: 燃气费
@@ -1554,21 +1526,6 @@
   status: draft
   gen: { model: deepseek-flash, prompt_ver: "cards500@1.0", hash: "4558c1de5a4738bb" }
 
-- id: w_101
-  text: 年费
-  chars: [年, 费]
-  pinyin: ["nián", "fèi"]
-  level: 2
-  scene: money
-  meaning: 卡每年要交的一点钱
-  meaning_source: { dict: self, entry: 年费, rev: "cards500-2026-10" }
-  sentence: 这张卡每年不收年费。
-  sentence_source: { corpus: self, doc: cards500-2026-10 }
-  image: { file: cards500-101.svg, lib: self, license: CC-BY-SA-4.0, alt: "一张银行卡，旁边放着几枚硬币" }
-  confusables: [废]
-  status: draft
-  gen: { model: deepseek-flash, prompt_ver: "cards500@1.0", hash: "e02f8b9fd7c26935" }
-
 - id: w_079
   text: 取款
   chars: [取, 款]
@@ -1683,21 +1640,6 @@
   status: draft
   gen: { model: deepseek-flash, prompt_ver: "cards500@1.0", hash: "92382386f01f06ef" }
 
-- id: w_122
-  text: 工资卡
-  chars: [工, 资, 卡]
-  pinyin: ["gōng", "zī", "kǎ"]
-  level: 2
-  scene: money
-  meaning: 单位打钱进来的那张卡
-  meaning_source: { dict: self, entry: 工资卡, rev: "cards500-2026-10" }
-  sentence: 工资卡换了，孩子陪我去改。
-  sentence_source: { corpus: self, doc: cards500-2026-10 }
-  image: { file: cards500-122.svg, lib: self, license: CC-BY-SA-4.0, alt: "一张银行卡，旁边有一个对勾" }
-  confusables: [姿]
-  status: draft
-  gen: { model: deepseek-flash, prompt_ver: "cards500@1.0", hash: "4193fbfb146bc3b6" }
-
 - id: w_134
   text: 收款码
   chars: [收, 款, 码]
@@ -1712,21 +1654,6 @@
   status: draft
   gen: { model: deepseek-flash, prompt_ver: "cards500@1.0", hash: "3b453a3aacfd1640" }
 
-- id: w_139
-  text: 手续费
-  chars: [手, 续, 费]
-  pinyin: ["shǒu", "xù", "fèi"]
-  level: 2
-  scene: money
-  meaning: 办业务时另外收的钱
-  meaning_source: { dict: self, entry: 手续费, rev: "cards500-2026-10" }
-  sentence: 跨行取钱会收一点手续费。
-  sentence_source: { corpus: self, doc: cards500-2026-10 }
-  image: { file: cards500-139.svg, lib: self, license: CC-BY-SA-4.0, alt: "一张缴费单，旁边有一叠硬币" }
-  confusables: [废]
-  status: draft
-  gen: { model: deepseek-flash, prompt_ver: "cards500@1.0", hash: "ab1bcdcf8b4354cc" }
-
 - id: w_127
   text: 退休金
   chars: [退, 休, 金]
@@ -1740,20 +1667,6 @@
   image: { file: cards500-127.svg, lib: self, license: CC-BY-SA-4.0, alt: "左边一页挂历，右下角一叠钞票压住日历的一角，右上角一个小闹钟，表示每月领到的钱" }
   status: draft
   gen: { model: deepseek-flash, prompt_ver: "cards500@1.0", hash: "2b6f9888d92f8b23" }
-
-- id: w_097
-  text: 信用卡
-  chars: [信, 用, 卡]
-  pinyin: ["xìn", "yòng", "kǎ"]
-  level: 2
-  scene: money
-  meaning: 可以先花钱过些天再还的卡
-  meaning_source: { dict: self, entry: 信用卡, rev: "cards500-2026-10" }
-  sentence: 信用卡这个月花了多少要还。
-  sentence_source: { corpus: self, doc: cards500-2026-10 }
-  image: { file: cards500-097.svg, lib: self, license: CC-BY-SA-4.0, alt: "一张银行卡旁边放着一个小钟" }
-  status: draft
-  gen: { model: deepseek-flash, prompt_ver: "cards500@1.0", hash: "0d14a94a2e3e8477" }
 
 - id: w_126
   text: 养老金
@@ -1812,20 +1725,6 @@
   status: draft
   gen: { model: deepseek-flash, prompt_ver: "cards500@1.0", hash: "85493643f443a6b4" }
 
-- id: w_137
-  text: 网上银行
-  chars: [网, 上, 银, 行]
-  pinyin: ["wǎng", "shàng", "yín", "háng"]
-  level: 2
-  scene: money
-  meaning: 用电脑上网办存钱取钱的事
-  meaning_source: { dict: self, entry: 网上银行, rev: "cards500-2026-10" }
-  sentence: 网上银行能查余额，也能交费。
-  sentence_source: { corpus: self, doc: cards500-2026-10 }
-  image: { file: cards500-137.svg, lib: self, license: CC-BY-SA-4.0, alt: "一栋银行大楼，旁边有几道波纹" }
-  status: draft
-  gen: { model: deepseek-flash, prompt_ver: "cards500@1.0", hash: "0a355d50c04d3161" }
-
 - id: w_096
   text: 代扣
   chars: [代, 扣]
@@ -1839,20 +1738,6 @@
   image: { file: cards500-096.svg, lib: self, license: CC-BY-SA-4.0, alt: "日历旁边有一个转圈的箭头" }
   status: draft
   gen: { model: deepseek-flash, prompt_ver: "cards500@1.0", hash: "a25a0110b193f3c8" }
-
-- id: w_124
-  text: 回单
-  chars: [回, 单]
-  pinyin: ["huí", "dān"]
-  level: 3
-  scene: money
-  meaning: 办完事给你的一张纸条
-  meaning_source: { dict: self, entry: 回单, rev: "cards500-2026-10" }
-  sentence: 柜员把回单递给我，我夹在本子里。
-  sentence_source: { corpus: self, doc: cards500-2026-10 }
-  image: { file: cards500-124.svg, lib: self, license: CC-BY-SA-4.0, alt: "柜台递出来的一张小纸条" }
-  status: draft
-  gen: { model: deepseek-flash, prompt_ver: "cards500@1.0", hash: "0fa84cd3c0ec101f" }
 
 - id: w_076
   text: 解冻
@@ -1896,21 +1781,6 @@
   image: { file: cards500-116.svg, lib: self, license: CC-BY-SA-4.0, alt: "一页日历和一个小钟，旁边有硬币" }
   status: draft
   gen: { model: deepseek-flash, prompt_ver: "cards500@1.0", hash: "99459c8090010655" }
-
-- id: w_088
-  text: 流水
-  chars: [流, 水]
-  pinyin: ["liú", "shuǐ"]
-  level: 3
-  scene: money
-  meaning: 卡里一笔一笔进出钱的记录
-  meaning_source: { dict: self, entry: 流水, rev: "cards500-2026-10" }
-  sentence: 打一份流水，能看清每笔钱。
-  sentence_source: { corpus: self, doc: cards500-2026-10 }
-  image: { file: cards500-088.svg, lib: self, license: CC-BY-SA-4.0, alt: "一张长长的凭条，旁边有一个箭头" }
-  confusables: [留]
-  status: draft
-  gen: { model: deepseek-flash, prompt_ver: "cards500@1.0", hash: "163c0b9b3abf7a3d" }
 
 - id: w_117
   text: 明细
@@ -1956,20 +1826,6 @@
   confusables: [枝]
   status: draft
   gen: { model: deepseek-flash, prompt_ver: "cards500@1.0", hash: "050e64032abc8370" }
-
-- id: w_120
-  text: 网银
-  chars: [网, 银]
-  pinyin: ["wǎng", "yín"]
-  level: 3
-  scene: money
-  meaning: 在电脑上办银行的事
-  meaning_source: { dict: self, entry: 网银, rev: "cards500-2026-10" }
-  sentence: 网银能看钱到没到，我不敢用。
-  sentence_source: { corpus: self, doc: cards500-2026-10 }
-  image: { file: cards500-120.svg, lib: self, license: CC-BY-SA-4.0, alt: "一个无线网络的标志，旁边有对勾" }
-  status: draft
-  gen: { model: deepseek-flash, prompt_ver: "cards500@1.0", hash: "d362e22a0e75a8f6" }
 
 - id: w_081
   text: 销户
@@ -2045,20 +1901,6 @@
   confusables: [姿]
   status: draft
   gen: { model: deepseek-flash, prompt_ver: "cards500@1.0", hash: "68104c6ddbfd50b6" }
-
-- id: w_098
-  text: 储蓄卡
-  chars: [储, 蓄, 卡]
-  pinyin: ["chǔ", "xù", "kǎ"]
-  level: 3
-  scene: money
-  meaning: 里面有钱才能花的那种卡
-  meaning_source: { dict: self, entry: 储蓄卡, rev: "cards500-2026-10" }
-  sentence: 每月的工资打在储蓄卡里。
-  sentence_source: { corpus: self, doc: cards500-2026-10 }
-  image: { file: cards500-098.svg, lib: self, license: CC-BY-SA-4.0, alt: "一张银行卡，旁边有几枚硬币" }
-  status: draft
-  gen: { model: deepseek-flash, prompt_ver: "cards500@1.0", hash: "d70baf66e990bfe8" }
 
 - id: w_108
   text: 开户行
@@ -2325,21 +2167,6 @@
   status: draft
   gen: { model: deepseek-flash, prompt_ver: "cards500@1.0", hash: "a5b911ad70adf154" }
 
-- id: w_147
-  text: 站点
-  chars: [站, 点]
-  pinyin: ["zhàn", "diǎn"]
-  level: 1
-  scene: travel
-  meaning: 公交车停靠让人上下的地方
-  meaning_source: { dict: self, entry: 站点, rev: "cards500-2026-10" }
-  sentence: 这个站点能坐三路公交车。
-  sentence_source: { corpus: self, doc: cards500-2026-10 }
-  image: { file: cards500-147.svg, lib: self, license: CC-BY-SA-4.0, alt: "一辆公交车，旁边有一个定位针" }
-  confusables: [占]
-  status: draft
-  gen: { model: deepseek-flash, prompt_ver: "cards500@1.0", hash: "f3b8192e80c9c0a9" }
-
 - id: w_146
   text: 站牌
   chars: [站, 牌]
@@ -2519,21 +2346,6 @@
   status: draft
   gen: { model: deepseek-flash, prompt_ver: "cards500@1.0", hash: "2162f09415411950" }
 
-- id: w_186
-  text: 动车
-  chars: [动, 车]
-  pinyin: ["dòng", "chē"]
-  level: 2
-  scene: travel
-  meaning: 停站少跑得快的火车
-  meaning_source: { dict: self, entry: 动车, rev: "cards500-2026-10" }
-  sentence: 动车到站，他提着包慢慢下车。
-  sentence_source: { corpus: self, doc: cards500-2026-10 }
-  image: { file: cards500-186.svg, lib: self, license: CC-BY-SA-4.0, alt: "一列火车停在铁轨上，旁边有个箭头" }
-  confusables: [冻]
-  status: draft
-  gen: { model: deepseek-flash, prompt_ver: "cards500@1.0", hash: "47e972781d3ca8d6" }
-
 - id: w_185
   text: 高铁
   chars: [高, 铁]
@@ -2608,20 +2420,6 @@
   confusables: [近]
   status: draft
   gen: { model: deepseek-flash, prompt_ver: "cards500@1.0", hash: "9030f1d6f7bcd3cc" }
-
-- id: w_188
-  text: 列车
-  chars: [列, 车]
-  pinyin: ["liè", "chē"]
-  level: 2
-  scene: travel
-  meaning: 一长串连在一起的车
-  meaning_source: { dict: self, entry: 列车, rev: "cards500-2026-10" }
-  sentence: 列车开得很稳，他靠在窗边。
-  sentence_source: { corpus: self, doc: cards500-2026-10 }
-  image: { file: cards500-188.svg, lib: self, license: CC-BY-SA-4.0, alt: "一列长长的车从隧道里开出来" }
-  status: draft
-  gen: { model: deepseek-flash, prompt_ver: "cards500@1.0", hash: "92d79fec6bb7b5c9" }
 
 - id: w_155
   text: 末班
@@ -2787,18 +2585,18 @@
   gen: { model: deepseek-flash, prompt_ver: "cards500@1.0", hash: "d691a4b01d1d0139" }
 
 - id: w_203
-  text: 候车室
-  chars: [候, 车, 室]
-  pinyin: ["hòu", "chē", "shì"]
-  level: 2
-  scene: travel
-  meaning: 车站里坐着等车的大屋子
-  meaning_source: { dict: self, entry: 候车室, rev: "cards500-2026-10" }
-  sentence: 天冷，大家都在候车室里等。
-  sentence_source: { corpus: self, doc: cards500-2026-10 }
-  image: { file: cards500-203.svg, lib: self, license: CC-BY-SA-4.0, alt: "候车室里有一排木连椅，三个人并排坐着等车，墙上挂着一个钟" }
+  text: 卧室
+  chars: [卧, 室]
+  pinyin: ["wò", "shì"]
+  level: 1
+  scene: home
+  meaning: 睡觉的那间屋子
+  meaning_source: { dict: self, entry: 卧室, rev: "rebalance-2026-11" }
+  sentence: 卧室的灯坏了，晚上很黑。
+  sentence_source: { corpus: self, doc: "rebalance-2026-11" }
+  image: { file: cards500-203.svg, lib: self, license: CC-BY-SA-4.0, alt: "一间卧室，里面有一张床和一盏床头灯" }
   status: draft
-  gen: { model: deepseek-flash, prompt_ver: "cards500@1.0", hash: "36678c66a245c7bd" }
+  gen: { model: deepseek-flash, prompt_ver: "rebalance@1", hash: "rebalance-w_203" }
 
 - id: w_201
   text: 检票口
@@ -2828,20 +2626,6 @@
   confusables: [受]
   status: draft
   gen: { model: deepseek-flash, prompt_ver: "cards500@1.0", hash: "fadd450642b561d3" }
-
-- id: w_190
-  text: 网约车
-  chars: [网, 约, 车]
-  pinyin: ["wǎng", "yuē", "chē"]
-  level: 2
-  scene: travel
-  meaning: 用手机叫来接送的车
-  meaning_source: { dict: self, entry: 网约车, rev: "cards500-2026-10" }
-  sentence: 他不会用手机叫网约车。
-  sentence_source: { corpus: self, doc: cards500-2026-10 }
-  image: { file: cards500-190.svg, lib: self, license: CC-BY-SA-4.0, alt: "一部手机，旁边有一个定位标记" }
-  status: draft
-  gen: { model: deepseek-flash, prompt_ver: "cards500@1.0", hash: "cfcff7f12035f15c" }
 
 - id: w_195
   text: 十字路口
@@ -2917,20 +2701,6 @@
   confusables: [该]
   status: draft
   gen: { model: deepseek-flash, prompt_ver: "cards500@1.0", hash: "da9af79688d4fadd" }
-
-- id: w_178
-  text: 检票
-  chars: [检, 票]
-  pinyin: ["jiǎn", "piào"]
-  level: 3
-  scene: travel
-  meaning: 上车前让人看一眼你的票
-  meaning_source: { dict: self, entry: 检票, rev: "cards500-2026-10" }
-  sentence: 到了检票口，把票拿在手上。
-  sentence_source: { corpus: self, doc: cards500-2026-10 }
-  image: { file: cards500-178.svg, lib: self, license: CC-BY-SA-4.0, alt: "一张车票，旁边有一个对勾" }
-  status: draft
-  gen: { model: deepseek-flash, prompt_ver: "cards500@1.0", hash: "2843316377165ba4" }
 
 - id: w_176
   text: 目的地
@@ -3565,21 +3335,6 @@
   image: { file: cards500-238.svg, lib: self, license: CC-BY-SA-4.0, alt: "一个套在被芯外面的被套，里面装着被芯，下边开着口露出被角，口子上一半拉着拉链" }
   status: draft
   gen: { model: deepseek-flash, prompt_ver: "cards500@1.0", hash: "bbe97b79371756cd" }
-
-- id: w_262
-  text: 断电
-  chars: [断, 电]
-  pinyin: ["duàn", "diàn"]
-  level: 2
-  scene: home
-  meaning: 电突然停了
-  meaning_source: { dict: self, entry: 断电, rev: "cards500-2026-10" }
-  sentence: 打雷的时候，家里断电了。
-  sentence_source: { corpus: self, doc: cards500-2026-10 }
-  image: { file: cards500-262.svg, lib: self, license: CC-BY-SA-4.0, alt: "墙上的开关被按下，屋里的灯不亮了" }
-  confusables: [段]
-  status: draft
-  gen: { model: deepseek-flash, prompt_ver: "cards500@1.0", hash: "65ea2ea80ea7a8d2" }
 
 - id: w_218
   text: 饭盒
@@ -4310,21 +4065,6 @@
   status: draft
   gen: { model: deepseek-flash, prompt_ver: "cards500@1.0", hash: "4a16468237cb3455" }
 
-- id: w_331
-  text: 充电宝
-  chars: [充, 电, 宝]
-  pinyin: ["chōng", "diàn", "bǎo"]
-  level: 1
-  scene: contact
-  meaning: 能带出门的备用电池
-  meaning_source: { dict: self, entry: 充电宝, rev: "cards500-2026-10" }
-  sentence: 出门带个充电宝，心里踏实。
-  sentence_source: { corpus: self, doc: cards500-2026-10 }
-  image: { file: cards500-331.svg, lib: self, license: CC-BY-SA-4.0, alt: "一块方方的电池，旁边一个加号" }
-  confusables: [冲]
-  status: draft
-  gen: { model: deepseek-flash, prompt_ver: "cards500@1.0", hash: "519b45c03eb1074c" }
-
 - id: w_332
   text: 数据线
   chars: [数, 据, 线]
@@ -4459,20 +4199,6 @@
   status: draft
   gen: { model: deepseek-flash, prompt_ver: "cards500@1.0", hash: "92ae54ce5e282000" }
 
-- id: w_293
-  text: 来电
-  chars: [来, 电]
-  pinyin: ["lái", "diàn"]
-  level: 2
-  scene: contact
-  meaning: 别人打电话到你手机上
-  meaning_source: { dict: self, entry: 来电, rev: "cards500-2026-10" }
-  sentence: 来电显示是一个陌生号码。
-  sentence_source: { corpus: self, doc: cards500-2026-10 }
-  image: { file: cards500-293.svg, lib: self, license: CC-BY-SA-4.0, alt: "手机响了，旁边有几道声音的波纹" }
-  status: draft
-  gen: { model: deepseek-flash, prompt_ver: "cards500@1.0", hash: "436ab42ed77b2b93" }
-
 - id: w_342
   text: 联网
   chars: [联, 网]
@@ -4549,18 +4275,18 @@
   gen: { model: deepseek-flash, prompt_ver: "cards500@1.0", hash: "aef6242a4fcb808f" }
 
 - id: w_321
-  text: 省电
-  chars: [省, 电]
-  pinyin: ["shěng", "diàn"]
+  text: 省钱
+  chars: [省, 钱]
+  pinyin: ["shěng", "qián"]
   level: 2
-  scene: contact
-  meaning: 让手机的电用得慢一点
-  meaning_source: { dict: self, entry: 省电, rev: "cards500-2026-10" }
-  sentence: 打开省电模式，能用得久一点。
-  sentence_source: { corpus: self, doc: cards500-2026-10 }
-  image: { file: cards500-321.svg, lib: self, license: CC-BY-SA-4.0, alt: "一节电池，旁边放着一片叶子" }
+  scene: money
+  meaning: 少花不该花的钱
+  meaning_source: { dict: self, entry: 省钱, rev: "rebalance-2026-11" }
+  sentence: 自己做饭，能省不少钱。
+  sentence_source: { corpus: self, doc: "rebalance-2026-11" }
+  image: { file: cards500-321.svg, lib: self, license: CC-BY-SA-4.0, alt: "一个存钱罐，旁边有一枚硬币" }
   status: draft
-  gen: { model: deepseek-flash, prompt_ver: "cards500@1.0", hash: "b38be1aba73dbfb9" }
+  gen: { model: deepseek-flash, prompt_ver: "rebalance@1", hash: "rebalance-w_321" }
 
 - id: w_309
   text: 收藏
@@ -5102,20 +4828,6 @@
   status: draft
   gen: { model: deepseek-flash, prompt_ver: "cards500@1.0", hash: "7e17296f44fe6826" }
 
-- id: w_389
-  text: 证件
-  chars: [证, 件]
-  pinyin: ["zhèng", "jiàn"]
-  level: 1
-  scene: gov
-  meaning: 办事要带的小本子和卡片
-  meaning_source: { dict: self, entry: 证件, rev: "cards500-2026-10" }
-  sentence: 出门办事记得把证件带上。
-  sentence_source: { corpus: self, doc: cards500-2026-10 }
-  image: { file: cards500-389.svg, lib: self, license: CC-BY-SA-4.0, alt: "一张身份证叠在一个红棕色的小本子上，卡上有照片、几行信息和一枚小圆章" }
-  status: draft
-  gen: { model: deepseek-flash, prompt_ver: "cards500@1.0", hash: "a078da037ea72e2b" }
-
 - id: w_386
   text: 村委会
   chars: [村, 委, 会]
@@ -5369,21 +5081,6 @@
   status: draft
   gen: { model: deepseek-flash, prompt_ver: "cards500@1.0", hash: "216279ab29ee598c" }
 
-- id: w_380
-  text: 换证
-  chars: [换, 证]
-  pinyin: ["huàn", "zhèng"]
-  level: 2
-  scene: gov
-  meaning: 旧证到期了换一张新的
-  meaning_source: { dict: self, entry: 换证, rev: "cards500-2026-10" }
-  sentence: 身份证到期要提前换证。
-  sentence_source: { corpus: self, doc: cards500-2026-10 }
-  image: { file: cards500-380.svg, lib: self, license: CC-BY-SA-4.0, alt: "一张卡片旁边有一个箭头" }
-  confusables: [唤]
-  status: draft
-  gen: { model: deepseek-flash, prompt_ver: "cards500@1.0", hash: "4609c0df749fc05d" }
-
 - id: w_397
   text: 签名
   chars: [签, 名]
@@ -5499,20 +5196,6 @@
   image: { file: cards500-355.svg, lib: self, license: CC-BY-SA-4.0, alt: "一张纸旁边有一颗小星星" }
   status: draft
   gen: { model: deepseek-flash, prompt_ver: "cards500@1.0", hash: "425d596b54487110" }
-
-- id: w_360
-  text: 证明
-  chars: [证, 明]
-  pinyin: ["zhèng", "míng"]
-  level: 2
-  scene: gov
-  meaning: 用来说明一件事的纸
-  meaning_source: { dict: self, entry: 证明, rev: "cards500-2026-10" }
-  sentence: 办这件事要单位开证明。
-  sentence_source: { corpus: self, doc: cards500-2026-10 }
-  image: { file: cards500-360.svg, lib: self, license: CC-BY-SA-4.0, alt: "一张纸的右下角有一个小圆牌" }
-  status: draft
-  gen: { model: deepseek-flash, prompt_ver: "cards500@1.0", hash: "47b0bce330cbb219" }
 
 - id: w_374
   text: 指南
@@ -5783,20 +5466,6 @@
   status: draft
   gen: { model: deepseek-flash, prompt_ver: "cards500@1.0", hash: "c2002597d091fe59" }
 
-- id: w_369
-  text: 优待证
-  chars: [优, 待, 证]
-  pinyin: ["yōu", "dài", "zhèng"]
-  level: 3
-  scene: gov
-  meaning: 当过兵的人用的证能受照顾
-  meaning_source: { dict: self, entry: 优待证, rev: "cards500-2026-10" }
-  sentence: 拿着优待证到窗口就能办。
-  sentence_source: { corpus: self, doc: cards500-2026-10 }
-  image: { file: cards500-369.svg, lib: self, license: CC-BY-SA-4.0, alt: "一张红色的小卡片，角上有一颗星" }
-  status: draft
-  gen: { model: deepseek-flash, prompt_ver: "cards500@1.0", hash: "d5651dd6b19ff44d" }
-
 - id: w_435
   text: 包装
   chars: [包, 装]
@@ -5911,20 +5580,6 @@
   confusables: [式]
   status: draft
   gen: { model: deepseek-flash, prompt_ver: "cards500@1.0", hash: "03be80a49b6d4a1a" }
-
-- id: w_431
-  text: 收银
-  chars: [收, 银]
-  pinyin: ["shōu", "yín"]
-  level: 1
-  scene: shopping
-  meaning: 收钱找钱的那个地方
-  meaning_source: { dict: self, entry: 收银, rev: "cards500-2026-10" }
-  sentence: 收银在门口，过去就能交钱。
-  sentence_source: { corpus: self, doc: cards500-2026-10 }
-  image: { file: cards500-431.svg, lib: self, license: CC-BY-SA-4.0, alt: "一个柜台，柜台上放着一枚硬币" }
-  status: draft
-  gen: { model: deepseek-flash, prompt_ver: "cards500@1.0", hash: "3ebc607c3736ff2f" }
 
 - id: w_448
   text: 水果
@@ -6746,36 +6401,6 @@
   status: draft
   gen: { model: deepseek-flash, prompt_ver: "cards500@1.0", hash: "b13cec6678d5bfe0" }
 
-- id: w_491
-  text: 客服电话
-  chars: [客, 服, 电, 话]
-  pinyin: ["kè", "fú", "diàn", "huà"]
-  level: 1
-  scene: safety
-  meaning: 打给公司问事的号码
-  meaning_source: { dict: self, entry: 客服电话, rev: "cards500-2026-10" }
-  sentence: 客服电话要自己查，别信来电。
-  sentence_source: { corpus: self, doc: cards500-2026-10 }
-  image: { file: cards500-491.svg, lib: self, license: CC-BY-SA-4.0, alt: "一部蓝色的座机电话，深色听筒架在带按键的底座上，左边两道黄色波纹表示正在响，右上方冒出一个带三个点的白色对话气泡" }
-  confusables: [店]
-  status: draft
-  gen: { model: deepseek-flash, prompt_ver: "cards500@1.0", hash: "53934f8184eb965a" }
-
-- id: w_489
-  text: 来电显示
-  chars: [来, 电, 显, 示]
-  pinyin: ["lái", "diàn", "xiǎn", "shì"]
-  level: 1
-  scene: safety
-  meaning: 电话上显示的对方号码
-  meaning_source: { dict: self, entry: 来电显示, rev: "cards500-2026-10" }
-  sentence: 来电显示是外地的号，当心点。
-  sentence_source: { corpus: self, doc: cards500-2026-10 }
-  image: { file: cards500-489.svg, lib: self, license: CC-BY-SA-4.0, alt: "一部手机，屏幕上方有一个来电箭头，下面一列来电号码用短横线表示，最上面一条有黄色高亮底色和红点标记" }
-  confusables: [现]
-  status: draft
-  gen: { model: deepseek-flash, prompt_ver: "cards500@1.0", hash: "4ac89cb88784979a" }
-
 - id: w_488
   text: 未接来电
   chars: [未, 接, 来, 电]
@@ -6862,21 +6487,6 @@
   image: { file: cards500-500.svg, lib: self, license: CC-BY-SA-4.0, alt: "一部电话，旁边一个往回弯的箭头" }
   status: draft
   gen: { model: deepseek-flash, prompt_ver: "cards500@1.0", hash: "e5857ff085e2366f" }
-
-- id: w_454
-  text: 假冒
-  chars: [假, 冒]
-  pinyin: ["jiǎ", "mào"]
-  level: 2
-  scene: safety
-  meaning: 拿假货当真的卖
-  meaning_source: { dict: self, entry: 假冒, rev: "cards500-2026-10" }
-  sentence: 假冒的保健品，千万别买。
-  sentence_source: { corpus: self, doc: cards500-2026-10 }
-  image: { file: cards500-454.svg, lib: self, license: CC-BY-SA-4.0, alt: "一盒药旁边，放着一个大叉" }
-  confusables: [架]
-  status: draft
-  gen: { model: deepseek-flash, prompt_ver: "cards500@1.0", hash: "9fe89808f1604969" }
 
 - id: w_486
   text: 兼职
@@ -7086,21 +6696,6 @@
   status: draft
   gen: { model: deepseek-flash, prompt_ver: "cards500@1.0", hash: "e4a95fffc07746c7" }
 
-- id: w_498
-  text: 身份证号
-  chars: [身, 份, 证, 号]
-  pinyin: ["shēn", "fèn", "zhèng", "hào"]
-  level: 2
-  scene: safety
-  meaning: 证件上那串长号码
-  meaning_source: { dict: self, entry: 身份证号, rev: "cards500-2026-10" }
-  sentence: 身份证号别随口说给陌生人。
-  sentence_source: { corpus: self, doc: cards500-2026-10 }
-  image: { file: cards500-498.svg, lib: self, license: CC-BY-SA-4.0, alt: "一张证件，边上有几道横线" }
-  confusables: [正]
-  status: draft
-  gen: { model: deepseek-flash, prompt_ver: "cards500@1.0", hash: "f95032ff6e3d4804" }
-
 - id: w_497
   text: 支付密码
   chars: [支, 付, 密, 码]
@@ -7263,3 +6858,395 @@
   confusables: [治]
   status: draft
   gen: { model: deepseek-flash, prompt_ver: "cards500@1.0", hash: "f6525ee54cf523e5" }
+
+- id: w_501
+  text: 高血压
+  chars: [高, 血, 压]
+  pinyin: ["gāo", "xuè", "yā"]
+  level: 2
+  scene: health
+  meaning: 血压一直比平常高
+  meaning_source: { dict: self, entry: 高血压, rev: "rebalance-2026-11" }
+  sentence: 奶奶有高血压，每天都要量一量。
+  sentence_source: { corpus: self, doc: "rebalance-2026-11" }
+  image: { file: cards500-501.svg, lib: self, license: CC-BY-SA-4.0, alt: "一只手臂上绑着血压计袖带，表上的指针偏高" }
+  status: draft
+  gen: { model: deepseek-flash, prompt_ver: "rebalance@1", hash: "rebalance-w_501" }
+
+- id: w_502
+  text: 体温
+  chars: [体, 温]
+  pinyin: ["tǐ", "wēn"]
+  level: 1
+  scene: health
+  meaning: 身上有多热
+  meaning_source: { dict: self, entry: 体温, rev: "rebalance-2026-11" }
+  sentence: 先量一下体温，看发不发烧。
+  sentence_source: { corpus: self, doc: "rebalance-2026-11" }
+  image: { file: cards500-502.svg, lib: self, license: CC-BY-SA-4.0, alt: "一支体温计，旁边有一杯温水" }
+  status: draft
+  gen: { model: deepseek-flash, prompt_ver: "rebalance@1", hash: "rebalance-w_502" }
+
+- id: w_503
+  text: 牙刷
+  chars: [牙, 刷]
+  pinyin: ["yá", "shuā"]
+  level: 1
+  scene: home
+  meaning: 刷牙用的小刷子
+  meaning_source: { dict: self, entry: 牙刷, rev: "rebalance-2026-11" }
+  sentence: 牙刷用久了要换一把新的。
+  sentence_source: { corpus: self, doc: "rebalance-2026-11" }
+  image: { file: cards500-503.svg, lib: self, license: CC-BY-SA-4.0, alt: "一把牙刷和一支牙膏" }
+  status: draft
+  gen: { model: deepseek-flash, prompt_ver: "rebalance@1", hash: "rebalance-w_503" }
+
+- id: w_504
+  text: 护工
+  chars: [护, 工]
+  pinyin: ["hù", "gōng"]
+  level: 2
+  scene: health
+  meaning: 在医院照顾病人的人
+  meaning_source: { dict: self, entry: 护工, rev: "rebalance-2026-11" }
+  sentence: 住院时请个护工帮忙照顾。
+  sentence_source: { corpus: self, doc: "rebalance-2026-11" }
+  image: { file: cards500-504.svg, lib: self, license: CC-BY-SA-4.0, alt: "一位穿工作服的护工在病床边照顾老人" }
+  status: draft
+  gen: { model: deepseek-flash, prompt_ver: "rebalance@1", hash: "rebalance-w_504" }
+
+- id: w_505
+  text: 退烧
+  chars: [退, 烧]
+  pinyin: ["tuì", "shāo"]
+  level: 1
+  scene: health
+  meaning: 让身上的热退下去
+  meaning_source: { dict: self, entry: 退烧, rev: "rebalance-2026-11" }
+  sentence: 吃了药，烧慢慢退了。
+  sentence_source: { corpus: self, doc: "rebalance-2026-11" }
+  image: { file: cards500-505.svg, lib: self, license: CC-BY-SA-4.0, alt: "一支体温计，旁边有一个箭头" }
+  status: draft
+  gen: { model: deepseek-flash, prompt_ver: "rebalance@1", hash: "rebalance-w_505" }
+
+- id: w_506
+  text: 中医
+  chars: [中, 医]
+  pinyin: ["zhōng", "yī"]
+  level: 2
+  scene: health
+  meaning: 用草药和推拿治病
+  meaning_source: { dict: self, entry: 中医, rev: "rebalance-2026-11" }
+  sentence: 他去看中医，开了几副药。
+  sentence_source: { corpus: self, doc: "rebalance-2026-11" }
+  image: { file: cards500-506.svg, lib: self, license: CC-BY-SA-4.0, alt: "一位中医在给老人把脉，旁边放着草药" }
+  status: draft
+  gen: { model: deepseek-flash, prompt_ver: "rebalance@1", hash: "rebalance-w_506" }
+
+- id: w_507
+  text: 血压计
+  chars: [血, 压, 计]
+  pinyin: ["xuè", "yā", "jì"]
+  level: 2
+  scene: health
+  meaning: 量血压用的表
+  meaning_source: { dict: self, entry: 血压计, rev: "rebalance-2026-11" }
+  sentence: 家里的血压计要常常校准。
+  sentence_source: { corpus: self, doc: "rebalance-2026-11" }
+  image: { file: cards500-507.svg, lib: self, license: CC-BY-SA-4.0, alt: "一台放在桌上的血压计，连着一根袖带" }
+  status: draft
+  gen: { model: deepseek-flash, prompt_ver: "rebalance@1", hash: "rebalance-w_507" }
+
+- id: w_508
+  text: 假牙
+  chars: [假, 牙]
+  pinyin: ["jiǎ", "yá"]
+  level: 1
+  scene: health
+  meaning: 装在嘴里代替真牙
+  meaning_source: { dict: self, entry: 假牙, rev: "rebalance-2026-11" }
+  sentence: 假牙要拿下来刷干净。
+  sentence_source: { corpus: self, doc: "rebalance-2026-11" }
+  image: { file: cards500-508.svg, lib: self, license: CC-BY-SA-4.0, alt: "一颗白色的假牙" }
+  status: draft
+  gen: { model: deepseek-flash, prompt_ver: "rebalance@1", hash: "rebalance-w_508" }
+
+- id: w_509
+  text: 养老院
+  chars: [养, 老, 院]
+  pinyin: ["yǎng", "lǎo", "yuàn"]
+  level: 2
+  scene: gov
+  meaning: 老人住进去有人照顾
+  meaning_source: { dict: self, entry: 养老院, rev: "rebalance-2026-11" }
+  sentence: 老人住在养老院有人照顾。
+  sentence_source: { corpus: self, doc: "rebalance-2026-11" }
+  image: { file: cards500-509.svg, lib: self, license: CC-BY-SA-4.0, alt: "一栋小楼，门口站着一位老人" }
+  status: draft
+  gen: { model: deepseek-flash, prompt_ver: "rebalance@1", hash: "rebalance-w_509" }
+
+- id: w_510
+  text: 手脚
+  chars: [手, 脚]
+  pinyin: ["shǒu", "jiǎo"]
+  level: 1
+  scene: health
+  meaning: 手和脚，身上能动的两头
+  meaning_source: { dict: self, entry: 手脚, rev: "rebalance-2026-11" }
+  sentence: 天冷了，手脚容易发凉。
+  sentence_source: { corpus: self, doc: "rebalance-2026-11" }
+  image: { file: cards500-510.svg, lib: self, license: CC-BY-SA-4.0, alt: "一只手和一只脚画在一起" }
+  status: draft
+  gen: { model: deepseek-flash, prompt_ver: "rebalance@1", hash: "rebalance-w_510" }
+
+- id: w_511
+  text: 吃饭
+  chars: [吃, 饭]
+  pinyin: ["chī", "fàn"]
+  level: 1
+  scene: home
+  meaning: 把饭放进嘴里咽下去
+  meaning_source: { dict: self, entry: 吃饭, rev: "rebalance-2026-11" }
+  sentence: 慢慢吃饭，别急着咽。
+  sentence_source: { corpus: self, doc: "rebalance-2026-11" }
+  image: { file: cards500-511.svg, lib: self, license: CC-BY-SA-4.0, alt: "一个人坐在桌边端着碗吃饭" }
+  status: draft
+  gen: { model: deepseek-flash, prompt_ver: "rebalance@1", hash: "rebalance-w_511" }
+
+- id: w_512
+  text: 散步
+  chars: [散, 步]
+  pinyin: ["sàn", "bù"]
+  level: 1
+  scene: health
+  meaning: 慢慢走一走活动身体
+  meaning_source: { dict: self, entry: 散步, rev: "rebalance-2026-11" }
+  sentence: 饭后到楼下散步半小时。
+  sentence_source: { corpus: self, doc: "rebalance-2026-11" }
+  image: { file: cards500-512.svg, lib: self, license: CC-BY-SA-4.0, alt: "两个老人在小区里慢慢走路" }
+  status: draft
+  gen: { model: deepseek-flash, prompt_ver: "rebalance@1", hash: "rebalance-w_512" }
+
+- id: w_513
+  text: 穿衣
+  chars: [穿, 衣]
+  pinyin: ["chuān", "yī"]
+  level: 1
+  scene: home
+  meaning: 把衣服穿到身上
+  meaning_source: { dict: self, entry: 穿衣, rev: "rebalance-2026-11" }
+  sentence: 天凉了，多穿一件衣服。
+  sentence_source: { corpus: self, doc: "rebalance-2026-11" }
+  image: { file: cards500-513.svg, lib: self, license: CC-BY-SA-4.0, alt: "一个人正把外套穿到身上，旁边有衣架" }
+  status: draft
+  gen: { model: deepseek-flash, prompt_ver: "rebalance@1", hash: "rebalance-w_513" }
+
+- id: w_514
+  text: 起床
+  chars: [起, 床]
+  pinyin: ["qǐ", "chuáng"]
+  level: 1
+  scene: home
+  meaning: 睡醒了从床上起来
+  meaning_source: { dict: self, entry: 起床, rev: "rebalance-2026-11" }
+  sentence: 早上七点起床，先喝杯水。
+  sentence_source: { corpus: self, doc: "rebalance-2026-11" }
+  image: { file: cards500-514.svg, lib: self, license: CC-BY-SA-4.0, alt: "一个人从床上坐起来，窗外有太阳" }
+  status: draft
+  gen: { model: deepseek-flash, prompt_ver: "rebalance@1", hash: "rebalance-w_514" }
+
+- id: w_515
+  text: 关灯
+  chars: [关, 灯]
+  pinyin: ["guān", "dēng"]
+  level: 1
+  scene: home
+  meaning: 把灯关掉不亮了
+  meaning_source: { dict: self, entry: 关灯, rev: "rebalance-2026-11" }
+  sentence: 出门前记得关灯。
+  sentence_source: { corpus: self, doc: "rebalance-2026-11" }
+  image: { file: cards500-515.svg, lib: self, license: CC-BY-SA-4.0, alt: "一只手按下墙上的开关，灯灭了" }
+  status: draft
+  gen: { model: deepseek-flash, prompt_ver: "rebalance@1", hash: "rebalance-w_515" }
+
+- id: w_516
+  text: 开窗
+  chars: [开, 窗]
+  pinyin: ["kāi", "chuāng"]
+  level: 1
+  scene: home
+  meaning: 把窗户打开透气
+  meaning_source: { dict: self, entry: 开窗, rev: "rebalance-2026-11" }
+  sentence: 屋里闷，开窗透透气。
+  sentence_source: { corpus: self, doc: "rebalance-2026-11" }
+  image: { file: cards500-516.svg, lib: self, license: CC-BY-SA-4.0, alt: "一扇窗户向外打开，风吹进来" }
+  status: draft
+  gen: { model: deepseek-flash, prompt_ver: "rebalance@1", hash: "rebalance-w_516" }
+
+- id: w_517
+  text: 锁门
+  chars: [锁, 门]
+  pinyin: ["suǒ", "mén"]
+  level: 1
+  scene: home
+  meaning: 出门前把门锁上
+  meaning_source: { dict: self, entry: 锁门, rev: "rebalance-2026-11" }
+  sentence: 睡觉前检查一下有没有锁门。
+  sentence_source: { corpus: self, doc: "rebalance-2026-11" }
+  image: { file: cards500-517.svg, lib: self, license: CC-BY-SA-4.0, alt: "一扇门，门边挂着一把锁" }
+  status: draft
+  gen: { model: deepseek-flash, prompt_ver: "rebalance@1", hash: "rebalance-w_517" }
+
+- id: w_518
+  text: 烧饭
+  chars: [烧, 饭]
+  pinyin: ["shāo", "fàn"]
+  level: 1
+  scene: home
+  meaning: 把生的东西做熟
+  meaning_source: { dict: self, entry: 烧饭, rev: "rebalance-2026-11" }
+  sentence: 中午在家烧饭，不去外面吃。
+  sentence_source: { corpus: self, doc: "rebalance-2026-11" }
+  image: { file: cards500-518.svg, lib: self, license: CC-BY-SA-4.0, alt: "灶上放着锅，锅里冒着热气" }
+  status: draft
+  gen: { model: deepseek-flash, prompt_ver: "rebalance@1", hash: "rebalance-w_518" }
+
+- id: w_519
+  text: 买菜
+  chars: [买, 菜]
+  pinyin: ["mǎi", "cài"]
+  level: 1
+  scene: shopping
+  meaning: 去市场把菜买回来
+  meaning_source: { dict: self, entry: 买菜, rev: "rebalance-2026-11" }
+  sentence: 早上去菜场买菜，便宜又新鲜。
+  sentence_source: { corpus: self, doc: "rebalance-2026-11" }
+  image: { file: cards500-519.svg, lib: self, license: CC-BY-SA-4.0, alt: "一个菜篮子，里面装着青菜和萝卜" }
+  status: draft
+  gen: { model: deepseek-flash, prompt_ver: "rebalance@1", hash: "rebalance-w_519" }
+
+- id: w_520
+  text: 路牌
+  chars: [路, 牌]
+  pinyin: ["lù", "pái"]
+  level: 1
+  scene: travel
+  meaning: 路边写着路名的牌子
+  meaning_source: { dict: self, entry: 路牌, rev: "rebalance-2026-11" }
+  sentence: 看不懂路牌，就问一下路人。
+  sentence_source: { corpus: self, doc: "rebalance-2026-11" }
+  image: { file: cards500-520.svg, lib: self, license: CC-BY-SA-4.0, alt: "路边立着一块路牌，牌上有一个箭头" }
+  status: draft
+  gen: { model: deepseek-flash, prompt_ver: "rebalance@1", hash: "rebalance-w_520" }
+
+- id: w_521
+  text: 拖地
+  chars: [拖, 地]
+  pinyin: ["tuō", "dì"]
+  level: 1
+  scene: home
+  meaning: 用拖把把地擦干净
+  meaning_source: { dict: self, entry: 拖地, rev: "rebalance-2026-11" }
+  sentence: 地上有水，拿拖把拖一拖。
+  sentence_source: { corpus: self, doc: "rebalance-2026-11" }
+  image: { file: cards500-521.svg, lib: self, license: CC-BY-SA-4.0, alt: "一个人拿着拖把在拖地" }
+  status: draft
+  gen: { model: deepseek-flash, prompt_ver: "rebalance@1", hash: "rebalance-w_521" }
+
+- id: w_522
+  text: 擦窗
+  chars: [擦, 窗]
+  pinyin: ["cā", "chuāng"]
+  level: 2
+  scene: home
+  meaning: 把窗户上的灰擦掉
+  meaning_source: { dict: self, entry: 擦窗, rev: "rebalance-2026-11" }
+  sentence: 过年之前把窗户擦干净。
+  sentence_source: { corpus: self, doc: "rebalance-2026-11" }
+  image: { file: cards500-522.svg, lib: self, license: CC-BY-SA-4.0, alt: "一只手拿抹布擦窗户" }
+  status: draft
+  gen: { model: deepseek-flash, prompt_ver: "rebalance@1", hash: "rebalance-w_522" }
+
+- id: w_523
+  text: 打字
+  chars: [打, 字]
+  pinyin: ["dǎ", "zì"]
+  level: 2
+  scene: contact
+  meaning: 用手指按键盘写字
+  meaning_source: { dict: self, entry: 打字, rev: "rebalance-2026-11" }
+  sentence: 字太小，打字看不清。
+  sentence_source: { corpus: self, doc: "rebalance-2026-11" }
+  image: { file: cards500-523.svg, lib: self, license: CC-BY-SA-4.0, alt: "两只手在键盘上打字" }
+  status: draft
+  gen: { model: deepseek-flash, prompt_ver: "rebalance@1", hash: "rebalance-w_523" }
+
+- id: w_524
+  text: 护照
+  chars: [护, 照]
+  pinyin: ["hù", "zhào"]
+  level: 2
+  scene: gov
+  meaning: 出国要用的证件
+  meaning_source: { dict: self, entry: 护照, rev: "rebalance-2026-11" }
+  sentence: 出国要带护照和机票。
+  sentence_source: { corpus: self, doc: "rebalance-2026-11" }
+  image: { file: cards500-524.svg, lib: self, license: CC-BY-SA-4.0, alt: "一本护照，旁边有一张机票" }
+  status: draft
+  gen: { model: deepseek-flash, prompt_ver: "rebalance@1", hash: "rebalance-w_524" }
+
+- id: w_525
+  text: 声明
+  chars: [声, 明]
+  pinyin: ["shēng", "míng"]
+  level: 2
+  scene: gov
+  meaning: 公开说清楚一件事
+  meaning_source: { dict: self, entry: 声明, rev: "rebalance-2026-11" }
+  sentence: 居委会贴了一张声明。
+  sentence_source: { corpus: self, doc: "rebalance-2026-11" }
+  image: { file: cards500-525.svg, lib: self, license: CC-BY-SA-4.0, alt: "一张写了字的纸，旁边有一个对勾" }
+  status: draft
+  gen: { model: deepseek-flash, prompt_ver: "rebalance@1", hash: "rebalance-w_525" }
+
+- id: w_526
+  text: 牙科
+  chars: [牙, 科]
+  pinyin: ["yá", "kē"]
+  level: 2
+  scene: health
+  meaning: 看牙治牙的科室
+  meaning_source: { dict: self, entry: 牙科, rev: "rebalance-2026-11" }
+  sentence: 牙疼得厉害，去牙科看看。
+  sentence_source: { corpus: self, doc: "rebalance-2026-11" }
+  image: { file: cards500-526.svg, lib: self, license: CC-BY-SA-4.0, alt: "一张牙科治疗椅，旁边站着牙医" }
+  status: draft
+  gen: { model: deepseek-flash, prompt_ver: "rebalance@1", hash: "rebalance-w_526" }
+
+- id: w_527
+  text: 眼科
+  chars: [眼, 科]
+  pinyin: ["yǎn", "kē"]
+  level: 2
+  scene: health
+  meaning: 看眼睛的科室
+  meaning_source: { dict: self, entry: 眼科, rev: "rebalance-2026-11" }
+  sentence: 眼睛看不清，先挂眼科。
+  sentence_source: { corpus: self, doc: "rebalance-2026-11" }
+  image: { file: cards500-527.svg, lib: self, license: CC-BY-SA-4.0, alt: "一台眼科检查仪，前面有一只眼睛" }
+  status: draft
+  gen: { model: deepseek-flash, prompt_ver: "rebalance@1", hash: "rebalance-w_527" }
+
+- id: w_528
+  text: 还钱
+  chars: [还, 钱]
+  pinyin: ["huán", "qián"]
+  level: 2
+  scene: money
+  meaning: 把借的钱还给人家
+  meaning_source: { dict: self, entry: 还钱, rev: "rebalance-2026-11" }
+  sentence: 借的钱要按时还。
+  sentence_source: { corpus: self, doc: "rebalance-2026-11" }
+  image: { file: cards500-528.svg, lib: self, license: CC-BY-SA-4.0, alt: "一双手把纸币递给另一个人" }
+  status: draft
+  gen: { model: deepseek-flash, prompt_ver: "rebalance@1", hash: "rebalance-w_528" }

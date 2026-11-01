@@ -37,6 +37,17 @@ pnpm content:build      # 校验 + 生成 apps/web 的 JSON 与图片副本
 
 门禁会检查：Zod schema、`text === chars.join('')`、拼音数量、释义 ≤20 字且不含英文/数字/括号、释义用字 ⊆ 对应字表、图片存在、id 不重复。警告（如缺 `image.alt`）不阻塞构建，但建议清零。
 
+## 选词辅助：单字频率
+
+扩词前可以跑：
+
+```bash
+pnpm cards:chars              # 550 张目标词的单字频率，按次数降序
+pnpm cards:chars -- --top 30  # 只看前 30
+```
+
+它只统计目标词里的汉字，用来避免新一批卡继续围绕“电、证、卡、车”等高频字；详细口径、JSON/Markdown 输出和“生词 AI”用法见 [docs/14](../docs/14-card-char-frequency.md)。
+
 ## 配图
 
 `tools/generate_images.py` 是**基线 52 张** SVG 的生成源，只用 Python 标准库；500 张扩量图由 `work/cards500/generate_svgs.py` 生成后复制进 `content/images/`：

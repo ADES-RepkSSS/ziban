@@ -1,0 +1,795 @@
+{
+  "generatedAt": "2026-11-01",
+  "rev": "rebalance-2026-11",
+  "removeIds": [
+    "w_498",
+    "w_144",
+    "w_178",
+    "w_489",
+    "w_293",
+    "w_491",
+    "w_137",
+    "w_120",
+    "w_262",
+    "w_190",
+    "w_186",
+    "w_188",
+    "w_360",
+    "w_380",
+    "w_389",
+    "w_369",
+    "w_331",
+    "w_097",
+    "w_098",
+    "w_122",
+    "w_101",
+    "w_139",
+    "w_057",
+    "w_147",
+    "w_454",
+    "w_431",
+    "w_124",
+    "w_088"
+  ],
+  "replacements": [
+    {
+      "id": "w_046",
+      "text": "心脏",
+      "scene": "health",
+      "level": 2,
+      "image": "cards500-046.svg",
+      "meaning": "身上一直在跳的东西",
+      "sentence": "走快一点，心脏就跳得厉害。",
+      "alt": "一颗红色的心脏，旁边有一条跳动的线",
+      "visual": {
+        "icon": "heart",
+        "props": [],
+        "accent": "red"
+      },
+      "chars": [
+        "心",
+        "脏"
+      ],
+      "pinyin": [
+        "xīn",
+        "zāng"
+      ],
+      "imageAlt": "一颗红色的心脏，旁边有一条跳动的线"
+    },
+    {
+      "id": "w_321",
+      "text": "省钱",
+      "scene": "money",
+      "level": 2,
+      "image": "cards500-321.svg",
+      "meaning": "少花不该花的钱",
+      "sentence": "自己做饭，能省不少钱。",
+      "alt": "一个存钱罐，旁边有一枚硬币",
+      "visual": {
+        "icon": "piggy-bank",
+        "props": [
+          "coin"
+        ],
+        "accent": "amber"
+      },
+      "chars": [
+        "省",
+        "钱"
+      ],
+      "pinyin": [
+        "shěng",
+        "qián"
+      ],
+      "imageAlt": "一个存钱罐，旁边有一枚硬币"
+    },
+    {
+      "id": "w_203",
+      "text": "卧室",
+      "scene": "home",
+      "level": 1,
+      "image": "cards500-203.svg",
+      "meaning": "睡觉的那间屋子",
+      "sentence": "卧室的灯坏了，晚上很黑。",
+      "alt": "一间卧室，里面有一张床和一盏床头灯",
+      "visual": {
+        "icon": "bed",
+        "props": [
+          "clock"
+        ],
+        "accent": "amber"
+      },
+      "chars": [
+        "卧",
+        "室"
+      ],
+      "pinyin": [
+        "wò",
+        "shì"
+      ],
+      "imageAlt": "一间卧室，里面有一张床和一盏床头灯"
+    }
+  ],
+  "additions": [
+    {
+      "id": "w_501",
+      "text": "高血压",
+      "scene": "health",
+      "level": 2,
+      "meaning": "血压一直比平常高",
+      "sentence": "奶奶有高血压，每天都要量一量。",
+      "image": "cards500-501.svg",
+      "chars": [
+        "高",
+        "血",
+        "压"
+      ],
+      "pinyin": [
+        "gāo",
+        "xuè",
+        "yā"
+      ],
+      "imageAlt": "一只手臂上绑着血压计袖带，表上的指针偏高",
+      "visual": {
+        "icon": "blood-pressure",
+        "props": [],
+        "accent": "red"
+      }
+    },
+    {
+      "id": "w_502",
+      "text": "体温",
+      "scene": "health",
+      "level": 1,
+      "meaning": "身上有多热",
+      "sentence": "先量一下体温，看发不发烧。",
+      "image": "cards500-502.svg",
+      "chars": [
+        "体",
+        "温"
+      ],
+      "pinyin": [
+        "tǐ",
+        "wēn"
+      ],
+      "imageAlt": "一支体温计，旁边有一杯温水",
+      "visual": {
+        "icon": "thermometer",
+        "props": [],
+        "accent": "blue"
+      }
+    },
+    {
+      "id": "w_503",
+      "text": "牙刷",
+      "scene": "home",
+      "level": 1,
+      "meaning": "刷牙用的小刷子",
+      "sentence": "牙刷用久了要换一把新的。",
+      "image": "cards500-503.svg",
+      "chars": [
+        "牙",
+        "刷"
+      ],
+      "pinyin": [
+        "yá",
+        "shuā"
+      ],
+      "imageAlt": "一把牙刷和一支牙膏",
+      "visual": {
+        "icon": "toothbrush",
+        "props": [],
+        "accent": "teal"
+      }
+    },
+    {
+      "id": "w_504",
+      "text": "护工",
+      "scene": "health",
+      "level": 2,
+      "meaning": "在医院照顾病人的人",
+      "sentence": "住院时请个护工帮忙照顾。",
+      "image": "cards500-504.svg",
+      "chars": [
+        "护",
+        "工"
+      ],
+      "pinyin": [
+        "hù",
+        "gōng"
+      ],
+      "imageAlt": "一位穿工作服的护工在病床边照顾老人",
+      "visual": {
+        "icon": "nurse",
+        "props": [],
+        "accent": "green"
+      }
+    },
+    {
+      "id": "w_505",
+      "text": "退烧",
+      "scene": "health",
+      "level": 1,
+      "meaning": "让身上的热退下去",
+      "sentence": "吃了药，烧慢慢退了。",
+      "image": "cards500-505.svg",
+      "chars": [
+        "退",
+        "烧"
+      ],
+      "pinyin": [
+        "tuì",
+        "shāo"
+      ],
+      "imageAlt": "一支体温计，旁边有一个箭头",
+      "visual": {
+        "icon": "thermometer",
+        "props": [
+          "arrow"
+        ],
+        "accent": "blue"
+      }
+    },
+    {
+      "id": "w_506",
+      "text": "中医",
+      "scene": "health",
+      "level": 2,
+      "meaning": "用草药和推拿治病",
+      "sentence": "他去看中医，开了几副药。",
+      "image": "cards500-506.svg",
+      "chars": [
+        "中",
+        "医"
+      ],
+      "pinyin": [
+        "zhōng",
+        "yī"
+      ],
+      "imageAlt": "一位中医在给老人把脉，旁边放着草药",
+      "visual": {
+        "icon": "doctor",
+        "props": [
+          "leaf"
+        ],
+        "accent": "green"
+      }
+    },
+    {
+      "id": "w_507",
+      "text": "血压计",
+      "scene": "health",
+      "level": 2,
+      "meaning": "量血压用的表",
+      "sentence": "家里的血压计要常常校准。",
+      "image": "cards500-507.svg",
+      "chars": [
+        "血",
+        "压",
+        "计"
+      ],
+      "pinyin": [
+        "xuè",
+        "yā",
+        "jì"
+      ],
+      "imageAlt": "一台放在桌上的血压计，连着一根袖带",
+      "visual": {
+        "icon": "blood-pressure",
+        "props": [],
+        "accent": "blue"
+      }
+    },
+    {
+      "id": "w_508",
+      "text": "假牙",
+      "scene": "health",
+      "level": 1,
+      "meaning": "装在嘴里代替真牙",
+      "sentence": "假牙要拿下来刷干净。",
+      "image": "cards500-508.svg",
+      "chars": [
+        "假",
+        "牙"
+      ],
+      "pinyin": [
+        "jiǎ",
+        "yá"
+      ],
+      "imageAlt": "一颗白色的假牙",
+      "visual": {
+        "icon": "tooth",
+        "props": [],
+        "accent": "blue"
+      }
+    },
+    {
+      "id": "w_509",
+      "text": "养老院",
+      "scene": "gov",
+      "level": 2,
+      "meaning": "老人住进去有人照顾",
+      "sentence": "老人住在养老院有人照顾。",
+      "image": "cards500-509.svg",
+      "chars": [
+        "养",
+        "老",
+        "院"
+      ],
+      "pinyin": [
+        "yǎng",
+        "lǎo",
+        "yuàn"
+      ],
+      "imageAlt": "一栋小楼，门口站着一位老人",
+      "visual": {
+        "icon": "community",
+        "props": [],
+        "accent": "amber"
+      }
+    },
+    {
+      "id": "w_510",
+      "text": "手脚",
+      "scene": "health",
+      "level": 1,
+      "meaning": "手和脚，身上能动的两头",
+      "sentence": "天冷了，手脚容易发凉。",
+      "image": "cards500-510.svg",
+      "chars": [
+        "手",
+        "脚"
+      ],
+      "pinyin": [
+        "shǒu",
+        "jiǎo"
+      ],
+      "imageAlt": "一只手和一只脚画在一起",
+      "visual": {
+        "icon": "limbs",
+        "props": [],
+        "accent": "teal"
+      }
+    },
+    {
+      "id": "w_511",
+      "text": "吃饭",
+      "scene": "home",
+      "level": 1,
+      "meaning": "把饭放进嘴里咽下去",
+      "sentence": "慢慢吃饭，别急着咽。",
+      "image": "cards500-511.svg",
+      "chars": [
+        "吃",
+        "饭"
+      ],
+      "pinyin": [
+        "chī",
+        "fàn"
+      ],
+      "imageAlt": "一个人坐在桌边端着碗吃饭",
+      "visual": {
+        "icon": "bowl",
+        "props": [
+          "steam"
+        ],
+        "accent": "amber"
+      }
+    },
+    {
+      "id": "w_512",
+      "text": "散步",
+      "scene": "health",
+      "level": 1,
+      "meaning": "慢慢走一走活动身体",
+      "sentence": "饭后到楼下散步半小时。",
+      "image": "cards500-512.svg",
+      "chars": [
+        "散",
+        "步"
+      ],
+      "pinyin": [
+        "sàn",
+        "bù"
+      ],
+      "imageAlt": "两个老人在小区里慢慢走路",
+      "visual": {
+        "icon": "walking",
+        "props": [],
+        "accent": "green"
+      }
+    },
+    {
+      "id": "w_513",
+      "text": "穿衣",
+      "scene": "home",
+      "level": 1,
+      "meaning": "把衣服穿到身上",
+      "sentence": "天凉了，多穿一件衣服。",
+      "image": "cards500-513.svg",
+      "chars": [
+        "穿",
+        "衣"
+      ],
+      "pinyin": [
+        "chuān",
+        "yī"
+      ],
+      "imageAlt": "一个人正把外套穿到身上，旁边有衣架",
+      "visual": {
+        "icon": "hanger",
+        "props": [],
+        "accent": "pink"
+      }
+    },
+    {
+      "id": "w_514",
+      "text": "起床",
+      "scene": "home",
+      "level": 1,
+      "meaning": "睡醒了从床上起来",
+      "sentence": "早上七点起床，先喝杯水。",
+      "image": "cards500-514.svg",
+      "chars": [
+        "起",
+        "床"
+      ],
+      "pinyin": [
+        "qǐ",
+        "chuáng"
+      ],
+      "imageAlt": "一个人从床上坐起来，窗外有太阳",
+      "visual": {
+        "icon": "bed",
+        "props": [
+          "clock"
+        ],
+        "accent": "amber"
+      }
+    },
+    {
+      "id": "w_515",
+      "text": "关灯",
+      "scene": "home",
+      "level": 1,
+      "meaning": "把灯关掉不亮了",
+      "sentence": "出门前记得关灯。",
+      "image": "cards500-515.svg",
+      "chars": [
+        "关",
+        "灯"
+      ],
+      "pinyin": [
+        "guān",
+        "dēng"
+      ],
+      "imageAlt": "一只手按下墙上的开关，灯灭了",
+      "visual": {
+        "icon": "switch-off",
+        "props": [],
+        "accent": "red"
+      }
+    },
+    {
+      "id": "w_516",
+      "text": "开窗",
+      "scene": "home",
+      "level": 1,
+      "meaning": "把窗户打开透气",
+      "sentence": "屋里闷，开窗透透气。",
+      "image": "cards500-516.svg",
+      "chars": [
+        "开",
+        "窗"
+      ],
+      "pinyin": [
+        "kāi",
+        "chuāng"
+      ],
+      "imageAlt": "一扇窗户向外打开，风吹进来",
+      "visual": {
+        "icon": "window",
+        "props": [
+          "arrow"
+        ],
+        "accent": "blue"
+      }
+    },
+    {
+      "id": "w_517",
+      "text": "锁门",
+      "scene": "home",
+      "level": 1,
+      "meaning": "出门前把门锁上",
+      "sentence": "睡觉前检查一下有没有锁门。",
+      "image": "cards500-517.svg",
+      "chars": [
+        "锁",
+        "门"
+      ],
+      "pinyin": [
+        "suǒ",
+        "mén"
+      ],
+      "imageAlt": "一扇门，门边挂着一把锁",
+      "visual": {
+        "icon": "door",
+        "props": [
+          "lock"
+        ],
+        "accent": "teal"
+      }
+    },
+    {
+      "id": "w_518",
+      "text": "烧饭",
+      "scene": "home",
+      "level": 1,
+      "meaning": "把生的东西做熟",
+      "sentence": "中午在家烧饭，不去外面吃。",
+      "image": "cards500-518.svg",
+      "chars": [
+        "烧",
+        "饭"
+      ],
+      "pinyin": [
+        "shāo",
+        "fàn"
+      ],
+      "imageAlt": "灶上放着锅，锅里冒着热气",
+      "visual": {
+        "icon": "pot",
+        "props": [
+          "steam"
+        ],
+        "accent": "red"
+      }
+    },
+    {
+      "id": "w_519",
+      "text": "买菜",
+      "scene": "shopping",
+      "level": 1,
+      "meaning": "去市场把菜买回来",
+      "sentence": "早上去菜场买菜，便宜又新鲜。",
+      "image": "cards500-519.svg",
+      "chars": [
+        "买",
+        "菜"
+      ],
+      "pinyin": [
+        "mǎi",
+        "cài"
+      ],
+      "imageAlt": "一个菜篮子，里面装着青菜和萝卜",
+      "visual": {
+        "icon": "basket",
+        "props": [
+          "leaf"
+        ],
+        "accent": "green"
+      }
+    },
+    {
+      "id": "w_520",
+      "text": "路牌",
+      "scene": "travel",
+      "level": 1,
+      "meaning": "路边写着路名的牌子",
+      "sentence": "看不懂路牌，就问一下路人。",
+      "image": "cards500-520.svg",
+      "chars": [
+        "路",
+        "牌"
+      ],
+      "pinyin": [
+        "lù",
+        "pái"
+      ],
+      "imageAlt": "路边立着一块路牌，牌上有一个箭头",
+      "visual": {
+        "icon": "road-sign",
+        "props": [],
+        "accent": "red"
+      }
+    },
+    {
+      "id": "w_521",
+      "text": "拖地",
+      "scene": "home",
+      "level": 1,
+      "meaning": "用拖把把地擦干净",
+      "sentence": "地上有水，拿拖把拖一拖。",
+      "image": "cards500-521.svg",
+      "chars": [
+        "拖",
+        "地"
+      ],
+      "pinyin": [
+        "tuō",
+        "dì"
+      ],
+      "imageAlt": "一个人拿着拖把在拖地",
+      "visual": {
+        "icon": "mop",
+        "props": [
+          "drop"
+        ],
+        "accent": "blue"
+      }
+    },
+    {
+      "id": "w_522",
+      "text": "擦窗",
+      "scene": "home",
+      "level": 2,
+      "meaning": "把窗户上的灰擦掉",
+      "sentence": "过年之前把窗户擦干净。",
+      "image": "cards500-522.svg",
+      "chars": [
+        "擦",
+        "窗"
+      ],
+      "pinyin": [
+        "cā",
+        "chuāng"
+      ],
+      "imageAlt": "一只手拿抹布擦窗户",
+      "visual": {
+        "icon": "window",
+        "props": [
+          "spark"
+        ],
+        "accent": "blue"
+      }
+    },
+    {
+      "id": "w_523",
+      "text": "打字",
+      "scene": "contact",
+      "level": 2,
+      "meaning": "用手指按键盘写字",
+      "sentence": "字太小，打字看不清。",
+      "image": "cards500-523.svg",
+      "chars": [
+        "打",
+        "字"
+      ],
+      "pinyin": [
+        "dǎ",
+        "zì"
+      ],
+      "imageAlt": "两只手在键盘上打字",
+      "visual": {
+        "icon": "keyboard",
+        "props": [],
+        "accent": "teal"
+      }
+    },
+    {
+      "id": "w_524",
+      "text": "护照",
+      "scene": "gov",
+      "level": 2,
+      "meaning": "出国要用的证件",
+      "sentence": "出国要带护照和机票。",
+      "image": "cards500-524.svg",
+      "chars": [
+        "护",
+        "照"
+      ],
+      "pinyin": [
+        "hù",
+        "zhào"
+      ],
+      "imageAlt": "一本护照，旁边有一张机票",
+      "visual": {
+        "icon": "id-card",
+        "props": [
+          "badge"
+        ],
+        "accent": "amber"
+      }
+    },
+    {
+      "id": "w_525",
+      "text": "声明",
+      "scene": "gov",
+      "level": 2,
+      "meaning": "公开说清楚一件事",
+      "sentence": "居委会贴了一张声明。",
+      "image": "cards500-525.svg",
+      "chars": [
+        "声",
+        "明"
+      ],
+      "pinyin": [
+        "shēng",
+        "míng"
+      ],
+      "imageAlt": "一张写了字的纸，旁边有一个对勾",
+      "visual": {
+        "icon": "document",
+        "props": [
+          "check"
+        ],
+        "accent": "blue"
+      }
+    },
+    {
+      "id": "w_526",
+      "text": "牙科",
+      "scene": "health",
+      "level": 2,
+      "meaning": "看牙治牙的科室",
+      "sentence": "牙疼得厉害，去牙科看看。",
+      "image": "cards500-526.svg",
+      "chars": [
+        "牙",
+        "科"
+      ],
+      "pinyin": [
+        "yá",
+        "kē"
+      ],
+      "imageAlt": "一张牙科治疗椅，旁边站着牙医",
+      "visual": {
+        "icon": "tooth",
+        "props": [],
+        "accent": "teal"
+      }
+    },
+    {
+      "id": "w_527",
+      "text": "眼科",
+      "scene": "health",
+      "level": 2,
+      "meaning": "看眼睛的科室",
+      "sentence": "眼睛看不清，先挂眼科。",
+      "image": "cards500-527.svg",
+      "chars": [
+        "眼",
+        "科"
+      ],
+      "pinyin": [
+        "yǎn",
+        "kē"
+      ],
+      "imageAlt": "一台眼科检查仪，前面有一只眼睛",
+      "visual": {
+        "icon": "eye",
+        "props": [],
+        "accent": "blue"
+      }
+    },
+    {
+      "id": "w_528",
+      "text": "还钱",
+      "scene": "money",
+      "level": 2,
+      "meaning": "把借的钱还给人家",
+      "sentence": "借的钱要按时还。",
+      "image": "cards500-528.svg",
+      "chars": [
+        "还",
+        "钱"
+      ],
+      "pinyin": [
+        "huán",
+        "qián"
+      ],
+      "imageAlt": "一双手把纸币递给另一个人",
+      "visual": {
+        "icon": "cash",
+        "props": [
+          "arrow"
+        ],
+        "accent": "green"
+      }
+    }
+  ],
+  "stats": {
+    "removed": 28,
+    "replaced": 3,
+    "added": 28
+  }
+}
