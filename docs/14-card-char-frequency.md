@@ -348,5 +348,5 @@ node scripts/card-char-frequency.mjs --output work/char-stats/cards-550.txt
 - [docs/10-corpus-handoff.md](10-corpus-handoff.md)：语料库格式与批次生成提示词。
 - [content/README.md](../content/README.md)：卡片、图片、字表维护。
 - [schema/card.schema.json](../schema/card.schema.json)：卡片字段定义。
-- [work/cards500/README.md](../work/cards500/README.md)：500 张扩量卡的交付说明与已知限制。
-- [work/cards500/HANDOFF.md](../work/cards500/HANDOFF.md)：500 张卡的生成/校验流水线。
+- `work/cards500/README.md`：500 张扩量卡的交付说明与已知限制（原始生成包，本地保留，不随仓库提交）。
+- `work/cards500/HANDOFF.md`：500 张卡的生成/校验流水线（原始生成包，本地保留，不随仓库提交）。
